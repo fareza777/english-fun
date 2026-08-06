@@ -1,0 +1,151 @@
+import '../models.dart';
+import '../theme.dart';
+
+/// KELAS 3 — Aksi & Kalimat (6 unit)
+final Grade grade3 = Grade(
+  level: 3,
+  title: 'Kelas 3',
+  subtitle: 'Aksi & Kalimat',
+  emoji: '🚀',
+  colors: GradePalette.all[2],
+  units: [
+    Unit.vocab(
+      id: 'g3_daily',
+      title: 'My Day',
+      titleId: 'Kegiatan Sehari-hari',
+      emoji: '🏃',
+      items: [
+        v('Eat', 'Makan', '🍽️', sentence: 'I eat rice.'),
+        v('Drink', 'Minum', '🥤', sentence: 'I drink water.'),
+        v('Sleep', 'Tidur', '😴', sentence: 'I sleep at night.'),
+        v('Play', 'Bermain', '⚽', sentence: 'I play with friends.'),
+        v('Read', 'Membaca', '📖', sentence: 'I read a book.'),
+        v('Write', 'Menulis', '✍️', sentence: 'I write a letter.'),
+        v('Run', 'Berlari', '🏃', sentence: 'I run fast.'),
+        v('Walk', 'Berjalan', '🚶', sentence: 'I walk to school.'),
+        v('Swim', 'Berenang', '🏊', sentence: 'I swim on Sunday.'),
+        v('Cook', 'Memasak', '🍳', sentence: 'Mom cooks rice.'),
+      ],
+    ),
+    Unit.vocab(
+      id: 'g3_actions2',
+      title: 'More Actions',
+      titleId: 'Lebih Banyak Kata Kerja',
+      emoji: '🎤',
+      items: [
+        v('Sing', 'Bernyanyi', '🎤', sentence: 'I sing a song.'),
+        v('Dance', 'Menari', '💃', sentence: 'She dances well.'),
+        v('Draw', 'Menggambar', '🎨', sentence: 'I draw a cat.'),
+        v('Clean', 'Membersihkan', '🧹', sentence: 'I clean my room.'),
+        v('Wash', 'Mencuci', '🧼', sentence: 'I wash my hands.'),
+        v('Clap', 'Tepuk tangan', '👏', sentence: 'We clap our hands.'),
+        v('Cry', 'Menangis', '😭', sentence: 'The baby cries.'),
+        v('Laugh', 'Tertawa', '😆', sentence: 'We laugh together.'),
+        v('Sit', 'Duduk', '🧘', sentence: 'I sit on the floor.'),
+        v('Stand', 'Berdiri', '🧍', sentence: 'I stand up.'),
+      ],
+    ),
+    Unit.vocab(
+      id: 'g3_sports',
+      title: 'Sports',
+      titleId: 'Olahraga',
+      emoji: '⚽',
+      items: [
+        v('Soccer', 'Sepak bola', '⚽', sentence: 'I play soccer with friends.'),
+        v('Basketball', 'Bola basket', '🏀', sentence: 'He plays basketball.'),
+        v('Badminton', 'Bulu tangkis', '🏸', sentence: 'We play badminton.'),
+        v('Volleyball', 'Bola voli', '🏐', sentence: 'They play volleyball.'),
+        v('Tennis', 'Tenis', '🎾', sentence: 'She plays tennis.'),
+        v('Table Tennis', 'Tenis meja', '🏓', sentence: 'I play table tennis.'),
+        v('Swimming', 'Renang', '🏊', sentence: 'Swimming is fun.'),
+        v('Running', 'Lari', '🏃', sentence: 'Running makes me strong.'),
+      ],
+    ),
+    Unit.vocab(
+      id: 'g3_hobbies',
+      title: 'Hobbies',
+      titleId: 'Hobi',
+      emoji: '🎨',
+      items: [
+        v('Reading', 'Membaca', '📚', sentence: 'My hobby is reading.'),
+        v('Cooking', 'Memasak', '🍳', sentence: 'Mom likes cooking.'),
+        v('Dancing', 'Menari', '💃', sentence: 'She likes dancing.'),
+        v('Singing', 'Bernyanyi', '🎤', sentence: 'I like singing.'),
+        v('Drawing', 'Menggambar', '🎨', sentence: 'He likes drawing.'),
+        v('Cycling', 'Bersepeda', '🚴', sentence: 'We like cycling.'),
+        v('Fishing', 'Memancing', '🎣', sentence: 'Dad likes fishing.'),
+        v('Gaming', 'Bermain game', '🎮', sentence: 'I like gaming.'),
+        v('Gardening', 'Berkebun', '🌱', sentence: 'Grandma likes gardening.'),
+        v('Camping', 'Berkemah', '🏕️', sentence: 'We like camping.'),
+      ],
+    ),
+    Unit.vocab(
+      id: 'g3_time',
+      title: 'Time & Days',
+      titleId: 'Waktu & Hari',
+      emoji: '🕐',
+      items: [
+        v('Monday', 'Senin', '📘', sentence: 'I go to school on Monday.'),
+        v('Tuesday', 'Selasa', '📗', sentence: 'We have sports on Tuesday.'),
+        v('Wednesday', 'Rabu', '📙', sentence: 'I draw on Wednesday.'),
+        v('Thursday', 'Kamis', '📒', sentence: 'Thursday is fun.'),
+        v('Friday', 'Jumat', '🎉', sentence: 'Friday is a happy day.'),
+        v('Saturday', 'Sabtu', '⚽', sentence: 'I play on Saturday.'),
+        v('Sunday', 'Minggu', '🌞', sentence: 'We rest on Sunday.'),
+        v('Morning', 'Pagi', '🌅', sentence: 'Good morning!'),
+        v('Afternoon', 'Siang', '🌞', sentence: 'Good afternoon!'),
+        v('Evening', 'Sore', '🌆', sentence: 'Good evening!'),
+        v('Night', 'Malam', '🌙', sentence: 'Good night!'),
+      ],
+    ),
+    Unit.grammar(
+      id: 'g3_ilike',
+      title: 'I like...',
+      titleId: 'Saya suka...',
+      emoji: '💛',
+      pages: [
+        GrammarPage(
+          title: 'I like ...',
+          explain: "Pakai 'I like' untuk bilang apa yang kamu suka.",
+          examples: [
+            ge('I like cats.', 'Saya suka kucing.', '🐱'),
+            ge('I like apples.', 'Saya suka apel.', '🍎'),
+            ge('I like soccer.', 'Saya suka sepak bola.', '⚽'),
+          ],
+          challenges: [ch('I ___ cats.', ['like', 'likes', 'am'], 0, 'I like cats.')],
+        ),
+        GrammarPage(
+          title: "I don't like ...",
+          explain: "Pakai 'I don't like' untuk bilang apa yang TIDAK kamu suka.",
+          examples: [
+            ge("I don't like snakes.", 'Saya tidak suka ular.', '🐍'),
+            ge("I don't like chili.", 'Saya tidak suka cabai.', '🌶️'),
+          ],
+          challenges: [
+            ch('I ___ like spiders.', ["don't", "doesn't", 'am not'], 0, "I don't like spiders.")
+          ],
+        ),
+        GrammarPage(
+          title: 'Do you like ...?',
+          explain: "Bertanya pakai 'Do you like...?'. Jawab: Yes, I do. / No, I don't.",
+          examples: [
+            ge('Do you like milk?', 'Apakah kamu suka susu?', '🥛'),
+            ge('Yes, I do!', 'Ya, saya suka!', '👍'),
+            ge("No, I don't.", 'Tidak, saya tidak suka.', '👎'),
+          ],
+          challenges: [ch('___ you like bananas?', ['Do', 'Does', 'Are'], 0, 'Do you like bananas?')],
+        ),
+        GrammarPage(
+          title: 'Latihan! 💪',
+          explain: 'Pilih jawaban yang tepat. Semangat!',
+          challenges: [
+            ch('She ___ ice cream.', ['likes', 'like', 'liking'], 0, 'She likes ice cream.'),
+            ch('___ they like fish?', ['Do', 'Does', 'Is'], 0, 'Do they like fish?'),
+            ch('I ___ like vegetables.', ["don't", "doesn't", 'not'], 0, "I don't like vegetables."),
+            ch('We ___ playing outside.', ['like', 'likes', 'are'], 0, 'We like playing outside.'),
+          ],
+        ),
+      ],
+    ),
+  ],
+);

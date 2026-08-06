@@ -1,0 +1,5014 @@
+{
+  "items": [
+    {
+      "id": "ccaddece85b1ca500f860d8fcea4f0ce",
+      "text": "Alphabet Fun",
+      "voice": "teach"
+    },
+    {
+      "id": "9f6290f4436e5a2351f12e03b6433c3c",
+      "text": "Apple",
+      "voice": "teach"
+    },
+    {
+      "id": "353df421c4fc976e2637061d7a83f601",
+      "text": "Ball",
+      "voice": "teach"
+    },
+    {
+      "id": "fa3ebd6742c360b2d9652b7f78d9bd7d",
+      "text": "Cat",
+      "voice": "teach"
+    },
+    {
+      "id": "c935d187f0b998ef720390f85014ed1e",
+      "text": "Dog",
+      "voice": "teach"
+    },
+    {
+      "id": "f04ba3c635d301c987d90fc75c71775b",
+      "text": "Egg",
+      "voice": "teach"
+    },
+    {
+      "id": "071642fa72ba780ee90ed36350d82745",
+      "text": "Fish",
+      "voice": "teach"
+    },
+    {
+      "id": "f9edfa286f905de03053f83eb4575a59",
+      "text": "Grape",
+      "voice": "teach"
+    },
+    {
+      "id": "a10d7a62aaff592f4eecbcf2fe7fad9b",
+      "text": "Hat",
+      "voice": "teach"
+    },
+    {
+      "id": "4905f67693c1e057a2d9b8c9de8f863b",
+      "text": "Ice Cream",
+      "voice": "teach"
+    },
+    {
+      "id": "b62ad612a8ad45faca9f4a6b9ecb31a3",
+      "text": "Juice",
+      "voice": "teach"
+    },
+    {
+      "id": "65c449ad44e2c0b6c1fffc5c5cea7413",
+      "text": "Kite",
+      "voice": "teach"
+    },
+    {
+      "id": "60d28e7d879c0dc48b9a593468cf11e5",
+      "text": "Lion",
+      "voice": "teach"
+    },
+    {
+      "id": "d502a50ed945d5fca74e0105575b5b34",
+      "text": "Moon",
+      "voice": "teach"
+    },
+    {
+      "id": "4432170f33a27181720d70ee7d6d2dee",
+      "text": "Nose",
+      "voice": "teach"
+    },
+    {
+      "id": "909cea0c97058cfe2e3ea8d675cb08e1",
+      "text": "Orange",
+      "voice": "teach"
+    },
+    {
+      "id": "b1e2171bb6be58c408f58debe611ee0f",
+      "text": "Pencil",
+      "voice": "teach"
+    },
+    {
+      "id": "2c2d2c0291163b077a372c2a9c5a6eda",
+      "text": "Queen",
+      "voice": "teach"
+    },
+    {
+      "id": "34dd4150fa869f4500f0badbb92946f7",
+      "text": "Rabbit",
+      "voice": "teach"
+    },
+    {
+      "id": "ef6572e4cd58bb39a3f4e82fc64fe9f0",
+      "text": "Sun",
+      "voice": "teach"
+    },
+    {
+      "id": "454c9843110686bf6f67ce5115b66617",
+      "text": "Tiger",
+      "voice": "teach"
+    },
+    {
+      "id": "91e0703aceed2a05cba02c792821d8b6",
+      "text": "Umbrella",
+      "voice": "teach"
+    },
+    {
+      "id": "038810d0fea91e013692cedfdf517478",
+      "text": "Violin",
+      "voice": "teach"
+    },
+    {
+      "id": "d157e65428af5c0724fd4efcfbcf6c51",
+      "text": "Whale",
+      "voice": "teach"
+    },
+    {
+      "id": "f18860f5f0fba9efa3b4c3c0a07edede",
+      "text": "Xylophone",
+      "voice": "teach"
+    },
+    {
+      "id": "bc8fd39eed19989284cf2304625bb803",
+      "text": "Yo-yo",
+      "voice": "teach"
+    },
+    {
+      "id": "6d122ee3449a0ef3270d7fc17414301a",
+      "text": "Zebra",
+      "voice": "teach"
+    },
+    {
+      "id": "cbebfa21dbe8e87e788d94a76f073807",
+      "text": "Numbers",
+      "voice": "teach"
+    },
+    {
+      "id": "06c2cea18679d64399783748fa367bdd",
+      "text": "One",
+      "voice": "teach"
+    },
+    {
+      "id": "aada29daee1d64ed0fe907043855cb7e",
+      "text": "Two",
+      "voice": "teach"
+    },
+    {
+      "id": "ca8a2087e5557e317599344687a57391",
+      "text": "Three",
+      "voice": "teach"
+    },
+    {
+      "id": "981b8fcee42e1e726a67a2b9a98ea6e9",
+      "text": "Four",
+      "voice": "teach"
+    },
+    {
+      "id": "e5d9de39f7ca1ba2637e5640af3ae8aa",
+      "text": "Five",
+      "voice": "teach"
+    },
+    {
+      "id": "e6fbc0b9673f8c86726688d7607fc8f5",
+      "text": "Six",
+      "voice": "teach"
+    },
+    {
+      "id": "12e67aac3e7f9227cc35f8f047d7dc74",
+      "text": "Seven",
+      "voice": "teach"
+    },
+    {
+      "id": "baca0ca6729684fd54206793ae4b5bd5",
+      "text": "Eight",
+      "voice": "teach"
+    },
+    {
+      "id": "24db11216549ee55172c33cf3def2f3f",
+      "text": "Nine",
+      "voice": "teach"
+    },
+    {
+      "id": "a185c3c138dca5ef46afc33288a67d1f",
+      "text": "Ten",
+      "voice": "teach"
+    },
+    {
+      "id": "5d50889672f6f860d14f502de3de1957",
+      "text": "Colors",
+      "voice": "teach"
+    },
+    {
+      "id": "ee38e4d5dd68c4e440825018d549cb47",
+      "text": "Red",
+      "voice": "teach"
+    },
+    {
+      "id": "9594eec95be70e7b1710f730fdda33d9",
+      "text": "Blue",
+      "voice": "teach"
+    },
+    {
+      "id": "51e6cd92b6c45f9affdc158ecca2b8b8",
+      "text": "Yellow",
+      "voice": "teach"
+    },
+    {
+      "id": "d382816a3cbeed082c9e216e7392eed1",
+      "text": "Green",
+      "voice": "teach"
+    },
+    {
+      "id": "b9ba865fec061c9706d2fd7ce49c0cc7",
+      "text": "Purple",
+      "voice": "teach"
+    },
+    {
+      "id": "8dc5344bc0746e1cc5abf896ca03bbdf",
+      "text": "Pink",
+      "voice": "teach"
+    },
+    {
+      "id": "e90dfb84e30edf611e326eeb04d680de",
+      "text": "Black",
+      "voice": "teach"
+    },
+    {
+      "id": "25a81701fbfa4a1efdf660a950c1d006",
+      "text": "White",
+      "voice": "teach"
+    },
+    {
+      "id": "ed63fc91500594c3086714f86b3001e4",
+      "text": "Brown",
+      "voice": "teach"
+    },
+    {
+      "id": "338b6e271aed5a56a48fa1fe89dbaaf6",
+      "text": "Animals",
+      "voice": "teach"
+    },
+    {
+      "id": "ebe418ae757b121b0d636041981fc1d1",
+      "text": "Bird",
+      "voice": "teach"
+    },
+    {
+      "id": "f97ca8decb3a5f04d11d0e3c6ff3f0cd",
+      "text": "Duck",
+      "voice": "teach"
+    },
+    {
+      "id": "fe0707cc476fa27a17508867b2b95d14",
+      "text": "Cow",
+      "voice": "teach"
+    },
+    {
+      "id": "38069b4eb64e325cb7ac65bd641b2188",
+      "text": "Horse",
+      "voice": "teach"
+    },
+    {
+      "id": "572b2541c97aec9d07ca45dad125559b",
+      "text": "Sheep",
+      "voice": "teach"
+    },
+    {
+      "id": "a9514f8884af954749b66932d8a95a76",
+      "text": "Chicken",
+      "voice": "teach"
+    },
+    {
+      "id": "a36ef47851e2b0fce36c1148d152749a",
+      "text": "Fruits",
+      "voice": "teach"
+    },
+    {
+      "id": "e6f9c347672daae5a2557ae118f44a1e",
+      "text": "Banana",
+      "voice": "teach"
+    },
+    {
+      "id": "9aa80c57478c55b3bcb34290d248d364",
+      "text": "Watermelon",
+      "voice": "teach"
+    },
+    {
+      "id": "72db688c715c3501e560a799d945c69c",
+      "text": "Strawberry",
+      "voice": "teach"
+    },
+    {
+      "id": "95f8c2da33b8930f8d6fee0d524c0817",
+      "text": "Mango",
+      "voice": "teach"
+    },
+    {
+      "id": "7855cca1372aed929a9ae2afb1011134",
+      "text": "Pineapple",
+      "voice": "teach"
+    },
+    {
+      "id": "dadbef2a06f4dd49f2b4f80c517eaf84",
+      "text": "Pear",
+      "voice": "teach"
+    },
+    {
+      "id": "7b75d91d2856e9e74fe7cfbb857dcf2f",
+      "text": "Cherry",
+      "voice": "teach"
+    },
+    {
+      "id": "d37e5732b7e6c9266f077cd51127e3ea",
+      "text": "My Body",
+      "voice": "teach"
+    },
+    {
+      "id": "98921133d10fbdb0fb6dbb7b2648befe",
+      "text": "Head",
+      "voice": "teach"
+    },
+    {
+      "id": "ae160b4691f9e79ba0f78369237218d0",
+      "text": "Eye",
+      "voice": "teach"
+    },
+    {
+      "id": "2fe8f26bc7c4b94fa382b3c34fa4d2b4",
+      "text": "Ear",
+      "voice": "teach"
+    },
+    {
+      "id": "d39f272ab2d5fa9230e90da7b1547655",
+      "text": "Mouth",
+      "voice": "teach"
+    },
+    {
+      "id": "a78b1ac16c0cd02168097fc9a9bd7604",
+      "text": "Hand",
+      "voice": "teach"
+    },
+    {
+      "id": "129e74dde7b475c8848310e16754c965",
+      "text": "Foot",
+      "voice": "teach"
+    },
+    {
+      "id": "c2ad21c07984f2ba47de12b7e88766e3",
+      "text": "Hair",
+      "voice": "teach"
+    },
+    {
+      "id": "c15be25ee7f2914151c2b75804df655a",
+      "text": "Teeth",
+      "voice": "teach"
+    },
+    {
+      "id": "05d7a63454d2014f937df55fd0fb3a63",
+      "text": "Finger",
+      "voice": "teach"
+    },
+    {
+      "id": "d447f5536f9d2e087569b1e42bc44e05",
+      "text": "My Family",
+      "voice": "teach"
+    },
+    {
+      "id": "a30ca91be97a9cedc0d2426e54b0e782",
+      "text": "Father",
+      "voice": "teach"
+    },
+    {
+      "id": "b8e18040dc07eead8e6741733653a740",
+      "text": "Mother",
+      "voice": "teach"
+    },
+    {
+      "id": "e0efbdcea0abe735dbf887292a5670fa",
+      "text": "Brother",
+      "voice": "teach"
+    },
+    {
+      "id": "19cda37369e2d2015e66b9d478ffbe15",
+      "text": "Sister",
+      "voice": "teach"
+    },
+    {
+      "id": "6f19f40d4675470823ce3f24918680ab",
+      "text": "Grandfather",
+      "voice": "teach"
+    },
+    {
+      "id": "543847364f0f1ee0119d839163c466b2",
+      "text": "Grandmother",
+      "voice": "teach"
+    },
+    {
+      "id": "a7b5bdb8cce7b6d6713cc8897c5cf374",
+      "text": "Baby",
+      "voice": "teach"
+    },
+    {
+      "id": "82e8f2916eea98b076f7d019559ac212",
+      "text": "Uncle",
+      "voice": "teach"
+    },
+    {
+      "id": "90232ede6177a8e167b43b4f57d266e9",
+      "text": "Aunt",
+      "voice": "teach"
+    },
+    {
+      "id": "cefc4f7cbc8c34762e0f76703e7e174e",
+      "text": "Family",
+      "voice": "teach"
+    },
+    {
+      "id": "26f979e64ece49ecf2aa7ce0609bd0bd",
+      "text": "My Toys",
+      "voice": "teach"
+    },
+    {
+      "id": "10d3b77299c0157439d839c143fb3e17",
+      "text": "Doll",
+      "voice": "teach"
+    },
+    {
+      "id": "502dd302b6d8d3c24b20ee49e2d51bd1",
+      "text": "Balloon",
+      "voice": "teach"
+    },
+    {
+      "id": "434a2e61d6b548446fc52fa936fbf3ae",
+      "text": "Teddy Bear",
+      "voice": "teach"
+    },
+    {
+      "id": "5d1eca158c00250d9c4c32d947b7c433",
+      "text": "Robot",
+      "voice": "teach"
+    },
+    {
+      "id": "04c4f9f595c4f21d1de65eb07056c15a",
+      "text": "Blocks",
+      "voice": "teach"
+    },
+    {
+      "id": "2b1b78c96448cca5d0d1d3a9e2b1caed",
+      "text": "Puzzle",
+      "voice": "teach"
+    },
+    {
+      "id": "43a219de3691dd5ebec4b4c51d5b4fb7",
+      "text": "Drum",
+      "voice": "teach"
+    },
+    {
+      "id": "65c5a240a67154a20479390dc2e642e3",
+      "text": "Toy Car",
+      "voice": "teach"
+    },
+    {
+      "id": "e7ee6a7ae0e6f824f5609c7bdac34375",
+      "text": "Shapes",
+      "voice": "teach"
+    },
+    {
+      "id": "30954d90085f6eaaf5817917fc5fecb3",
+      "text": "Circle",
+      "voice": "teach"
+    },
+    {
+      "id": "ceb46ca115d05c51aa5a16a8867c3304",
+      "text": "Square",
+      "voice": "teach"
+    },
+    {
+      "id": "5e5500cb2b82eb72d550de644bd1b64b",
+      "text": "Triangle",
+      "voice": "teach"
+    },
+    {
+      "id": "26f93e6e68e28a698377e941cb59f29a",
+      "text": "Star",
+      "voice": "teach"
+    },
+    {
+      "id": "f4a6ceffc0054a855f31f42083328df9",
+      "text": "Heart",
+      "voice": "teach"
+    },
+    {
+      "id": "8f7671185d590914ac21c7511767b699",
+      "text": "Diamond",
+      "voice": "teach"
+    },
+    {
+      "id": "0f4e1aaabd074689b7d3ead824d1ee8e",
+      "text": "Arrow",
+      "voice": "teach"
+    },
+    {
+      "id": "a296104f0c61a9cf39f4824d05315e12",
+      "text": "Cube",
+      "voice": "teach"
+    },
+    {
+      "id": "754c54e892a6109f228435dfd8e88cdd",
+      "text": "Numbers 11-20",
+      "voice": "teach"
+    },
+    {
+      "id": "c709c631ff12d168727d4fd5488a04d9",
+      "text": "Eleven",
+      "voice": "teach"
+    },
+    {
+      "id": "1b187571eeebe3f241cb64bb1f943322",
+      "text": "Twelve",
+      "voice": "teach"
+    },
+    {
+      "id": "c9c15d36d259b4aa1382b2970a590c89",
+      "text": "Thirteen",
+      "voice": "teach"
+    },
+    {
+      "id": "a59cd6b51b232dee123c6b1dd2c7e80b",
+      "text": "Fourteen",
+      "voice": "teach"
+    },
+    {
+      "id": "03278bc1f5e4b81a4420dae450852597",
+      "text": "Fifteen",
+      "voice": "teach"
+    },
+    {
+      "id": "8ba5c1c5015c955a5b142debe35c30ff",
+      "text": "Sixteen",
+      "voice": "teach"
+    },
+    {
+      "id": "e7f75ccd40a77997fc7669480d50a80a",
+      "text": "Seventeen",
+      "voice": "teach"
+    },
+    {
+      "id": "c844f01737b08ba3ff4d51796106eebc",
+      "text": "Eighteen",
+      "voice": "teach"
+    },
+    {
+      "id": "7cbcafe3ad828ebf2bd555f9e9f660ae",
+      "text": "Nineteen",
+      "voice": "teach"
+    },
+    {
+      "id": "dbdad670512fd94747024a8c80a08947",
+      "text": "Twenty",
+      "voice": "teach"
+    },
+    {
+      "id": "773324e6185db003e84b350cbf96f34e",
+      "text": "Little Animals",
+      "voice": "teach"
+    },
+    {
+      "id": "32e9edc16056ea133af764ed59b74291",
+      "text": "Pig",
+      "voice": "teach"
+    },
+    {
+      "id": "239243b6cfcaef84a6d7004f21b7af6f",
+      "text": "Frog",
+      "voice": "teach"
+    },
+    {
+      "id": "f2a47c6809d88e175dade0ef7b16aa13",
+      "text": "Mouse",
+      "voice": "teach"
+    },
+    {
+      "id": "ace31f451ae00b684abd336da60787c9",
+      "text": "Bee",
+      "voice": "teach"
+    },
+    {
+      "id": "29ecfc45c7bd93061222062f86d4161d",
+      "text": "Butterfly",
+      "voice": "teach"
+    },
+    {
+      "id": "938db156ad9b67fa1d4276ac67649940",
+      "text": "Ant",
+      "voice": "teach"
+    },
+    {
+      "id": "b4d68660c4a56181cd886fe5ecc08f71",
+      "text": "Spider",
+      "voice": "teach"
+    },
+    {
+      "id": "5f8f34759907c2016a0e4413e4ecb718",
+      "text": "Snail",
+      "voice": "teach"
+    },
+    {
+      "id": "06deba5908b007eb6f32d8d95f3f61b5",
+      "text": "Turtle",
+      "voice": "teach"
+    },
+    {
+      "id": "fee26bbdfe5ee3fd5214a5ab45547349",
+      "text": "Owl",
+      "voice": "teach"
+    },
+    {
+      "id": "6d54761159fe0fdbe7f6d4125c7e2dd6",
+      "text": "Yummy Food",
+      "voice": "teach"
+    },
+    {
+      "id": "5ced19b207476c79cb1566a58990ce64",
+      "text": "Rice",
+      "voice": "teach"
+    },
+    {
+      "id": "e89b2cbb7d11825a67459af2249064de",
+      "text": "Milk",
+      "voice": "teach"
+    },
+    {
+      "id": "1296fcaab5ec71496d1ecb176f176bdf",
+      "text": "Bread",
+      "voice": "teach"
+    },
+    {
+      "id": "41a7f93915f95cbcf39daac94bad9602",
+      "text": "Cake",
+      "voice": "teach"
+    },
+    {
+      "id": "d8290f62c0e4d131b924ffa27f842994",
+      "text": "Candy",
+      "voice": "teach"
+    },
+    {
+      "id": "27634ff8002b12e75d98e07ccd005d18",
+      "text": "Water",
+      "voice": "teach"
+    },
+    {
+      "id": "785b95b3572eb0ac40598fbc7a8e12e4",
+      "text": "Noodles",
+      "voice": "teach"
+    },
+    {
+      "id": "aa2a732d98488cd450550db47c381734",
+      "text": "My Things",
+      "voice": "teach"
+    },
+    {
+      "id": "2b1f94ef23b79bf90eb891cae1df7a90",
+      "text": "Book",
+      "voice": "teach"
+    },
+    {
+      "id": "d3ab3d5184fe9b1b4428e4ffb797bdca",
+      "text": "Bag",
+      "voice": "teach"
+    },
+    {
+      "id": "897356954c2cd3d41b221e3f24f99bba",
+      "text": "Key",
+      "voice": "teach"
+    },
+    {
+      "id": "98a892aea3359481ae30e7b66c44d7a8",
+      "text": "Clock",
+      "voice": "teach"
+    },
+    {
+      "id": "f20658650d987d31063b593c05980397",
+      "text": "Watch",
+      "voice": "teach"
+    },
+    {
+      "id": "bcc254b55c4a1babdf1dcb82c207506b",
+      "text": "Phone",
+      "voice": "teach"
+    },
+    {
+      "id": "271ddf829afeece44d8732757fba1a66",
+      "text": "TV",
+      "voice": "teach"
+    },
+    {
+      "id": "aa311eccee45c457c74cd2680db3b48e",
+      "text": "Clothes",
+      "voice": "teach"
+    },
+    {
+      "id": "3f1f22fd0c9264a1c8a5d1dcad769387",
+      "text": "Shirt",
+      "voice": "teach"
+    },
+    {
+      "id": "6ecd23b29cb618188451cdf0f35d4704",
+      "text": "Pants",
+      "voice": "teach"
+    },
+    {
+      "id": "a60ba1a7a56c9e00252baebe89d62c12",
+      "text": "Shoes",
+      "voice": "teach"
+    },
+    {
+      "id": "d1f9f76d3e8272930e1e89cf3d725e95",
+      "text": "Socks",
+      "voice": "teach"
+    },
+    {
+      "id": "41e8233cbbe03eee90cc371b01175388",
+      "text": "Dress",
+      "voice": "teach"
+    },
+    {
+      "id": "e75a4b46605b3adedcce3e98dace883a",
+      "text": "Jacket",
+      "voice": "teach"
+    },
+    {
+      "id": "7ac39575b701bc93aeb9a7a1473a57c3",
+      "text": "Shorts",
+      "voice": "teach"
+    },
+    {
+      "id": "0f461e64d283177a15179b180fed353d",
+      "text": "Glasses",
+      "voice": "teach"
+    },
+    {
+      "id": "643fdaf1fef54e8def751f54b706cd60",
+      "text": "Gloves",
+      "voice": "teach"
+    },
+    {
+      "id": "7c74ec2a0ca9950c64f828fa155c3a0d",
+      "text": "Scarf",
+      "voice": "teach"
+    },
+    {
+      "id": "d212ce7fdc2357d19628334b5a2a2b2f",
+      "text": "Nature",
+      "voice": "teach"
+    },
+    {
+      "id": "c8e2277ecfb1427838c488c217f99466",
+      "text": "Cloud",
+      "voice": "teach"
+    },
+    {
+      "id": "de4eda51f409f7799a728d8725b340cd",
+      "text": "Rain",
+      "voice": "teach"
+    },
+    {
+      "id": "338d1f8007f0c84287d9963d5ea36aeb",
+      "text": "Flower",
+      "voice": "teach"
+    },
+    {
+      "id": "3b0c14770e6bd663518496da60f524da",
+      "text": "Tree",
+      "voice": "teach"
+    },
+    {
+      "id": "c3b5e1f7de11d645fb1da6c5415b1fa5",
+      "text": "Leaf",
+      "voice": "teach"
+    },
+    {
+      "id": "4aca5ee9a087fb9218bfb662fe92605c",
+      "text": "Rainbow",
+      "voice": "teach"
+    },
+    {
+      "id": "ec9903c79dd510ffa43f69ee867a9002",
+      "text": "Mountain",
+      "voice": "teach"
+    },
+    {
+      "id": "11a4fde510c7bb2965c5cb354ee086d7",
+      "text": "At Home",
+      "voice": "teach"
+    },
+    {
+      "id": "aebfe46795575772b7cf413e25caeab9",
+      "text": "House",
+      "voice": "teach"
+    },
+    {
+      "id": "f44e14d49cd011d1e873d9fe0c4624f1",
+      "text": "Door",
+      "voice": "teach"
+    },
+    {
+      "id": "c89686a387d2b12b3c729ce35a0bcb5b",
+      "text": "Window",
+      "voice": "teach"
+    },
+    {
+      "id": "d19c65bc26ec025653d95586db2c31de",
+      "text": "Bed",
+      "voice": "teach"
+    },
+    {
+      "id": "a60db0f0d5ae395b22a9297259d818cd",
+      "text": "Chair",
+      "voice": "teach"
+    },
+    {
+      "id": "528f274c304a5bad6e5147d9c26774f5",
+      "text": "Sofa",
+      "voice": "teach"
+    },
+    {
+      "id": "5331717d33d4e634fd3c5ec209f475d2",
+      "text": "Lamp",
+      "voice": "teach"
+    },
+    {
+      "id": "a4db2121629542d3ebdcf4e93890e4da",
+      "text": "Bathroom",
+      "voice": "teach"
+    },
+    {
+      "id": "33fa00a66f2edf0d1c5697a9f8693ba8",
+      "text": "Kitchen",
+      "voice": "teach"
+    },
+    {
+      "id": "97c1f6f29151f8624cd0d3df59f04405",
+      "text": "At School",
+      "voice": "teach"
+    },
+    {
+      "id": "955cd8691ca89a6baa6ea10c7787e604",
+      "text": "School",
+      "voice": "teach"
+    },
+    {
+      "id": "8ab7bbdf01a24e988c50c4cfe9557814",
+      "text": "Teacher",
+      "voice": "teach"
+    },
+    {
+      "id": "eada4723af6f51cf2391d85b5fde49b0",
+      "text": "Ruler",
+      "voice": "teach"
+    },
+    {
+      "id": "ef829858697fad3a25da0692aaaeca0b",
+      "text": "Pen",
+      "voice": "teach"
+    },
+    {
+      "id": "f0c82cab113550372691520212db9d6f",
+      "text": "Crayon",
+      "voice": "teach"
+    },
+    {
+      "id": "28204140cee6e34a9843b64e5a490b08",
+      "text": "Scissors",
+      "voice": "teach"
+    },
+    {
+      "id": "4802a5ac6005a6ab9c68a2fb29e30a3e",
+      "text": "Paint",
+      "voice": "teach"
+    },
+    {
+      "id": "181900dad960beccb34f53c4e0ff4647",
+      "text": "Computer",
+      "voice": "teach"
+    },
+    {
+      "id": "999a06f28346262ef9e1699d9fc1ab56",
+      "text": "Bell",
+      "voice": "teach"
+    },
+    {
+      "id": "c5836008c1649301e29351a55db8f65c",
+      "text": "Flag",
+      "voice": "teach"
+    },
+    {
+      "id": "83467144e8aa33bf67ff729d1540fa81",
+      "text": "Vehicles",
+      "voice": "teach"
+    },
+    {
+      "id": "e9989db5dabeea617f40c8dbfd07f5fb",
+      "text": "Car",
+      "voice": "teach"
+    },
+    {
+      "id": "6e4b38bfd57741ac1597c440a1c98074",
+      "text": "Bus",
+      "voice": "teach"
+    },
+    {
+      "id": "e41273f43af504714d85465294f1f369",
+      "text": "Train",
+      "voice": "teach"
+    },
+    {
+      "id": "54118ed33b4e838063109b752c1195e6",
+      "text": "Airplane",
+      "voice": "teach"
+    },
+    {
+      "id": "0387832795db3eb2e05f4365fba5ddac",
+      "text": "Ship",
+      "voice": "teach"
+    },
+    {
+      "id": "78efcae683f1034caf6017ee6892be71",
+      "text": "Bicycle",
+      "voice": "teach"
+    },
+    {
+      "id": "5683df776e946a22676513412910817e",
+      "text": "Motorcycle",
+      "voice": "teach"
+    },
+    {
+      "id": "6f13850d3346c949c10c7bae79479ebd",
+      "text": "Truck",
+      "voice": "teach"
+    },
+    {
+      "id": "0dcfdb3caf2dcc0998f250e9aba65cee",
+      "text": "Taxi",
+      "voice": "teach"
+    },
+    {
+      "id": "2ab8b43468e8b92b0fc5c81e70e35a2d",
+      "text": "Helicopter",
+      "voice": "teach"
+    },
+    {
+      "id": "06df33001c1d7187fdd81ea1f5b277aa",
+      "text": "Actions",
+      "voice": "teach"
+    },
+    {
+      "id": "bd26b44bdadb13511edfa8e95455a43f",
+      "text": "Eat",
+      "voice": "teach"
+    },
+    {
+      "id": "40491db1043a93d8b94b9d94e3eda532",
+      "text": "Drink",
+      "voice": "teach"
+    },
+    {
+      "id": "243924bfd56a682be235638b53961e09",
+      "text": "Sleep",
+      "voice": "teach"
+    },
+    {
+      "id": "de3c731be5633838089a07179d301d7b",
+      "text": "Play",
+      "voice": "teach"
+    },
+    {
+      "id": "7a1a5f3e79fdc91edf2f5ead9d66abb4",
+      "text": "Read",
+      "voice": "teach"
+    },
+    {
+      "id": "1129c0e4d43f2d121652a7302712cff6",
+      "text": "Write",
+      "voice": "teach"
+    },
+    {
+      "id": "c5301693c4e792bcd5a479ef38fb8f8d",
+      "text": "Run",
+      "voice": "teach"
+    },
+    {
+      "id": "7a16a854f32231a8df9326136b09ee62",
+      "text": "Walk",
+      "voice": "teach"
+    },
+    {
+      "id": "d0d933facd58904b226d055e75da2a6d",
+      "text": "Swim",
+      "voice": "teach"
+    },
+    {
+      "id": "101f693f72287a2819a364f64ca1c0ed",
+      "text": "Jump",
+      "voice": "teach"
+    },
+    {
+      "id": "41fc0f91110901360a582f6a908b1a1d",
+      "text": "Feelings",
+      "voice": "teach"
+    },
+    {
+      "id": "ef97b40b2245d3690c745cd6e8c663db",
+      "text": "Happy",
+      "voice": "teach"
+    },
+    {
+      "id": "debd770bb8fbabb0802fba46f361447c",
+      "text": "Sad",
+      "voice": "teach"
+    },
+    {
+      "id": "cc3b72d79006b9b02571c1974f08244d",
+      "text": "Angry",
+      "voice": "teach"
+    },
+    {
+      "id": "02de33395b72c956494196efe186844b",
+      "text": "Scared",
+      "voice": "teach"
+    },
+    {
+      "id": "4634cc34b3b4a22dabc8fd9342887c22",
+      "text": "Tired",
+      "voice": "teach"
+    },
+    {
+      "id": "3263c2c1523a44cad4d2916c1d9d3e73",
+      "text": "Hungry",
+      "voice": "teach"
+    },
+    {
+      "id": "cdc7145d2df7912ad942e1de2f0f8132",
+      "text": "Sick",
+      "voice": "teach"
+    },
+    {
+      "id": "939d428c24d9a8cccba7c1523cfcb720",
+      "text": "Surprised",
+      "voice": "teach"
+    },
+    {
+      "id": "17d724c090d2c7298c4fb19b8ee33721",
+      "text": "Wild Animals",
+      "voice": "teach"
+    },
+    {
+      "id": "f6cf83978d6a8e7ac57444bb38a540a7",
+      "text": "Elephant",
+      "voice": "teach"
+    },
+    {
+      "id": "e5fb254f1f8cc540c9953d8586ae6478",
+      "text": "The elephant is big.",
+      "voice": "teach"
+    },
+    {
+      "id": "70a1c7563f7b6b3995c14474efb21439",
+      "text": "The tiger is strong.",
+      "voice": "teach"
+    },
+    {
+      "id": "9be93be50ea91a3c99ba4a12143ff58b",
+      "text": "The lion is the king.",
+      "voice": "teach"
+    },
+    {
+      "id": "4126964b770eb1e2f3ac01ff7f4fd942",
+      "text": "Monkey",
+      "voice": "teach"
+    },
+    {
+      "id": "df45853b7c5bea8e778755c7cf7e3f4c",
+      "text": "The monkey is funny.",
+      "voice": "teach"
+    },
+    {
+      "id": "dfa90f1b4eb3affbd3b46af34ed2477c",
+      "text": "Snake",
+      "voice": "teach"
+    },
+    {
+      "id": "2760f412955e6d8bbcd2f995212fcf60",
+      "text": "The snake is long.",
+      "voice": "teach"
+    },
+    {
+      "id": "427debb81d265a0edd8789f30b11beb6",
+      "text": "Giraffe",
+      "voice": "teach"
+    },
+    {
+      "id": "df97372c8c2447f20573e3ece833d6b7",
+      "text": "The giraffe is tall.",
+      "voice": "teach"
+    },
+    {
+      "id": "90f7ceb7a692d39a26909b507a10bfbf",
+      "text": "The zebra has stripes.",
+      "voice": "teach"
+    },
+    {
+      "id": "5e4fd4f6cec8fadead1fe532fd62ade8",
+      "text": "Panda",
+      "voice": "teach"
+    },
+    {
+      "id": "ae68ce5bf4a55677cc4c5e41a120b042",
+      "text": "The panda eats bamboo.",
+      "voice": "teach"
+    },
+    {
+      "id": "372137ebb0d053fecd7a594ec5cb5971",
+      "text": "Bear",
+      "voice": "teach"
+    },
+    {
+      "id": "0e78ec7f7169c3471de360617aa3d565",
+      "text": "The bear is big.",
+      "voice": "teach"
+    },
+    {
+      "id": "08593f6462671249c427e87daf8bd686",
+      "text": "Crocodile",
+      "voice": "teach"
+    },
+    {
+      "id": "2597576da3175fe484faa54f52c2a754",
+      "text": "The crocodile is scary.",
+      "voice": "teach"
+    },
+    {
+      "id": "c4dfb9bd55f0d1338cbdbd3c470fb1a7",
+      "text": "Sea Animals",
+      "voice": "teach"
+    },
+    {
+      "id": "f4f71aeb5fd31cb543b0f8f4113ffb81",
+      "text": "Octopus",
+      "voice": "teach"
+    },
+    {
+      "id": "6ef749c0684a1d0d1125382e08f82046",
+      "text": "The octopus has eight arms.",
+      "voice": "teach"
+    },
+    {
+      "id": "ebbcb1c93f82340663ae2752c8bc4ca0",
+      "text": "The whale is huge.",
+      "voice": "teach"
+    },
+    {
+      "id": "76f7843c2bc545f9ef3a174e319ea4e2",
+      "text": "Dolphin",
+      "voice": "teach"
+    },
+    {
+      "id": "8c5e119bfa2f537edb178c85f36af259",
+      "text": "The dolphin is smart.",
+      "voice": "teach"
+    },
+    {
+      "id": "8b9d5abd9f9b3fbb16864ce5aac02635",
+      "text": "Shark",
+      "voice": "teach"
+    },
+    {
+      "id": "2fb28f98706ec5766032b2d328d5f65a",
+      "text": "The shark has sharp teeth.",
+      "voice": "teach"
+    },
+    {
+      "id": "ff174d64774d5421545e1b38ded8db2f",
+      "text": "Crab",
+      "voice": "teach"
+    },
+    {
+      "id": "8fa7d7fab4d43aebc0484e25f7fb5cf4",
+      "text": "The crab walks sideways.",
+      "voice": "teach"
+    },
+    {
+      "id": "2f2e1847f0dbddd2a94ddf9b8823390e",
+      "text": "Shrimp",
+      "voice": "teach"
+    },
+    {
+      "id": "ef3adc165e9e5cad3bcaee68c1f3e716",
+      "text": "The shrimp is small.",
+      "voice": "teach"
+    },
+    {
+      "id": "0cc5a9c37a75a8dc3b3a55ca5e16be81",
+      "text": "Squid",
+      "voice": "teach"
+    },
+    {
+      "id": "47280034bac7a21eb0f5c5dd7b687d15",
+      "text": "The squid swims fast.",
+      "voice": "teach"
+    },
+    {
+      "id": "ea89b68c34ce4a63c0f77e17413c6e30",
+      "text": "Shell",
+      "voice": "teach"
+    },
+    {
+      "id": "ecb60bcd6ee352f39544444a8bd09c92",
+      "text": "I find a pretty shell.",
+      "voice": "teach"
+    },
+    {
+      "id": "ddf36056f9e85504c7d86e9fd441a40d",
+      "text": "Seal",
+      "voice": "teach"
+    },
+    {
+      "id": "4e4b583e20a3c5842f4ad696d0534d6d",
+      "text": "The seal claps its hands.",
+      "voice": "teach"
+    },
+    {
+      "id": "cb9a232773e35bd4062800a2b62591be",
+      "text": "Beautiful Birds",
+      "voice": "teach"
+    },
+    {
+      "id": "e7cb1e977e896954fec46d2ea7832072",
+      "text": "Parrot",
+      "voice": "teach"
+    },
+    {
+      "id": "0da04beed90ea2f039b797f6a357f2de",
+      "text": "The parrot can talk.",
+      "voice": "teach"
+    },
+    {
+      "id": "99625fa1cac27bb6a2b33b7638afe47f",
+      "text": "Penguin",
+      "voice": "teach"
+    },
+    {
+      "id": "f61da4bd79cca7a17b7ed012e1f8318d",
+      "text": "The penguin cannot fly.",
+      "voice": "teach"
+    },
+    {
+      "id": "7885830f9d3a8722f628e2985cd26daf",
+      "text": "Eagle",
+      "voice": "teach"
+    },
+    {
+      "id": "e41d8d2fd754edbaf47ec98af0e95c81",
+      "text": "The eagle flies high.",
+      "voice": "teach"
+    },
+    {
+      "id": "b87078849a142e1b00db02744b4848a6",
+      "text": "Swan",
+      "voice": "teach"
+    },
+    {
+      "id": "3b744a3878d7294f08fd242a7bafbcda",
+      "text": "The swan is white.",
+      "voice": "teach"
+    },
+    {
+      "id": "1c55b68e7477a0e0ff47c3b0ba23c0d6",
+      "text": "Flamingo",
+      "voice": "teach"
+    },
+    {
+      "id": "3a768e2ecf8237ef14e3f7b27649fc06",
+      "text": "The flamingo is pink.",
+      "voice": "teach"
+    },
+    {
+      "id": "c755af00cd3f625fa2fcb1fbca6f7620",
+      "text": "Peacock",
+      "voice": "teach"
+    },
+    {
+      "id": "48b462d9e4c0ab5e738a7b565cd6dcbf",
+      "text": "The peacock is beautiful.",
+      "voice": "teach"
+    },
+    {
+      "id": "2d5b3d62e7bd3a1d79494bd85e69b5ba",
+      "text": "Bat",
+      "voice": "teach"
+    },
+    {
+      "id": "ccdce917ca182f802a6d19ee06cb4917",
+      "text": "The bat sleeps in the day.",
+      "voice": "teach"
+    },
+    {
+      "id": "285954244fdc2bcce532fb88a1e0ddb5",
+      "text": "Rooster",
+      "voice": "teach"
+    },
+    {
+      "id": "55b8282ffe539cf4206c4424579e07d3",
+      "text": "The rooster wakes me up.",
+      "voice": "teach"
+    },
+    {
+      "id": "221cdfb73049678e244380b45872cbb2",
+      "text": "Turkey",
+      "voice": "teach"
+    },
+    {
+      "id": "411733c552b4a3f0520b6fce5e4b4982",
+      "text": "The turkey is big.",
+      "voice": "teach"
+    },
+    {
+      "id": "1d22c812efd7b8a4244d93c51acc3992",
+      "text": "Dove",
+      "voice": "teach"
+    },
+    {
+      "id": "8c797b1aaf6600cb1f9ccc2ce7638e25",
+      "text": "The dove flies free.",
+      "voice": "teach"
+    },
+    {
+      "id": "5d02dbfaa091187a8f81eedc045de39f",
+      "text": "Vegetables",
+      "voice": "teach"
+    },
+    {
+      "id": "1ed10d1bb14ff1b1bf02aad5a5cdb052",
+      "text": "Carrot",
+      "voice": "teach"
+    },
+    {
+      "id": "fe5aa42098e1c36463c617a5ccab96b7",
+      "text": "Rabbits eat carrots.",
+      "voice": "teach"
+    },
+    {
+      "id": "d34f5c26c70d0027907f60fd63b862f6",
+      "text": "Corn",
+      "voice": "teach"
+    },
+    {
+      "id": "09aa48adce526247c93f6ec863736a34",
+      "text": "I like sweet corn.",
+      "voice": "teach"
+    },
+    {
+      "id": "77bd79b3dca1f49815655b6f2df760ba",
+      "text": "Tomato",
+      "voice": "teach"
+    },
+    {
+      "id": "6eb271541a559683e4fb41a9a631fe8e",
+      "text": "The tomato is red.",
+      "voice": "teach"
+    },
+    {
+      "id": "bb8e09a312941709ab85b7b147c74abc",
+      "text": "Potato",
+      "voice": "teach"
+    },
+    {
+      "id": "94c4568073d927139044f9c43409734f",
+      "text": "I like potatoes.",
+      "voice": "teach"
+    },
+    {
+      "id": "0a32c69e4a335f4a18f4e4982354c761",
+      "text": "Broccoli",
+      "voice": "teach"
+    },
+    {
+      "id": "93de6f200784e9a54ec8c45b60280001",
+      "text": "Broccoli is green.",
+      "voice": "teach"
+    },
+    {
+      "id": "039892fd59a649c7eeeae20450afb4b6",
+      "text": "Cucumber",
+      "voice": "teach"
+    },
+    {
+      "id": "f588712dc2051ed5dc72737f4f7989f6",
+      "text": "The cucumber is fresh.",
+      "voice": "teach"
+    },
+    {
+      "id": "8eaa10d1a33a28200a7c7684919b66c7",
+      "text": "Onion",
+      "voice": "teach"
+    },
+    {
+      "id": "a029a9096015ffb1bc03475690bfee06",
+      "text": "Mom cuts the onion.",
+      "voice": "teach"
+    },
+    {
+      "id": "26f556ab266d057f9adf6e28589f3027",
+      "text": "Garlic",
+      "voice": "teach"
+    },
+    {
+      "id": "97eea22c31dc775d3a8d92dbb2bdf133",
+      "text": "Garlic smells strong.",
+      "voice": "teach"
+    },
+    {
+      "id": "b93c3d9029fa42815abf0551db0cec98",
+      "text": "Mushroom",
+      "voice": "teach"
+    },
+    {
+      "id": "e840e5c38d8e1f0d29adeaf86b22b492",
+      "text": "The mushroom is small.",
+      "voice": "teach"
+    },
+    {
+      "id": "248165666ed0b2b9dd73a9f283cdd384",
+      "text": "Chili",
+      "voice": "teach"
+    },
+    {
+      "id": "199d4c3ffedf6f155c082d93f3e43d1c",
+      "text": "The chili is hot!",
+      "voice": "teach"
+    },
+    {
+      "id": "e826d8cbacdd9dc78989bc68f647cd9c",
+      "text": "Snacks",
+      "voice": "teach"
+    },
+    {
+      "id": "706f10887bbeb729378c706eee126fa7",
+      "text": "Cookie",
+      "voice": "teach"
+    },
+    {
+      "id": "a1978667cb2f1a825d38ecad5785b337",
+      "text": "I eat a cookie.",
+      "voice": "teach"
+    },
+    {
+      "id": "8e796b238ffabf6aba12fe98757bbdd2",
+      "text": "Donut",
+      "voice": "teach"
+    },
+    {
+      "id": "e07ea07bc7ac37466c9cf9ade53bbb89",
+      "text": "The donut is sweet.",
+      "voice": "teach"
+    },
+    {
+      "id": "6ea408ea56e8b710aa240004af7580c1",
+      "text": "Chocolate",
+      "voice": "teach"
+    },
+    {
+      "id": "985d0af9fc63e401c2605fd2e343d1d0",
+      "text": "I like chocolate.",
+      "voice": "teach"
+    },
+    {
+      "id": "cf4ff726403b8a992fd43e09dd7b5717",
+      "text": "Popcorn",
+      "voice": "teach"
+    },
+    {
+      "id": "ccf1b50e84d7bee7b93996d13091db2d",
+      "text": "We eat popcorn.",
+      "voice": "teach"
+    },
+    {
+      "id": "47f7a34dc32455576c88d5da5adaead7",
+      "text": "Lollipop",
+      "voice": "teach"
+    },
+    {
+      "id": "8f274a9165b11193be3efcc13b4b56dc",
+      "text": "The lollipop is sweet.",
+      "voice": "teach"
+    },
+    {
+      "id": "ffe12ca365c767c1e816fc756046de54",
+      "text": "Cupcake",
+      "voice": "teach"
+    },
+    {
+      "id": "f8ab825dc0e55c43fd889684a24ca9bd",
+      "text": "The cupcake is pretty.",
+      "voice": "teach"
+    },
+    {
+      "id": "c6586b2e09d0ed0ee6431a1bb280657f",
+      "text": "Pizza",
+      "voice": "teach"
+    },
+    {
+      "id": "314720fd86632cec4dfcdca0c568c6cf",
+      "text": "I like pizza.",
+      "voice": "teach"
+    },
+    {
+      "id": "496451f3d45d2f22ba6695e53b3a2e12",
+      "text": "Burger",
+      "voice": "teach"
+    },
+    {
+      "id": "4856827f064029a2eb201da5ebe6eeb4",
+      "text": "The burger is big.",
+      "voice": "teach"
+    },
+    {
+      "id": "e0f47194261424391f2503ab8b71b8b9",
+      "text": "French Fries",
+      "voice": "teach"
+    },
+    {
+      "id": "4372ac82bc09f6e81dfdb8171dba0bfb",
+      "text": "The fries are salty.",
+      "voice": "teach"
+    },
+    {
+      "id": "03c50ae484d8f3090c944aafd7d35162",
+      "text": "Hotdog",
+      "voice": "teach"
+    },
+    {
+      "id": "8d9cf7508bf1cf89d1885545f064ef70",
+      "text": "The hotdog is yummy.",
+      "voice": "teach"
+    },
+    {
+      "id": "78d77a0b8ec57890944b8cfce506b113",
+      "text": "Places",
+      "voice": "teach"
+    },
+    {
+      "id": "c94c6a645c0298cb1a617e5179e5739c",
+      "text": "I study at school.",
+      "voice": "teach"
+    },
+    {
+      "id": "cc2ab63fd3eb564be64b4f21bd083bc7",
+      "text": "Hospital",
+      "voice": "teach"
+    },
+    {
+      "id": "4b3bc03683838891f44486c445325850",
+      "text": "The doctor works at the hospital.",
+      "voice": "teach"
+    },
+    {
+      "id": "31840a66a8d6d223e5b0540138768838",
+      "text": "Market",
+      "voice": "teach"
+    },
+    {
+      "id": "3975613d068714c2703933fa3c2e6345",
+      "text": "Mom shops at the market.",
+      "voice": "teach"
+    },
+    {
+      "id": "910101318275914a9f141d4e255bf8c8",
+      "text": "Park",
+      "voice": "teach"
+    },
+    {
+      "id": "3dd55721475e8ad420b13c6ffc1e2672",
+      "text": "We play at the park.",
+      "voice": "teach"
+    },
+    {
+      "id": "bfa888a354db97c7cbefb9d050b94ca3",
+      "text": "Zoo",
+      "voice": "teach"
+    },
+    {
+      "id": "ded6a4f9ead451aee0db1f3335f2698a",
+      "text": "I see animals at the zoo.",
+      "voice": "teach"
+    },
+    {
+      "id": "a0a4c64f1dc61df07a3bac7db49cd647",
+      "text": "Mosque",
+      "voice": "teach"
+    },
+    {
+      "id": "8ab6784958732bf89ec92f2e7da96e25",
+      "text": "We pray at the mosque.",
+      "voice": "teach"
+    },
+    {
+      "id": "7ec9aaa8ac320fa8b83c6f7aaa8c9ca1",
+      "text": "Church",
+      "voice": "teach"
+    },
+    {
+      "id": "f4cec93d16694652813a58b32a80ea15",
+      "text": "They pray at the church.",
+      "voice": "teach"
+    },
+    {
+      "id": "1e7f72cb01415f5e800f3e1e32f91ee9",
+      "text": "Beach",
+      "voice": "teach"
+    },
+    {
+      "id": "dac612d49c727ed2cede8dca941446a2",
+      "text": "We play at the beach.",
+      "voice": "teach"
+    },
+    {
+      "id": "4d70254b3a8e2bc38b6147fa6ee813be",
+      "text": "Library",
+      "voice": "teach"
+    },
+    {
+      "id": "28e37bd7611f99ad740f12272b9b826c",
+      "text": "I read books at the library.",
+      "voice": "teach"
+    },
+    {
+      "id": "e197a9ccf40b776f31368105d1aa8c4b",
+      "text": "Restaurant",
+      "voice": "teach"
+    },
+    {
+      "id": "7042863388370797892458e8ce1863cb",
+      "text": "We eat at the restaurant.",
+      "voice": "teach"
+    },
+    {
+      "id": "12ceff2290bb9039beaa8f36d5dec226",
+      "text": "Jobs",
+      "voice": "teach"
+    },
+    {
+      "id": "cbb67c65f2abd1005d46939a7b3aff5f",
+      "text": "Doctor",
+      "voice": "teach"
+    },
+    {
+      "id": "e0744b3a161ed6e1e40a999756c25877",
+      "text": "My father is a doctor.",
+      "voice": "teach"
+    },
+    {
+      "id": "51202d248e4fecab1f1a95bd52dc9ed6",
+      "text": "Nurse",
+      "voice": "teach"
+    },
+    {
+      "id": "106226a69c809d2abd374bae0ccf1837",
+      "text": "The nurse helps the doctor.",
+      "voice": "teach"
+    },
+    {
+      "id": "3f42c274930402162e0b24c98cd6ba16",
+      "text": "She is a teacher.",
+      "voice": "teach"
+    },
+    {
+      "id": "79d78c3a13218d208e30813c22752861",
+      "text": "Police Officer",
+      "voice": "teach"
+    },
+    {
+      "id": "9c8eadab909e3635675695b9870a9c14",
+      "text": "The police officer is brave.",
+      "voice": "teach"
+    },
+    {
+      "id": "8bf7aa45eea83881ca9052ac2d7a8025",
+      "text": "Farmer",
+      "voice": "teach"
+    },
+    {
+      "id": "61ca7c7247c955a1873068a60f0696e3",
+      "text": "The farmer plants rice.",
+      "voice": "teach"
+    },
+    {
+      "id": "8fd82b8864d71ed7fa12b59e6e34cd1c",
+      "text": "Chef",
+      "voice": "teach"
+    },
+    {
+      "id": "335912090ee2c9bd69971b0fd2f3ea5d",
+      "text": "The chef cooks well.",
+      "voice": "teach"
+    },
+    {
+      "id": "27cb6a9c075369d09f4a30b8996ec6c3",
+      "text": "Pilot",
+      "voice": "teach"
+    },
+    {
+      "id": "19fda266c848c4b6e8860e8e51837381",
+      "text": "The pilot flies a plane.",
+      "voice": "teach"
+    },
+    {
+      "id": "b74ad4852301652bdbe405413f9a4b49",
+      "text": "Firefighter",
+      "voice": "teach"
+    },
+    {
+      "id": "7472b77ed562fd3f59e0323af5bf19b5",
+      "text": "The firefighter is a hero.",
+      "voice": "teach"
+    },
+    {
+      "id": "4047c5607db6be8e0081725f0d164309",
+      "text": "Artist",
+      "voice": "teach"
+    },
+    {
+      "id": "89255fb82ba5ae558c6a4bcdae7b3fbb",
+      "text": "The artist paints pictures.",
+      "voice": "teach"
+    },
+    {
+      "id": "de75f2eb439368d9b39281bd0c4bdabb",
+      "text": "Soldier",
+      "voice": "teach"
+    },
+    {
+      "id": "819647f698af0e69838d52f0c8215c75",
+      "text": "The soldier is strong.",
+      "voice": "teach"
+    },
+    {
+      "id": "1441df6b1c10f910ccdc400e40b5fce9",
+      "text": "Weather",
+      "voice": "teach"
+    },
+    {
+      "id": "ffc76083445e28a7e4b314a07a8c3b6a",
+      "text": "Sunny",
+      "voice": "teach"
+    },
+    {
+      "id": "a652b95148fbd959e8516a05b96ffacb",
+      "text": "It is sunny today.",
+      "voice": "teach"
+    },
+    {
+      "id": "c4bded8f0ac3908ae907806d8e624b53",
+      "text": "Rainy",
+      "voice": "teach"
+    },
+    {
+      "id": "14a98de0caa83ff478fd15515188a950",
+      "text": "It is rainy.",
+      "voice": "teach"
+    },
+    {
+      "id": "e3a1a93fc29abede6c0f3ceade99fdc0",
+      "text": "Cloudy",
+      "voice": "teach"
+    },
+    {
+      "id": "c5dc4e8568238d7bc729c0f3c808d891",
+      "text": "It is cloudy.",
+      "voice": "teach"
+    },
+    {
+      "id": "0824bb2e1bab5a66eb9673a34d26624c",
+      "text": "Windy",
+      "voice": "teach"
+    },
+    {
+      "id": "8dbcb099bdbb69c77041c2d768de2097",
+      "text": "It is windy.",
+      "voice": "teach"
+    },
+    {
+      "id": "db3e8d805f8bb9056efb093a595cd4ea",
+      "text": "Snowy",
+      "voice": "teach"
+    },
+    {
+      "id": "4653a7e8925612304d7ebe6298cd0387",
+      "text": "It is snowy.",
+      "voice": "teach"
+    },
+    {
+      "id": "4194726ee334e1085d93e002837b73f0",
+      "text": "Hot",
+      "voice": "teach"
+    },
+    {
+      "id": "1a733ddef40e6c46e0bc1881bf7c4363",
+      "text": "It is hot.",
+      "voice": "teach"
+    },
+    {
+      "id": "1a3c2e99e572ec71d3820d0363d90742",
+      "text": "Cold",
+      "voice": "teach"
+    },
+    {
+      "id": "c5444b92086130336381c6ac7c9ba370",
+      "text": "It is cold.",
+      "voice": "teach"
+    },
+    {
+      "id": "908228e8d5139a6e935a6086a89f774b",
+      "text": "Stormy",
+      "voice": "teach"
+    },
+    {
+      "id": "3c655fffe60dd0e23c9db1d16d7ae275",
+      "text": "It is stormy.",
+      "voice": "teach"
+    },
+    {
+      "id": "624cff3a7c785f310122a5fa5ff534f5",
+      "text": "I see a rainbow!",
+      "voice": "teach"
+    },
+    {
+      "id": "d12acf482edd07c2aa3b6765a0ab1ba2",
+      "text": "Opposites",
+      "voice": "teach"
+    },
+    {
+      "id": "d491538da818a2ba11a3195ba035cfd3",
+      "text": "Big",
+      "voice": "teach"
+    },
+    {
+      "id": "2660064e68655415da2628c2ae2f7592",
+      "text": "Small",
+      "voice": "teach"
+    },
+    {
+      "id": "014d708217cadc72d58b4825ebd5d6c9",
+      "text": "The ant is small.",
+      "voice": "teach"
+    },
+    {
+      "id": "31fdedff3e473efdbd079e3b59fcb4f9",
+      "text": "Tall",
+      "voice": "teach"
+    },
+    {
+      "id": "30bb747c98bccdd11b3f89e644c4d0ad",
+      "text": "Short",
+      "voice": "teach"
+    },
+    {
+      "id": "abaef96e0cf0c83007a9a68737c6100f",
+      "text": "The mushroom is short.",
+      "voice": "teach"
+    },
+    {
+      "id": "e16b5b7f26f54214445cbe38d72c2828",
+      "text": "Fast",
+      "voice": "teach"
+    },
+    {
+      "id": "7c89de8d67a870cd62fd58c090b52ca0",
+      "text": "The cheetah is fast.",
+      "voice": "teach"
+    },
+    {
+      "id": "efa5397985b8609a5dbeb430a4bcadd3",
+      "text": "Slow",
+      "voice": "teach"
+    },
+    {
+      "id": "a41c2b911484d6b470f586c6f0b9f9ad",
+      "text": "The turtle is slow.",
+      "voice": "teach"
+    },
+    {
+      "id": "ae83a5e67970ae2c26b5be6b7a35e84e",
+      "text": "The fire is hot.",
+      "voice": "teach"
+    },
+    {
+      "id": "c71709b3680e56c63e9360e5911767aa",
+      "text": "The ice is cold.",
+      "voice": "teach"
+    },
+    {
+      "id": "03c2e7e41ffc181a4e84080b4710e81e",
+      "text": "New",
+      "voice": "teach"
+    },
+    {
+      "id": "b2339ebb5d809e378c1c00143e48b4a4",
+      "text": "My bag is new.",
+      "voice": "teach"
+    },
+    {
+      "id": "c7268757fbabf48019f4984933539d8a",
+      "text": "Old",
+      "voice": "teach"
+    },
+    {
+      "id": "cd6b1e6964ff14555b7a9b6c40522c6c",
+      "text": "The clock is old.",
+      "voice": "teach"
+    },
+    {
+      "id": "a60fd3b69ff59cb5a7a0b31ecb9c58b5",
+      "text": "This is...",
+      "voice": "teach"
+    },
+    {
+      "id": "a1963e92a2463efaaee47e111e66d9b7",
+      "text": "This is ...",
+      "voice": "teach"
+    },
+    {
+      "id": "2cc93518f600e2e3d2b9a2219632c339",
+      "text": "This is a cat.",
+      "voice": "teach"
+    },
+    {
+      "id": "d98e0cdc5ac3d7a17d7299a4f571aa0a",
+      "text": "This is a book.",
+      "voice": "teach"
+    },
+    {
+      "id": "7fc0fbe12d0a34b24421aa876ec9b449",
+      "text": "This is my mom.",
+      "voice": "teach"
+    },
+    {
+      "id": "1aabde2a1aaac55d0e47041953a13e78",
+      "text": "This is a dog.",
+      "voice": "teach"
+    },
+    {
+      "id": "a2a551a6458a8de22446cc76d639a9e9",
+      "text": "is",
+      "voice": "teach"
+    },
+    {
+      "id": "4015e9ce43edfb0668ddaa973ebc7e87",
+      "text": "are",
+      "voice": "teach"
+    },
+    {
+      "id": "c04cd38aeb30f3ad1f8ab4e64a0ded7b",
+      "text": "am",
+      "voice": "teach"
+    },
+    {
+      "id": "3a1687c476bbb0e55d9665cd96f87f8a",
+      "text": "These are ...",
+      "voice": "teach"
+    },
+    {
+      "id": "5c91b3ceae4d3cf33d628461c0925d30",
+      "text": "These are cats.",
+      "voice": "teach"
+    },
+    {
+      "id": "d0e1d6200e12bad0b71efec76f13fb37",
+      "text": "These are books.",
+      "voice": "teach"
+    },
+    {
+      "id": "d5bd6e4801a638a5e73c9a46d341d3d4",
+      "text": "These are my friends.",
+      "voice": "teach"
+    },
+    {
+      "id": "ae4359eb7cd33e842930d95f3a52b71c",
+      "text": "These are my toys.",
+      "voice": "teach"
+    },
+    {
+      "id": "829be429aafb4f0bedbf8884c800047e",
+      "text": "A atau An?",
+      "voice": "teach"
+    },
+    {
+      "id": "735aa9df4cd0a8ee3c61c39b8e45b9cc",
+      "text": "an apple",
+      "voice": "teach"
+    },
+    {
+      "id": "c007ff4cdeabe79c7bc402a41fe98053",
+      "text": "an egg",
+      "voice": "teach"
+    },
+    {
+      "id": "9319ad9ad9dc51254672b5d44eb6463d",
+      "text": "a car",
+      "voice": "teach"
+    },
+    {
+      "id": "c63cb2b8e968a7715a36a5f00ad2fd7e",
+      "text": "an umbrella",
+      "voice": "teach"
+    },
+    {
+      "id": "8600e7cbfdff46f2fed703ff02e6d486",
+      "text": "This is an orange.",
+      "voice": "teach"
+    },
+    {
+      "id": "18b049cc8d8535787929df716f9f4e68",
+      "text": "an",
+      "voice": "teach"
+    },
+    {
+      "id": "0cc175b9c0f1b6a831c399e269772661",
+      "text": "a",
+      "voice": "teach"
+    },
+    {
+      "id": "f0ee12917db1b20a62676d02ecc02921",
+      "text": "Latihan! 💪",
+      "voice": "teach"
+    },
+    {
+      "id": "df9f4baa3de49c2dd990f31be18082bf",
+      "text": "This is my bag.",
+      "voice": "teach"
+    },
+    {
+      "id": "b37820c8d302d977dfb0951e98716890",
+      "text": "This is an apple.",
+      "voice": "teach"
+    },
+    {
+      "id": "fc1dbd672a62ef0258f3468bb1b758e7",
+      "text": "This is a car.",
+      "voice": "teach"
+    },
+    {
+      "id": "11bbdbe65d9e2aa27237d49271b5fded",
+      "text": "My Day",
+      "voice": "teach"
+    },
+    {
+      "id": "7ccd48592697852196bc55499d9eaffd",
+      "text": "I eat rice.",
+      "voice": "teach"
+    },
+    {
+      "id": "f3369e1b09fa9f0bed70d61829f1b971",
+      "text": "I drink water.",
+      "voice": "teach"
+    },
+    {
+      "id": "1a4a60529b33ebfdf7791ae6a799055a",
+      "text": "I sleep at night.",
+      "voice": "teach"
+    },
+    {
+      "id": "b7d01fad9b7d336b9572f860c1bd861d",
+      "text": "I play with friends.",
+      "voice": "teach"
+    },
+    {
+      "id": "d99c51b4f899ce58f20b4d0400b697a1",
+      "text": "I read a book.",
+      "voice": "teach"
+    },
+    {
+      "id": "f83337a7001b0877cb6c2f545ff9e8d6",
+      "text": "I write a letter.",
+      "voice": "teach"
+    },
+    {
+      "id": "7316389ca12014fa75bfac369c2278bf",
+      "text": "I run fast.",
+      "voice": "teach"
+    },
+    {
+      "id": "9ab10b5f1c0dc6712c98e37b758e121a",
+      "text": "I walk to school.",
+      "voice": "teach"
+    },
+    {
+      "id": "720b44e229224c27f6e67c850a6f99dc",
+      "text": "I swim on Sunday.",
+      "voice": "teach"
+    },
+    {
+      "id": "1bf70a91b0b28b92dc52e03d45abf61a",
+      "text": "Cook",
+      "voice": "teach"
+    },
+    {
+      "id": "88ecac676ff33f43b579569e5b763147",
+      "text": "Mom cooks rice.",
+      "voice": "teach"
+    },
+    {
+      "id": "dfe9ff4dbd90ea59c5e0a7c965dee422",
+      "text": "More Actions",
+      "voice": "teach"
+    },
+    {
+      "id": "283973714cfcfb1f7cd15d9f81e99866",
+      "text": "Sing",
+      "voice": "teach"
+    },
+    {
+      "id": "91e49a6a5840aac27b29208b64a2cb17",
+      "text": "I sing a song.",
+      "voice": "teach"
+    },
+    {
+      "id": "7ae5eb054903e9573446842c76213373",
+      "text": "Dance",
+      "voice": "teach"
+    },
+    {
+      "id": "ab1e029d74bda4fa8b69d9742321819b",
+      "text": "She dances well.",
+      "voice": "teach"
+    },
+    {
+      "id": "2d03c2d5a7ec65ef4619e0582c272ec2",
+      "text": "Draw",
+      "voice": "teach"
+    },
+    {
+      "id": "e3010e72f5883623c942ec26b45286a8",
+      "text": "I draw a cat.",
+      "voice": "teach"
+    },
+    {
+      "id": "37d12e2cfbef6e6105297374d02f3998",
+      "text": "Clean",
+      "voice": "teach"
+    },
+    {
+      "id": "3a46bfe2f512302106044a59b7201e12",
+      "text": "I clean my room.",
+      "voice": "teach"
+    },
+    {
+      "id": "1cd1c6a9425f7b3ea8585eb948ea642a",
+      "text": "Wash",
+      "voice": "teach"
+    },
+    {
+      "id": "d84855db97126adf96fd302b9be0d750",
+      "text": "I wash my hands.",
+      "voice": "teach"
+    },
+    {
+      "id": "ba317cc5bacc33ec252fbdf1aada8c0d",
+      "text": "Clap",
+      "voice": "teach"
+    },
+    {
+      "id": "21dfdeba045baeb0eed68cfe8c1b4937",
+      "text": "We clap our hands.",
+      "voice": "teach"
+    },
+    {
+      "id": "a5c2e847d32516d0cb657f3f17e44a4b",
+      "text": "Cry",
+      "voice": "teach"
+    },
+    {
+      "id": "5ec71cbfa9889500445dec89841ad13d",
+      "text": "The baby cries.",
+      "voice": "teach"
+    },
+    {
+      "id": "d59294ce0bbf5fa675233747eeeffe60",
+      "text": "Laugh",
+      "voice": "teach"
+    },
+    {
+      "id": "81c98ad5a5885087cd5b4b46b2f69aba",
+      "text": "We laugh together.",
+      "voice": "teach"
+    },
+    {
+      "id": "0ba672e3acbda6fa67c1f7b32f139979",
+      "text": "Sit",
+      "voice": "teach"
+    },
+    {
+      "id": "da5984c134d2986a36706003a0d2eeca",
+      "text": "I sit on the floor.",
+      "voice": "teach"
+    },
+    {
+      "id": "f5e531e3638cf8a722a9cd26831e108f",
+      "text": "Stand",
+      "voice": "teach"
+    },
+    {
+      "id": "29152f3e8cb7c2ef40297f89523e9877",
+      "text": "I stand up.",
+      "voice": "teach"
+    },
+    {
+      "id": "918e180e06b96c76b7193c9fcb1cb312",
+      "text": "Sports",
+      "voice": "teach"
+    },
+    {
+      "id": "871d17bd2733a95c351a87fd39f40bc1",
+      "text": "Soccer",
+      "voice": "teach"
+    },
+    {
+      "id": "efc2ba839c480ad68032cd287a902740",
+      "text": "I play soccer with friends.",
+      "voice": "teach"
+    },
+    {
+      "id": "c71a18083d9e74b4a5c5d8d9a17d68d0",
+      "text": "Basketball",
+      "voice": "teach"
+    },
+    {
+      "id": "a02ba1634c67509c603a4565b40a6792",
+      "text": "He plays basketball.",
+      "voice": "teach"
+    },
+    {
+      "id": "3d949aba5399278c1014e473bbf9c86a",
+      "text": "Badminton",
+      "voice": "teach"
+    },
+    {
+      "id": "6513f1c2b338f5a6f882f7404693129b",
+      "text": "We play badminton.",
+      "voice": "teach"
+    },
+    {
+      "id": "c26e2589e25045ad516b5bc37d18523a",
+      "text": "Volleyball",
+      "voice": "teach"
+    },
+    {
+      "id": "c9ef5e1d9fea9cfbd8cd72f07469118b",
+      "text": "They play volleyball.",
+      "voice": "teach"
+    },
+    {
+      "id": "0c493d20a11930e4980725d94b0203ec",
+      "text": "Tennis",
+      "voice": "teach"
+    },
+    {
+      "id": "19f20244f9ec4c178cc4d31d02123c9c",
+      "text": "She plays tennis.",
+      "voice": "teach"
+    },
+    {
+      "id": "877ba264e353c1f14b18763facf0121e",
+      "text": "Table Tennis",
+      "voice": "teach"
+    },
+    {
+      "id": "43f75f3379976db18cda48979c461809",
+      "text": "I play table tennis.",
+      "voice": "teach"
+    },
+    {
+      "id": "7b7a0411718cea15c3f9dc675af1b7c7",
+      "text": "Swimming",
+      "voice": "teach"
+    },
+    {
+      "id": "3730e185504cf9f98eefd68ccf58cdc2",
+      "text": "Swimming is fun.",
+      "voice": "teach"
+    },
+    {
+      "id": "5bda814c4aedb126839228f1a3d92f09",
+      "text": "Running",
+      "voice": "teach"
+    },
+    {
+      "id": "51a676a63710f27b8931369e2a3c576a",
+      "text": "Running makes me strong.",
+      "voice": "teach"
+    },
+    {
+      "id": "6a0401b0a3f6a6e73ef172e2555539db",
+      "text": "Hobbies",
+      "voice": "teach"
+    },
+    {
+      "id": "26fccddf2f94b1685b184267996e10f8",
+      "text": "Reading",
+      "voice": "teach"
+    },
+    {
+      "id": "090a20764a9bd0c8ab43af65b4d461ab",
+      "text": "My hobby is reading.",
+      "voice": "teach"
+    },
+    {
+      "id": "3b962574887f124e78bfd9b4685f3b39",
+      "text": "Cooking",
+      "voice": "teach"
+    },
+    {
+      "id": "633f32a7529f60e856ddc89b28f8b4f0",
+      "text": "Mom likes cooking.",
+      "voice": "teach"
+    },
+    {
+      "id": "e74777bdd988f1cddc4530920649e589",
+      "text": "Dancing",
+      "voice": "teach"
+    },
+    {
+      "id": "b45ada9f0014bf5d7b541cb612fcfbb0",
+      "text": "She likes dancing.",
+      "voice": "teach"
+    },
+    {
+      "id": "eec5503e21c428e650987268e368f0a0",
+      "text": "Singing",
+      "voice": "teach"
+    },
+    {
+      "id": "89054a817dbe98636b3a88c9fe4dc558",
+      "text": "I like singing.",
+      "voice": "teach"
+    },
+    {
+      "id": "681d72abce5de4f856e71bfb1856796b",
+      "text": "Drawing",
+      "voice": "teach"
+    },
+    {
+      "id": "a8c6496cac6efeb9d2dd3dc5643d95f8",
+      "text": "He likes drawing.",
+      "voice": "teach"
+    },
+    {
+      "id": "14943f54ebfea38049fe16972c96772e",
+      "text": "Cycling",
+      "voice": "teach"
+    },
+    {
+      "id": "bb52da5814283fb51f7af5c85d4e9b7a",
+      "text": "We like cycling.",
+      "voice": "teach"
+    },
+    {
+      "id": "fb34369d75850f95670125cb259dbd38",
+      "text": "Fishing",
+      "voice": "teach"
+    },
+    {
+      "id": "8d7e718b23be23bad8a95151bfb9b1a1",
+      "text": "Dad likes fishing.",
+      "voice": "teach"
+    },
+    {
+      "id": "9eed85ad420e3a3c986cdc6d7e77854d",
+      "text": "Gaming",
+      "voice": "teach"
+    },
+    {
+      "id": "12b30c00abd93b2fd7bcb6d4aa6e504b",
+      "text": "I like gaming.",
+      "voice": "teach"
+    },
+    {
+      "id": "45e064f832435bbcc69deed872cd20b6",
+      "text": "Gardening",
+      "voice": "teach"
+    },
+    {
+      "id": "2a1fb88985d02ee872ec11643f85d099",
+      "text": "Grandma likes gardening.",
+      "voice": "teach"
+    },
+    {
+      "id": "c497c365f23fa847d8598ef1fe8dbf5c",
+      "text": "Camping",
+      "voice": "teach"
+    },
+    {
+      "id": "2c20678aa5940de0a63043ff1f3a9cdd",
+      "text": "We like camping.",
+      "voice": "teach"
+    },
+    {
+      "id": "281e815d68877916ee1a4d39b9e1a97b",
+      "text": "Time & Days",
+      "voice": "teach"
+    },
+    {
+      "id": "6f8522e0610541f1ef215a22ffa66ff6",
+      "text": "Monday",
+      "voice": "teach"
+    },
+    {
+      "id": "cc88555e164e2c8b1768c8842e46d05b",
+      "text": "I go to school on Monday.",
+      "voice": "teach"
+    },
+    {
+      "id": "5792315f09a5d54fb7e3d066672b507f",
+      "text": "Tuesday",
+      "voice": "teach"
+    },
+    {
+      "id": "b409039ccb37d454d13c7458a9d535e8",
+      "text": "We have sports on Tuesday.",
+      "voice": "teach"
+    },
+    {
+      "id": "796c163589f295373e171842f37265d5",
+      "text": "Wednesday",
+      "voice": "teach"
+    },
+    {
+      "id": "0159d1d68e4151aad1ffe392d805daa4",
+      "text": "I draw on Wednesday.",
+      "voice": "teach"
+    },
+    {
+      "id": "78ae6f0cd191d25147e252dc54768238",
+      "text": "Thursday",
+      "voice": "teach"
+    },
+    {
+      "id": "1c4ceb4ccc983fc6cb1930de8a581be8",
+      "text": "Thursday is fun.",
+      "voice": "teach"
+    },
+    {
+      "id": "c33b138a163847cdb6caeeb7c9a126b4",
+      "text": "Friday",
+      "voice": "teach"
+    },
+    {
+      "id": "5f8ccf2f196cfd57f8fc715365a5cabf",
+      "text": "Friday is a happy day.",
+      "voice": "teach"
+    },
+    {
+      "id": "8b7051187b9191cdcdae6ed5a10e5adc",
+      "text": "Saturday",
+      "voice": "teach"
+    },
+    {
+      "id": "d38f1946bb544987ad79ff824c673415",
+      "text": "I play on Saturday.",
+      "voice": "teach"
+    },
+    {
+      "id": "9d1a0949c39e66a0cd65240bc0ac9177",
+      "text": "Sunday",
+      "voice": "teach"
+    },
+    {
+      "id": "17c8d7f741f6d091da5eba09b4701e41",
+      "text": "We rest on Sunday.",
+      "voice": "teach"
+    },
+    {
+      "id": "b311a3fe13ac9b0ee02985f4759a2e46",
+      "text": "Morning",
+      "voice": "teach"
+    },
+    {
+      "id": "d56bf970b2bd8c25ab544c337531c117",
+      "text": "Good morning!",
+      "voice": "teach"
+    },
+    {
+      "id": "31d0ff0ae8611ca7f4ffc11349067cf7",
+      "text": "Afternoon",
+      "voice": "teach"
+    },
+    {
+      "id": "afd7cf038cc94d3da3dbb556f036df5c",
+      "text": "Good afternoon!",
+      "voice": "teach"
+    },
+    {
+      "id": "0b8bd8e7a923442b0de1b614af46944f",
+      "text": "Evening",
+      "voice": "teach"
+    },
+    {
+      "id": "0961283e8274a04129d8db11dddf3b32",
+      "text": "Good evening!",
+      "voice": "teach"
+    },
+    {
+      "id": "0edc9b073397681dc9f2c479686ea0d9",
+      "text": "Night",
+      "voice": "teach"
+    },
+    {
+      "id": "bc7f9299d98b120fd7f857274450fc58",
+      "text": "Good night!",
+      "voice": "teach"
+    },
+    {
+      "id": "25293f5d6fd4a662c412ee399e1b8db6",
+      "text": "I like...",
+      "voice": "teach"
+    },
+    {
+      "id": "be499b556a5018bc02163f5768c90a3d",
+      "text": "I like ...",
+      "voice": "teach"
+    },
+    {
+      "id": "75bcf2b7de19c90a5851589b2c9589cf",
+      "text": "I like cats.",
+      "voice": "teach"
+    },
+    {
+      "id": "1db529d1220f9aa467b61e3ab9b7bfd5",
+      "text": "I like apples.",
+      "voice": "teach"
+    },
+    {
+      "id": "5454836da9a97efed0f04a96c0221728",
+      "text": "I like soccer.",
+      "voice": "teach"
+    },
+    {
+      "id": "be1ab1632e4285edc3733b142935c60b",
+      "text": "like",
+      "voice": "teach"
+    },
+    {
+      "id": "cc71d8f3dc8842c0f4f55e3f5b388ec6",
+      "text": "likes",
+      "voice": "teach"
+    },
+    {
+      "id": "319685447d749f52cf2b37ff8dcbb50f",
+      "text": "I don't like ...",
+      "voice": "teach"
+    },
+    {
+      "id": "a6d75b4bbae37567cdb1ec881d7c1447",
+      "text": "I don't like snakes.",
+      "voice": "teach"
+    },
+    {
+      "id": "e2c97a8743df34b386ba7583a321937f",
+      "text": "I don't like chili.",
+      "voice": "teach"
+    },
+    {
+      "id": "cb38beb0e48b0ae67bcb6796f1cb7297",
+      "text": "I don't like spiders.",
+      "voice": "teach"
+    },
+    {
+      "id": "5970929a425637241abb7a44591e32b3",
+      "text": "don't",
+      "voice": "teach"
+    },
+    {
+      "id": "59a7709f7ee8c9dadf75615cbe4a79cf",
+      "text": "doesn't",
+      "voice": "teach"
+    },
+    {
+      "id": "8f64b007a994806e8204f860aa0160f2",
+      "text": "am not",
+      "voice": "teach"
+    },
+    {
+      "id": "a70dc25908cad18bb6f8191dd33fd64e",
+      "text": "Do you like ...?",
+      "voice": "teach"
+    },
+    {
+      "id": "4bfbe05dc055320fd2429b492853d391",
+      "text": "Do you like milk?",
+      "voice": "teach"
+    },
+    {
+      "id": "4ccfbd89f2449544a8010cfd2c4afe19",
+      "text": "Yes, I do!",
+      "voice": "teach"
+    },
+    {
+      "id": "514cef703b2e497e3b802bdd009233e9",
+      "text": "No, I don't.",
+      "voice": "teach"
+    },
+    {
+      "id": "4469ece52256cb16d19ede847cc52235",
+      "text": "Do you like bananas?",
+      "voice": "teach"
+    },
+    {
+      "id": "0567953871b1bf589b797d9b178d5a94",
+      "text": "Do",
+      "voice": "teach"
+    },
+    {
+      "id": "8298b314f27e51fd491f2d30dcfd5ac9",
+      "text": "Does",
+      "voice": "teach"
+    },
+    {
+      "id": "877eeefcc4d02981cb94bdb25f5b1118",
+      "text": "Are",
+      "voice": "teach"
+    },
+    {
+      "id": "bf904f77ec220385bdd0e0bd87e6467c",
+      "text": "She likes ice cream.",
+      "voice": "teach"
+    },
+    {
+      "id": "af5d6c476ee03b337b8d458bf5814973",
+      "text": "liking",
+      "voice": "teach"
+    },
+    {
+      "id": "502331d061f4a676eff9c5611e2ff826",
+      "text": "Do they like fish?",
+      "voice": "teach"
+    },
+    {
+      "id": "27d4cf7da57f6748f79254f7be42cca3",
+      "text": "Is",
+      "voice": "teach"
+    },
+    {
+      "id": "34ad4f4d58b70f9810047fcc5263f19f",
+      "text": "I don't like vegetables.",
+      "voice": "teach"
+    },
+    {
+      "id": "d529e941509eb9e9b9cfaeae1fe7ca23",
+      "text": "not",
+      "voice": "teach"
+    },
+    {
+      "id": "41e1fd88ca358aa10bfaa29eabb5c9b9",
+      "text": "We like playing outside.",
+      "voice": "teach"
+    },
+    {
+      "id": "75d0e629e286e414e69a2269e2050fa8",
+      "text": "Daily Routines",
+      "voice": "teach"
+    },
+    {
+      "id": "166fcd0e5769302f49fb3751b25551d1",
+      "text": "Wake up",
+      "voice": "teach"
+    },
+    {
+      "id": "87fe329ae1d83f90e4db8de8fa4bff82",
+      "text": "I wake up at six.",
+      "voice": "teach"
+    },
+    {
+      "id": "62da755943cc0dc437fed82cc8d00166",
+      "text": "Brush my teeth",
+      "voice": "teach"
+    },
+    {
+      "id": "c78fd415dca5464eb58ce488a84033dd",
+      "text": "I brush my teeth.",
+      "voice": "teach"
+    },
+    {
+      "id": "186f09bca73f414e445bf1090005e406",
+      "text": "Take a bath",
+      "voice": "teach"
+    },
+    {
+      "id": "292f07f606e33e9838a1dd6bc7e13d5c",
+      "text": "I take a bath.",
+      "voice": "teach"
+    },
+    {
+      "id": "ce8172f50c01d2e9f9b72dc26baaaacf",
+      "text": "Go to school",
+      "voice": "teach"
+    },
+    {
+      "id": "1fcb97c6a9838dd1378ba74a8c932913",
+      "text": "I go to school at seven.",
+      "voice": "teach"
+    },
+    {
+      "id": "0a3dac2314e66e15240f019afcbd6b0f",
+      "text": "Study",
+      "voice": "teach"
+    },
+    {
+      "id": "b3cb66d085f041a58ba6494b8d6aa2ec",
+      "text": "I study English.",
+      "voice": "teach"
+    },
+    {
+      "id": "6f98933652d7956ea613602f1072c369",
+      "text": "I play with my friends.",
+      "voice": "teach"
+    },
+    {
+      "id": "1463c5218114ee499f8dfc7b557b125f",
+      "text": "Watch TV",
+      "voice": "teach"
+    },
+    {
+      "id": "1ac08a9141ece0bc50849f820de3d916",
+      "text": "I watch TV with dad.",
+      "voice": "teach"
+    },
+    {
+      "id": "f964e802e204c75a8d7f0aca7cca5164",
+      "text": "I sleep at nine.",
+      "voice": "teach"
+    },
+    {
+      "id": "233b46c79f123d6dc6d6ea50d7663f0e",
+      "text": "Describing People",
+      "voice": "teach"
+    },
+    {
+      "id": "9c8c29335006d9e40eef25192524c99f",
+      "text": "Beautiful",
+      "voice": "teach"
+    },
+    {
+      "id": "515770f65ab8735fc3b70b1128f90c1f",
+      "text": "The flower is beautiful.",
+      "voice": "teach"
+    },
+    {
+      "id": "99e8eb67dee858a86b80904675a5739c",
+      "text": "Cute",
+      "voice": "teach"
+    },
+    {
+      "id": "83a45c503d7fc467849fea67c1ec1007",
+      "text": "The baby is cute.",
+      "voice": "teach"
+    },
+    {
+      "id": "f5c0d5ed7af24d3aa55b4666cc4596a7",
+      "text": "Funny",
+      "voice": "teach"
+    },
+    {
+      "id": "4db5bddaa39001a685579ef3c952d861",
+      "text": "The clown is funny.",
+      "voice": "teach"
+    },
+    {
+      "id": "acd381e68b92357896c0856efebb3666",
+      "text": "Smart",
+      "voice": "teach"
+    },
+    {
+      "id": "9762d0c0f18c5a5e16b2066859588c0f",
+      "text": "She is smart.",
+      "voice": "teach"
+    },
+    {
+      "id": "8d091597127cc044520e13fae3a3af59",
+      "text": "Brave",
+      "voice": "teach"
+    },
+    {
+      "id": "e9045cb500c18da5ccb9f9ef89de5530",
+      "text": "He is brave.",
+      "voice": "teach"
+    },
+    {
+      "id": "d626102cfc2416a570fc0dc582a9b771",
+      "text": "Kind",
+      "voice": "teach"
+    },
+    {
+      "id": "96827c62ef8dea61707af1f6871d2616",
+      "text": "She is kind to everyone.",
+      "voice": "teach"
+    },
+    {
+      "id": "c43e0fd449c758dab8f891d8e19eb1a9",
+      "text": "Strong",
+      "voice": "teach"
+    },
+    {
+      "id": "2c13aca651c6636324ceb910e74ff215",
+      "text": "Dad is strong.",
+      "voice": "teach"
+    },
+    {
+      "id": "46a9ebdb80117bfa1f0cdea65438290a",
+      "text": "Lazy",
+      "voice": "teach"
+    },
+    {
+      "id": "d4082216da28271e6ca9cc8f694a2050",
+      "text": "The sloth is lazy.",
+      "voice": "teach"
+    },
+    {
+      "id": "03fdbf12e03a4cd1409b84abe2b631df",
+      "text": "Friendly",
+      "voice": "teach"
+    },
+    {
+      "id": "e6804e90f3ada6727cc028d2b5a3adb1",
+      "text": "They are friendly.",
+      "voice": "teach"
+    },
+    {
+      "id": "79a00d459791fcf1e9307a1195fc8938",
+      "text": "Polite",
+      "voice": "teach"
+    },
+    {
+      "id": "9ef7d497d433a43723a7f04a213a30d7",
+      "text": "He is polite.",
+      "voice": "teach"
+    },
+    {
+      "id": "d640883689af89398421e2ab4cd71060",
+      "text": "Where is the Cat?",
+      "voice": "teach"
+    },
+    {
+      "id": "efeb369cccbd560588a756610865664c",
+      "text": "In",
+      "voice": "teach"
+    },
+    {
+      "id": "35c8276a0582d47227393f7bb02618ab",
+      "text": "The cat is in the box.",
+      "voice": "teach"
+    },
+    {
+      "id": "521c36a31c2762741cf0f8890cbe05e3",
+      "text": "On",
+      "voice": "teach"
+    },
+    {
+      "id": "b559f1683fb88f9dec5cb27f01fc67f1",
+      "text": "The cat is on the bed.",
+      "voice": "teach"
+    },
+    {
+      "id": "02552d3c116b8a96f9ff0001b6ae661c",
+      "text": "Under",
+      "voice": "teach"
+    },
+    {
+      "id": "015815a54e0b2e028edfeca6bda1edbf",
+      "text": "The cat is under the bed.",
+      "voice": "teach"
+    },
+    {
+      "id": "382c70faebc9dd21aff0801c33c5c4eb",
+      "text": "Behind",
+      "voice": "teach"
+    },
+    {
+      "id": "d7d64eab3e08d9f00d02c3202d51da24",
+      "text": "The cat is behind the tree.",
+      "voice": "teach"
+    },
+    {
+      "id": "8e30589051980932591ed08341bd907d",
+      "text": "In front of",
+      "voice": "teach"
+    },
+    {
+      "id": "d3eb969ffacf80ced1dc29538efa6165",
+      "text": "The cat is in front of the tree.",
+      "voice": "teach"
+    },
+    {
+      "id": "ab58fb73466e09b83090139659361199",
+      "text": "Next to",
+      "voice": "teach"
+    },
+    {
+      "id": "1956bbf72c2c06f8374320d58df07a43",
+      "text": "The cat is next to the dog.",
+      "voice": "teach"
+    },
+    {
+      "id": "5ccb72b3b258508dc7918070eaeb214c",
+      "text": "Between",
+      "voice": "teach"
+    },
+    {
+      "id": "d7f31a2002b7bf4dfbc1d2c44f49c96f",
+      "text": "The cat is between the dogs.",
+      "voice": "teach"
+    },
+    {
+      "id": "e3f98669fe1b14caa750a1b66b454087",
+      "text": "Am, Is, Are",
+      "voice": "teach"
+    },
+    {
+      "id": "32a462fb6daeebe5e30e4bb0e1558a16",
+      "text": "I am ...",
+      "voice": "teach"
+    },
+    {
+      "id": "2b1814c97b18192814618136c87c9243",
+      "text": "I am happy.",
+      "voice": "teach"
+    },
+    {
+      "id": "2f1f75e8bb00643cb05aed57f7bdb4a8",
+      "text": "I am a student.",
+      "voice": "teach"
+    },
+    {
+      "id": "9604a68219e5bf35f8a11cdb06e4451c",
+      "text": "I am seven years old.",
+      "voice": "teach"
+    },
+    {
+      "id": "67546c2b6e691358954df4fe5d9ab5be",
+      "text": "I am a good boy.",
+      "voice": "teach"
+    },
+    {
+      "id": "fb251f46aefce401efe6f04cb110855a",
+      "text": "He / She / It + is",
+      "voice": "teach"
+    },
+    {
+      "id": "ab417e4eeb24fa4e771583a8aaac2534",
+      "text": "He is tall.",
+      "voice": "teach"
+    },
+    {
+      "id": "947dd05d7993fa0bc74eee7ae5c93395",
+      "text": "She is my mom.",
+      "voice": "teach"
+    },
+    {
+      "id": "3155b9461872ec0e60b7cb19dfd2a23b",
+      "text": "It is a dog.",
+      "voice": "teach"
+    },
+    {
+      "id": "91c1b783cf0dcbc54e74e5a88ff784c5",
+      "text": "She is my teacher.",
+      "voice": "teach"
+    },
+    {
+      "id": "f43b0e6f3152cabea0d7120891c33f97",
+      "text": "You / We / They + are",
+      "voice": "teach"
+    },
+    {
+      "id": "4254f1e9df188f4ef6e50475065fc97c",
+      "text": "You are my friend.",
+      "voice": "teach"
+    },
+    {
+      "id": "0d789b3741e4b6204a7a6e376619a3c0",
+      "text": "We are happy.",
+      "voice": "teach"
+    },
+    {
+      "id": "8e084037cdc2d8fcadb620e9ffdacd23",
+      "text": "They are students.",
+      "voice": "teach"
+    },
+    {
+      "id": "cbcb24093e49ece12e06b03cc79a6a2e",
+      "text": "They are playing.",
+      "voice": "teach"
+    },
+    {
+      "id": "de327caf80a67c80d84420dff0efedab",
+      "text": "Bentuk Tidak (Negatif)",
+      "voice": "teach"
+    },
+    {
+      "id": "5e40257089617352b49eb165a62173b0",
+      "text": "I am not sad.",
+      "voice": "teach"
+    },
+    {
+      "id": "80b39932d31b1773eaca9de8b71bc133",
+      "text": "He isn't angry.",
+      "voice": "teach"
+    },
+    {
+      "id": "6696a95a7bb96d03b815b4f153edd6d3",
+      "text": "They aren't late.",
+      "voice": "teach"
+    },
+    {
+      "id": "b9e0eba9049dd3f33dc542052298a4a5",
+      "text": "He isn't happy.",
+      "voice": "teach"
+    },
+    {
+      "id": "4de6581944a6bd25ecc90a52947add4c",
+      "text": "isn't",
+      "voice": "teach"
+    },
+    {
+      "id": "5759b7c5715d057d5710c3f672f2fa6b",
+      "text": "aren't",
+      "voice": "teach"
+    },
+    {
+      "id": "ed6464346fee7af78c5061bbc5179faa",
+      "text": "Bertanya dengan To Be",
+      "voice": "teach"
+    },
+    {
+      "id": "1cdb7cc39b0de78bf86082024b4473df",
+      "text": "Is she your mom?",
+      "voice": "teach"
+    },
+    {
+      "id": "17995e9975225367e004cfc5da120c3b",
+      "text": "Are they friends?",
+      "voice": "teach"
+    },
+    {
+      "id": "cfd4226ad5fa7728b838655e305c1e0b",
+      "text": "Am I late?",
+      "voice": "teach"
+    },
+    {
+      "id": "f07ec1b01555ed1939e25db154cc4450",
+      "text": "Am",
+      "voice": "teach"
+    },
+    {
+      "id": "1e27bed562b212936ff31b96850c48cc",
+      "text": "It is a cat.",
+      "voice": "teach"
+    },
+    {
+      "id": "4ea32befc2becfbff1beef870117dfcc",
+      "text": "Are you ready?",
+      "voice": "teach"
+    },
+    {
+      "id": "0b119f9234fca4d05f0015be407a6064",
+      "text": "They are not here.",
+      "voice": "teach"
+    },
+    {
+      "id": "aad5282b67386d2040ac98057be460c5",
+      "text": "Simple Present",
+      "voice": "teach"
+    },
+    {
+      "id": "9f41261a4e6b7087e1262aa95b95724b",
+      "text": "I / You / We / They + kata kerja",
+      "voice": "teach"
+    },
+    {
+      "id": "3f8d42a2362fed0ddef80aa0b9d763a5",
+      "text": "I play ball every day.",
+      "voice": "teach"
+    },
+    {
+      "id": "761fe40536f76cf296b82671f0ac7369",
+      "text": "They eat rice.",
+      "voice": "teach"
+    },
+    {
+      "id": "976d1b8f3590aba14fd341cb56cdddf7",
+      "text": "We go to school.",
+      "voice": "teach"
+    },
+    {
+      "id": "04e408ab544739f324762574c435a9f8",
+      "text": "They play football on Sunday.",
+      "voice": "teach"
+    },
+    {
+      "id": "a3b34c0871dc2fd51eec5559b68f709d",
+      "text": "play",
+      "voice": "teach"
+    },
+    {
+      "id": "ed4018190d63d27337300381ca661fae",
+      "text": "plays",
+      "voice": "teach"
+    },
+    {
+      "id": "7ed501a93c1205e3a23f7f0313ea65dc",
+      "text": "playing",
+      "voice": "teach"
+    },
+    {
+      "id": "e8eaaa171635e7f0f371145a98ca6742",
+      "text": "He / She / It + kata kerja + s/es",
+      "voice": "teach"
+    },
+    {
+      "id": "6b0452c399e407986c42a370aa57713e",
+      "text": "He plays ball.",
+      "voice": "teach"
+    },
+    {
+      "id": "1c04e8ed5631c4359c74853dc2af3f0a",
+      "text": "She goes to school.",
+      "voice": "teach"
+    },
+    {
+      "id": "b4b6e84c85c6e0e110fa16d6d129dd67",
+      "text": "It eats fish.",
+      "voice": "teach"
+    },
+    {
+      "id": "b9fd659b4ffdc52ec5670fdcb331d647",
+      "text": "She goes to school every day.",
+      "voice": "teach"
+    },
+    {
+      "id": "89fe7b5ca56cdee4e750f4eb3ab12fbb",
+      "text": "goes",
+      "voice": "teach"
+    },
+    {
+      "id": "34d1f91fb2e514b8576fab1a75a89a6b",
+      "text": "go",
+      "voice": "teach"
+    },
+    {
+      "id": "f2bab06044281a8c660c441ff4dc7952",
+      "text": "going",
+      "voice": "teach"
+    },
+    {
+      "id": "d1ba8f096b40b8916ca9f02fef53dadf",
+      "text": "+ s/es Spesial",
+      "voice": "teach"
+    },
+    {
+      "id": "15b18adab9ea6c5bc07a620f88bd9621",
+      "text": "He watches TV.",
+      "voice": "teach"
+    },
+    {
+      "id": "6c035ba7ac472749ad0eaea760d780dc",
+      "text": "She studies English.",
+      "voice": "teach"
+    },
+    {
+      "id": "068ee8f4a89c1c637874e7b1ad4c3f52",
+      "text": "It has four legs.",
+      "voice": "teach"
+    },
+    {
+      "id": "a086c3e969a3a344b4468dc49a720c79",
+      "text": "studies",
+      "voice": "teach"
+    },
+    {
+      "id": "137e7225d7136d8fe09f429c9117fb20",
+      "text": "studys",
+      "voice": "teach"
+    },
+    {
+      "id": "2cd1c6ecec2c6d908b3ed66d4ea7b902",
+      "text": "study",
+      "voice": "teach"
+    },
+    {
+      "id": "511d2a365bd73e14587999157f4e898e",
+      "text": "Bertanya: Do dan Does",
+      "voice": "teach"
+    },
+    {
+      "id": "4741f45508a40accd6b2c73ad30cde86",
+      "text": "Does he play ball?",
+      "voice": "teach"
+    },
+    {
+      "id": "d02ffeb218a3913d1461509e45b924ba",
+      "text": "Do they swim?",
+      "voice": "teach"
+    },
+    {
+      "id": "2803d8c5eb1a595b3e38ccd12c2703fa",
+      "text": "Does she like ice cream?",
+      "voice": "teach"
+    },
+    {
+      "id": "09433073d89ad1565deaa5128419b428",
+      "text": "Tidak: don't dan doesn't",
+      "voice": "teach"
+    },
+    {
+      "id": "b83e7f8fa3605bc150aca4e21b1c644d",
+      "text": "He doesn't eat fish.",
+      "voice": "teach"
+    },
+    {
+      "id": "a17a15a5e4c56b47ddc2dc14758e37fb",
+      "text": "They don't play at night.",
+      "voice": "teach"
+    },
+    {
+      "id": "3ec5fe478ef36f54a5c286592c53b826",
+      "text": "He doesn't like vegetables.",
+      "voice": "teach"
+    },
+    {
+      "id": "37b90b7e32ba137d26fd61f2ebaa8cae",
+      "text": "wake",
+      "voice": "teach"
+    },
+    {
+      "id": "88a3e001a558fa212109fcd88f5b1157",
+      "text": "wakes",
+      "voice": "teach"
+    },
+    {
+      "id": "ee0902c43a42b378dbfd650301b15b04",
+      "text": "waking",
+      "voice": "teach"
+    },
+    {
+      "id": "4a0e41bd148de5b45d1bbc42436c0aa5",
+      "text": "He watches TV every night.",
+      "voice": "teach"
+    },
+    {
+      "id": "2d6b6aad43dffa9125ef8420faefca18",
+      "text": "watches",
+      "voice": "teach"
+    },
+    {
+      "id": "d2974c96dc96b3f30a6168bcc4b25b02",
+      "text": "watch",
+      "voice": "teach"
+    },
+    {
+      "id": "fbf90254b7a7023a689c18a8cbe490cc",
+      "text": "watching",
+      "voice": "teach"
+    },
+    {
+      "id": "1802142318951e1a58b78a06cb2f23bb",
+      "text": "Do you like coffee?",
+      "voice": "teach"
+    },
+    {
+      "id": "9da1d69f2607f5134aafac3d709c8ebf",
+      "text": "My dad goes to work by car.",
+      "voice": "teach"
+    },
+    {
+      "id": "a245e0092a81a858c6f8a5f424b93f1a",
+      "text": "They do not play inside.",
+      "voice": "teach"
+    },
+    {
+      "id": "d4579b2688d675235f402f6b4b43bcbf",
+      "text": "do",
+      "voice": "teach"
+    },
+    {
+      "id": "5440e70c43cc02aba90d879c888e6e09",
+      "text": "does",
+      "voice": "teach"
+    },
+    {
+      "id": "86014cabee4630f8b0b9014cbafd026b",
+      "text": "She has two cats.",
+      "voice": "teach"
+    },
+    {
+      "id": "3309a7a7941818e131b4dfb9a6349914",
+      "text": "has",
+      "voice": "teach"
+    },
+    {
+      "id": "b42dad5453b2128a32f6612b13ea5d9f",
+      "text": "have",
+      "voice": "teach"
+    },
+    {
+      "id": "dafbf4a76c1c624f953fc41d9c586088",
+      "text": "haves",
+      "voice": "teach"
+    },
+    {
+      "id": "80d83f656c5203cd4402b2b25d99c62e",
+      "text": "Present Continuous",
+      "voice": "teach"
+    },
+    {
+      "id": "88dc6b83c2a088d84fb2eb43ba75f8e1",
+      "text": "am/is/are + kata kerja-ing",
+      "voice": "teach"
+    },
+    {
+      "id": "e60dacb5303cdf8d0fe3fe7055d6339d",
+      "text": "I am reading now.",
+      "voice": "teach"
+    },
+    {
+      "id": "8c6cee58d2dab483a48afad8a5158af4",
+      "text": "She is cooking.",
+      "voice": "teach"
+    },
+    {
+      "id": "532d07854b32108c088ed829dabe7fad",
+      "text": "Look! The baby is crying.",
+      "voice": "teach"
+    },
+    {
+      "id": "8263574d010bfe3a764dadac6d887463",
+      "text": "Aturan +ing",
+      "voice": "teach"
+    },
+    {
+      "id": "51a50a7a9d92f369b262b395d38e653a",
+      "text": "He is running.",
+      "voice": "teach"
+    },
+    {
+      "id": "52caf66066f7ba706c5f10d6a952cac8",
+      "text": "I am writing.",
+      "voice": "teach"
+    },
+    {
+      "id": "fd5124ba54f964fb0296bf020c2e7702",
+      "text": "We are swimming.",
+      "voice": "teach"
+    },
+    {
+      "id": "cb2f34a5d204ffb9c1cc114327be3e1f",
+      "text": "He is running now.",
+      "voice": "teach"
+    },
+    {
+      "id": "75101dcdfc88455bcafc9e53e0b06689",
+      "text": "running",
+      "voice": "teach"
+    },
+    {
+      "id": "9cddaf010f78421432ae919a43c8e0ab",
+      "text": "runing",
+      "voice": "teach"
+    },
+    {
+      "id": "a53108f7543b75adbb34afc035d4cdf6",
+      "text": "run",
+      "voice": "teach"
+    },
+    {
+      "id": "5b573a946ae89a56c26aae145aae2dcb",
+      "text": "Negatif & Bertanya",
+      "voice": "teach"
+    },
+    {
+      "id": "9c144de175182bdc12b0328f31a940c5",
+      "text": "She is not sleeping.",
+      "voice": "teach"
+    },
+    {
+      "id": "673535c5ee0c2d9a7723700c986d8e5a",
+      "text": "Are they playing?",
+      "voice": "teach"
+    },
+    {
+      "id": "d7fdca80269246e5e602a5183bf338ea",
+      "text": "Is it raining?",
+      "voice": "teach"
+    },
+    {
+      "id": "ab0155b3815886bf172e98abb782c55a",
+      "text": "Kata Kunci Waktu",
+      "voice": "teach"
+    },
+    {
+      "id": "38bb92fba08bfbe50715b9db1db466df",
+      "text": "Listen! The birds are singing.",
+      "voice": "teach"
+    },
+    {
+      "id": "6f36ea2e4a916b8a0d6dc543cc907841",
+      "text": "Look! It is raining.",
+      "voice": "teach"
+    },
+    {
+      "id": "ac52b6e6a48df1bbd36bfd3a49e14f09",
+      "text": "We are studying now.",
+      "voice": "teach"
+    },
+    {
+      "id": "16a85b23aa143dcd57e3d71df56c8b6d",
+      "text": "She is cooking dinner.",
+      "voice": "teach"
+    },
+    {
+      "id": "367e2f4543e2eb7fb008810c126403d4",
+      "text": "They are playing soccer.",
+      "voice": "teach"
+    },
+    {
+      "id": "859398f54340308a633fcbbb1622041d",
+      "text": "We are studying English.",
+      "voice": "teach"
+    },
+    {
+      "id": "b4f1343595eacaa465db4db02f5c011f",
+      "text": "He is writing a letter.",
+      "voice": "teach"
+    },
+    {
+      "id": "1cea5345d284f36245a94301b114b27c",
+      "text": "writing",
+      "voice": "teach"
+    },
+    {
+      "id": "03b22b0ad3cbac8f02fc12b7e05e98c9",
+      "text": "writeing",
+      "voice": "teach"
+    },
+    {
+      "id": "efb2a684e4afb7d55e6147fbe5a332ee",
+      "text": "write",
+      "voice": "teach"
+    },
+    {
+      "id": "3d6944aef9eb8b5b99a6415e67afdfbe",
+      "text": "In the City",
+      "voice": "teach"
+    },
+    {
+      "id": "eb45bd2725cb8ac50d0795432a918f86",
+      "text": "Bank",
+      "voice": "teach"
+    },
+    {
+      "id": "f0f252830eb94108287a9355ef5aa68b",
+      "text": "Dad goes to the bank.",
+      "voice": "teach"
+    },
+    {
+      "id": "9416b8fdb61378eb29ebe807b9bdbb44",
+      "text": "Post Office",
+      "voice": "teach"
+    },
+    {
+      "id": "3a21329388706744d856e03eee20a081",
+      "text": "Mom sends a letter at the post office.",
+      "voice": "teach"
+    },
+    {
+      "id": "e529f1ffeb63c7d27e84f3d50b465a03",
+      "text": "Airport",
+      "voice": "teach"
+    },
+    {
+      "id": "263e0c0ee5f1cb805ef7b3b58e1389dc",
+      "text": "The plane is at the airport.",
+      "voice": "teach"
+    },
+    {
+      "id": "70a29efef7ec3aa42f43d66b0048b43d",
+      "text": "Train Station",
+      "voice": "teach"
+    },
+    {
+      "id": "0dbea8a7c0c06fdd9f832e2d3db52a4b",
+      "text": "We wait at the train station.",
+      "voice": "teach"
+    },
+    {
+      "id": "26e28738b51eebd25cf4d734b33b539f",
+      "text": "Hotel",
+      "voice": "teach"
+    },
+    {
+      "id": "7c65c3fea1db7eaab34217af0b6a08ab",
+      "text": "We sleep at the hotel.",
+      "voice": "teach"
+    },
+    {
+      "id": "2d365e421520ea39d539527b81cd069e",
+      "text": "Cinema",
+      "voice": "teach"
+    },
+    {
+      "id": "c2e33f9a210b2ea3d8d8392e1918896f",
+      "text": "We watch a movie at the cinema.",
+      "voice": "teach"
+    },
+    {
+      "id": "2d208329abc403adc44e3aba85cf5be6",
+      "text": "Mall",
+      "voice": "teach"
+    },
+    {
+      "id": "c2f64aabde072e8a480db7bb0f4084f0",
+      "text": "We shop at the mall.",
+      "voice": "teach"
+    },
+    {
+      "id": "c07c35714963668a8ec1b8784f83d143",
+      "text": "Bakery",
+      "voice": "teach"
+    },
+    {
+      "id": "e3e9c88251b020b05546faf15bad7012",
+      "text": "The bakery smells good.",
+      "voice": "teach"
+    },
+    {
+      "id": "68d282d3b1cfe6921a3beeebb0ba3eec",
+      "text": "Museum",
+      "voice": "teach"
+    },
+    {
+      "id": "cbc580354133bdebe79160f97e198b80",
+      "text": "The museum is interesting.",
+      "voice": "teach"
+    },
+    {
+      "id": "de8504b73ea228d0ea9bbce69752092e",
+      "text": "Bridge",
+      "voice": "teach"
+    },
+    {
+      "id": "416990a40584ffb7f546e324c1f4a0af",
+      "text": "The bridge is long.",
+      "voice": "teach"
+    },
+    {
+      "id": "f3599ab891076a4dec4eafe424453690",
+      "text": "More Vehicles",
+      "voice": "teach"
+    },
+    {
+      "id": "15e8bfff2c10ca22da244d85b2bf7d94",
+      "text": "Rocket",
+      "voice": "teach"
+    },
+    {
+      "id": "a6fdedfc00cda6382774a8428afe2aae",
+      "text": "The rocket flies to space.",
+      "voice": "teach"
+    },
+    {
+      "id": "3755f172c7accfff4f5ba826cf86f9db",
+      "text": "Sailboat",
+      "voice": "teach"
+    },
+    {
+      "id": "6a7876b4145b4c3b12911edb425cbebf",
+      "text": "The sailboat is white.",
+      "voice": "teach"
+    },
+    {
+      "id": "8d3241d67b2cf4563e64988de44a1a09",
+      "text": "Canoe",
+      "voice": "teach"
+    },
+    {
+      "id": "aac1098bfa1c9b0ddd3d5238b3f52d1b",
+      "text": "We row the canoe.",
+      "voice": "teach"
+    },
+    {
+      "id": "82f90e2f7354ca298a92ab8a01d6c2a3",
+      "text": "Scooter",
+      "voice": "teach"
+    },
+    {
+      "id": "2dc4ab7bf6875dce04a7e06c1cc719f0",
+      "text": "I ride my scooter.",
+      "voice": "teach"
+    },
+    {
+      "id": "974a2f9de4ff993fbd4d1cd3fb80865e",
+      "text": "Skateboard",
+      "voice": "teach"
+    },
+    {
+      "id": "31d0f268298abd5a4eea3b11653d4604",
+      "text": "He plays skateboard.",
+      "voice": "teach"
+    },
+    {
+      "id": "585f98ed9d73111845ef5e876fd8c8dc",
+      "text": "Van",
+      "voice": "teach"
+    },
+    {
+      "id": "ac3d9c5e1382714cac25fcba84ea5932",
+      "text": "The van is big.",
+      "voice": "teach"
+    },
+    {
+      "id": "d075e43e3716d407f7a03aa03ee58476",
+      "text": "Ambulance",
+      "voice": "teach"
+    },
+    {
+      "id": "4571a31af094c54a308012196c3e57c5",
+      "text": "The ambulance helps sick people.",
+      "voice": "teach"
+    },
+    {
+      "id": "bad94469a7492174b030957ebca3243b",
+      "text": "Police Car",
+      "voice": "teach"
+    },
+    {
+      "id": "8a04da6b87a10cb5fded9812b04f0154",
+      "text": "The police car is fast.",
+      "voice": "teach"
+    },
+    {
+      "id": "fb12b92ae95814f1fa82675c76a2b9b9",
+      "text": "Fire Truck",
+      "voice": "teach"
+    },
+    {
+      "id": "92fd2214cfe96c518292757966d75981",
+      "text": "The fire truck is red.",
+      "voice": "teach"
+    },
+    {
+      "id": "8029d0d49e9eacde5e719162a691bc63",
+      "text": "Tractor",
+      "voice": "teach"
+    },
+    {
+      "id": "0162cd75b2ddd2a97db4196e575b5e78",
+      "text": "The farmer drives a tractor.",
+      "voice": "teach"
+    },
+    {
+      "id": "a7e35f740d40526ca4431bd3a3f16ead",
+      "text": "Cool Jobs",
+      "voice": "teach"
+    },
+    {
+      "id": "9a15881cc8ac684ff7f623f121f12773",
+      "text": "Scientist",
+      "voice": "teach"
+    },
+    {
+      "id": "ee001d483668ecc5fd3c110ca5e37f34",
+      "text": "The scientist does experiments.",
+      "voice": "teach"
+    },
+    {
+      "id": "46636203ccc3ba230c655b264982f64e",
+      "text": "Astronaut",
+      "voice": "teach"
+    },
+    {
+      "id": "ea2abdc6b6d8aacdeb6a61fa7e63b16f",
+      "text": "The astronaut goes to space.",
+      "voice": "teach"
+    },
+    {
+      "id": "a730b454cc5164f1beaa65816fb582e7",
+      "text": "Singer",
+      "voice": "teach"
+    },
+    {
+      "id": "12d649558d74edb0fdcb68fe54773704",
+      "text": "The singer sings beautifully.",
+      "voice": "teach"
+    },
+    {
+      "id": "935ff3fccfa3798b3c08602dfaefa45b",
+      "text": "Judge",
+      "voice": "teach"
+    },
+    {
+      "id": "32df7c4a98b9e44ed89cfa7e56d2699c",
+      "text": "The judge is fair.",
+      "voice": "teach"
+    },
+    {
+      "id": "64eb669723cae1983f03e34cca705c80",
+      "text": "Mechanic",
+      "voice": "teach"
+    },
+    {
+      "id": "25104dafe36ff89bdf3dd476abf9b7ff",
+      "text": "The mechanic fixes cars.",
+      "voice": "teach"
+    },
+    {
+      "id": "99b4baa88ec179c4a7db5b1967041186",
+      "text": "Barber",
+      "voice": "teach"
+    },
+    {
+      "id": "4fdfe379ff05a407620310eec65afd90",
+      "text": "The barber cuts hair.",
+      "voice": "teach"
+    },
+    {
+      "id": "a0cceed7cae225b6bf780574f30cea12",
+      "text": "Photographer",
+      "voice": "teach"
+    },
+    {
+      "id": "f74b878b9b91ea4bc10b49c9b58b9253",
+      "text": "The photographer takes photos.",
+      "voice": "teach"
+    },
+    {
+      "id": "bbad3d307be077bacf6e77b0520db65f",
+      "text": "Writer",
+      "voice": "teach"
+    },
+    {
+      "id": "501919b803225781a7c303491b32f897",
+      "text": "The writer writes stories.",
+      "voice": "teach"
+    },
+    {
+      "id": "d21e67d9896c8ab9fe4dbb2dae01503b",
+      "text": "Simple Past",
+      "voice": "teach"
+    },
+    {
+      "id": "9992d2ae9d1a29ff1e2a3d8df09f17b5",
+      "text": "Kata kerja + ed",
+      "voice": "teach"
+    },
+    {
+      "id": "53aa5cc9f746e887cde98312a168eca3",
+      "text": "I played ball yesterday.",
+      "voice": "teach"
+    },
+    {
+      "id": "a294df27df094f798eadf3be9198ab39",
+      "text": "We visited grandma.",
+      "voice": "teach"
+    },
+    {
+      "id": "da897d204aedae690c3b929140e0005a",
+      "text": "She watched TV last night.",
+      "voice": "teach"
+    },
+    {
+      "id": "ab08a79108c38a332b13550679ae840c",
+      "text": "Yesterday, I played football.",
+      "voice": "teach"
+    },
+    {
+      "id": "d1b335c1c6e53281edbff438ff2af54f",
+      "text": "played",
+      "voice": "teach"
+    },
+    {
+      "id": "eb752e6003501526ba0aa755d2b15eed",
+      "text": "Kata Kerja Spesial 1",
+      "voice": "teach"
+    },
+    {
+      "id": "a30d8f0ad55baa42046de420ff575bb0",
+      "text": "I went to the zoo.",
+      "voice": "teach"
+    },
+    {
+      "id": "8c334a65743510a48317c635bc6abd89",
+      "text": "He ate cake.",
+      "voice": "teach"
+    },
+    {
+      "id": "88686a4325e88efc9939e4785f5eb57b",
+      "text": "We drank milk.",
+      "voice": "teach"
+    },
+    {
+      "id": "039617e9c153e08f7931375fe5725e2f",
+      "text": "Last week, we went to the beach.",
+      "voice": "teach"
+    },
+    {
+      "id": "dd22b70914cd2243e055d2e118741186",
+      "text": "went",
+      "voice": "teach"
+    },
+    {
+      "id": "f49f026032ca4afc6c2f3853251c699a",
+      "text": "Kata Kerja Spesial 2",
+      "voice": "teach"
+    },
+    {
+      "id": "f47a46af61f4df2c1f7b9387490264d5",
+      "text": "She bought a doll.",
+      "voice": "teach"
+    },
+    {
+      "id": "ec05c9fba2b0784b0be6c1906d9a55e9",
+      "text": "He took my pencil.",
+      "voice": "teach"
+    },
+    {
+      "id": "b53871851e241a5302aa99a82a21665e",
+      "text": "Mom gave me a gift.",
+      "voice": "teach"
+    },
+    {
+      "id": "d8a13fb26bd5ebdf4bdbe1520a38f038",
+      "text": "She bought a doll yesterday.",
+      "voice": "teach"
+    },
+    {
+      "id": "2a02979d266d1d394c3ee72b249ba25f",
+      "text": "bought",
+      "voice": "teach"
+    },
+    {
+      "id": "0461ebd2b773878eac9f78a891912d65",
+      "text": "buy",
+      "voice": "teach"
+    },
+    {
+      "id": "38dd380927d8765d98098b1d0c5a4152",
+      "text": "buys",
+      "voice": "teach"
+    },
+    {
+      "id": "278947ae1934c706522169486ca0fa2c",
+      "text": "I didn't go out.",
+      "voice": "teach"
+    },
+    {
+      "id": "4d4fbcef438cc59ba8c516d7869680bd",
+      "text": "Did you go to school?",
+      "voice": "teach"
+    },
+    {
+      "id": "fde67a339a9271589cd037ba06fe0001",
+      "text": "He didn't eat breakfast.",
+      "voice": "teach"
+    },
+    {
+      "id": "5196334a198f4cbd4f37a8f6c9c07dac",
+      "text": "Did you go to school yesterday?",
+      "voice": "teach"
+    },
+    {
+      "id": "74cac558072300385f7ab4dff7465e3c",
+      "text": "Did",
+      "voice": "teach"
+    },
+    {
+      "id": "13f8f4b978b40c17c94769e03c87fd76",
+      "text": "He watched TV last night.",
+      "voice": "teach"
+    },
+    {
+      "id": "e49e5c5c14850e1f20726b09cd155018",
+      "text": "watched",
+      "voice": "teach"
+    },
+    {
+      "id": "1ed8705b635878a7eb116d328b5a09f1",
+      "text": "I ate an egg this morning.",
+      "voice": "teach"
+    },
+    {
+      "id": "1f0cec14e2c5effcbff50f2feb9495f6",
+      "text": "ate",
+      "voice": "teach"
+    },
+    {
+      "id": "9a97eda6d89f5c9e84560468a0679707",
+      "text": "eat",
+      "voice": "teach"
+    },
+    {
+      "id": "369b4a938ff24b6c7ef69ec5149d49c5",
+      "text": "eats",
+      "voice": "teach"
+    },
+    {
+      "id": "cdd903ea41f677566dc9952dc93f5c53",
+      "text": "They were happy yesterday.",
+      "voice": "teach"
+    },
+    {
+      "id": "2b016d90959eda144d600e4f870c30ba",
+      "text": "were",
+      "voice": "teach"
+    },
+    {
+      "id": "a77b3598941cb803eac0fcdafe44fac9",
+      "text": "was",
+      "voice": "teach"
+    },
+    {
+      "id": "cc0f47a92a87ad1f1cf956bbb1de9131",
+      "text": "Did she visit grandma?",
+      "voice": "teach"
+    },
+    {
+      "id": "fda982a56081fd9045a2c8b651a70eac",
+      "text": "We did not go out.",
+      "voice": "teach"
+    },
+    {
+      "id": "ee85b62281ba8c77e8a83721683b5bcc",
+      "text": "did",
+      "voice": "teach"
+    },
+    {
+      "id": "0f5afcd1bae4c9909705df94b933fa5c",
+      "text": "gave",
+      "voice": "teach"
+    },
+    {
+      "id": "a1ec23e9b9ab43a88222d9949ee26499",
+      "text": "give",
+      "voice": "teach"
+    },
+    {
+      "id": "3674478d09da161a0fa409f7c30380ee",
+      "text": "gives",
+      "voice": "teach"
+    },
+    {
+      "id": "8b72b104083f5ddeae3c28a9f233d173",
+      "text": "Comparatives",
+      "voice": "teach"
+    },
+    {
+      "id": "32361da4defa32a79c8a1a18b8374d9b",
+      "text": "Lebih ... : + er",
+      "voice": "teach"
+    },
+    {
+      "id": "94fcf26932ef3c12dabdb1892a060ebb",
+      "text": "A car is faster than a bike.",
+      "voice": "teach"
+    },
+    {
+      "id": "c108b3086504ed9ed8acfaa27552642b",
+      "text": "An elephant is bigger than a cat.",
+      "voice": "teach"
+    },
+    {
+      "id": "a00e10cac1c8865c7dca16f4aeec3565",
+      "text": "Dad is taller than me.",
+      "voice": "teach"
+    },
+    {
+      "id": "1643681f4fbc78b7c4a86cb865a2d4ed",
+      "text": "A cheetah is faster than a turtle.",
+      "voice": "teach"
+    },
+    {
+      "id": "dc3a388cf38ae88246560749b776aa1b",
+      "text": "faster",
+      "voice": "teach"
+    },
+    {
+      "id": "31d4541b8e926a24f0c9b835b68cfdf3",
+      "text": "fast",
+      "voice": "teach"
+    },
+    {
+      "id": "a79afc8d3ff753307872c30fb9b449ea",
+      "text": "fastest",
+      "voice": "teach"
+    },
+    {
+      "id": "2c229af7d6ed46c15ccc38a868f7ba07",
+      "text": "Kata panjang: more ...",
+      "voice": "teach"
+    },
+    {
+      "id": "983ece8a2ac3fbeb987bd9f1793ee8b0",
+      "text": "A rose is more beautiful than grass.",
+      "voice": "teach"
+    },
+    {
+      "id": "8d17101600a30aadb9923554690576ba",
+      "text": "This book is more interesting.",
+      "voice": "teach"
+    },
+    {
+      "id": "e3c65bd7e5099b7091579875abb6e1fa",
+      "text": "A peacock is more beautiful than a chicken.",
+      "voice": "teach"
+    },
+    {
+      "id": "13a7632684aa46795c0c5009f3821359",
+      "text": "more beautiful",
+      "voice": "teach"
+    },
+    {
+      "id": "82b275e6f5e65d13251e74a97a289c5b",
+      "text": "beautifuller",
+      "voice": "teach"
+    },
+    {
+      "id": "d446da30ee45d32d4a971bd87cb5dfb1",
+      "text": "most beautiful",
+      "voice": "teach"
+    },
+    {
+      "id": "948db523d1162c67964fc83515739460",
+      "text": "Paling ... : the + est",
+      "voice": "teach"
+    },
+    {
+      "id": "a437522c8a7f329e54a0097b75995f59",
+      "text": "The cheetah is the fastest animal.",
+      "voice": "teach"
+    },
+    {
+      "id": "7be6077c8c0b02e71bd7417b58041d85",
+      "text": "The blue whale is the biggest.",
+      "voice": "teach"
+    },
+    {
+      "id": "d9576223f15cc33f8b47cd033f93e993",
+      "text": "She is the smartest in class.",
+      "voice": "teach"
+    },
+    {
+      "id": "4963ef8115f9d61fa65fab8b61a744f1",
+      "text": "An ant is smaller than an elephant.",
+      "voice": "teach"
+    },
+    {
+      "id": "23394313d75148a01ac834b289a0dd91",
+      "text": "smaller",
+      "voice": "teach"
+    },
+    {
+      "id": "eb5c1399a871211c7e7ed732d15e3a8b",
+      "text": "small",
+      "voice": "teach"
+    },
+    {
+      "id": "a9a92beab8ebfcf1e557fbf7fdaee928",
+      "text": "smallest",
+      "voice": "teach"
+    },
+    {
+      "id": "5f34b5748f0ffaf2421e86268782ddd7",
+      "text": "My bag is the heaviest.",
+      "voice": "teach"
+    },
+    {
+      "id": "539ae97d9d18dcbdd3961f4a661ada0a",
+      "text": "heaviest",
+      "voice": "teach"
+    },
+    {
+      "id": "0b81236f3ac7c225f5c3b28e5bcdd27b",
+      "text": "heavier",
+      "voice": "teach"
+    },
+    {
+      "id": "7cfe64ea44dc3bbeb63b29ff3039a481",
+      "text": "heavy",
+      "voice": "teach"
+    },
+    {
+      "id": "a8703b062b32d99273c0ea382399b73e",
+      "text": "A plane is faster than a car.",
+      "voice": "teach"
+    },
+    {
+      "id": "db7775713414ab08eb788b3363e27049",
+      "text": "She is the smartest student in class.",
+      "voice": "teach"
+    },
+    {
+      "id": "d849d6d34ae61dd7575e2b0909b26ef6",
+      "text": "smartest",
+      "voice": "teach"
+    },
+    {
+      "id": "67b45714689a59a84469bfdb2e00f7a9",
+      "text": "smarter",
+      "voice": "teach"
+    },
+    {
+      "id": "8c319f28d81d1527a9428e9a5c2195f5",
+      "text": "smart",
+      "voice": "teach"
+    },
+    {
+      "id": "83ddaf0b29b852cece74af1a6ec415d7",
+      "text": "Today is hotter than yesterday.",
+      "voice": "teach"
+    },
+    {
+      "id": "61e0a9aff38bf7b00119c65a9ed80147",
+      "text": "hotter",
+      "voice": "teach"
+    },
+    {
+      "id": "6a1fccefbc7f074b5017884743cde766",
+      "text": "hottest",
+      "voice": "teach"
+    },
+    {
+      "id": "27369b3bf4483e8dcfd85ba9a39a947f",
+      "text": "hot",
+      "voice": "teach"
+    },
+    {
+      "id": "1b1bf836a3f8067e6ec6012eec409392",
+      "text": "Going To",
+      "voice": "teach"
+    },
+    {
+      "id": "472a5efc68242d67ddf8bdfc415939b5",
+      "text": "am/is/are + going to + kata kerja",
+      "voice": "teach"
+    },
+    {
+      "id": "eabbfad346fec0d8344b21b671115be8",
+      "text": "I am going to swim.",
+      "voice": "teach"
+    },
+    {
+      "id": "9ef5f825940caf0a18cfaa5298a8cb3d",
+      "text": "She is going to cook.",
+      "voice": "teach"
+    },
+    {
+      "id": "ebd0a74183a043c3552e1a7452106a5e",
+      "text": "They are going to play.",
+      "voice": "teach"
+    },
+    {
+      "id": "cb60a6766825bce0dda2442a4cb8fd54",
+      "text": "We are going to the zoo tomorrow.",
+      "voice": "teach"
+    },
+    {
+      "id": "ba248c4906a00f7edd42cc22b1ad39af",
+      "text": "He is going to read tonight.",
+      "voice": "teach"
+    },
+    {
+      "id": "f612ecf3b4a518a36c1b0e3547054dde",
+      "text": "She is going to visit grandma tomorrow.",
+      "voice": "teach"
+    },
+    {
+      "id": "86fbb3e2e1460d490cc98fa9d3c65681",
+      "text": "We are going to the zoo.",
+      "voice": "teach"
+    },
+    {
+      "id": "01b6e20344b68835c5ed1ddedf20d531",
+      "text": "to",
+      "voice": "teach"
+    },
+    {
+      "id": "b403d3f0efbf4cb850d2d543758cb57c",
+      "text": "too",
+      "voice": "teach"
+    },
+    {
+      "id": "b8a9f715dbb64fd5c56e7783c6820a61",
+      "text": "two",
+      "voice": "teach"
+    },
+    {
+      "id": "bbbdb44196174f23b593cbb5f7ceb131",
+      "text": "He is going to read.",
+      "voice": "teach"
+    },
+    {
+      "id": "27e28ebbbaeda694e9bed1c124bf6f7d",
+      "text": "I am going to read a book.",
+      "voice": "teach"
+    },
+    {
+      "id": "ecae13117d6f0584c25a9da6c8f8415e",
+      "text": "read",
+      "voice": "teach"
+    },
+    {
+      "id": "0fb9cf5f04f61bb6f1151da57ceb1ca1",
+      "text": "reads",
+      "voice": "teach"
+    },
+    {
+      "id": "eceadc1d40cea061fd5986f2a109ee93",
+      "text": "reading",
+      "voice": "teach"
+    },
+    {
+      "id": "32dcbca094b23e2af5c227026096a9d9",
+      "text": "Question Words",
+      "voice": "teach"
+    },
+    {
+      "id": "195a73a273f99167769426634368b0f2",
+      "text": "What & Who",
+      "voice": "teach"
+    },
+    {
+      "id": "f6429fe0f1a76611670df7e1234af936",
+      "text": "What is your name?",
+      "voice": "teach"
+    },
+    {
+      "id": "5fb8e2bf06bde22825fc2762777501b6",
+      "text": "Who is your teacher?",
+      "voice": "teach"
+    },
+    {
+      "id": "124433700b3275084ede92789a9d83ef",
+      "text": "What",
+      "voice": "teach"
+    },
+    {
+      "id": "4ee972120bcda675f75222c87cb9d356",
+      "text": "Who",
+      "voice": "teach"
+    },
+    {
+      "id": "b3c5b21d2cb47cc950fd4667edaf404c",
+      "text": "Where",
+      "voice": "teach"
+    },
+    {
+      "id": "ec5e48a273659e12a0d1e28f1f75c142",
+      "text": "Where & When",
+      "voice": "teach"
+    },
+    {
+      "id": "b035a70957f527931efc05d2b5758af9",
+      "text": "Where do you live?",
+      "voice": "teach"
+    },
+    {
+      "id": "91e685f4f09c5a0d8410de08407efb4b",
+      "text": "When is your birthday?",
+      "voice": "teach"
+    },
+    {
+      "id": "4e97aeeaa8b15ca1180fcd1f3ac478d1",
+      "text": "When",
+      "voice": "teach"
+    },
+    {
+      "id": "9bca6b93e36fc3b77b58991314afd988",
+      "text": "Why & How",
+      "voice": "teach"
+    },
+    {
+      "id": "9ca2e73235a0e75cbf1ee921f8a5ae71",
+      "text": "Why are you sad?",
+      "voice": "teach"
+    },
+    {
+      "id": "04e35eb3e4fcb8b395191053c359ca0e",
+      "text": "How are you?",
+      "voice": "teach"
+    },
+    {
+      "id": "91164770fc34b877cc56ccaf61d6eee8",
+      "text": "Why",
+      "voice": "teach"
+    },
+    {
+      "id": "1325707fcc94e967cae1576d0c61d409",
+      "text": "How",
+      "voice": "teach"
+    },
+    {
+      "id": "23d0ee9bac740864322478b610127622",
+      "text": "What is that? It is a cat.",
+      "voice": "teach"
+    },
+    {
+      "id": "f65bb21b25b08cd9c3ffb1fb67c6b8a3",
+      "text": "Who is your teacher? Mrs. Ana.",
+      "voice": "teach"
+    },
+    {
+      "id": "3bd7c2165ec229585721cea8dc7a6fb2",
+      "text": "When do you go to school? At seven.",
+      "voice": "teach"
+    },
+    {
+      "id": "13e575be866ecf5ac3dcbf61ab2048d7",
+      "text": "How old are you?",
+      "voice": "teach"
+    },
+    {
+      "id": "c60a555cc9fac1d25e66a6833ea2f481",
+      "text": "Where do you study? At school.",
+      "voice": "teach"
+    },
+    {
+      "id": "790d59ef178acbc75d233bf4211763c6",
+      "text": "Countries",
+      "voice": "teach"
+    },
+    {
+      "id": "4647d00cf81f8fb0ab80f753320d0fc9",
+      "text": "Indonesia",
+      "voice": "teach"
+    },
+    {
+      "id": "c82d1a6b8823173d1ee18a0b2d3cbf9c",
+      "text": "I am from Indonesia.",
+      "voice": "teach"
+    },
+    {
+      "id": "53a577bb3bc587b0c28ab808390f1c9b",
+      "text": "Japan",
+      "voice": "teach"
+    },
+    {
+      "id": "5345e3e269270475cd2682511a35de31",
+      "text": "Japan has beautiful sakura.",
+      "voice": "teach"
+    },
+    {
+      "id": "088f003833d523d9dccc529e929afdc7",
+      "text": "America",
+      "voice": "teach"
+    },
+    {
+      "id": "ca729cd6f06b005e7c16e9c2f642b0c1",
+      "text": "America is far away.",
+      "voice": "teach"
+    },
+    {
+      "id": "64f607906be7598a02d75dbc1e979662",
+      "text": "England",
+      "voice": "teach"
+    },
+    {
+      "id": "79b1c5cebed0e0dbc72024e00509ff02",
+      "text": "They speak English in England.",
+      "voice": "teach"
+    },
+    {
+      "id": "4442e4af0916f53a07fb8ca9a49b98ed",
+      "text": "Australia",
+      "voice": "teach"
+    },
+    {
+      "id": "d9c8b15f5665803452949a8f1abeebc1",
+      "text": "Kangaroos live in Australia.",
+      "voice": "teach"
+    },
+    {
+      "id": "e31959fe2842dacea4d16d36e9813620",
+      "text": "Egypt",
+      "voice": "teach"
+    },
+    {
+      "id": "4535ec08ba110d1b40e585d085fc3d7a",
+      "text": "The pyramids are in Egypt.",
+      "voice": "teach"
+    },
+    {
+      "id": "ae54a5c026f31ada088992587d92cb3a",
+      "text": "China",
+      "voice": "teach"
+    },
+    {
+      "id": "b91740198a2bea548525f4e2e58e931b",
+      "text": "China has the Great Wall.",
+      "voice": "teach"
+    },
+    {
+      "id": "7d31e0da1ab99fe8b08a22118e2f402b",
+      "text": "India",
+      "voice": "teach"
+    },
+    {
+      "id": "243e19e48192115bf6bff9a12a8e89e2",
+      "text": "The Taj Mahal is in India.",
+      "voice": "teach"
+    },
+    {
+      "id": "a8f809c99c4a996780c3046b9b594195",
+      "text": "Korea",
+      "voice": "teach"
+    },
+    {
+      "id": "0eedae7304e9b262251d4ba8c3703e5b",
+      "text": "K-pop is from Korea.",
+      "voice": "teach"
+    },
+    {
+      "id": "42537f0fb56e31e20ab9c2305752087d",
+      "text": "Brazil",
+      "voice": "teach"
+    },
+    {
+      "id": "517962cfdf1924f1cad791952075771a",
+      "text": "Brazil loves soccer.",
+      "voice": "teach"
+    },
+    {
+      "id": "0a44b6528df42574dd692ae8ec1f38fd",
+      "text": "School Subjects",
+      "voice": "teach"
+    },
+    {
+      "id": "a49950aa047c2292e989e368a97a3aae",
+      "text": "Math",
+      "voice": "teach"
+    },
+    {
+      "id": "620288fe0ccf87203ba7397ccccf9e0b",
+      "text": "I like Math.",
+      "voice": "teach"
+    },
+    {
+      "id": "35bf1210e6727959a7a88a00462db959",
+      "text": "Science",
+      "voice": "teach"
+    },
+    {
+      "id": "d271db5fd2369dd03ad8fc42dc52ebb6",
+      "text": "Science is fun.",
+      "voice": "teach"
+    },
+    {
+      "id": "47dcbd834e669233d7eb8a51456ed217",
+      "text": "Music",
+      "voice": "teach"
+    },
+    {
+      "id": "a1cbd8353fd9573fb1591e35e8c266fb",
+      "text": "We sing in Music class.",
+      "voice": "teach"
+    },
+    {
+      "id": "978d7d6bde930f0fa9615627a15b2fc1",
+      "text": "Art",
+      "voice": "teach"
+    },
+    {
+      "id": "51358723bcc7b9111783257fbf4118b5",
+      "text": "I draw in Art class.",
+      "voice": "teach"
+    },
+    {
+      "id": "725e85ee7e0442454883ae641a36caae",
+      "text": "We run in Sports class.",
+      "voice": "teach"
+    },
+    {
+      "id": "d0eddd24c160c76dba2c647e511af3eb",
+      "text": "I type in Computer class.",
+      "voice": "teach"
+    },
+    {
+      "id": "16d2b386b2034b9488996466aaae0b57",
+      "text": "History",
+      "voice": "teach"
+    },
+    {
+      "id": "48895a1a7b2d0ba875b7ef65255d8f3b",
+      "text": "History tells old stories.",
+      "voice": "teach"
+    },
+    {
+      "id": "84352d0cf230738e4ee298790e4b5265",
+      "text": "Geography",
+      "voice": "teach"
+    },
+    {
+      "id": "9a44d56e63d5ae8dd235543e430bded0",
+      "text": "Geography is about the world.",
+      "voice": "teach"
+    },
+    {
+      "id": "f283c35ad732cfcf192774702f0c75e0",
+      "text": "Have & Has",
+      "voice": "teach"
+    },
+    {
+      "id": "aa341b629863ad338e0511f06bc646f4",
+      "text": "I / You / We / They + have",
+      "voice": "teach"
+    },
+    {
+      "id": "39f73bee367b053fb2a24efeb75441dd",
+      "text": "I have two eyes.",
+      "voice": "teach"
+    },
+    {
+      "id": "fb9743b0dfcb811a1eca4625857d2232",
+      "text": "They have a big house.",
+      "voice": "teach"
+    },
+    {
+      "id": "115a9968a4e3b2aca9aa7bec4563b3c1",
+      "text": "We have lunch at noon.",
+      "voice": "teach"
+    },
+    {
+      "id": "30af1d2db9223f39e6d2831a72d66ec8",
+      "text": "He / She / It + has",
+      "voice": "teach"
+    },
+    {
+      "id": "9be91a38351ad93d5e2804d509cacb72",
+      "text": "She has a cat.",
+      "voice": "teach"
+    },
+    {
+      "id": "18e8dd839d2cbe002a6750dd7b10e77a",
+      "text": "He has a new bike.",
+      "voice": "teach"
+    },
+    {
+      "id": "e3501f4d3bd74e817d0eedf4ee3c693d",
+      "text": "They have many books.",
+      "voice": "teach"
+    },
+    {
+      "id": "8d514e27b281be36cade5d6332645dd0",
+      "text": "The dog has four legs.",
+      "voice": "teach"
+    },
+    {
+      "id": "a3dba6fee7072e809dab5071b0e971c2",
+      "text": "There is / There are",
+      "voice": "teach"
+    },
+    {
+      "id": "83a6dc581491e51a7eb16e2ced135a6c",
+      "text": "There is (satu)",
+      "voice": "teach"
+    },
+    {
+      "id": "c592251184de9af4ac7ccae7383d5a95",
+      "text": "There is a cat on the bed.",
+      "voice": "teach"
+    },
+    {
+      "id": "0bec920f5ba85475f5f11c55957fa40b",
+      "text": "There is a book on the table.",
+      "voice": "teach"
+    },
+    {
+      "id": "8eb74bcb089ddcf01be8eb0277f841d6",
+      "text": "There are (banyak)",
+      "voice": "teach"
+    },
+    {
+      "id": "1bb8e2bd65ddf8a5bc7fd5a5334bf3b6",
+      "text": "There are three birds.",
+      "voice": "teach"
+    },
+    {
+      "id": "f9723752ed70477271d06fb04aca186f",
+      "text": "There are many stars.",
+      "voice": "teach"
+    },
+    {
+      "id": "fcd989389caa62be0e4b203e6fd214b3",
+      "text": "There are five apples.",
+      "voice": "teach"
+    },
+    {
+      "id": "52116143dd36835ae8f1396229a474ad",
+      "text": "Is there a park near here?",
+      "voice": "teach"
+    },
+    {
+      "id": "1b6dc9cfb4b6629368bffadec8113aa6",
+      "text": "There is some water.",
+      "voice": "teach"
+    },
+    {
+      "id": "910955a907e739b81ec8855763108a29",
+      "text": "be",
+      "voice": "teach"
+    },
+    {
+      "id": "b75ded68b13decc6af1730c1216a3bad",
+      "text": "And, But, Because",
+      "voice": "teach"
+    },
+    {
+      "id": "e29795166aa140900875a27f965f371e",
+      "text": "and (dan)",
+      "voice": "teach"
+    },
+    {
+      "id": "cc28cffa0193714d51c0a2fc396cd7d2",
+      "text": "I like cats and dogs.",
+      "voice": "teach"
+    },
+    {
+      "id": "c4f9689251911f9ca78269157b75f940",
+      "text": "She sings and dances.",
+      "voice": "teach"
+    },
+    {
+      "id": "be5d5d37542d75f93a87094459f76678",
+      "text": "and",
+      "voice": "teach"
+    },
+    {
+      "id": "37598dad8f8805ce708ba8c4f67ce367",
+      "text": "but",
+      "voice": "teach"
+    },
+    {
+      "id": "cc70865f1ecd933ec055851deb5bd69a",
+      "text": "because",
+      "voice": "teach"
+    },
+    {
+      "id": "e3dba1357a587ccab7814cd11d225289",
+      "text": "but (tetapi) & because (karena)",
+      "voice": "teach"
+    },
+    {
+      "id": "4953723845d00b7b68294525c274149c",
+      "text": "I like fish but I don't like shrimp.",
+      "voice": "teach"
+    },
+    {
+      "id": "c78868d9a4702f5fc6bae27ad53deb3e",
+      "text": "I am sad because it rains.",
+      "voice": "teach"
+    },
+    {
+      "id": "becae8173a2d084e20dfa05f877cac9c",
+      "text": "She is smart and kind.",
+      "voice": "teach"
+    },
+    {
+      "id": "1dcc502b1a4b63da3909639016db8b00",
+      "text": "He sleeps early because he is tired.",
+      "voice": "teach"
+    },
+    {
+      "id": "d4e26dc72fcbc298f772931e5aabaa7a",
+      "text": "We play and study every day.",
+      "voice": "teach"
+    },
+    {
+      "id": "28597320e67406298e445adfc36c9870",
+      "text": "A Day at the Zoo",
+      "voice": "teach"
+    },
+    {
+      "id": "b6f389c164a7b7a08a8d135950a14829",
+      "text": "Today is Sunday.",
+      "voice": "story"
+    },
+    {
+      "id": "feb3de0315039dfc848c1d923206c818",
+      "text": "I go to the zoo with my family.",
+      "voice": "story"
+    },
+    {
+      "id": "d6bbd68a0e985a2924435b0d4374e8f0",
+      "text": "I see a big elephant.",
+      "voice": "story"
+    },
+    {
+      "id": "8ae5b1113b6b6f8fc7f6a0e6a6f86454",
+      "text": "The monkeys are funny.",
+      "voice": "story"
+    },
+    {
+      "id": "e9828bec83a521a36265e0f76995f0fa",
+      "text": "I eat ice cream with my brother.",
+      "voice": "story"
+    },
+    {
+      "id": "02159ab5771fa70007544c0cb4de06ad",
+      "text": "We are happy today.",
+      "voice": "story"
+    },
+    {
+      "id": "797e30eae216a36301880116b9b47377",
+      "text": "What day is it?",
+      "voice": "story"
+    },
+    {
+      "id": "b2c42936a62117de53e1cf45a75e85bb",
+      "text": "Where does he go?",
+      "voice": "story"
+    },
+    {
+      "id": "bfcdd7242f93e9bb1567e8db09b8a660",
+      "text": "He goes to the zoo.",
+      "voice": "teach"
+    },
+    {
+      "id": "f4ccc5d42b7583fa2af9103a7cdf8113",
+      "text": "To the zoo",
+      "voice": "teach"
+    },
+    {
+      "id": "7b8821845bbb54eff3406d7fb49b6baa",
+      "text": "To school",
+      "voice": "teach"
+    },
+    {
+      "id": "2dfcb2711fa4489dd71362342053b4cd",
+      "text": "To the beach",
+      "voice": "teach"
+    },
+    {
+      "id": "ee7386d92bb7deb2736c56a9e0362c11",
+      "text": "What does he eat?",
+      "voice": "story"
+    },
+    {
+      "id": "8f96f5ba308a798844b5f86d9ef9914a",
+      "text": "He eats ice cream.",
+      "voice": "teach"
+    },
+    {
+      "id": "22322b2b47dab77cb37cda3ae584c36a",
+      "text": "Ice cream",
+      "voice": "teach"
+    },
+    {
+      "id": "f259f6754397af8c303a854259109dc9",
+      "text": "My Birthday Party",
+      "voice": "teach"
+    },
+    {
+      "id": "0131077a4f906877ccbc4fa25c742779",
+      "text": "Today is my birthday.",
+      "voice": "story"
+    },
+    {
+      "id": "a816cbfb920c6c461c1849253ae2613e",
+      "text": "I am eight years old now.",
+      "voice": "story"
+    },
+    {
+      "id": "e45d2f90764ca871d4e0e0d1357f4bd1",
+      "text": "My friends come to my house.",
+      "voice": "story"
+    },
+    {
+      "id": "fc1a7bd32a6dcf87a7539944c3a279cb",
+      "text": "We sing and dance together.",
+      "voice": "story"
+    },
+    {
+      "id": "2a1d45fc4a3591ed5ca36b474dd1e3b5",
+      "text": "Mom gives me a big cake.",
+      "voice": "story"
+    },
+    {
+      "id": "d6e4185237d4d399ccaf37a266c25c4d",
+      "text": "I am very happy!",
+      "voice": "story"
+    },
+    {
+      "id": "7cd2aadcb7834d0c05251188cb0e4bd1",
+      "text": "How old is she?",
+      "voice": "story"
+    },
+    {
+      "id": "b708541c12deae1462d24b46d18f03ef",
+      "text": "She is eight years old.",
+      "voice": "teach"
+    },
+    {
+      "id": "b42fe4ed7c4f55e296c239b974684ef3",
+      "text": "Who comes to the house?",
+      "voice": "story"
+    },
+    {
+      "id": "8d7aa63759ba61f5d56250d25376ae06",
+      "text": "Her friends come to the house.",
+      "voice": "teach"
+    },
+    {
+      "id": "d7fbe12d43290814bfb3bedec36dce0e",
+      "text": "Her friends",
+      "voice": "teach"
+    },
+    {
+      "id": "12a7e72af1b0559778f410327c33f735",
+      "text": "The doctor",
+      "voice": "teach"
+    },
+    {
+      "id": "d204ef779dc7563e442af9ec0d3bfe93",
+      "text": "A teacher",
+      "voice": "teach"
+    },
+    {
+      "id": "4582911d2453a1d655d74dc9e51cdc04",
+      "text": "What does Mom give?",
+      "voice": "story"
+    },
+    {
+      "id": "3f7586cac919ceca64ff5e6f44bc0766",
+      "text": "Mom gives a big cake.",
+      "voice": "teach"
+    },
+    {
+      "id": "a761e3bd4719bad26761c2d90a373397",
+      "text": "A big cake",
+      "voice": "teach"
+    },
+    {
+      "id": "97d79eb5af8141837ef252198d39f74c",
+      "text": "A ball",
+      "voice": "teach"
+    },
+    {
+      "id": "148605a9c4d66f493baa63d55da21892",
+      "text": "A book",
+      "voice": "teach"
+    },
+    {
+      "id": "0b6f39028a48706ead6f5e0fb9050f28",
+      "text": "A Rainy Day",
+      "voice": "teach"
+    },
+    {
+      "id": "8f6b0d4894fa063bd3cf2cfd5c04096d",
+      "text": "It is raining today.",
+      "voice": "story"
+    },
+    {
+      "id": "58962f29d5c7ddbcc0c361f5d01b8dd5",
+      "text": "I cannot play outside.",
+      "voice": "story"
+    },
+    {
+      "id": "4aa6bf4599c6bf15cbffb2780b37e726",
+      "text": "I read my favorite book.",
+      "voice": "story"
+    },
+    {
+      "id": "1257bb3dc1153cc6fc12ef0a78458848",
+      "text": "Mom makes hot chocolate for me.",
+      "voice": "story"
+    },
+    {
+      "id": "98ac61b3afa8a36bed1048284b5d496a",
+      "text": "The rain stops in the afternoon.",
+      "voice": "story"
+    },
+    {
+      "id": "bdf56751d1dbd619114153d6ce2b99bf",
+      "text": "I see a beautiful rainbow!",
+      "voice": "story"
+    },
+    {
+      "id": "c4150a2ad26a0c6345041f11ba914661",
+      "text": "How is the weather?",
+      "voice": "story"
+    },
+    {
+      "id": "53a8641a9d0f8d625e3185cbee49489f",
+      "text": "It is raining.",
+      "voice": "teach"
+    },
+    {
+      "id": "2e66b9c548786b254028ee93161a4b8a",
+      "text": "Raining",
+      "voice": "teach"
+    },
+    {
+      "id": "ac9729e4fe561c3af3b871d74e559c0d",
+      "text": "Snowing",
+      "voice": "teach"
+    },
+    {
+      "id": "7c7f8e4757e835e4e9cc8495eac316c5",
+      "text": "What does he read?",
+      "voice": "story"
+    },
+    {
+      "id": "2075533b31f9bf5dd11692e907b62ebe",
+      "text": "He reads a book.",
+      "voice": "teach"
+    },
+    {
+      "id": "24b2e132b70887d89460b86c3d3f73e1",
+      "text": "A letter",
+      "voice": "teach"
+    },
+    {
+      "id": "b3c879f0dd76234dd45325d86d5e3f2d",
+      "text": "A map",
+      "voice": "teach"
+    },
+    {
+      "id": "7557031dee8595fc06d09ddcab7e3141",
+      "text": "What does he see at the end?",
+      "voice": "story"
+    },
+    {
+      "id": "0ef1cb1f82083cdcbe41ca350c3c47b2",
+      "text": "He sees a rainbow.",
+      "voice": "teach"
+    },
+    {
+      "id": "7d9dbf225c89896679d4533fe9320a16",
+      "text": "A rainbow",
+      "voice": "teach"
+    },
+    {
+      "id": "e434d837aebd935bbf88f6f573c57e56",
+      "text": "A star",
+      "voice": "teach"
+    },
+    {
+      "id": "75c9aebaa34cd68e6a7b9adcbf321da0",
+      "text": "The moon",
+      "voice": "teach"
+    },
+    {
+      "id": "9148d2894b2fc08246ecfdf9550be655",
+      "text": "Great job!",
+      "voice": "praise"
+    },
+    {
+      "id": "125a99e3257092dca48f0ccb98947ee9",
+      "text": "Awesome!",
+      "voice": "praise"
+    },
+    {
+      "id": "2227aba85dc8a6dfa14f99677b35f592",
+      "text": "You are amazing!",
+      "voice": "praise"
+    },
+    {
+      "id": "1261d3cf2e23bbf69f461e544b3561c0",
+      "text": "Super!",
+      "voice": "praise"
+    },
+    {
+      "id": "b6e714ce6b1850a6a5ebfb7264e3398f",
+      "text": "Fantastic!",
+      "voice": "praise"
+    },
+    {
+      "id": "60e2016ddc5fc624739607e22b531cda",
+      "text": "Well done!",
+      "voice": "praise"
+    },
+    {
+      "id": "e9a65eb8339b0b161d30612a37b90c66",
+      "text": "You are a superstar!",
+      "voice": "praise"
+    },
+    {
+      "id": "bd08204c396936cc30b593b0678bf1e4",
+      "text": "Excellent!",
+      "voice": "praise"
+    },
+    {
+      "id": "73bc3b5a9a2873d81d33899f1fd68439",
+      "text": "Great!",
+      "voice": "praise"
+    },
+    {
+      "id": "0912f8f8b87c237b8415f1b4c0a50438",
+      "text": "Try again!",
+      "voice": "praise"
+    }
+  ]
+}

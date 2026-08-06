@@ -1,0 +1,5455 @@
+{
+  "grades": [
+    {
+      "level": 1,
+      "title": "Kelas 1",
+      "subtitle": "Ayo Mulai!",
+      "emoji": "🌱",
+      "colors": [
+        4294929259,
+        4294945101
+      ],
+      "units": [
+        {
+          "id": "g1_alpha",
+          "title": "Alphabet Fun",
+          "titleId": "Huruf A-Z",
+          "emoji": "🔤",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Apple",
+              "idn": "Apel",
+              "emoji": "🍎",
+              "big": "Aa"
+            },
+            {
+              "en": "Ball",
+              "idn": "Bola",
+              "emoji": "⚽",
+              "big": "Bb"
+            },
+            {
+              "en": "Cat",
+              "idn": "Kucing",
+              "emoji": "🐱",
+              "big": "Cc"
+            },
+            {
+              "en": "Dog",
+              "idn": "Anjing",
+              "emoji": "🐶",
+              "big": "Dd"
+            },
+            {
+              "en": "Egg",
+              "idn": "Telur",
+              "emoji": "🥚",
+              "big": "Ee"
+            },
+            {
+              "en": "Fish",
+              "idn": "Ikan",
+              "emoji": "🐟",
+              "big": "Ff"
+            },
+            {
+              "en": "Grape",
+              "idn": "Anggur",
+              "emoji": "🍇",
+              "big": "Gg"
+            },
+            {
+              "en": "Hat",
+              "idn": "Topi",
+              "emoji": "👒",
+              "big": "Hh"
+            },
+            {
+              "en": "Ice Cream",
+              "idn": "Es krim",
+              "emoji": "🍦",
+              "big": "Ii"
+            },
+            {
+              "en": "Juice",
+              "idn": "Jus",
+              "emoji": "🧃",
+              "big": "Jj"
+            },
+            {
+              "en": "Kite",
+              "idn": "Layangan",
+              "emoji": "🪁",
+              "big": "Kk"
+            },
+            {
+              "en": "Lion",
+              "idn": "Singa",
+              "emoji": "🦁",
+              "big": "Ll"
+            },
+            {
+              "en": "Moon",
+              "idn": "Bulan",
+              "emoji": "🌙",
+              "big": "Mm"
+            },
+            {
+              "en": "Nose",
+              "idn": "Hidung",
+              "emoji": "👃",
+              "big": "Nn"
+            },
+            {
+              "en": "Orange",
+              "idn": "Jeruk",
+              "emoji": "🍊",
+              "big": "Oo"
+            },
+            {
+              "en": "Pencil",
+              "idn": "Pensil",
+              "emoji": "✏️",
+              "big": "Pp"
+            },
+            {
+              "en": "Queen",
+              "idn": "Ratu",
+              "emoji": "👸",
+              "big": "Qq"
+            },
+            {
+              "en": "Rabbit",
+              "idn": "Kelinci",
+              "emoji": "🐰",
+              "big": "Rr"
+            },
+            {
+              "en": "Sun",
+              "idn": "Matahari",
+              "emoji": "☀️",
+              "big": "Ss"
+            },
+            {
+              "en": "Tiger",
+              "idn": "Harimau",
+              "emoji": "🐯",
+              "big": "Tt"
+            },
+            {
+              "en": "Umbrella",
+              "idn": "Payung",
+              "emoji": "☂️",
+              "big": "Uu"
+            },
+            {
+              "en": "Violin",
+              "idn": "Biola",
+              "emoji": "🎻",
+              "big": "Vv"
+            },
+            {
+              "en": "Whale",
+              "idn": "Paus",
+              "emoji": "🐳",
+              "big": "Ww"
+            },
+            {
+              "en": "Xylophone",
+              "idn": "Gambang",
+              "emoji": "🎶",
+              "big": "Xx"
+            },
+            {
+              "en": "Yo-yo",
+              "idn": "Yoyo",
+              "emoji": "🪀",
+              "big": "Yy"
+            },
+            {
+              "en": "Zebra",
+              "idn": "Zebra",
+              "emoji": "🦓",
+              "big": "Zz"
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g1_num",
+          "title": "Numbers",
+          "titleId": "Angka 1-10",
+          "emoji": "🔢",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "One",
+              "idn": "Satu",
+              "emoji": "🍎",
+              "big": "1"
+            },
+            {
+              "en": "Two",
+              "idn": "Dua",
+              "emoji": "🍎🍎",
+              "big": "2"
+            },
+            {
+              "en": "Three",
+              "idn": "Tiga",
+              "emoji": "🍎🍎🍎",
+              "big": "3"
+            },
+            {
+              "en": "Four",
+              "idn": "Empat",
+              "emoji": "🍎🍎🍎🍎",
+              "big": "4"
+            },
+            {
+              "en": "Five",
+              "idn": "Lima",
+              "emoji": "🍎🍎🍎🍎🍎",
+              "big": "5"
+            },
+            {
+              "en": "Six",
+              "idn": "Enam",
+              "emoji": "🍎🍎🍎🍎🍎🍎",
+              "big": "6"
+            },
+            {
+              "en": "Seven",
+              "idn": "Tujuh",
+              "emoji": "🍎🍎🍎🍎🍎🍎🍎",
+              "big": "7"
+            },
+            {
+              "en": "Eight",
+              "idn": "Delapan",
+              "emoji": "🍎🍎🍎🍎🍎🍎🍎🍎",
+              "big": "8"
+            },
+            {
+              "en": "Nine",
+              "idn": "Sembilan",
+              "emoji": "🍎🍎🍎🍎🍎🍎🍎🍎🍎",
+              "big": "9"
+            },
+            {
+              "en": "Ten",
+              "idn": "Sepuluh",
+              "emoji": "🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎",
+              "big": "10"
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g1_colors",
+          "title": "Colors",
+          "titleId": "Warna",
+          "emoji": "🌈",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Red",
+              "idn": "Merah",
+              "emoji": "🔴"
+            },
+            {
+              "en": "Blue",
+              "idn": "Biru",
+              "emoji": "🔵"
+            },
+            {
+              "en": "Yellow",
+              "idn": "Kuning",
+              "emoji": "🟡"
+            },
+            {
+              "en": "Green",
+              "idn": "Hijau",
+              "emoji": "🟢"
+            },
+            {
+              "en": "Orange",
+              "idn": "Oranye",
+              "emoji": "🟠"
+            },
+            {
+              "en": "Purple",
+              "idn": "Ungu",
+              "emoji": "🟣"
+            },
+            {
+              "en": "Pink",
+              "idn": "Merah muda",
+              "emoji": "💗"
+            },
+            {
+              "en": "Black",
+              "idn": "Hitam",
+              "emoji": "⚫"
+            },
+            {
+              "en": "White",
+              "idn": "Putih",
+              "emoji": "⚪"
+            },
+            {
+              "en": "Brown",
+              "idn": "Cokelat",
+              "emoji": "🟤"
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g1_animals",
+          "title": "Animals",
+          "titleId": "Hewan di Sekitarku",
+          "emoji": "🐾",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Cat",
+              "idn": "Kucing",
+              "emoji": "🐱"
+            },
+            {
+              "en": "Dog",
+              "idn": "Anjing",
+              "emoji": "🐶"
+            },
+            {
+              "en": "Bird",
+              "idn": "Burung",
+              "emoji": "🐦"
+            },
+            {
+              "en": "Fish",
+              "idn": "Ikan",
+              "emoji": "🐟"
+            },
+            {
+              "en": "Rabbit",
+              "idn": "Kelinci",
+              "emoji": "🐰"
+            },
+            {
+              "en": "Duck",
+              "idn": "Bebek",
+              "emoji": "🦆"
+            },
+            {
+              "en": "Cow",
+              "idn": "Sapi",
+              "emoji": "🐄"
+            },
+            {
+              "en": "Horse",
+              "idn": "Kuda",
+              "emoji": "🐴"
+            },
+            {
+              "en": "Sheep",
+              "idn": "Domba",
+              "emoji": "🐑"
+            },
+            {
+              "en": "Chicken",
+              "idn": "Ayam",
+              "emoji": "🐔"
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g1_fruits",
+          "title": "Fruits",
+          "titleId": "Buah-buahan",
+          "emoji": "🍎",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Apple",
+              "idn": "Apel",
+              "emoji": "🍎"
+            },
+            {
+              "en": "Banana",
+              "idn": "Pisang",
+              "emoji": "🍌"
+            },
+            {
+              "en": "Orange",
+              "idn": "Jeruk",
+              "emoji": "🍊"
+            },
+            {
+              "en": "Grape",
+              "idn": "Anggur",
+              "emoji": "🍇"
+            },
+            {
+              "en": "Watermelon",
+              "idn": "Semangka",
+              "emoji": "🍉"
+            },
+            {
+              "en": "Strawberry",
+              "idn": "Stroberi",
+              "emoji": "🍓"
+            },
+            {
+              "en": "Mango",
+              "idn": "Mangga",
+              "emoji": "🥭"
+            },
+            {
+              "en": "Pineapple",
+              "idn": "Nanas",
+              "emoji": "🍍"
+            },
+            {
+              "en": "Pear",
+              "idn": "Pir",
+              "emoji": "🍐"
+            },
+            {
+              "en": "Cherry",
+              "idn": "Ceri",
+              "emoji": "🍒"
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g1_body",
+          "title": "My Body",
+          "titleId": "Tubuhku",
+          "emoji": "🧍",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Head",
+              "idn": "Kepala",
+              "emoji": "👤"
+            },
+            {
+              "en": "Eye",
+              "idn": "Mata",
+              "emoji": "👁️"
+            },
+            {
+              "en": "Ear",
+              "idn": "Telinga",
+              "emoji": "👂"
+            },
+            {
+              "en": "Nose",
+              "idn": "Hidung",
+              "emoji": "👃"
+            },
+            {
+              "en": "Mouth",
+              "idn": "Mulut",
+              "emoji": "👄"
+            },
+            {
+              "en": "Hand",
+              "idn": "Tangan",
+              "emoji": "✋"
+            },
+            {
+              "en": "Foot",
+              "idn": "Kaki",
+              "emoji": "🦶"
+            },
+            {
+              "en": "Hair",
+              "idn": "Rambut",
+              "emoji": "💇"
+            },
+            {
+              "en": "Teeth",
+              "idn": "Gigi",
+              "emoji": "🦷"
+            },
+            {
+              "en": "Finger",
+              "idn": "Jari",
+              "emoji": "👆"
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g1_family",
+          "title": "My Family",
+          "titleId": "Keluargaku",
+          "emoji": "👨‍👩‍👧",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Father",
+              "idn": "Ayah",
+              "emoji": "👨"
+            },
+            {
+              "en": "Mother",
+              "idn": "Ibu",
+              "emoji": "👩"
+            },
+            {
+              "en": "Brother",
+              "idn": "Saudara laki-laki",
+              "emoji": "👦"
+            },
+            {
+              "en": "Sister",
+              "idn": "Saudara perempuan",
+              "emoji": "👧"
+            },
+            {
+              "en": "Grandfather",
+              "idn": "Kakek",
+              "emoji": "👴"
+            },
+            {
+              "en": "Grandmother",
+              "idn": "Nenek",
+              "emoji": "👵"
+            },
+            {
+              "en": "Baby",
+              "idn": "Bayi",
+              "emoji": "👶"
+            },
+            {
+              "en": "Uncle",
+              "idn": "Paman",
+              "emoji": "🧔"
+            },
+            {
+              "en": "Aunt",
+              "idn": "Bibi",
+              "emoji": "👱‍♀️"
+            },
+            {
+              "en": "Family",
+              "idn": "Keluarga",
+              "emoji": "👨‍👩‍👧"
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g1_toys",
+          "title": "My Toys",
+          "titleId": "Mainanku",
+          "emoji": "🧸",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Ball",
+              "idn": "Bola",
+              "emoji": "⚽"
+            },
+            {
+              "en": "Doll",
+              "idn": "Boneka",
+              "emoji": "🎎"
+            },
+            {
+              "en": "Kite",
+              "idn": "Layangan",
+              "emoji": "🪁"
+            },
+            {
+              "en": "Balloon",
+              "idn": "Balon",
+              "emoji": "🎈"
+            },
+            {
+              "en": "Teddy Bear",
+              "idn": "Boneka beruang",
+              "emoji": "🧸"
+            },
+            {
+              "en": "Robot",
+              "idn": "Robot",
+              "emoji": "🤖"
+            },
+            {
+              "en": "Blocks",
+              "idn": "Balok susun",
+              "emoji": "🧱"
+            },
+            {
+              "en": "Puzzle",
+              "idn": "Puzzle",
+              "emoji": "🧩"
+            },
+            {
+              "en": "Drum",
+              "idn": "Drum",
+              "emoji": "🥁"
+            },
+            {
+              "en": "Toy Car",
+              "idn": "Mobil mainan",
+              "emoji": "🏎️"
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g1_shapes",
+          "title": "Shapes",
+          "titleId": "Bentuk-Bentuk",
+          "emoji": "🔷",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Circle",
+              "idn": "Lingkaran",
+              "emoji": "⭕"
+            },
+            {
+              "en": "Square",
+              "idn": "Persegi",
+              "emoji": "🟦"
+            },
+            {
+              "en": "Triangle",
+              "idn": "Segitiga",
+              "emoji": "🔺"
+            },
+            {
+              "en": "Star",
+              "idn": "Bintang",
+              "emoji": "⭐"
+            },
+            {
+              "en": "Heart",
+              "idn": "Hati",
+              "emoji": "❤️"
+            },
+            {
+              "en": "Diamond",
+              "idn": "Wajik",
+              "emoji": "🔶"
+            },
+            {
+              "en": "Arrow",
+              "idn": "Panah",
+              "emoji": "➡️"
+            },
+            {
+              "en": "Cube",
+              "idn": "Kubus",
+              "emoji": "🧊"
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g1_num2",
+          "title": "Numbers 11-20",
+          "titleId": "Angka 11-20",
+          "emoji": "💯",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Eleven",
+              "idn": "Sebelas",
+              "emoji": "🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎\n🍎",
+              "big": "11"
+            },
+            {
+              "en": "Twelve",
+              "idn": "Dua belas",
+              "emoji": "🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎\n🍎🍎",
+              "big": "12"
+            },
+            {
+              "en": "Thirteen",
+              "idn": "Tiga belas",
+              "emoji": "🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎\n🍎🍎🍎",
+              "big": "13"
+            },
+            {
+              "en": "Fourteen",
+              "idn": "Empat belas",
+              "emoji": "🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎\n🍎🍎🍎🍎",
+              "big": "14"
+            },
+            {
+              "en": "Fifteen",
+              "idn": "Lima belas",
+              "emoji": "🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎\n🍎🍎🍎🍎🍎",
+              "big": "15"
+            },
+            {
+              "en": "Sixteen",
+              "idn": "Enam belas",
+              "emoji": "🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎\n🍎🍎🍎🍎🍎🍎",
+              "big": "16"
+            },
+            {
+              "en": "Seventeen",
+              "idn": "Tujuh belas",
+              "emoji": "🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎\n🍎🍎🍎🍎🍎🍎🍎",
+              "big": "17"
+            },
+            {
+              "en": "Eighteen",
+              "idn": "Delapan belas",
+              "emoji": "🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎\n🍎🍎🍎🍎🍎🍎🍎🍎",
+              "big": "18"
+            },
+            {
+              "en": "Nineteen",
+              "idn": "Sembilan belas",
+              "emoji": "🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎\n🍎🍎🍎🍎🍎🍎🍎🍎🍎",
+              "big": "19"
+            },
+            {
+              "en": "Twenty",
+              "idn": "Dua puluh",
+              "emoji": "🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎\n🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎",
+              "big": "20"
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g1_smallanimals",
+          "title": "Little Animals",
+          "titleId": "Hewan Kecil",
+          "emoji": "🐜",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Pig",
+              "idn": "Babi",
+              "emoji": "🐷"
+            },
+            {
+              "en": "Frog",
+              "idn": "Katak",
+              "emoji": "🐸"
+            },
+            {
+              "en": "Mouse",
+              "idn": "Tikus",
+              "emoji": "🐭"
+            },
+            {
+              "en": "Bee",
+              "idn": "Lebah",
+              "emoji": "🐝"
+            },
+            {
+              "en": "Butterfly",
+              "idn": "Kupu-kupu",
+              "emoji": "🦋"
+            },
+            {
+              "en": "Ant",
+              "idn": "Semut",
+              "emoji": "🐜"
+            },
+            {
+              "en": "Spider",
+              "idn": "Laba-laba",
+              "emoji": "🕷️"
+            },
+            {
+              "en": "Snail",
+              "idn": "Siput",
+              "emoji": "🐌"
+            },
+            {
+              "en": "Turtle",
+              "idn": "Kura-kura",
+              "emoji": "🐢"
+            },
+            {
+              "en": "Owl",
+              "idn": "Burung hantu",
+              "emoji": "🦉"
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g1_food",
+          "title": "Yummy Food",
+          "titleId": "Makanan Kesukaanku",
+          "emoji": "🍚",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Rice",
+              "idn": "Nasi",
+              "emoji": "🍚"
+            },
+            {
+              "en": "Egg",
+              "idn": "Telur",
+              "emoji": "🥚"
+            },
+            {
+              "en": "Milk",
+              "idn": "Susu",
+              "emoji": "🥛"
+            },
+            {
+              "en": "Bread",
+              "idn": "Roti",
+              "emoji": "🍞"
+            },
+            {
+              "en": "Cake",
+              "idn": "Kue",
+              "emoji": "🍰"
+            },
+            {
+              "en": "Candy",
+              "idn": "Permen",
+              "emoji": "🍬"
+            },
+            {
+              "en": "Water",
+              "idn": "Air",
+              "emoji": "💧"
+            },
+            {
+              "en": "Juice",
+              "idn": "Jus",
+              "emoji": "🧃"
+            },
+            {
+              "en": "Ice Cream",
+              "idn": "Es krim",
+              "emoji": "🍦"
+            },
+            {
+              "en": "Noodles",
+              "idn": "Mi",
+              "emoji": "🍜"
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g1_things",
+          "title": "My Things",
+          "titleId": "Barang-barangku",
+          "emoji": "🎒",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Book",
+              "idn": "Buku",
+              "emoji": "📖"
+            },
+            {
+              "en": "Pencil",
+              "idn": "Pensil",
+              "emoji": "✏️"
+            },
+            {
+              "en": "Bag",
+              "idn": "Tas",
+              "emoji": "🎒"
+            },
+            {
+              "en": "Hat",
+              "idn": "Topi",
+              "emoji": "👒"
+            },
+            {
+              "en": "Umbrella",
+              "idn": "Payung",
+              "emoji": "☂️"
+            },
+            {
+              "en": "Key",
+              "idn": "Kunci",
+              "emoji": "🔑"
+            },
+            {
+              "en": "Clock",
+              "idn": "Jam",
+              "emoji": "⏰"
+            },
+            {
+              "en": "Watch",
+              "idn": "Jam tangan",
+              "emoji": "⌚"
+            },
+            {
+              "en": "Phone",
+              "idn": "Telepon",
+              "emoji": "📱"
+            },
+            {
+              "en": "TV",
+              "idn": "Televisi",
+              "emoji": "📺"
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g1_clothes",
+          "title": "Clothes",
+          "titleId": "Pakaian",
+          "emoji": "👕",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Shirt",
+              "idn": "Kemeja",
+              "emoji": "👕"
+            },
+            {
+              "en": "Pants",
+              "idn": "Celana panjang",
+              "emoji": "👖"
+            },
+            {
+              "en": "Shoes",
+              "idn": "Sepatu",
+              "emoji": "👟"
+            },
+            {
+              "en": "Socks",
+              "idn": "Kaos kaki",
+              "emoji": "🧦"
+            },
+            {
+              "en": "Dress",
+              "idn": "Gaun",
+              "emoji": "👗"
+            },
+            {
+              "en": "Jacket",
+              "idn": "Jaket",
+              "emoji": "🧥"
+            },
+            {
+              "en": "Shorts",
+              "idn": "Celana pendek",
+              "emoji": "🩳"
+            },
+            {
+              "en": "Glasses",
+              "idn": "Kacamata",
+              "emoji": "👓"
+            },
+            {
+              "en": "Gloves",
+              "idn": "Sarung tangan",
+              "emoji": "🧤"
+            },
+            {
+              "en": "Scarf",
+              "idn": "Syal",
+              "emoji": "🧣"
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g1_nature",
+          "title": "Nature",
+          "titleId": "Alam di Sekitarku",
+          "emoji": "🌳",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Sun",
+              "idn": "Matahari",
+              "emoji": "☀️"
+            },
+            {
+              "en": "Moon",
+              "idn": "Bulan",
+              "emoji": "🌙"
+            },
+            {
+              "en": "Star",
+              "idn": "Bintang",
+              "emoji": "⭐"
+            },
+            {
+              "en": "Cloud",
+              "idn": "Awan",
+              "emoji": "☁️"
+            },
+            {
+              "en": "Rain",
+              "idn": "Hujan",
+              "emoji": "🌧️"
+            },
+            {
+              "en": "Flower",
+              "idn": "Bunga",
+              "emoji": "🌸"
+            },
+            {
+              "en": "Tree",
+              "idn": "Pohon",
+              "emoji": "🌳"
+            },
+            {
+              "en": "Leaf",
+              "idn": "Daun",
+              "emoji": "🍃"
+            },
+            {
+              "en": "Rainbow",
+              "idn": "Pelangi",
+              "emoji": "🌈"
+            },
+            {
+              "en": "Mountain",
+              "idn": "Gunung",
+              "emoji": "⛰️"
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g1_home",
+          "title": "At Home",
+          "titleId": "Di Rumah",
+          "emoji": "🏠",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "House",
+              "idn": "Rumah",
+              "emoji": "🏠"
+            },
+            {
+              "en": "Door",
+              "idn": "Pintu",
+              "emoji": "🚪"
+            },
+            {
+              "en": "Window",
+              "idn": "Jendela",
+              "emoji": "🪟"
+            },
+            {
+              "en": "Bed",
+              "idn": "Tempat tidur",
+              "emoji": "🛏️"
+            },
+            {
+              "en": "Chair",
+              "idn": "Kursi",
+              "emoji": "🪑"
+            },
+            {
+              "en": "Sofa",
+              "idn": "Sofa",
+              "emoji": "🛋️"
+            },
+            {
+              "en": "Lamp",
+              "idn": "Lampu",
+              "emoji": "💡"
+            },
+            {
+              "en": "Bathroom",
+              "idn": "Kamar mandi",
+              "emoji": "🛁"
+            },
+            {
+              "en": "Kitchen",
+              "idn": "Dapur",
+              "emoji": "🍳"
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g1_school",
+          "title": "At School",
+          "titleId": "Di Sekolah",
+          "emoji": "🏫",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "School",
+              "idn": "Sekolah",
+              "emoji": "🏫"
+            },
+            {
+              "en": "Teacher",
+              "idn": "Guru",
+              "emoji": "👩‍🏫"
+            },
+            {
+              "en": "Ruler",
+              "idn": "Penggaris",
+              "emoji": "📏"
+            },
+            {
+              "en": "Pen",
+              "idn": "Pulpen",
+              "emoji": "🖊️"
+            },
+            {
+              "en": "Crayon",
+              "idn": "Krayon",
+              "emoji": "🖍️"
+            },
+            {
+              "en": "Scissors",
+              "idn": "Gunting",
+              "emoji": "✂️"
+            },
+            {
+              "en": "Paint",
+              "idn": "Cat warna",
+              "emoji": "🎨"
+            },
+            {
+              "en": "Computer",
+              "idn": "Komputer",
+              "emoji": "💻"
+            },
+            {
+              "en": "Bell",
+              "idn": "Bel",
+              "emoji": "🔔"
+            },
+            {
+              "en": "Flag",
+              "idn": "Bendera",
+              "emoji": "🚩"
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g1_vehicles",
+          "title": "Vehicles",
+          "titleId": "Kendaraan",
+          "emoji": "🚗",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Car",
+              "idn": "Mobil",
+              "emoji": "🚗"
+            },
+            {
+              "en": "Bus",
+              "idn": "Bus",
+              "emoji": "🚌"
+            },
+            {
+              "en": "Train",
+              "idn": "Kereta",
+              "emoji": "🚂"
+            },
+            {
+              "en": "Airplane",
+              "idn": "Pesawat",
+              "emoji": "✈️"
+            },
+            {
+              "en": "Ship",
+              "idn": "Kapal",
+              "emoji": "🚢"
+            },
+            {
+              "en": "Bicycle",
+              "idn": "Sepeda",
+              "emoji": "🚲"
+            },
+            {
+              "en": "Motorcycle",
+              "idn": "Sepeda motor",
+              "emoji": "🏍️"
+            },
+            {
+              "en": "Truck",
+              "idn": "Truk",
+              "emoji": "🚚"
+            },
+            {
+              "en": "Taxi",
+              "idn": "Taksi",
+              "emoji": "🚕"
+            },
+            {
+              "en": "Helicopter",
+              "idn": "Helikopter",
+              "emoji": "🚁"
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g1_actions",
+          "title": "Actions",
+          "titleId": "Kata Kerja Pertama",
+          "emoji": "🏃",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Eat",
+              "idn": "Makan",
+              "emoji": "🍽️"
+            },
+            {
+              "en": "Drink",
+              "idn": "Minum",
+              "emoji": "🥤"
+            },
+            {
+              "en": "Sleep",
+              "idn": "Tidur",
+              "emoji": "😴"
+            },
+            {
+              "en": "Play",
+              "idn": "Bermain",
+              "emoji": "⚽"
+            },
+            {
+              "en": "Read",
+              "idn": "Membaca",
+              "emoji": "📖"
+            },
+            {
+              "en": "Write",
+              "idn": "Menulis",
+              "emoji": "✍️"
+            },
+            {
+              "en": "Run",
+              "idn": "Berlari",
+              "emoji": "🏃"
+            },
+            {
+              "en": "Walk",
+              "idn": "Berjalan",
+              "emoji": "🚶"
+            },
+            {
+              "en": "Swim",
+              "idn": "Berenang",
+              "emoji": "🏊"
+            },
+            {
+              "en": "Jump",
+              "idn": "Melompat",
+              "emoji": "🤸"
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g1_feelings",
+          "title": "Feelings",
+          "titleId": "Perasaanku",
+          "emoji": "😊",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Happy",
+              "idn": "Senang",
+              "emoji": "😊"
+            },
+            {
+              "en": "Sad",
+              "idn": "Sedih",
+              "emoji": "😢"
+            },
+            {
+              "en": "Angry",
+              "idn": "Marah",
+              "emoji": "😠"
+            },
+            {
+              "en": "Scared",
+              "idn": "Takut",
+              "emoji": "😨"
+            },
+            {
+              "en": "Tired",
+              "idn": "Lelah",
+              "emoji": "🥱"
+            },
+            {
+              "en": "Hungry",
+              "idn": "Lapar",
+              "emoji": "😋"
+            },
+            {
+              "en": "Sick",
+              "idn": "Sakit",
+              "emoji": "🤒"
+            },
+            {
+              "en": "Surprised",
+              "idn": "Terkejut",
+              "emoji": "😲"
+            }
+          ],
+          "pages": []
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "title": "Kelas 2",
+      "subtitle": "Petualangan Kata",
+      "emoji": "🎈",
+      "colors": [
+        4294938539,
+        4291263999
+      ],
+      "units": [
+        {
+          "id": "g2_wild",
+          "title": "Wild Animals",
+          "titleId": "Hewan Liar",
+          "emoji": "🦁",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Elephant",
+              "idn": "Gajah",
+              "emoji": "🐘",
+              "sentence": "The elephant is big."
+            },
+            {
+              "en": "Tiger",
+              "idn": "Harimau",
+              "emoji": "🐯",
+              "sentence": "The tiger is strong."
+            },
+            {
+              "en": "Lion",
+              "idn": "Singa",
+              "emoji": "🦁",
+              "sentence": "The lion is the king."
+            },
+            {
+              "en": "Monkey",
+              "idn": "Monyet",
+              "emoji": "🐵",
+              "sentence": "The monkey is funny."
+            },
+            {
+              "en": "Snake",
+              "idn": "Ular",
+              "emoji": "🐍",
+              "sentence": "The snake is long."
+            },
+            {
+              "en": "Giraffe",
+              "idn": "Jerapah",
+              "emoji": "🦒",
+              "sentence": "The giraffe is tall."
+            },
+            {
+              "en": "Zebra",
+              "idn": "Zebra",
+              "emoji": "🦓",
+              "sentence": "The zebra has stripes."
+            },
+            {
+              "en": "Panda",
+              "idn": "Panda",
+              "emoji": "🐼",
+              "sentence": "The panda eats bamboo."
+            },
+            {
+              "en": "Bear",
+              "idn": "Beruang",
+              "emoji": "🐻",
+              "sentence": "The bear is big."
+            },
+            {
+              "en": "Crocodile",
+              "idn": "Buaya",
+              "emoji": "🐊",
+              "sentence": "The crocodile is scary."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g2_sea",
+          "title": "Sea Animals",
+          "titleId": "Hewan Laut",
+          "emoji": "🐠",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Octopus",
+              "idn": "Gurita",
+              "emoji": "🐙",
+              "sentence": "The octopus has eight arms."
+            },
+            {
+              "en": "Whale",
+              "idn": "Paus",
+              "emoji": "🐳",
+              "sentence": "The whale is huge."
+            },
+            {
+              "en": "Dolphin",
+              "idn": "Lumba-lumba",
+              "emoji": "🐬",
+              "sentence": "The dolphin is smart."
+            },
+            {
+              "en": "Shark",
+              "idn": "Hiu",
+              "emoji": "🦈",
+              "sentence": "The shark has sharp teeth."
+            },
+            {
+              "en": "Crab",
+              "idn": "Kepiting",
+              "emoji": "🦀",
+              "sentence": "The crab walks sideways."
+            },
+            {
+              "en": "Shrimp",
+              "idn": "Udang",
+              "emoji": "🦐",
+              "sentence": "The shrimp is small."
+            },
+            {
+              "en": "Squid",
+              "idn": "Cumi-cumi",
+              "emoji": "🦑",
+              "sentence": "The squid swims fast."
+            },
+            {
+              "en": "Shell",
+              "idn": "Kerang",
+              "emoji": "🐚",
+              "sentence": "I find a pretty shell."
+            },
+            {
+              "en": "Seal",
+              "idn": "Anjing laut",
+              "emoji": "🦭",
+              "sentence": "The seal claps its hands."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g2_birds",
+          "title": "Beautiful Birds",
+          "titleId": "Burung-Burung",
+          "emoji": "🦜",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Parrot",
+              "idn": "Burung nuri",
+              "emoji": "🦜",
+              "sentence": "The parrot can talk."
+            },
+            {
+              "en": "Penguin",
+              "idn": "Penguin",
+              "emoji": "🐧",
+              "sentence": "The penguin cannot fly."
+            },
+            {
+              "en": "Eagle",
+              "idn": "Elang",
+              "emoji": "🦅",
+              "sentence": "The eagle flies high."
+            },
+            {
+              "en": "Swan",
+              "idn": "Angsa",
+              "emoji": "🦢",
+              "sentence": "The swan is white."
+            },
+            {
+              "en": "Flamingo",
+              "idn": "Flamingo",
+              "emoji": "🦩",
+              "sentence": "The flamingo is pink."
+            },
+            {
+              "en": "Peacock",
+              "idn": "Burung merak",
+              "emoji": "🦚",
+              "sentence": "The peacock is beautiful."
+            },
+            {
+              "en": "Bat",
+              "idn": "Kelelawar",
+              "emoji": "🦇",
+              "sentence": "The bat sleeps in the day."
+            },
+            {
+              "en": "Rooster",
+              "idn": "Ayam jago",
+              "emoji": "🐓",
+              "sentence": "The rooster wakes me up."
+            },
+            {
+              "en": "Turkey",
+              "idn": "Kalkun",
+              "emoji": "🦃",
+              "sentence": "The turkey is big."
+            },
+            {
+              "en": "Dove",
+              "idn": "Merpati",
+              "emoji": "🕊️",
+              "sentence": "The dove flies free."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g2_vegetables",
+          "title": "Vegetables",
+          "titleId": "Sayur-Sayuran",
+          "emoji": "🥕",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Carrot",
+              "idn": "Wortel",
+              "emoji": "🥕",
+              "sentence": "Rabbits eat carrots."
+            },
+            {
+              "en": "Corn",
+              "idn": "Jagung",
+              "emoji": "🌽",
+              "sentence": "I like sweet corn."
+            },
+            {
+              "en": "Tomato",
+              "idn": "Tomat",
+              "emoji": "🍅",
+              "sentence": "The tomato is red."
+            },
+            {
+              "en": "Potato",
+              "idn": "Kentang",
+              "emoji": "🥔",
+              "sentence": "I like potatoes."
+            },
+            {
+              "en": "Broccoli",
+              "idn": "Brokoli",
+              "emoji": "🥦",
+              "sentence": "Broccoli is green."
+            },
+            {
+              "en": "Cucumber",
+              "idn": "Mentimun",
+              "emoji": "🥒",
+              "sentence": "The cucumber is fresh."
+            },
+            {
+              "en": "Onion",
+              "idn": "Bawang",
+              "emoji": "🧅",
+              "sentence": "Mom cuts the onion."
+            },
+            {
+              "en": "Garlic",
+              "idn": "Bawang putih",
+              "emoji": "🧄",
+              "sentence": "Garlic smells strong."
+            },
+            {
+              "en": "Mushroom",
+              "idn": "Jamur",
+              "emoji": "🍄",
+              "sentence": "The mushroom is small."
+            },
+            {
+              "en": "Chili",
+              "idn": "Cabai",
+              "emoji": "🌶️",
+              "sentence": "The chili is hot!"
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g2_snacks",
+          "title": "Snacks",
+          "titleId": "Camilan",
+          "emoji": "🍪",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Cookie",
+              "idn": "Kukis",
+              "emoji": "🍪",
+              "sentence": "I eat a cookie."
+            },
+            {
+              "en": "Donut",
+              "idn": "Donat",
+              "emoji": "🍩",
+              "sentence": "The donut is sweet."
+            },
+            {
+              "en": "Chocolate",
+              "idn": "Cokelat",
+              "emoji": "🍫",
+              "sentence": "I like chocolate."
+            },
+            {
+              "en": "Popcorn",
+              "idn": "Popcorn",
+              "emoji": "🍿",
+              "sentence": "We eat popcorn."
+            },
+            {
+              "en": "Lollipop",
+              "idn": "Lolipop",
+              "emoji": "🍭",
+              "sentence": "The lollipop is sweet."
+            },
+            {
+              "en": "Cupcake",
+              "idn": "Kue mangkuk",
+              "emoji": "🧁",
+              "sentence": "The cupcake is pretty."
+            },
+            {
+              "en": "Pizza",
+              "idn": "Pizza",
+              "emoji": "🍕",
+              "sentence": "I like pizza."
+            },
+            {
+              "en": "Burger",
+              "idn": "Burger",
+              "emoji": "🍔",
+              "sentence": "The burger is big."
+            },
+            {
+              "en": "French Fries",
+              "idn": "Kentang goreng",
+              "emoji": "🍟",
+              "sentence": "The fries are salty."
+            },
+            {
+              "en": "Hotdog",
+              "idn": "Hotdog",
+              "emoji": "🌭",
+              "sentence": "The hotdog is yummy."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g2_places",
+          "title": "Places",
+          "titleId": "Tempat-Tempat",
+          "emoji": "🏙️",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "School",
+              "idn": "Sekolah",
+              "emoji": "🏫",
+              "sentence": "I study at school."
+            },
+            {
+              "en": "Hospital",
+              "idn": "Rumah sakit",
+              "emoji": "🏥",
+              "sentence": "The doctor works at the hospital."
+            },
+            {
+              "en": "Market",
+              "idn": "Pasar",
+              "emoji": "🏪",
+              "sentence": "Mom shops at the market."
+            },
+            {
+              "en": "Park",
+              "idn": "Taman",
+              "emoji": "🌳",
+              "sentence": "We play at the park."
+            },
+            {
+              "en": "Zoo",
+              "idn": "Kebun binatang",
+              "emoji": "🦒",
+              "sentence": "I see animals at the zoo."
+            },
+            {
+              "en": "Mosque",
+              "idn": "Masjid",
+              "emoji": "🕌",
+              "sentence": "We pray at the mosque."
+            },
+            {
+              "en": "Church",
+              "idn": "Gereja",
+              "emoji": "⛪",
+              "sentence": "They pray at the church."
+            },
+            {
+              "en": "Beach",
+              "idn": "Pantai",
+              "emoji": "🏖️",
+              "sentence": "We play at the beach."
+            },
+            {
+              "en": "Library",
+              "idn": "Perpustakaan",
+              "emoji": "📚",
+              "sentence": "I read books at the library."
+            },
+            {
+              "en": "Restaurant",
+              "idn": "Restoran",
+              "emoji": "🍴",
+              "sentence": "We eat at the restaurant."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g2_jobs",
+          "title": "Jobs",
+          "titleId": "Pekerjaan",
+          "emoji": "👨‍⚕️",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Doctor",
+              "idn": "Dokter",
+              "emoji": "👨‍⚕️",
+              "sentence": "My father is a doctor."
+            },
+            {
+              "en": "Nurse",
+              "idn": "Perawat",
+              "emoji": "👩‍⚕️",
+              "sentence": "The nurse helps the doctor."
+            },
+            {
+              "en": "Teacher",
+              "idn": "Guru",
+              "emoji": "👩‍🏫",
+              "sentence": "She is a teacher."
+            },
+            {
+              "en": "Police Officer",
+              "idn": "Polisi",
+              "emoji": "👮",
+              "sentence": "The police officer is brave."
+            },
+            {
+              "en": "Farmer",
+              "idn": "Petani",
+              "emoji": "👨‍🌾",
+              "sentence": "The farmer plants rice."
+            },
+            {
+              "en": "Chef",
+              "idn": "Koki",
+              "emoji": "👨‍🍳",
+              "sentence": "The chef cooks well."
+            },
+            {
+              "en": "Pilot",
+              "idn": "Pilot",
+              "emoji": "🧑‍✈️",
+              "sentence": "The pilot flies a plane."
+            },
+            {
+              "en": "Firefighter",
+              "idn": "Pemadam kebakaran",
+              "emoji": "🧑‍🚒",
+              "sentence": "The firefighter is a hero."
+            },
+            {
+              "en": "Artist",
+              "idn": "Seniman",
+              "emoji": "🧑‍🎨",
+              "sentence": "The artist paints pictures."
+            },
+            {
+              "en": "Soldier",
+              "idn": "Tentara",
+              "emoji": "💂",
+              "sentence": "The soldier is strong."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g2_weather",
+          "title": "Weather",
+          "titleId": "Cuaca",
+          "emoji": "☀️",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Sunny",
+              "idn": "Cerah",
+              "emoji": "☀️",
+              "sentence": "It is sunny today."
+            },
+            {
+              "en": "Rainy",
+              "idn": "Hujan",
+              "emoji": "🌧️",
+              "sentence": "It is rainy."
+            },
+            {
+              "en": "Cloudy",
+              "idn": "Berawan",
+              "emoji": "☁️",
+              "sentence": "It is cloudy."
+            },
+            {
+              "en": "Windy",
+              "idn": "Berangin",
+              "emoji": "💨",
+              "sentence": "It is windy."
+            },
+            {
+              "en": "Snowy",
+              "idn": "Bersalju",
+              "emoji": "❄️",
+              "sentence": "It is snowy."
+            },
+            {
+              "en": "Hot",
+              "idn": "Panas",
+              "emoji": "🥵",
+              "sentence": "It is hot."
+            },
+            {
+              "en": "Cold",
+              "idn": "Dingin",
+              "emoji": "🥶",
+              "sentence": "It is cold."
+            },
+            {
+              "en": "Stormy",
+              "idn": "Badai",
+              "emoji": "⛈️",
+              "sentence": "It is stormy."
+            },
+            {
+              "en": "Rainbow",
+              "idn": "Pelangi",
+              "emoji": "🌈",
+              "sentence": "I see a rainbow!"
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g2_opposites",
+          "title": "Opposites",
+          "titleId": "Kata Sifat Berlawanan",
+          "emoji": "↔️",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Big",
+              "idn": "Besar",
+              "emoji": "🐘",
+              "sentence": "The elephant is big."
+            },
+            {
+              "en": "Small",
+              "idn": "Kecil",
+              "emoji": "🐜",
+              "sentence": "The ant is small."
+            },
+            {
+              "en": "Tall",
+              "idn": "Tinggi",
+              "emoji": "🦒",
+              "sentence": "The giraffe is tall."
+            },
+            {
+              "en": "Short",
+              "idn": "Pendek",
+              "emoji": "🍄",
+              "sentence": "The mushroom is short."
+            },
+            {
+              "en": "Fast",
+              "idn": "Cepat",
+              "emoji": "🐆",
+              "sentence": "The cheetah is fast."
+            },
+            {
+              "en": "Slow",
+              "idn": "Lambat",
+              "emoji": "🐢",
+              "sentence": "The turtle is slow."
+            },
+            {
+              "en": "Hot",
+              "idn": "Panas",
+              "emoji": "🔥",
+              "sentence": "The fire is hot."
+            },
+            {
+              "en": "Cold",
+              "idn": "Dingin",
+              "emoji": "🧊",
+              "sentence": "The ice is cold."
+            },
+            {
+              "en": "New",
+              "idn": "Baru",
+              "emoji": "✨",
+              "sentence": "My bag is new."
+            },
+            {
+              "en": "Old",
+              "idn": "Tua",
+              "emoji": "🕰️",
+              "sentence": "The clock is old."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g2_thisis",
+          "title": "This is...",
+          "titleId": "Ini adalah...",
+          "emoji": "👉",
+          "kind": "grammar",
+          "games": [
+            "learn",
+            "build"
+          ],
+          "items": [],
+          "pages": [
+            {
+              "title": "This is ...",
+              "explain": "Pakai 'This is' untuk SATU benda atau orang di dekat kita.",
+              "examples": [
+                {
+                  "en": "This is a cat.",
+                  "idn": "Ini seekor kucing.",
+                  "emoji": "🐱"
+                },
+                {
+                  "en": "This is a book.",
+                  "idn": "Ini sebuah buku.",
+                  "emoji": "📖"
+                },
+                {
+                  "en": "This is my mom.",
+                  "idn": "Ini ibuku.",
+                  "emoji": "👩"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "This ___ a dog.",
+                  "options": [
+                    "is",
+                    "are",
+                    "am"
+                  ],
+                  "answer": 0,
+                  "full": "This is a dog."
+                }
+              ]
+            },
+            {
+              "title": "These are ...",
+              "explain": "Pakai 'These are' untuk BANYAK benda (lebih dari satu).",
+              "examples": [
+                {
+                  "en": "These are cats.",
+                  "idn": "Ini kucing-kucing.",
+                  "emoji": "🐱🐱"
+                },
+                {
+                  "en": "These are books.",
+                  "idn": "Ini buku-buku.",
+                  "emoji": "📖📖"
+                },
+                {
+                  "en": "These are my friends.",
+                  "idn": "Ini teman-temanku.",
+                  "emoji": "👧👦"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "These ___ my toys.",
+                  "options": [
+                    "are",
+                    "is",
+                    "am"
+                  ],
+                  "answer": 0,
+                  "full": "These are my toys."
+                }
+              ]
+            },
+            {
+              "title": "A atau An?",
+              "explain": "Pakai 'an' kalau kata berikutnya dimulai huruf vokal (a, i, u, e, o). Selain itu pakai 'a'.",
+              "examples": [
+                {
+                  "en": "an apple",
+                  "idn": "sebuah apel",
+                  "emoji": "🍎"
+                },
+                {
+                  "en": "an egg",
+                  "idn": "sebuah telur",
+                  "emoji": "🥚"
+                },
+                {
+                  "en": "a car",
+                  "idn": "sebuah mobil",
+                  "emoji": "🚗"
+                },
+                {
+                  "en": "an umbrella",
+                  "idn": "sebuah payung",
+                  "emoji": "☂️"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "This is ___ orange.",
+                  "options": [
+                    "an",
+                    "a",
+                    "is"
+                  ],
+                  "answer": 0,
+                  "full": "This is an orange."
+                }
+              ]
+            },
+            {
+              "title": "Latihan! 💪",
+              "explain": "Pilih jawaban yang tepat. Kamu pasti bisa!",
+              "examples": [],
+              "challenges": [
+                {
+                  "prompt": "This ___ my bag.",
+                  "options": [
+                    "is",
+                    "are",
+                    "am"
+                  ],
+                  "answer": 0,
+                  "full": "This is my bag."
+                },
+                {
+                  "prompt": "These ___ books.",
+                  "options": [
+                    "are",
+                    "is",
+                    "am"
+                  ],
+                  "answer": 0,
+                  "full": "These are books."
+                },
+                {
+                  "prompt": "This is ___ apple.",
+                  "options": [
+                    "an",
+                    "a",
+                    "is"
+                  ],
+                  "answer": 0,
+                  "full": "This is an apple."
+                },
+                {
+                  "prompt": "This is ___ car.",
+                  "options": [
+                    "a",
+                    "an",
+                    "are"
+                  ],
+                  "answer": 0,
+                  "full": "This is a car."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "title": "Kelas 3",
+      "subtitle": "Aksi & Kalimat",
+      "emoji": "🚀",
+      "colors": [
+        4281255094,
+        4286639513
+      ],
+      "units": [
+        {
+          "id": "g3_daily",
+          "title": "My Day",
+          "titleId": "Kegiatan Sehari-hari",
+          "emoji": "🏃",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Eat",
+              "idn": "Makan",
+              "emoji": "🍽️",
+              "sentence": "I eat rice."
+            },
+            {
+              "en": "Drink",
+              "idn": "Minum",
+              "emoji": "🥤",
+              "sentence": "I drink water."
+            },
+            {
+              "en": "Sleep",
+              "idn": "Tidur",
+              "emoji": "😴",
+              "sentence": "I sleep at night."
+            },
+            {
+              "en": "Play",
+              "idn": "Bermain",
+              "emoji": "⚽",
+              "sentence": "I play with friends."
+            },
+            {
+              "en": "Read",
+              "idn": "Membaca",
+              "emoji": "📖",
+              "sentence": "I read a book."
+            },
+            {
+              "en": "Write",
+              "idn": "Menulis",
+              "emoji": "✍️",
+              "sentence": "I write a letter."
+            },
+            {
+              "en": "Run",
+              "idn": "Berlari",
+              "emoji": "🏃",
+              "sentence": "I run fast."
+            },
+            {
+              "en": "Walk",
+              "idn": "Berjalan",
+              "emoji": "🚶",
+              "sentence": "I walk to school."
+            },
+            {
+              "en": "Swim",
+              "idn": "Berenang",
+              "emoji": "🏊",
+              "sentence": "I swim on Sunday."
+            },
+            {
+              "en": "Cook",
+              "idn": "Memasak",
+              "emoji": "🍳",
+              "sentence": "Mom cooks rice."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g3_actions2",
+          "title": "More Actions",
+          "titleId": "Lebih Banyak Kata Kerja",
+          "emoji": "🎤",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Sing",
+              "idn": "Bernyanyi",
+              "emoji": "🎤",
+              "sentence": "I sing a song."
+            },
+            {
+              "en": "Dance",
+              "idn": "Menari",
+              "emoji": "💃",
+              "sentence": "She dances well."
+            },
+            {
+              "en": "Draw",
+              "idn": "Menggambar",
+              "emoji": "🎨",
+              "sentence": "I draw a cat."
+            },
+            {
+              "en": "Clean",
+              "idn": "Membersihkan",
+              "emoji": "🧹",
+              "sentence": "I clean my room."
+            },
+            {
+              "en": "Wash",
+              "idn": "Mencuci",
+              "emoji": "🧼",
+              "sentence": "I wash my hands."
+            },
+            {
+              "en": "Clap",
+              "idn": "Tepuk tangan",
+              "emoji": "👏",
+              "sentence": "We clap our hands."
+            },
+            {
+              "en": "Cry",
+              "idn": "Menangis",
+              "emoji": "😭",
+              "sentence": "The baby cries."
+            },
+            {
+              "en": "Laugh",
+              "idn": "Tertawa",
+              "emoji": "😆",
+              "sentence": "We laugh together."
+            },
+            {
+              "en": "Sit",
+              "idn": "Duduk",
+              "emoji": "🧘",
+              "sentence": "I sit on the floor."
+            },
+            {
+              "en": "Stand",
+              "idn": "Berdiri",
+              "emoji": "🧍",
+              "sentence": "I stand up."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g3_sports",
+          "title": "Sports",
+          "titleId": "Olahraga",
+          "emoji": "⚽",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Soccer",
+              "idn": "Sepak bola",
+              "emoji": "⚽",
+              "sentence": "I play soccer with friends."
+            },
+            {
+              "en": "Basketball",
+              "idn": "Bola basket",
+              "emoji": "🏀",
+              "sentence": "He plays basketball."
+            },
+            {
+              "en": "Badminton",
+              "idn": "Bulu tangkis",
+              "emoji": "🏸",
+              "sentence": "We play badminton."
+            },
+            {
+              "en": "Volleyball",
+              "idn": "Bola voli",
+              "emoji": "🏐",
+              "sentence": "They play volleyball."
+            },
+            {
+              "en": "Tennis",
+              "idn": "Tenis",
+              "emoji": "🎾",
+              "sentence": "She plays tennis."
+            },
+            {
+              "en": "Table Tennis",
+              "idn": "Tenis meja",
+              "emoji": "🏓",
+              "sentence": "I play table tennis."
+            },
+            {
+              "en": "Swimming",
+              "idn": "Renang",
+              "emoji": "🏊",
+              "sentence": "Swimming is fun."
+            },
+            {
+              "en": "Running",
+              "idn": "Lari",
+              "emoji": "🏃",
+              "sentence": "Running makes me strong."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g3_hobbies",
+          "title": "Hobbies",
+          "titleId": "Hobi",
+          "emoji": "🎨",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Reading",
+              "idn": "Membaca",
+              "emoji": "📚",
+              "sentence": "My hobby is reading."
+            },
+            {
+              "en": "Cooking",
+              "idn": "Memasak",
+              "emoji": "🍳",
+              "sentence": "Mom likes cooking."
+            },
+            {
+              "en": "Dancing",
+              "idn": "Menari",
+              "emoji": "💃",
+              "sentence": "She likes dancing."
+            },
+            {
+              "en": "Singing",
+              "idn": "Bernyanyi",
+              "emoji": "🎤",
+              "sentence": "I like singing."
+            },
+            {
+              "en": "Drawing",
+              "idn": "Menggambar",
+              "emoji": "🎨",
+              "sentence": "He likes drawing."
+            },
+            {
+              "en": "Cycling",
+              "idn": "Bersepeda",
+              "emoji": "🚴",
+              "sentence": "We like cycling."
+            },
+            {
+              "en": "Fishing",
+              "idn": "Memancing",
+              "emoji": "🎣",
+              "sentence": "Dad likes fishing."
+            },
+            {
+              "en": "Gaming",
+              "idn": "Bermain game",
+              "emoji": "🎮",
+              "sentence": "I like gaming."
+            },
+            {
+              "en": "Gardening",
+              "idn": "Berkebun",
+              "emoji": "🌱",
+              "sentence": "Grandma likes gardening."
+            },
+            {
+              "en": "Camping",
+              "idn": "Berkemah",
+              "emoji": "🏕️",
+              "sentence": "We like camping."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g3_time",
+          "title": "Time & Days",
+          "titleId": "Waktu & Hari",
+          "emoji": "🕐",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Monday",
+              "idn": "Senin",
+              "emoji": "📘",
+              "sentence": "I go to school on Monday."
+            },
+            {
+              "en": "Tuesday",
+              "idn": "Selasa",
+              "emoji": "📗",
+              "sentence": "We have sports on Tuesday."
+            },
+            {
+              "en": "Wednesday",
+              "idn": "Rabu",
+              "emoji": "📙",
+              "sentence": "I draw on Wednesday."
+            },
+            {
+              "en": "Thursday",
+              "idn": "Kamis",
+              "emoji": "📒",
+              "sentence": "Thursday is fun."
+            },
+            {
+              "en": "Friday",
+              "idn": "Jumat",
+              "emoji": "🎉",
+              "sentence": "Friday is a happy day."
+            },
+            {
+              "en": "Saturday",
+              "idn": "Sabtu",
+              "emoji": "⚽",
+              "sentence": "I play on Saturday."
+            },
+            {
+              "en": "Sunday",
+              "idn": "Minggu",
+              "emoji": "🌞",
+              "sentence": "We rest on Sunday."
+            },
+            {
+              "en": "Morning",
+              "idn": "Pagi",
+              "emoji": "🌅",
+              "sentence": "Good morning!"
+            },
+            {
+              "en": "Afternoon",
+              "idn": "Siang",
+              "emoji": "🌞",
+              "sentence": "Good afternoon!"
+            },
+            {
+              "en": "Evening",
+              "idn": "Sore",
+              "emoji": "🌆",
+              "sentence": "Good evening!"
+            },
+            {
+              "en": "Night",
+              "idn": "Malam",
+              "emoji": "🌙",
+              "sentence": "Good night!"
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g3_ilike",
+          "title": "I like...",
+          "titleId": "Saya suka...",
+          "emoji": "💛",
+          "kind": "grammar",
+          "games": [
+            "learn",
+            "build"
+          ],
+          "items": [],
+          "pages": [
+            {
+              "title": "I like ...",
+              "explain": "Pakai 'I like' untuk bilang apa yang kamu suka.",
+              "examples": [
+                {
+                  "en": "I like cats.",
+                  "idn": "Saya suka kucing.",
+                  "emoji": "🐱"
+                },
+                {
+                  "en": "I like apples.",
+                  "idn": "Saya suka apel.",
+                  "emoji": "🍎"
+                },
+                {
+                  "en": "I like soccer.",
+                  "idn": "Saya suka sepak bola.",
+                  "emoji": "⚽"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "I ___ cats.",
+                  "options": [
+                    "like",
+                    "likes",
+                    "am"
+                  ],
+                  "answer": 0,
+                  "full": "I like cats."
+                }
+              ]
+            },
+            {
+              "title": "I don't like ...",
+              "explain": "Pakai 'I don't like' untuk bilang apa yang TIDAK kamu suka.",
+              "examples": [
+                {
+                  "en": "I don't like snakes.",
+                  "idn": "Saya tidak suka ular.",
+                  "emoji": "🐍"
+                },
+                {
+                  "en": "I don't like chili.",
+                  "idn": "Saya tidak suka cabai.",
+                  "emoji": "🌶️"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "I ___ like spiders.",
+                  "options": [
+                    "don't",
+                    "doesn't",
+                    "am not"
+                  ],
+                  "answer": 0,
+                  "full": "I don't like spiders."
+                }
+              ]
+            },
+            {
+              "title": "Do you like ...?",
+              "explain": "Bertanya pakai 'Do you like...?'. Jawab: Yes, I do. / No, I don't.",
+              "examples": [
+                {
+                  "en": "Do you like milk?",
+                  "idn": "Apakah kamu suka susu?",
+                  "emoji": "🥛"
+                },
+                {
+                  "en": "Yes, I do!",
+                  "idn": "Ya, saya suka!",
+                  "emoji": "👍"
+                },
+                {
+                  "en": "No, I don't.",
+                  "idn": "Tidak, saya tidak suka.",
+                  "emoji": "👎"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "___ you like bananas?",
+                  "options": [
+                    "Do",
+                    "Does",
+                    "Are"
+                  ],
+                  "answer": 0,
+                  "full": "Do you like bananas?"
+                }
+              ]
+            },
+            {
+              "title": "Latihan! 💪",
+              "explain": "Pilih jawaban yang tepat. Semangat!",
+              "examples": [],
+              "challenges": [
+                {
+                  "prompt": "She ___ ice cream.",
+                  "options": [
+                    "likes",
+                    "like",
+                    "liking"
+                  ],
+                  "answer": 0,
+                  "full": "She likes ice cream."
+                },
+                {
+                  "prompt": "___ they like fish?",
+                  "options": [
+                    "Do",
+                    "Does",
+                    "Is"
+                  ],
+                  "answer": 0,
+                  "full": "Do they like fish?"
+                },
+                {
+                  "prompt": "I ___ like vegetables.",
+                  "options": [
+                    "don't",
+                    "doesn't",
+                    "not"
+                  ],
+                  "answer": 0,
+                  "full": "I don't like vegetables."
+                },
+                {
+                  "prompt": "We ___ playing outside.",
+                  "options": [
+                    "like",
+                    "likes",
+                    "are"
+                  ],
+                  "answer": 0,
+                  "full": "We like playing outside."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "title": "Kelas 4",
+      "subtitle": "Grammar Hero",
+      "emoji": "🌟",
+      "colors": [
+        4283222512,
+        4282606062
+      ],
+      "units": [
+        {
+          "id": "g4_routines",
+          "title": "Daily Routines",
+          "titleId": "Rutinitas Harian",
+          "emoji": "⏰",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Wake up",
+              "idn": "Bangun tidur",
+              "emoji": "⏰",
+              "sentence": "I wake up at six."
+            },
+            {
+              "en": "Brush my teeth",
+              "idn": "Menggosok gigi",
+              "emoji": "🪥",
+              "sentence": "I brush my teeth."
+            },
+            {
+              "en": "Take a bath",
+              "idn": "Mandi",
+              "emoji": "🛁",
+              "sentence": "I take a bath."
+            },
+            {
+              "en": "Go to school",
+              "idn": "Pergi ke sekolah",
+              "emoji": "🏫",
+              "sentence": "I go to school at seven."
+            },
+            {
+              "en": "Study",
+              "idn": "Belajar",
+              "emoji": "📚",
+              "sentence": "I study English."
+            },
+            {
+              "en": "Play",
+              "idn": "Bermain",
+              "emoji": "⚽",
+              "sentence": "I play with my friends."
+            },
+            {
+              "en": "Watch TV",
+              "idn": "Menonton TV",
+              "emoji": "📺",
+              "sentence": "I watch TV with dad."
+            },
+            {
+              "en": "Sleep",
+              "idn": "Tidur",
+              "emoji": "😴",
+              "sentence": "I sleep at nine."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g4_describing",
+          "title": "Describing People",
+          "titleId": "Sifat & Gambaran",
+          "emoji": "🌺",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Beautiful",
+              "idn": "Cantik / Indah",
+              "emoji": "🌺",
+              "sentence": "The flower is beautiful."
+            },
+            {
+              "en": "Cute",
+              "idn": "Lucu",
+              "emoji": "🥰",
+              "sentence": "The baby is cute."
+            },
+            {
+              "en": "Funny",
+              "idn": "Lucu / Kocak",
+              "emoji": "🤪",
+              "sentence": "The clown is funny."
+            },
+            {
+              "en": "Smart",
+              "idn": "Pintar",
+              "emoji": "🧠",
+              "sentence": "She is smart."
+            },
+            {
+              "en": "Brave",
+              "idn": "Berani",
+              "emoji": "🦁",
+              "sentence": "He is brave."
+            },
+            {
+              "en": "Kind",
+              "idn": "Baik hati",
+              "emoji": "💝",
+              "sentence": "She is kind to everyone."
+            },
+            {
+              "en": "Strong",
+              "idn": "Kuat",
+              "emoji": "💪",
+              "sentence": "Dad is strong."
+            },
+            {
+              "en": "Lazy",
+              "idn": "Malas",
+              "emoji": "🦥",
+              "sentence": "The sloth is lazy."
+            },
+            {
+              "en": "Friendly",
+              "idn": "Ramah",
+              "emoji": "🤝",
+              "sentence": "They are friendly."
+            },
+            {
+              "en": "Polite",
+              "idn": "Sopan",
+              "emoji": "😇",
+              "sentence": "He is polite."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g4_prep",
+          "title": "Where is the Cat?",
+          "titleId": "Kata Depan (in, on, under...)",
+          "emoji": "📦",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "In",
+              "idn": "Di dalam",
+              "emoji": "🐱📦",
+              "sentence": "The cat is in the box."
+            },
+            {
+              "en": "On",
+              "idn": "Di atas",
+              "emoji": "🐱🛏️",
+              "sentence": "The cat is on the bed."
+            },
+            {
+              "en": "Under",
+              "idn": "Di bawah",
+              "emoji": "🛏️🐱",
+              "sentence": "The cat is under the bed."
+            },
+            {
+              "en": "Behind",
+              "idn": "Di belakang",
+              "emoji": "🌳🐱",
+              "sentence": "The cat is behind the tree."
+            },
+            {
+              "en": "In front of",
+              "idn": "Di depan",
+              "emoji": "🐱🌳",
+              "sentence": "The cat is in front of the tree."
+            },
+            {
+              "en": "Next to",
+              "idn": "Di sebelah",
+              "emoji": "🐱🐶",
+              "sentence": "The cat is next to the dog."
+            },
+            {
+              "en": "Between",
+              "idn": "Di antara",
+              "emoji": "🐶🐱🐶",
+              "sentence": "The cat is between the dogs."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g4_tobe",
+          "title": "Am, Is, Are",
+          "titleId": "Kata Kerja To Be",
+          "emoji": "🧩",
+          "kind": "grammar",
+          "games": [
+            "learn",
+            "build"
+          ],
+          "items": [],
+          "pages": [
+            {
+              "title": "I am ...",
+              "explain": "'Am' selalu bersama 'I' (saya).",
+              "examples": [
+                {
+                  "en": "I am happy.",
+                  "idn": "Saya senang.",
+                  "emoji": "😊"
+                },
+                {
+                  "en": "I am a student.",
+                  "idn": "Saya seorang murid.",
+                  "emoji": "🧑‍🎓"
+                },
+                {
+                  "en": "I am seven years old.",
+                  "idn": "Saya berumur tujuh tahun.",
+                  "emoji": "7️⃣"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "I ___ a good boy.",
+                  "options": [
+                    "am",
+                    "is",
+                    "are"
+                  ],
+                  "answer": 0,
+                  "full": "I am a good boy."
+                }
+              ]
+            },
+            {
+              "title": "He / She / It + is",
+              "explain": "Pakai 'is' untuk he, she, it (satu orang atau benda).",
+              "examples": [
+                {
+                  "en": "He is tall.",
+                  "idn": "Dia (laki-laki) tinggi.",
+                  "emoji": "🧍"
+                },
+                {
+                  "en": "She is my mom.",
+                  "idn": "Dia (perempuan) ibuku.",
+                  "emoji": "👩"
+                },
+                {
+                  "en": "It is a dog.",
+                  "idn": "Itu seekor anjing.",
+                  "emoji": "🐶"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "She ___ my teacher.",
+                  "options": [
+                    "is",
+                    "am",
+                    "are"
+                  ],
+                  "answer": 0,
+                  "full": "She is my teacher."
+                }
+              ]
+            },
+            {
+              "title": "You / We / They + are",
+              "explain": "Pakai 'are' untuk you, we, dan they.",
+              "examples": [
+                {
+                  "en": "You are my friend.",
+                  "idn": "Kamu temanku.",
+                  "emoji": "🧑‍🤝‍🧑"
+                },
+                {
+                  "en": "We are happy.",
+                  "idn": "Kami senang.",
+                  "emoji": "👨‍👩‍👧"
+                },
+                {
+                  "en": "They are students.",
+                  "idn": "Mereka murid-murid.",
+                  "emoji": "🧑‍🎓"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "They ___ playing.",
+                  "options": [
+                    "are",
+                    "is",
+                    "am"
+                  ],
+                  "answer": 0,
+                  "full": "They are playing."
+                }
+              ]
+            },
+            {
+              "title": "Bentuk Tidak (Negatif)",
+              "explain": "is not = isn't, are not = aren't. Artinya 'bukan/tidak'.",
+              "examples": [
+                {
+                  "en": "I am not sad.",
+                  "idn": "Saya tidak sedih.",
+                  "emoji": "😊"
+                },
+                {
+                  "en": "He isn't angry.",
+                  "idn": "Dia tidak marah.",
+                  "emoji": "😌"
+                },
+                {
+                  "en": "They aren't late.",
+                  "idn": "Mereka tidak terlambat.",
+                  "emoji": "⏰"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "He ___ happy. (tidak)",
+                  "options": [
+                    "isn't",
+                    "aren't",
+                    "am not"
+                  ],
+                  "answer": 0,
+                  "full": "He isn't happy."
+                }
+              ]
+            },
+            {
+              "title": "Bertanya dengan To Be",
+              "explain": "Tukar posisi! Is she...? Are they...? Am I...?",
+              "examples": [
+                {
+                  "en": "Is she your mom?",
+                  "idn": "Apakah dia ibumu?",
+                  "emoji": "👩"
+                },
+                {
+                  "en": "Are they friends?",
+                  "idn": "Apakah mereka teman?",
+                  "emoji": "👫"
+                },
+                {
+                  "en": "Am I late?",
+                  "idn": "Apakah saya terlambat?",
+                  "emoji": "⏰"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "___ she your mom?",
+                  "options": [
+                    "Is",
+                    "Are",
+                    "Am"
+                  ],
+                  "answer": 0,
+                  "full": "Is she your mom?"
+                }
+              ]
+            },
+            {
+              "title": "Latihan! 💪",
+              "explain": "Pilih am, is, atau are. Kamu pasti bisa!",
+              "examples": [],
+              "challenges": [
+                {
+                  "prompt": "I ___ seven years old.",
+                  "options": [
+                    "am",
+                    "is",
+                    "are"
+                  ],
+                  "answer": 0,
+                  "full": "I am seven years old."
+                },
+                {
+                  "prompt": "We ___ happy.",
+                  "options": [
+                    "are",
+                    "is",
+                    "am"
+                  ],
+                  "answer": 0,
+                  "full": "We are happy."
+                },
+                {
+                  "prompt": "It ___ a cat.",
+                  "options": [
+                    "is",
+                    "are",
+                    "am"
+                  ],
+                  "answer": 0,
+                  "full": "It is a cat."
+                },
+                {
+                  "prompt": "___ you ready?",
+                  "options": [
+                    "Are",
+                    "Is",
+                    "Am"
+                  ],
+                  "answer": 0,
+                  "full": "Are you ready?"
+                },
+                {
+                  "prompt": "They ___ not here.",
+                  "options": [
+                    "are",
+                    "is",
+                    "am"
+                  ],
+                  "answer": 0,
+                  "full": "They are not here."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g4_present",
+          "title": "Simple Present",
+          "titleId": "Simple Present Tense",
+          "emoji": "⏰",
+          "kind": "grammar",
+          "games": [
+            "learn",
+            "build"
+          ],
+          "items": [],
+          "pages": [
+            {
+              "title": "I / You / We / They + kata kerja",
+              "explain": "Untuk kebiasaan sehari-hari. Untuk I, you, we, they: kata kerjanya tetap biasa.",
+              "examples": [
+                {
+                  "en": "I play ball every day.",
+                  "idn": "Saya bermain bola setiap hari.",
+                  "emoji": "⚽"
+                },
+                {
+                  "en": "They eat rice.",
+                  "idn": "Mereka makan nasi.",
+                  "emoji": "🍚"
+                },
+                {
+                  "en": "We go to school.",
+                  "idn": "Kami pergi ke sekolah.",
+                  "emoji": "🏫"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "They ___ football on Sunday.",
+                  "options": [
+                    "play",
+                    "plays",
+                    "playing"
+                  ],
+                  "answer": 0,
+                  "full": "They play football on Sunday."
+                }
+              ]
+            },
+            {
+              "title": "He / She / It + kata kerja + s/es",
+              "explain": "Untuk he, she, it: kata kerja tambah 's' atau 'es'. Play → plays, go → goes.",
+              "examples": [
+                {
+                  "en": "He plays ball.",
+                  "idn": "Dia bermain bola.",
+                  "emoji": "⚽"
+                },
+                {
+                  "en": "She goes to school.",
+                  "idn": "Dia pergi ke sekolah.",
+                  "emoji": "🏫"
+                },
+                {
+                  "en": "It eats fish.",
+                  "idn": "Ia makan ikan.",
+                  "emoji": "🐱"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "She ___ to school every day.",
+                  "options": [
+                    "goes",
+                    "go",
+                    "going"
+                  ],
+                  "answer": 0,
+                  "full": "She goes to school every day."
+                }
+              ]
+            },
+            {
+              "title": "+ s/es Spesial",
+              "explain": "go → goes, watch → watches, study → studies, have → has. Hafalkan ya!",
+              "examples": [
+                {
+                  "en": "He watches TV.",
+                  "idn": "Dia menonton TV.",
+                  "emoji": "📺"
+                },
+                {
+                  "en": "She studies English.",
+                  "idn": "Dia belajar bahasa Inggris.",
+                  "emoji": "📚"
+                },
+                {
+                  "en": "It has four legs.",
+                  "idn": "Ia punya empat kaki.",
+                  "emoji": "🐕"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "She ___ English.",
+                  "options": [
+                    "studies",
+                    "studys",
+                    "study"
+                  ],
+                  "answer": 0,
+                  "full": "She studies English."
+                }
+              ]
+            },
+            {
+              "title": "Bertanya: Do dan Does",
+              "explain": "Untuk bertanya pakai 'do' (I/you/we/they) dan 'does' (he/she/it).",
+              "examples": [
+                {
+                  "en": "Do you like milk?",
+                  "idn": "Apakah kamu suka susu?",
+                  "emoji": "🥛"
+                },
+                {
+                  "en": "Does he play ball?",
+                  "idn": "Apakah dia bermain bola?",
+                  "emoji": "⚽"
+                },
+                {
+                  "en": "Do they swim?",
+                  "idn": "Apakah mereka berenang?",
+                  "emoji": "🏊"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "___ she like ice cream?",
+                  "options": [
+                    "Does",
+                    "Do",
+                    "Is"
+                  ],
+                  "answer": 0,
+                  "full": "Does she like ice cream?"
+                }
+              ]
+            },
+            {
+              "title": "Tidak: don't dan doesn't",
+              "explain": "Kalimat tidak: don't untuk I/you/we/they, doesn't untuk he/she/it.",
+              "examples": [
+                {
+                  "en": "I don't like snakes.",
+                  "idn": "Saya tidak suka ular.",
+                  "emoji": "🐍"
+                },
+                {
+                  "en": "He doesn't eat fish.",
+                  "idn": "Dia tidak makan ikan.",
+                  "emoji": "🐟"
+                },
+                {
+                  "en": "They don't play at night.",
+                  "idn": "Mereka tidak bermain di malam hari.",
+                  "emoji": "🌙"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "He ___ like vegetables.",
+                  "options": [
+                    "doesn't",
+                    "don't",
+                    "isn't"
+                  ],
+                  "answer": 0,
+                  "full": "He doesn't like vegetables."
+                }
+              ]
+            },
+            {
+              "title": "Latihan! 💪",
+              "explain": "Uji kemampuanmu! Ingat aturan s/es dan do/does.",
+              "examples": [],
+              "challenges": [
+                {
+                  "prompt": "I ___ up at six.",
+                  "options": [
+                    "wake",
+                    "wakes",
+                    "waking"
+                  ],
+                  "answer": 0,
+                  "full": "I wake up at six."
+                },
+                {
+                  "prompt": "He ___ TV every night.",
+                  "options": [
+                    "watches",
+                    "watch",
+                    "watching"
+                  ],
+                  "answer": 0,
+                  "full": "He watches TV every night."
+                },
+                {
+                  "prompt": "___ you like coffee?",
+                  "options": [
+                    "Do",
+                    "Does",
+                    "Are"
+                  ],
+                  "answer": 0,
+                  "full": "Do you like coffee?"
+                },
+                {
+                  "prompt": "My dad ___ to work by car.",
+                  "options": [
+                    "goes",
+                    "go",
+                    "going"
+                  ],
+                  "answer": 0,
+                  "full": "My dad goes to work by car."
+                },
+                {
+                  "prompt": "They ___ not play inside.",
+                  "options": [
+                    "do",
+                    "does",
+                    "are"
+                  ],
+                  "answer": 0,
+                  "full": "They do not play inside."
+                },
+                {
+                  "prompt": "She ___ two cats.",
+                  "options": [
+                    "has",
+                    "have",
+                    "haves"
+                  ],
+                  "answer": 0,
+                  "full": "She has two cats."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g4_continuous",
+          "title": "Present Continuous",
+          "titleId": "Sedang Terjadi (-ing)",
+          "emoji": "🎬",
+          "kind": "grammar",
+          "games": [
+            "learn",
+            "build"
+          ],
+          "items": [],
+          "pages": [
+            {
+              "title": "am/is/are + kata kerja-ing",
+              "explain": "Untuk kegiatan yang SEDANG terjadi sekarang: am/is/are + kata kerja + ing.",
+              "examples": [
+                {
+                  "en": "I am reading now.",
+                  "idn": "Saya sedang membaca sekarang.",
+                  "emoji": "📖"
+                },
+                {
+                  "en": "She is cooking.",
+                  "idn": "Dia sedang memasak.",
+                  "emoji": "🍳"
+                },
+                {
+                  "en": "They are playing.",
+                  "idn": "Mereka sedang bermain.",
+                  "emoji": "⚽"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "Look! The baby ___ crying.",
+                  "options": [
+                    "is",
+                    "are",
+                    "am"
+                  ],
+                  "answer": 0,
+                  "full": "Look! The baby is crying."
+                }
+              ]
+            },
+            {
+              "title": "Aturan +ing",
+              "explain": "run → running, swim → swimming (huruf terakhir ganda). write → writing, make → making (huruf 'e' hilang).",
+              "examples": [
+                {
+                  "en": "He is running.",
+                  "idn": "Dia sedang berlari.",
+                  "emoji": "🏃"
+                },
+                {
+                  "en": "I am writing.",
+                  "idn": "Saya sedang menulis.",
+                  "emoji": "✍️"
+                },
+                {
+                  "en": "We are swimming.",
+                  "idn": "Kami sedang berenang.",
+                  "emoji": "🏊"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "He is ___ now.",
+                  "options": [
+                    "running",
+                    "runing",
+                    "run"
+                  ],
+                  "answer": 0,
+                  "full": "He is running now."
+                }
+              ]
+            },
+            {
+              "title": "Negatif & Bertanya",
+              "explain": "Negatif: is/are + not. Bertanya: Is/Are di depan.",
+              "examples": [
+                {
+                  "en": "She is not sleeping.",
+                  "idn": "Dia tidak sedang tidur.",
+                  "emoji": "😴"
+                },
+                {
+                  "en": "Are they playing?",
+                  "idn": "Apakah mereka sedang bermain?",
+                  "emoji": "⚽"
+                },
+                {
+                  "en": "Is it raining?",
+                  "idn": "Apakah sedang hujan?",
+                  "emoji": "🌧️"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "___ they playing?",
+                  "options": [
+                    "Are",
+                    "Is",
+                    "Am"
+                  ],
+                  "answer": 0,
+                  "full": "Are they playing?"
+                }
+              ]
+            },
+            {
+              "title": "Kata Kunci Waktu",
+              "explain": "Tanda sedang terjadi: now (sekarang), Look! (Lihat!), Listen! (Dengar!), today (hari ini).",
+              "examples": [
+                {
+                  "en": "Listen! The birds are singing.",
+                  "idn": "Dengar! Burung-burung sedang bernyanyi.",
+                  "emoji": "🐦"
+                },
+                {
+                  "en": "Look! It is raining.",
+                  "idn": "Lihat! Sedang hujan.",
+                  "emoji": "🌧️"
+                },
+                {
+                  "en": "We are studying now.",
+                  "idn": "Kami sedang belajar sekarang.",
+                  "emoji": "📚"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "Listen! The birds ___ singing.",
+                  "options": [
+                    "are",
+                    "is",
+                    "am"
+                  ],
+                  "answer": 0,
+                  "full": "Listen! The birds are singing."
+                }
+              ]
+            },
+            {
+              "title": "Latihan! 💪",
+              "explain": "Pilih jawaban yang tepat!",
+              "examples": [],
+              "challenges": [
+                {
+                  "prompt": "I ___ reading now.",
+                  "options": [
+                    "am",
+                    "is",
+                    "are"
+                  ],
+                  "answer": 0,
+                  "full": "I am reading now."
+                },
+                {
+                  "prompt": "She ___ cooking dinner.",
+                  "options": [
+                    "is",
+                    "are",
+                    "am"
+                  ],
+                  "answer": 0,
+                  "full": "She is cooking dinner."
+                },
+                {
+                  "prompt": "They ___ playing soccer.",
+                  "options": [
+                    "are",
+                    "is",
+                    "am"
+                  ],
+                  "answer": 0,
+                  "full": "They are playing soccer."
+                },
+                {
+                  "prompt": "Look! It ___ raining.",
+                  "options": [
+                    "is",
+                    "are",
+                    "am"
+                  ],
+                  "answer": 0,
+                  "full": "Look! It is raining."
+                },
+                {
+                  "prompt": "We ___ studying English.",
+                  "options": [
+                    "are",
+                    "is",
+                    "am"
+                  ],
+                  "answer": 0,
+                  "full": "We are studying English."
+                },
+                {
+                  "prompt": "He is ___ a letter.",
+                  "options": [
+                    "writing",
+                    "writeing",
+                    "write"
+                  ],
+                  "answer": 0,
+                  "full": "He is writing a letter."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "title": "Kelas 5",
+      "subtitle": "Penjelajah Tenses",
+      "emoji": "🏆",
+      "colors": [
+        4294942492,
+        4294956554
+      ],
+      "units": [
+        {
+          "id": "g5_city",
+          "title": "In the City",
+          "titleId": "Di Kota",
+          "emoji": "🌆",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Bank",
+              "idn": "Bank",
+              "emoji": "🏦",
+              "sentence": "Dad goes to the bank."
+            },
+            {
+              "en": "Post Office",
+              "idn": "Kantor pos",
+              "emoji": "🏤",
+              "sentence": "Mom sends a letter at the post office."
+            },
+            {
+              "en": "Airport",
+              "idn": "Bandara",
+              "emoji": "🛫",
+              "sentence": "The plane is at the airport."
+            },
+            {
+              "en": "Train Station",
+              "idn": "Stasiun kereta",
+              "emoji": "🚉",
+              "sentence": "We wait at the train station."
+            },
+            {
+              "en": "Hotel",
+              "idn": "Hotel",
+              "emoji": "🏨",
+              "sentence": "We sleep at the hotel."
+            },
+            {
+              "en": "Cinema",
+              "idn": "Bioskop",
+              "emoji": "🎦",
+              "sentence": "We watch a movie at the cinema."
+            },
+            {
+              "en": "Mall",
+              "idn": "Mal",
+              "emoji": "🏬",
+              "sentence": "We shop at the mall."
+            },
+            {
+              "en": "Bakery",
+              "idn": "Toko roti",
+              "emoji": "🥖",
+              "sentence": "The bakery smells good."
+            },
+            {
+              "en": "Museum",
+              "idn": "Museum",
+              "emoji": "🏛️",
+              "sentence": "The museum is interesting."
+            },
+            {
+              "en": "Bridge",
+              "idn": "Jembatan",
+              "emoji": "🌉",
+              "sentence": "The bridge is long."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g5_transport2",
+          "title": "More Vehicles",
+          "titleId": "Kendaraan Keren",
+          "emoji": "🚀",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Rocket",
+              "idn": "Roket",
+              "emoji": "🚀",
+              "sentence": "The rocket flies to space."
+            },
+            {
+              "en": "Sailboat",
+              "idn": "Perahu layar",
+              "emoji": "⛵",
+              "sentence": "The sailboat is white."
+            },
+            {
+              "en": "Canoe",
+              "idn": "Kano",
+              "emoji": "🛶",
+              "sentence": "We row the canoe."
+            },
+            {
+              "en": "Scooter",
+              "idn": "Skuter",
+              "emoji": "🛴",
+              "sentence": "I ride my scooter."
+            },
+            {
+              "en": "Skateboard",
+              "idn": "Papan luncur",
+              "emoji": "🛹",
+              "sentence": "He plays skateboard."
+            },
+            {
+              "en": "Van",
+              "idn": "Van",
+              "emoji": "🚐",
+              "sentence": "The van is big."
+            },
+            {
+              "en": "Ambulance",
+              "idn": "Ambulans",
+              "emoji": "🚑",
+              "sentence": "The ambulance helps sick people."
+            },
+            {
+              "en": "Police Car",
+              "idn": "Mobil polisi",
+              "emoji": "🚓",
+              "sentence": "The police car is fast."
+            },
+            {
+              "en": "Fire Truck",
+              "idn": "Mobil pemadam",
+              "emoji": "🚒",
+              "sentence": "The fire truck is red."
+            },
+            {
+              "en": "Tractor",
+              "idn": "Traktor",
+              "emoji": "🚜",
+              "sentence": "The farmer drives a tractor."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g5_jobs2",
+          "title": "Cool Jobs",
+          "titleId": "Profesi Keren",
+          "emoji": "🧑‍🔬",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Scientist",
+              "idn": "Ilmuwan",
+              "emoji": "🧑‍🔬",
+              "sentence": "The scientist does experiments."
+            },
+            {
+              "en": "Astronaut",
+              "idn": "Astronot",
+              "emoji": "🧑‍🚀",
+              "sentence": "The astronaut goes to space."
+            },
+            {
+              "en": "Singer",
+              "idn": "Penyanyi",
+              "emoji": "🧑‍🎤",
+              "sentence": "The singer sings beautifully."
+            },
+            {
+              "en": "Judge",
+              "idn": "Hakim",
+              "emoji": "🧑‍⚖️",
+              "sentence": "The judge is fair."
+            },
+            {
+              "en": "Mechanic",
+              "idn": "Mekanik",
+              "emoji": "🧑‍🔧",
+              "sentence": "The mechanic fixes cars."
+            },
+            {
+              "en": "Barber",
+              "idn": "Tukang cukur",
+              "emoji": "💈",
+              "sentence": "The barber cuts hair."
+            },
+            {
+              "en": "Photographer",
+              "idn": "Fotografer",
+              "emoji": "📷",
+              "sentence": "The photographer takes photos."
+            },
+            {
+              "en": "Writer",
+              "idn": "Penulis",
+              "emoji": "📝",
+              "sentence": "The writer writes stories."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g5_past",
+          "title": "Simple Past",
+          "titleId": "Kejadian Lampau",
+          "emoji": "⏮️",
+          "kind": "grammar",
+          "games": [
+            "learn",
+            "build"
+          ],
+          "items": [],
+          "pages": [
+            {
+              "title": "Kata kerja + ed",
+              "explain": "Untuk kegiatan yang SUDAH lewat (kemarin, tadi malam): kata kerja + ed. play → played.",
+              "examples": [
+                {
+                  "en": "I played ball yesterday.",
+                  "idn": "Saya bermain bola kemarin.",
+                  "emoji": "⚽"
+                },
+                {
+                  "en": "We visited grandma.",
+                  "idn": "Kami mengunjungi nenek.",
+                  "emoji": "👵"
+                },
+                {
+                  "en": "She watched TV last night.",
+                  "idn": "Dia menonton TV tadi malam.",
+                  "emoji": "📺"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "Yesterday, I ___ football.",
+                  "options": [
+                    "played",
+                    "play",
+                    "plays"
+                  ],
+                  "answer": 0,
+                  "full": "Yesterday, I played football."
+                }
+              ]
+            },
+            {
+              "title": "Kata Kerja Spesial 1",
+              "explain": "Beberapa kata berubah total! go → went, eat → ate, drink → drank, see → saw.",
+              "examples": [
+                {
+                  "en": "I went to the zoo.",
+                  "idn": "Saya pergi ke kebun binatang.",
+                  "emoji": "🦁"
+                },
+                {
+                  "en": "He ate cake.",
+                  "idn": "Dia makan kue.",
+                  "emoji": "🍰"
+                },
+                {
+                  "en": "We drank milk.",
+                  "idn": "Kami minum susu.",
+                  "emoji": "🥛"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "Last week, we ___ to the beach.",
+                  "options": [
+                    "went",
+                    "go",
+                    "goes"
+                  ],
+                  "answer": 0,
+                  "full": "Last week, we went to the beach."
+                }
+              ]
+            },
+            {
+              "title": "Kata Kerja Spesial 2",
+              "explain": "buy → bought, take → took, give → gave, write → wrote, read → read (dibaca \"red\").",
+              "examples": [
+                {
+                  "en": "She bought a doll.",
+                  "idn": "Dia membeli boneka.",
+                  "emoji": "🎎"
+                },
+                {
+                  "en": "He took my pencil.",
+                  "idn": "Dia mengambil pensilku.",
+                  "emoji": "✏️"
+                },
+                {
+                  "en": "Mom gave me a gift.",
+                  "idn": "Ibu memberiku hadiah.",
+                  "emoji": "🎁"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "She ___ a doll yesterday.",
+                  "options": [
+                    "bought",
+                    "buy",
+                    "buys"
+                  ],
+                  "answer": 0,
+                  "full": "She bought a doll yesterday."
+                }
+              ]
+            },
+            {
+              "title": "Negatif & Bertanya",
+              "explain": "Pakai didn't untuk tidak, dan 'Did' untuk bertanya. Kata kerjanya kembali biasa!",
+              "examples": [
+                {
+                  "en": "I didn't go out.",
+                  "idn": "Saya tidak pergi keluar.",
+                  "emoji": "🏠"
+                },
+                {
+                  "en": "Did you go to school?",
+                  "idn": "Apakah kamu pergi ke sekolah?",
+                  "emoji": "🏫"
+                },
+                {
+                  "en": "He didn't eat breakfast.",
+                  "idn": "Dia tidak makan pagi.",
+                  "emoji": "🍳"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "___ you go to school yesterday?",
+                  "options": [
+                    "Did",
+                    "Do",
+                    "Does"
+                  ],
+                  "answer": 0,
+                  "full": "Did you go to school yesterday?"
+                }
+              ]
+            },
+            {
+              "title": "Latihan! 💪",
+              "explain": "Ingat: kemarin = lampau = +ed atau kata spesial!",
+              "examples": [],
+              "challenges": [
+                {
+                  "prompt": "He ___ TV last night.",
+                  "options": [
+                    "watched",
+                    "watch",
+                    "watches"
+                  ],
+                  "answer": 0,
+                  "full": "He watched TV last night."
+                },
+                {
+                  "prompt": "I ___ an egg this morning.",
+                  "options": [
+                    "ate",
+                    "eat",
+                    "eats"
+                  ],
+                  "answer": 0,
+                  "full": "I ate an egg this morning."
+                },
+                {
+                  "prompt": "They ___ happy yesterday.",
+                  "options": [
+                    "were",
+                    "was",
+                    "are"
+                  ],
+                  "answer": 0,
+                  "full": "They were happy yesterday."
+                },
+                {
+                  "prompt": "___ she visit grandma?",
+                  "options": [
+                    "Did",
+                    "Does",
+                    "Do"
+                  ],
+                  "answer": 0,
+                  "full": "Did she visit grandma?"
+                },
+                {
+                  "prompt": "We ___ not go out.",
+                  "options": [
+                    "did",
+                    "do",
+                    "does"
+                  ],
+                  "answer": 0,
+                  "full": "We did not go out."
+                },
+                {
+                  "prompt": "Mom ___ me a gift.",
+                  "options": [
+                    "gave",
+                    "give",
+                    "gives"
+                  ],
+                  "answer": 0,
+                  "full": "Mom gave me a gift."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g5_compare",
+          "title": "Comparatives",
+          "titleId": "Membandingkan (lebih & paling)",
+          "emoji": "📏",
+          "kind": "grammar",
+          "games": [
+            "learn",
+            "build"
+          ],
+          "items": [],
+          "pages": [
+            {
+              "title": "Lebih ... : + er",
+              "explain": "Membandingkan 2 hal: kata sifat + er, lalu \"than\". big → bigger, fast → faster.",
+              "examples": [
+                {
+                  "en": "A car is faster than a bike.",
+                  "idn": "Mobil lebih cepat dari sepeda.",
+                  "emoji": "🚗"
+                },
+                {
+                  "en": "An elephant is bigger than a cat.",
+                  "idn": "Gajah lebih besar dari kucing.",
+                  "emoji": "🐘"
+                },
+                {
+                  "en": "Dad is taller than me.",
+                  "idn": "Ayah lebih tinggi dariku.",
+                  "emoji": "🧍"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "A cheetah is ___ than a turtle.",
+                  "options": [
+                    "faster",
+                    "fast",
+                    "fastest"
+                  ],
+                  "answer": 0,
+                  "full": "A cheetah is faster than a turtle."
+                }
+              ]
+            },
+            {
+              "title": "Kata panjang: more ...",
+              "explain": "Kata sifat panjang pakai \"more\": beautiful → more beautiful, interesting → more interesting.",
+              "examples": [
+                {
+                  "en": "A rose is more beautiful than grass.",
+                  "idn": "Mawar lebih indah dari rumput.",
+                  "emoji": "🌹"
+                },
+                {
+                  "en": "This book is more interesting.",
+                  "idn": "Buku ini lebih menarik.",
+                  "emoji": "📖"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "A peacock is ___ than a chicken.",
+                  "options": [
+                    "more beautiful",
+                    "beautifuller",
+                    "most beautiful"
+                  ],
+                  "answer": 0,
+                  "full": "A peacock is more beautiful than a chicken."
+                }
+              ]
+            },
+            {
+              "title": "Paling ... : the + est",
+              "explain": "Untuk yang PALING dari semua: the + kata sifat + est. fast → the fastest.",
+              "examples": [
+                {
+                  "en": "The cheetah is the fastest animal.",
+                  "idn": "Cheetah adalah hewan tercepat.",
+                  "emoji": "🐆"
+                },
+                {
+                  "en": "The blue whale is the biggest.",
+                  "idn": "Paus biru adalah yang terbesar.",
+                  "emoji": "🐳"
+                },
+                {
+                  "en": "She is the smartest in class.",
+                  "idn": "Dia yang terpintar di kelas.",
+                  "emoji": "🧠"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "The cheetah is the ___ animal.",
+                  "options": [
+                    "fastest",
+                    "faster",
+                    "fast"
+                  ],
+                  "answer": 0,
+                  "full": "The cheetah is the fastest animal."
+                }
+              ]
+            },
+            {
+              "title": "Latihan! 💪",
+              "explain": "Pilih jawaban yang tepat!",
+              "examples": [],
+              "challenges": [
+                {
+                  "prompt": "An ant is ___ than an elephant.",
+                  "options": [
+                    "smaller",
+                    "small",
+                    "smallest"
+                  ],
+                  "answer": 0,
+                  "full": "An ant is smaller than an elephant."
+                },
+                {
+                  "prompt": "My bag is the ___.",
+                  "options": [
+                    "heaviest",
+                    "heavier",
+                    "heavy"
+                  ],
+                  "answer": 0,
+                  "full": "My bag is the heaviest."
+                },
+                {
+                  "prompt": "A plane is ___ than a car.",
+                  "options": [
+                    "faster",
+                    "fastest",
+                    "fast"
+                  ],
+                  "answer": 0,
+                  "full": "A plane is faster than a car."
+                },
+                {
+                  "prompt": "She is the ___ student in class.",
+                  "options": [
+                    "smartest",
+                    "smarter",
+                    "smart"
+                  ],
+                  "answer": 0,
+                  "full": "She is the smartest student in class."
+                },
+                {
+                  "prompt": "Today is ___ than yesterday.",
+                  "options": [
+                    "hotter",
+                    "hottest",
+                    "hot"
+                  ],
+                  "answer": 0,
+                  "full": "Today is hotter than yesterday."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g5_goingto",
+          "title": "Going To",
+          "titleId": "Rencana Masa Depan",
+          "emoji": "🔮",
+          "kind": "grammar",
+          "games": [
+            "learn",
+            "build"
+          ],
+          "items": [],
+          "pages": [
+            {
+              "title": "am/is/are + going to + kata kerja",
+              "explain": "Untuk rencana yang AKAN dilakukan: am/is/are + going to + kata kerja.",
+              "examples": [
+                {
+                  "en": "I am going to swim.",
+                  "idn": "Saya akan berenang.",
+                  "emoji": "🏊"
+                },
+                {
+                  "en": "She is going to cook.",
+                  "idn": "Dia akan memasak.",
+                  "emoji": "🍳"
+                },
+                {
+                  "en": "They are going to play.",
+                  "idn": "Mereka akan bermain.",
+                  "emoji": "⚽"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "I ___ going to swim.",
+                  "options": [
+                    "am",
+                    "is",
+                    "are"
+                  ],
+                  "answer": 0,
+                  "full": "I am going to swim."
+                }
+              ]
+            },
+            {
+              "title": "Kata Kunci Waktu",
+              "explain": "Tanda masa depan: tomorrow (besok), next week (minggu depan), tonight (nanti malam).",
+              "examples": [
+                {
+                  "en": "We are going to the zoo tomorrow.",
+                  "idn": "Kami akan ke kebun binatang besok.",
+                  "emoji": "🦁"
+                },
+                {
+                  "en": "He is going to read tonight.",
+                  "idn": "Dia akan membaca nanti malam.",
+                  "emoji": "📖"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "She ___ going to visit grandma tomorrow.",
+                  "options": [
+                    "is",
+                    "are",
+                    "am"
+                  ],
+                  "answer": 0,
+                  "full": "She is going to visit grandma tomorrow."
+                }
+              ]
+            },
+            {
+              "title": "Latihan! 💪",
+              "explain": "Pilih jawaban yang tepat!",
+              "examples": [],
+              "challenges": [
+                {
+                  "prompt": "They ___ going to play.",
+                  "options": [
+                    "are",
+                    "is",
+                    "am"
+                  ],
+                  "answer": 0,
+                  "full": "They are going to play."
+                },
+                {
+                  "prompt": "We are going ___ the zoo.",
+                  "options": [
+                    "to",
+                    "too",
+                    "two"
+                  ],
+                  "answer": 0,
+                  "full": "We are going to the zoo."
+                },
+                {
+                  "prompt": "He ___ going to read.",
+                  "options": [
+                    "is",
+                    "are",
+                    "am"
+                  ],
+                  "answer": 0,
+                  "full": "He is going to read."
+                },
+                {
+                  "prompt": "I am going to ___ a book.",
+                  "options": [
+                    "read",
+                    "reads",
+                    "reading"
+                  ],
+                  "answer": 0,
+                  "full": "I am going to read a book."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g5_questions",
+          "title": "Question Words",
+          "titleId": "Kata Tanya (5W1H)",
+          "emoji": "❓",
+          "kind": "grammar",
+          "games": [
+            "learn",
+            "build"
+          ],
+          "items": [],
+          "pages": [
+            {
+              "title": "What & Who",
+              "explain": "What = apa (benda). Who = siapa (orang).",
+              "examples": [
+                {
+                  "en": "What is your name?",
+                  "idn": "Apa namamu?",
+                  "emoji": "📛"
+                },
+                {
+                  "en": "Who is your teacher?",
+                  "idn": "Siapa gurumu?",
+                  "emoji": "👩‍🏫"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "___ is your name?",
+                  "options": [
+                    "What",
+                    "Who",
+                    "Where"
+                  ],
+                  "answer": 0,
+                  "full": "What is your name?"
+                }
+              ]
+            },
+            {
+              "title": "Where & When",
+              "explain": "Where = di mana (tempat). When = kapan (waktu).",
+              "examples": [
+                {
+                  "en": "Where do you live?",
+                  "idn": "Di mana kamu tinggal?",
+                  "emoji": "🏠"
+                },
+                {
+                  "en": "When is your birthday?",
+                  "idn": "Kapan ulang tahunmu?",
+                  "emoji": "🎂"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "___ do you live?",
+                  "options": [
+                    "Where",
+                    "When",
+                    "What"
+                  ],
+                  "answer": 0,
+                  "full": "Where do you live?"
+                }
+              ]
+            },
+            {
+              "title": "Why & How",
+              "explain": "Why = mengapa (alasan). How = bagaimana (cara).",
+              "examples": [
+                {
+                  "en": "Why are you sad?",
+                  "idn": "Mengapa kamu sedih?",
+                  "emoji": "😢"
+                },
+                {
+                  "en": "How are you?",
+                  "idn": "Bagaimana kabarmu?",
+                  "emoji": "👋"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "___ are you sad?",
+                  "options": [
+                    "Why",
+                    "How",
+                    "What"
+                  ],
+                  "answer": 0,
+                  "full": "Why are you sad?"
+                }
+              ]
+            },
+            {
+              "title": "Latihan! 💪",
+              "explain": "Pilih kata tanya yang tepat!",
+              "examples": [],
+              "challenges": [
+                {
+                  "prompt": "___ is that? It is a cat.",
+                  "options": [
+                    "What",
+                    "Who",
+                    "Where"
+                  ],
+                  "answer": 0,
+                  "full": "What is that? It is a cat."
+                },
+                {
+                  "prompt": "___ is your teacher? Mrs. Ana.",
+                  "options": [
+                    "Who",
+                    "What",
+                    "When"
+                  ],
+                  "answer": 0,
+                  "full": "Who is your teacher? Mrs. Ana."
+                },
+                {
+                  "prompt": "___ do you go to school? At seven.",
+                  "options": [
+                    "When",
+                    "Where",
+                    "Why"
+                  ],
+                  "answer": 0,
+                  "full": "When do you go to school? At seven."
+                },
+                {
+                  "prompt": "___ old are you?",
+                  "options": [
+                    "How",
+                    "What",
+                    "Who"
+                  ],
+                  "answer": 0,
+                  "full": "How old are you?"
+                },
+                {
+                  "prompt": "___ do you study? At school.",
+                  "options": [
+                    "Where",
+                    "When",
+                    "Why"
+                  ],
+                  "answer": 0,
+                  "full": "Where do you study? At school."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "title": "Kelas 6",
+      "subtitle": "Master Muda",
+      "emoji": "👑",
+      "colors": [
+        4288372197,
+        4284094618
+      ],
+      "units": [
+        {
+          "id": "g6_countries",
+          "title": "Countries",
+          "titleId": "Negara-Negara",
+          "emoji": "🌍",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Indonesia",
+              "idn": "Indonesia",
+              "emoji": "🇮🇩",
+              "sentence": "I am from Indonesia."
+            },
+            {
+              "en": "Japan",
+              "idn": "Jepang",
+              "emoji": "🇯🇵",
+              "sentence": "Japan has beautiful sakura."
+            },
+            {
+              "en": "America",
+              "idn": "Amerika",
+              "emoji": "🇺🇸",
+              "sentence": "America is far away."
+            },
+            {
+              "en": "England",
+              "idn": "Inggris",
+              "emoji": "🇬🇧",
+              "sentence": "They speak English in England."
+            },
+            {
+              "en": "Australia",
+              "idn": "Australia",
+              "emoji": "🇦🇺",
+              "sentence": "Kangaroos live in Australia."
+            },
+            {
+              "en": "Egypt",
+              "idn": "Mesir",
+              "emoji": "🇪🇬",
+              "sentence": "The pyramids are in Egypt."
+            },
+            {
+              "en": "China",
+              "idn": "Tiongkok",
+              "emoji": "🇨🇳",
+              "sentence": "China has the Great Wall."
+            },
+            {
+              "en": "India",
+              "idn": "India",
+              "emoji": "🇮🇳",
+              "sentence": "The Taj Mahal is in India."
+            },
+            {
+              "en": "Korea",
+              "idn": "Korea",
+              "emoji": "🇰🇷",
+              "sentence": "K-pop is from Korea."
+            },
+            {
+              "en": "Brazil",
+              "idn": "Brasil",
+              "emoji": "🇧🇷",
+              "sentence": "Brazil loves soccer."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g6_subjects",
+          "title": "School Subjects",
+          "titleId": "Mata Pelajaran",
+          "emoji": "📚",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Math",
+              "idn": "Matematika",
+              "emoji": "➗",
+              "sentence": "I like Math."
+            },
+            {
+              "en": "Science",
+              "idn": "IPA",
+              "emoji": "🔬",
+              "sentence": "Science is fun."
+            },
+            {
+              "en": "Music",
+              "idn": "Musik",
+              "emoji": "🎵",
+              "sentence": "We sing in Music class."
+            },
+            {
+              "en": "Art",
+              "idn": "Seni",
+              "emoji": "🖼️",
+              "sentence": "I draw in Art class."
+            },
+            {
+              "en": "Sports",
+              "idn": "Olahraga",
+              "emoji": "🏅",
+              "sentence": "We run in Sports class."
+            },
+            {
+              "en": "Computer",
+              "idn": "Komputer",
+              "emoji": "💻",
+              "sentence": "I type in Computer class."
+            },
+            {
+              "en": "History",
+              "idn": "Sejarah",
+              "emoji": "📜",
+              "sentence": "History tells old stories."
+            },
+            {
+              "en": "Geography",
+              "idn": "Geografi",
+              "emoji": "🌍",
+              "sentence": "Geography is about the world."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g6_havehas",
+          "title": "Have & Has",
+          "titleId": "Punya: have / has",
+          "emoji": "🎁",
+          "kind": "grammar",
+          "games": [
+            "learn",
+            "build"
+          ],
+          "items": [],
+          "pages": [
+            {
+              "title": "I / You / We / They + have",
+              "explain": "Pakai 'have' untuk I, you, we, they. Artinya: punya.",
+              "examples": [
+                {
+                  "en": "I have two eyes.",
+                  "idn": "Saya punya dua mata.",
+                  "emoji": "👁️"
+                },
+                {
+                  "en": "They have a big house.",
+                  "idn": "Mereka punya rumah besar.",
+                  "emoji": "🏠"
+                },
+                {
+                  "en": "We have lunch at noon.",
+                  "idn": "Kami makan siang jam dua belas.",
+                  "emoji": "🍚"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "I ___ two eyes.",
+                  "options": [
+                    "have",
+                    "has",
+                    "haves"
+                  ],
+                  "answer": 0,
+                  "full": "I have two eyes."
+                }
+              ]
+            },
+            {
+              "title": "He / She / It + has",
+              "explain": "Pakai 'has' untuk he, she, it.",
+              "examples": [
+                {
+                  "en": "She has a cat.",
+                  "idn": "Dia punya seekor kucing.",
+                  "emoji": "🐱"
+                },
+                {
+                  "en": "He has a new bike.",
+                  "idn": "Dia punya sepeda baru.",
+                  "emoji": "🚲"
+                },
+                {
+                  "en": "It has four legs.",
+                  "idn": "Ia punya empat kaki.",
+                  "emoji": "🐕"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "She ___ a cat.",
+                  "options": [
+                    "has",
+                    "have",
+                    "haves"
+                  ],
+                  "answer": 0,
+                  "full": "She has a cat."
+                }
+              ]
+            },
+            {
+              "title": "Latihan! 💪",
+              "explain": "Pilih have atau has!",
+              "examples": [],
+              "challenges": [
+                {
+                  "prompt": "They ___ many books.",
+                  "options": [
+                    "have",
+                    "has",
+                    "haves"
+                  ],
+                  "answer": 0,
+                  "full": "They have many books."
+                },
+                {
+                  "prompt": "He ___ a new bike.",
+                  "options": [
+                    "has",
+                    "have",
+                    "haves"
+                  ],
+                  "answer": 0,
+                  "full": "He has a new bike."
+                },
+                {
+                  "prompt": "We ___ lunch at noon.",
+                  "options": [
+                    "have",
+                    "has",
+                    "haves"
+                  ],
+                  "answer": 0,
+                  "full": "We have lunch at noon."
+                },
+                {
+                  "prompt": "The dog ___ four legs.",
+                  "options": [
+                    "has",
+                    "have",
+                    "haves"
+                  ],
+                  "answer": 0,
+                  "full": "The dog has four legs."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g6_thereis",
+          "title": "There is / There are",
+          "titleId": "Ada: there is / there are",
+          "emoji": "👀",
+          "kind": "grammar",
+          "games": [
+            "learn",
+            "build"
+          ],
+          "items": [],
+          "pages": [
+            {
+              "title": "There is (satu)",
+              "explain": "Pakai 'There is' untuk SATU benda. Artinya: ada.",
+              "examples": [
+                {
+                  "en": "There is a cat on the bed.",
+                  "idn": "Ada kucing di atas tempat tidur.",
+                  "emoji": "🐱"
+                },
+                {
+                  "en": "There is a book on the table.",
+                  "idn": "Ada buku di atas meja.",
+                  "emoji": "📖"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "There ___ a cat on the bed.",
+                  "options": [
+                    "is",
+                    "are",
+                    "am"
+                  ],
+                  "answer": 0,
+                  "full": "There is a cat on the bed."
+                }
+              ]
+            },
+            {
+              "title": "There are (banyak)",
+              "explain": "Pakai 'There are' untuk BANYAK benda.",
+              "examples": [
+                {
+                  "en": "There are three birds.",
+                  "idn": "Ada tiga burung.",
+                  "emoji": "🐦🐦🐦"
+                },
+                {
+                  "en": "There are many stars.",
+                  "idn": "Ada banyak bintang.",
+                  "emoji": "⭐"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "There ___ three birds.",
+                  "options": [
+                    "are",
+                    "is",
+                    "am"
+                  ],
+                  "answer": 0,
+                  "full": "There are three birds."
+                }
+              ]
+            },
+            {
+              "title": "Latihan! 💪",
+              "explain": "Pilih is atau are!",
+              "examples": [],
+              "challenges": [
+                {
+                  "prompt": "There ___ a book on the table.",
+                  "options": [
+                    "is",
+                    "are",
+                    "am"
+                  ],
+                  "answer": 0,
+                  "full": "There is a book on the table."
+                },
+                {
+                  "prompt": "There ___ five apples.",
+                  "options": [
+                    "are",
+                    "is",
+                    "am"
+                  ],
+                  "answer": 0,
+                  "full": "There are five apples."
+                },
+                {
+                  "prompt": "___ there a park near here?",
+                  "options": [
+                    "Is",
+                    "Are",
+                    "Am"
+                  ],
+                  "answer": 0,
+                  "full": "Is there a park near here?"
+                },
+                {
+                  "prompt": "There ___ some water.",
+                  "options": [
+                    "is",
+                    "are",
+                    "be"
+                  ],
+                  "answer": 0,
+                  "full": "There is some water."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g6_conjunction",
+          "title": "And, But, Because",
+          "titleId": "Kata Sambung",
+          "emoji": "🔗",
+          "kind": "grammar",
+          "games": [
+            "learn",
+            "build"
+          ],
+          "items": [],
+          "pages": [
+            {
+              "title": "and (dan)",
+              "explain": "Pakai 'and' untuk menggabungkan dua hal yang sejalan.",
+              "examples": [
+                {
+                  "en": "I like cats and dogs.",
+                  "idn": "Saya suka kucing dan anjing.",
+                  "emoji": "🐱🐶"
+                },
+                {
+                  "en": "She sings and dances.",
+                  "idn": "Dia bernyanyi dan menari.",
+                  "emoji": "🎤💃"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "I like cats ___ dogs.",
+                  "options": [
+                    "and",
+                    "but",
+                    "because"
+                  ],
+                  "answer": 0,
+                  "full": "I like cats and dogs."
+                }
+              ]
+            },
+            {
+              "title": "but (tetapi) & because (karena)",
+              "explain": "'But' untuk hal yang berlawanan. 'Because' untuk alasan.",
+              "examples": [
+                {
+                  "en": "I like fish but I don't like shrimp.",
+                  "idn": "Saya suka ikan tetapi tidak suka udang.",
+                  "emoji": "🐟"
+                },
+                {
+                  "en": "I am sad because it rains.",
+                  "idn": "Saya sedih karena hujan.",
+                  "emoji": "🌧️"
+                }
+              ],
+              "challenges": [
+                {
+                  "prompt": "I am sad ___ it rains.",
+                  "options": [
+                    "because",
+                    "but",
+                    "and"
+                  ],
+                  "answer": 0,
+                  "full": "I am sad because it rains."
+                }
+              ]
+            },
+            {
+              "title": "Latihan! 💪",
+              "explain": "Pilih kata sambung yang tepat!",
+              "examples": [],
+              "challenges": [
+                {
+                  "prompt": "She is smart ___ kind.",
+                  "options": [
+                    "and",
+                    "but",
+                    "because"
+                  ],
+                  "answer": 0,
+                  "full": "She is smart and kind."
+                },
+                {
+                  "prompt": "I like fish ___ I don't like shrimp.",
+                  "options": [
+                    "but",
+                    "and",
+                    "because"
+                  ],
+                  "answer": 0,
+                  "full": "I like fish but I don't like shrimp."
+                },
+                {
+                  "prompt": "He sleeps early ___ he is tired.",
+                  "options": [
+                    "because",
+                    "but",
+                    "and"
+                  ],
+                  "answer": 0,
+                  "full": "He sleeps early because he is tired."
+                },
+                {
+                  "prompt": "We play ___ study every day.",
+                  "options": [
+                    "and",
+                    "but",
+                    "because"
+                  ],
+                  "answer": 0,
+                  "full": "We play and study every day."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g6_story1",
+          "title": "A Day at the Zoo",
+          "titleId": "Cerita: Sehari di Kebun Binatang",
+          "emoji": "🦁",
+          "kind": "story",
+          "games": [
+            "read",
+            "quiz"
+          ],
+          "items": [],
+          "pages": [],
+          "story": {
+            "title": "A Day at the Zoo",
+            "emoji": "🦁",
+            "lines": [
+              {
+                "en": "Today is Sunday.",
+                "idn": "Hari ini hari Minggu.",
+                "emoji": "🌞"
+              },
+              {
+                "en": "I go to the zoo with my family.",
+                "idn": "Aku pergi ke kebun binatang bersama keluargaku.",
+                "emoji": "👨‍👩‍👧"
+              },
+              {
+                "en": "I see a big elephant.",
+                "idn": "Aku melihat gajah yang besar.",
+                "emoji": "🐘"
+              },
+              {
+                "en": "The monkeys are funny.",
+                "idn": "Monyet-monyet itu lucu.",
+                "emoji": "🐵"
+              },
+              {
+                "en": "I eat ice cream with my brother.",
+                "idn": "Aku makan es krim bersama kakakku.",
+                "emoji": "🍦"
+              },
+              {
+                "en": "We are happy today.",
+                "idn": "Kami senang hari ini.",
+                "emoji": "😊"
+              }
+            ],
+            "questions": [
+              {
+                "prompt": "What day is it?",
+                "options": [
+                  "Sunday",
+                  "Monday",
+                  "Friday"
+                ],
+                "answer": 0,
+                "full": "Today is Sunday."
+              },
+              {
+                "prompt": "Where does he go?",
+                "options": [
+                  "To the zoo",
+                  "To school",
+                  "To the beach"
+                ],
+                "answer": 0,
+                "full": "He goes to the zoo."
+              },
+              {
+                "prompt": "What does he eat?",
+                "options": [
+                  "Ice cream",
+                  "Rice",
+                  "Bread"
+                ],
+                "answer": 0,
+                "full": "He eats ice cream."
+              }
+            ]
+          }
+        },
+        {
+          "id": "g6_story2",
+          "title": "My Birthday Party",
+          "titleId": "Cerita: Pesta Ulang Tahunku",
+          "emoji": "🎂",
+          "kind": "story",
+          "games": [
+            "read",
+            "quiz"
+          ],
+          "items": [],
+          "pages": [],
+          "story": {
+            "title": "My Birthday Party",
+            "emoji": "🎂",
+            "lines": [
+              {
+                "en": "Today is my birthday.",
+                "idn": "Hari ini ulang tahunku.",
+                "emoji": "🎂"
+              },
+              {
+                "en": "I am eight years old now.",
+                "idn": "Aku sekarang berumur delapan tahun.",
+                "emoji": "8️⃣"
+              },
+              {
+                "en": "My friends come to my house.",
+                "idn": "Teman-temanku datang ke rumahku.",
+                "emoji": "🏠"
+              },
+              {
+                "en": "We sing and dance together.",
+                "idn": "Kami bernyanyi dan menari bersama.",
+                "emoji": "🎤"
+              },
+              {
+                "en": "Mom gives me a big cake.",
+                "idn": "Ibu memberiku kue yang besar.",
+                "emoji": "🍰"
+              },
+              {
+                "en": "I am very happy!",
+                "idn": "Aku sangat senang!",
+                "emoji": "🥳"
+              }
+            ],
+            "questions": [
+              {
+                "prompt": "How old is she?",
+                "options": [
+                  "Eight",
+                  "Seven",
+                  "Ten"
+                ],
+                "answer": 0,
+                "full": "She is eight years old."
+              },
+              {
+                "prompt": "Who comes to the house?",
+                "options": [
+                  "Her friends",
+                  "The doctor",
+                  "A teacher"
+                ],
+                "answer": 0,
+                "full": "Her friends come to the house."
+              },
+              {
+                "prompt": "What does Mom give?",
+                "options": [
+                  "A big cake",
+                  "A ball",
+                  "A book"
+                ],
+                "answer": 0,
+                "full": "Mom gives a big cake."
+              }
+            ]
+          }
+        },
+        {
+          "id": "g6_story3",
+          "title": "A Rainy Day",
+          "titleId": "Cerita: Hari Hujan",
+          "emoji": "🌧️",
+          "kind": "story",
+          "games": [
+            "read",
+            "quiz"
+          ],
+          "items": [],
+          "pages": [],
+          "story": {
+            "title": "A Rainy Day",
+            "emoji": "🌧️",
+            "lines": [
+              {
+                "en": "It is raining today.",
+                "idn": "Hari ini sedang hujan.",
+                "emoji": "🌧️"
+              },
+              {
+                "en": "I cannot play outside.",
+                "idn": "Aku tidak bisa bermain di luar.",
+                "emoji": "🏠"
+              },
+              {
+                "en": "I read my favorite book.",
+                "idn": "Aku membaca buku kesukaanku.",
+                "emoji": "📖"
+              },
+              {
+                "en": "Mom makes hot chocolate for me.",
+                "idn": "Ibu membuatkanku cokelat panas.",
+                "emoji": "🍫"
+              },
+              {
+                "en": "The rain stops in the afternoon.",
+                "idn": "Hujan berhenti di sore hari.",
+                "emoji": "🌤️"
+              },
+              {
+                "en": "I see a beautiful rainbow!",
+                "idn": "Aku melihat pelangi yang indah!",
+                "emoji": "🌈"
+              }
+            ],
+            "questions": [
+              {
+                "prompt": "How is the weather?",
+                "options": [
+                  "Raining",
+                  "Sunny",
+                  "Snowing"
+                ],
+                "answer": 0,
+                "full": "It is raining."
+              },
+              {
+                "prompt": "What does he read?",
+                "options": [
+                  "A book",
+                  "A letter",
+                  "A map"
+                ],
+                "answer": 0,
+                "full": "He reads a book."
+              },
+              {
+                "prompt": "What does he see at the end?",
+                "options": [
+                  "A rainbow",
+                  "A star",
+                  "The moon"
+                ],
+                "answer": 0,
+                "full": "He sees a rainbow."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

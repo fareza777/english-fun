@@ -50,3 +50,4 @@ app.*.map.json
 # Local env files must never carry API keys
 .env
 *.env
+`n# generator scratch file`n/assets/voice/voice_failed.txt

@@ -6,6 +6,7 @@ import '../services/progress.dart';
 import '../services/sfx.dart';
 import '../theme.dart';
 import '../widgets/common.dart';
+import '../widgets/ad_banner.dart';
 import 'arcade_screen.dart';
 import 'parents_screen.dart';
 import 'pets_screen.dart';
@@ -163,6 +164,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
               ),
+              const AdBanner(),
             ],
           ),
         ),

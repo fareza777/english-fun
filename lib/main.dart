@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'screens/splash_screen.dart';
+import 'services/monetization.dart';
 import 'services/progress.dart';
 import 'services/sfx.dart';
 
@@ -14,7 +15,7 @@ Future<void> main() async {
     systemNavigationBarIconBrightness: Brightness.dark,
   ));
   await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
-  await Future.wait([Sfx.I.init(), Progress.I.load()]);
+  await Future.wait([Sfx.I.init(), Progress.I.load(), MonetizationService.I.init()]);
   runApp(const EnglishFunApp());
 }
 

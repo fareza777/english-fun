@@ -1,0 +1,14 @@
+{
+  "name": "english-fun-promo",
+  "private": true,
+  "scripts": {
+    "render:video": "remotion render src/index.jsx Promo out/english-fun-promo.mp4",
+    "render:feature": "remotion still src/index.jsx FeatureGraphic out/feature-graphic.png"
+  },
+  "dependencies": {
+    "@remotion/cli": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "remotion": "latest"
+  }
+}

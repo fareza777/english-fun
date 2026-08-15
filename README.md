@@ -58,7 +58,7 @@ Maskot: **Funky si Rubah** 🦊
 - **Animasi di mana-mana** — confetti, bintang elastis, tombol memantul, awan bergerak, maskot hidup
 - **Sistem bintang & progres** tersimpan otomatis (SharedPreferences), unit terbuka berurutan
 - **Ikon launcher rubah** yang digambar programatis (`tools/make_icon.py`)
-- **Offline penuh** — tanpa iklan, tanpa pengumpulan data (aman & ramah anak)
+- **Offline-first** — progres belajar tersimpan di perangkat; banner iklan ramah anak bersifat non-personalized dan dapat dihapus permanen dari area Orang Tua
 
 ## Menjalankan
 

@@ -51,3 +51,9 @@ app.*.map.json
 .env
 *.env
 `n# generator scratch file`n/assets/voice/voice_failed.txt
+
+# Local QA screenshots and Remotion build output
+/artifacts/
+/promo/node_modules/
+/promo/out/
+/android/.kotlin/

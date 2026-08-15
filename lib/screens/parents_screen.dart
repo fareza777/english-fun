@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../data/content.dart';
 import '../data/stickers.dart';
+import '../services/monetization.dart';
 import '../services/progress.dart';
 import '../theme.dart';
 import '../widgets/common.dart';
@@ -74,6 +75,8 @@ class ParentsScreen extends StatelessWidget {
                       const SizedBox(height: 18),
                       _settingsCard(context),
                       const SizedBox(height: 12),
+                      _adFreeCard(context),
+                      const SizedBox(height: 12),
                       _weakWordsCard(),
                       const SizedBox(height: 18),
                       ...kGrades.map((g) {
@@ -132,6 +135,66 @@ class ParentsScreen extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+
+  Widget _adFreeCard(BuildContext context) {
+    return ListenableBuilder(
+      listenable: MonetizationService.I,
+      builder: (context, _) {
+        final service = MonetizationService.I;
+        final removed = service.adsRemoved;
+        return Container(
+          padding: const EdgeInsets.all(16),
+          decoration: BoxDecoration(
+            gradient: const LinearGradient(colors: [Color(0xFFFFF3C4), Color(0xFFFFE8A3)]),
+            borderRadius: BorderRadius.circular(22),
+            border: Border.all(color: const Color(0xFFFFC857), width: 2),
+            boxShadow: const [BoxShadow(color: Color(0x18000000), blurRadius: 6, offset: Offset(0, 3))],
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(removed ? '✅ Mode tanpa iklan aktif' : '✨ Belajar tanpa iklan', style: AppText.heading(19)),
+              const SizedBox(height: 5),
+              Text(
+                removed
+                    ? 'Terima kasih! Iklan tidak akan tampil di perangkat ini.'
+                    : 'Hapus banner iklan sekali bayar dan buat sesi belajar lebih nyaman.',
+                style: AppText.body(14),
+              ),
+              if (!removed) ...[
+                const SizedBox(height: 12),
+                Row(
+                  children: [
+                    Expanded(
+                      child: PillButton(
+                        label: 'Hapus Iklan ${service.removeAdsPrice}',
+                        emoji: '🛡️',
+                        color: AppColors.correct,
+                        fontSize: 16,
+                        onTap: () async {
+                          final started = await service.buyRemoveAds();
+                          if (!context.mounted || started) return;
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            const SnackBar(content: Text('Produk belum siap. Coba lagi setelah Play Store terhubung.')),
+                          );
+                        },
+                      ),
+                    ),
+                    const SizedBox(width: 8),
+                    IconButton(
+                      tooltip: 'Pulihkan pembelian',
+                      onPressed: service.storeAvailable ? service.restorePurchases : null,
+                      icon: const Icon(Icons.restore_rounded),
+                    ),
+                  ],
+                ),
+              ],
+            ],
+          ),
+        );
+      },
     );
   }
 

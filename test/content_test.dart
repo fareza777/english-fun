@@ -59,6 +59,59 @@ void main() {
     }
   });
 
+  test('every grade carries enough vocabulary to stay interesting', () {
+    // Grade 6 used to ship only 18 cards, which a child finishes in one
+    // sitting. Every grade now has to hold a real amount of material.
+    for (final g in kGrades) {
+      final cards = g.units
+          .where((u) => u.kind == UnitKind.vocab)
+          .fold(0, (sum, u) => sum + u.items.length);
+      expect(cards, greaterThanOrEqualTo(60),
+          reason: 'grade ${g.level} only has $cards vocabulary cards');
+    }
+  });
+
+  test('no vocab unit repeats an English word', () {
+    // Duplicates inside a unit would let the distractor picker offer the
+    // correct answer twice.
+    for (final g in kGrades) {
+      for (final u in g.units.where((x) => x.kind == UnitKind.vocab)) {
+        final seen = <String>{};
+        for (final item in u.items) {
+          final key = item.en.trim().toLowerCase();
+          expect(seen.add(key), isTrue,
+              reason: '${u.id} repeats "${item.en}"');
+        }
+      }
+    }
+  });
+
+  test('every vocab unit can build a four-option question', () {
+    for (final g in kGrades) {
+      for (final u in g.units.where((x) => x.kind == UnitKind.vocab)) {
+        expect(u.items.length, greaterThanOrEqualTo(4),
+            reason: '${u.id} cannot fill four answer slots');
+      }
+    }
+  });
+
+  test('challenge options never repeat and always name a real answer', () {
+    for (final g in kGrades) {
+      for (final u in g.units) {
+        final challenges = <Challenge>[
+          ...u.pages.expand((p) => p.challenges),
+          ...?u.story?.questions,
+        ];
+        for (final c in challenges) {
+          expect(c.options.length, greaterThanOrEqualTo(2), reason: u.id);
+          expect(c.options.toSet().length, c.options.length,
+              reason: '${u.id} repeats an option in "${c.prompt}"');
+          expect(c.options[c.answer], isNotEmpty, reason: u.id);
+        }
+      }
+    }
+  });
+
   test('star economy is consistent', () {
     for (final g in kGrades) {
       expect(g.maxStars, greaterThan(0));

@@ -6,6 +6,7 @@ import '../models.dart';
 import '../services/progress.dart';
 import '../theme.dart';
 import '../widgets/common.dart';
+import '../widgets/responsive.dart';
 import 'adventure_screen.dart';
 import 'balloon_screen.dart';
 import 'catch_screen.dart';
@@ -21,7 +22,10 @@ List<VocabItem> arcadeWordPool(int gradeLevel) {
       .expand((u) => u.items)
       .toList();
   if (learned.length >= 8) return learned;
-  return grade.units.where((u) => u.kind == UnitKind.vocab).expand((u) => u.items).toList();
+  return grade.units
+      .where((u) => u.kind == UnitKind.vocab)
+      .expand((u) => u.items)
+      .toList();
 }
 
 /// "Arena Arcade" — hub for the action & bonus games.
@@ -58,7 +62,10 @@ class _ArcadeScreenState extends State<ArcadeScreen> {
                   scrollDirection: Axis.horizontal,
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   children: [
-                    Text('Kelas:', style: AppText.body(17, color: Colors.white)),
+                    Text(
+                      'Kelas:',
+                      style: AppText.body(17, color: Colors.white),
+                    ),
                     const SizedBox(width: 8),
                     for (var g = 1; g <= 6; g++)
                       Padding(
@@ -74,53 +81,62 @@ class _ArcadeScreenState extends State<ArcadeScreen> {
               ),
               const SizedBox(height: 8),
               Expanded(
-                child: ListView(
-                  padding: const EdgeInsets.fromLTRB(20, 0, 20, 24),
-                  children: [
-                    _gameCard(
-                      emoji: '🎈',
-                      title: 'Balon Pop',
-                      desc: 'Dengar kata, letuskan balon yang benar!',
-                      colors: const [Color(0xFFFF6B6B), Color(0xFFFF9F1C)],
-                      onTap: () =>
-                          _openWordGame((w) => BalloonScreen(words: w, title: 'Balon Pop')),
-                    ),
-                    _gameCard(
-                      emoji: '🧺',
-                      title: 'Tangkap Kata',
-                      desc: 'Gerakkan keranjang, tangkap kata yang tepat!',
-                      colors: const [Color(0xFF43AA8B), Color(0xFF80ED99)],
-                      onTap: () =>
-                          _openWordGame((w) => CatchScreen(words: w, title: 'Tangkap Kata')),
-                    ),
-                    _gameCard(
-                      emoji: '🏃',
-                      title: 'Lari Kata',
-                      desc: 'Funky berlari! Ketuk gerbang jawaban yang benar!',
-                      colors: const [Color(0xFF4CC9F0), Color(0xFF4361EE)],
-                      onTap: () =>
-                          _openWordGame((w) => RunnerScreen(words: w, title: 'Lari Kata')),
-                    ),
-                    _gameCard(
-                      emoji: '🧍',
-                      title: 'Simon Says',
-                      desc: 'Ikuti perintah... hanya kalau Simon bilang!',
-                      colors: const [Color(0xFFFF8FAB), Color(0xFFC77DFF)],
-                      onTap: () => Navigator.of(context).push(funRoute(const SimonScreen())),
-                    ),
-                    const SizedBox(height: 6),
-                    Text('🗺️ Cerita Bercabang', style: AppText.display(22)),
-                    const SizedBox(height: 8),
-                    for (final adv in kAdventures)
+                child: ContentWidth(
+                  child: ListView(
+                    padding: const EdgeInsets.fromLTRB(20, 0, 20, 24),
+                    children: [
                       _gameCard(
-                        emoji: adv.emoji,
-                        title: adv.title,
-                        desc: adv.titleId,
-                        colors: const [Color(0xFF7B61FF), Color(0xFF9B5DE5)],
-                        onTap: () =>
-                            Navigator.of(context).push(funRoute(AdventureScreen(adventure: adv))),
+                        emoji: '🎈',
+                        title: 'Balon Pop',
+                        desc: 'Dengar kata, letuskan balon yang benar!',
+                        colors: const [Color(0xFFFF6B6B), Color(0xFFFF9F1C)],
+                        onTap: () => _openWordGame(
+                          (w) => BalloonScreen(words: w, title: 'Balon Pop'),
+                        ),
                       ),
-                  ],
+                      _gameCard(
+                        emoji: '🧺',
+                        title: 'Tangkap Kata',
+                        desc: 'Gerakkan keranjang, tangkap kata yang tepat!',
+                        colors: const [Color(0xFF43AA8B), Color(0xFF80ED99)],
+                        onTap: () => _openWordGame(
+                          (w) => CatchScreen(words: w, title: 'Tangkap Kata'),
+                        ),
+                      ),
+                      _gameCard(
+                        emoji: '🏃',
+                        title: 'Lari Kata',
+                        desc:
+                            'Funky berlari! Ketuk gerbang jawaban yang benar!',
+                        colors: const [Color(0xFF4CC9F0), Color(0xFF4361EE)],
+                        onTap: () => _openWordGame(
+                          (w) => RunnerScreen(words: w, title: 'Lari Kata'),
+                        ),
+                      ),
+                      _gameCard(
+                        emoji: '🧍',
+                        title: 'Simon Says',
+                        desc: 'Ikuti perintah... hanya kalau Simon bilang!',
+                        colors: const [Color(0xFFFF8FAB), Color(0xFFC77DFF)],
+                        onTap: () => Navigator.of(
+                          context,
+                        ).push(funRoute(const SimonScreen())),
+                      ),
+                      const SizedBox(height: 6),
+                      Text('🗺️ Cerita Bercabang', style: AppText.display(22)),
+                      const SizedBox(height: 8),
+                      for (final adv in kAdventures)
+                        _gameCard(
+                          emoji: adv.emoji,
+                          title: adv.title,
+                          desc: adv.titleId,
+                          colors: const [Color(0xFF7B61FF), Color(0xFF9B5DE5)],
+                          onTap: () => Navigator.of(
+                            context,
+                          ).push(funRoute(AdventureScreen(adventure: adv))),
+                        ),
+                    ],
+                  ),
                 ),
               ),
             ],
@@ -146,8 +162,16 @@ class _ArcadeScreenState extends State<ArcadeScreen> {
           decoration: BoxDecoration(
             gradient: LinearGradient(colors: colors),
             borderRadius: BorderRadius.circular(24),
-            border: Border.all(color: Colors.white.withOpacity(0.5), width: 3),
-            boxShadow: [BoxShadow(color: colors.last.withOpacity(0.45), offset: const Offset(0, 6))],
+            border: Border.all(
+              color: Colors.white.withValues(alpha: 0.5),
+              width: 3,
+            ),
+            boxShadow: [
+              BoxShadow(
+                color: colors.last.withValues(alpha: 0.45),
+                offset: const Offset(0, 6),
+              ),
+            ],
           ),
           child: Row(
             children: [
@@ -162,7 +186,11 @@ class _ArcadeScreenState extends State<ArcadeScreen> {
                   ],
                 ),
               ),
-              const Icon(Icons.play_circle_fill_rounded, color: Colors.white, size: 40),
+              const Icon(
+                Icons.play_circle_fill_rounded,
+                color: Colors.white,
+                size: 40,
+              ),
             ],
           ),
         ),

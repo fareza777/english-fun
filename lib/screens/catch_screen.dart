@@ -75,13 +75,15 @@ class _CatchScreenState extends State<CatchScreen> with SingleTickerProviderStat
         _spawnCount++;
         final isTarget = _spawnCount % 3 == 0;
         final item = isTarget ? _target : widget.words[_rnd.nextInt(widget.words.length)];
-        _items.add(_Falling(
-          item.en,
-          isTarget,
-          30 + _rnd.nextDouble() * (_width - 90),
-          -40,
-          90 + _rnd.nextDouble() * 50 + _score * 6,
-        ));
+        _items.add(
+          _Falling(
+            item.en,
+            isTarget,
+            30 + _rnd.nextDouble() * (_width - 90),
+            -40,
+            90 + _rnd.nextDouble() * 50 + _score * 6,
+          ),
+        );
       }
       final basketY = _playH - 110;
       final caught = <_Falling>[];
@@ -123,13 +125,17 @@ class _CatchScreenState extends State<CatchScreen> with SingleTickerProviderStat
     _done = true;
     final stars = _score >= 10 ? 3 : (_score >= 7 ? 2 : (_score >= 4 ? 1 : 0));
     Progress.I.addCoins(_score * 2);
-    Navigator.of(context).pushReplacement(funRoute(ResultScreen(
-      title: 'Tangkap Kata',
-      stars: stars,
-      correct: _score,
-      total: _goal,
-      retryBuilder: () => CatchScreen(words: widget.words, title: widget.title),
-    )));
+    Navigator.of(context).pushReplacement(
+      funRoute(
+        ResultScreen(
+          title: 'Tangkap Kata',
+          stars: stars,
+          correct: _score,
+          total: _goal,
+          retryBuilder: () => CatchScreen(words: widget.words, title: widget.title),
+        ),
+      ),
+    );
   }
 
   @override
@@ -182,13 +188,19 @@ class _CatchScreenState extends State<CatchScreen> with SingleTickerProviderStat
                             Text(_target.emoji, style: const TextStyle(fontSize: 30)),
                             const SizedBox(width: 8),
                             Flexible(
-                              child: Text('Tangkap: ${_target.idn}  ($_score/$_goal)',
-                                  style: AppText.heading(20), overflow: TextOverflow.ellipsis),
+                              child: Text(
+                                'Tangkap: ${_target.idn}  ($_score/$_goal)',
+                                style: AppText.heading(20),
+                                overflow: TextOverflow.ellipsis,
+                              ),
                             ),
                             BouncyButton(
                               onTap: _speakTarget,
-                              child: const Icon(Icons.volume_up_rounded,
-                                  color: Color(0xFF4361EE), size: 28),
+                              child: const Icon(
+                                Icons.volume_up_rounded,
+                                color: Color(0xFF4361EE),
+                                size: 28,
+                              ),
                             ),
                           ],
                         ),
@@ -210,19 +222,21 @@ class _CatchScreenState extends State<CatchScreen> with SingleTickerProviderStat
                                     decoration: BoxDecoration(
                                       color: Colors.white,
                                       borderRadius: BorderRadius.circular(16),
-                                      border:
-                                          Border.all(color: const Color(0xFF4361EE), width: 2),
+                                      border: Border.all(color: const Color(0xFF4361EE), width: 2),
                                       boxShadow: const [
                                         BoxShadow(
-                                            color: Color(0x22000000),
-                                            blurRadius: 6,
-                                            offset: Offset(0, 3))
+                                          color: Color(0x22000000),
+                                          blurRadius: 6,
+                                          offset: Offset(0, 3),
+                                        ),
                                       ],
                                     ),
                                     alignment: Alignment.center,
-                                    child: Text(it.word,
-                                        style: AppText.heading(17),
-                                        overflow: TextOverflow.ellipsis),
+                                    child: Text(
+                                      it.word,
+                                      style: AppText.heading(17),
+                                      overflow: TextOverflow.ellipsis,
+                                    ),
                                   ),
                                 ),
                               // basket

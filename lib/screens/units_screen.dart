@@ -5,6 +5,7 @@ import '../services/progress.dart';
 import '../services/sfx.dart';
 import '../theme.dart';
 import '../widgets/common.dart';
+import '../widgets/responsive.dart';
 import 'boss_screen.dart';
 import 'build_screen.dart';
 import 'grammar_screen.dart';
@@ -34,67 +35,73 @@ class UnitsScreen extends StatelessWidget {
               colors: grade.colors,
             ),
             Expanded(
-              child: ListenableBuilder(
-                listenable: Progress.I,
-                builder: (context, _) => ListView.builder(
-                  padding: const EdgeInsets.fromLTRB(24, 8, 24, 40),
-                  itemCount: grade.units.length + 1, // +1 = boss node
-                  itemBuilder: (context, i) {
-                    final alignX = _pattern[i % _pattern.length];
-                    final connector = i == 0
-                        ? const SizedBox(height: 6)
-                        : SizedBox(
-                            height: 40,
-                            width: double.infinity,
-                            child: CustomPaint(
-                              painter: _ConnectorPainter(
-                                from: _pattern[(i - 1) % _pattern.length],
-                                to: alignX,
-                                color: grade.colors.first,
+              child: ContentWidth(
+                child: ListenableBuilder(
+                  listenable: Progress.I,
+                  builder: (context, _) => ListView.builder(
+                    padding: const EdgeInsets.fromLTRB(24, 8, 24, 40),
+                    itemCount: grade.units.length + 1, // +1 = boss node
+                    itemBuilder: (context, i) {
+                      final alignX = _pattern[i % _pattern.length];
+                      final connector = i == 0
+                          ? const SizedBox(height: 6)
+                          : SizedBox(
+                              height: 40,
+                              width: double.infinity,
+                              child: CustomPaint(
+                                painter: _ConnectorPainter(
+                                  from: _pattern[(i - 1) % _pattern.length],
+                                  to: alignX,
+                                  color: grade.colors.first,
+                                ),
+                              ),
+                            );
+                      if (i == grade.units.length) {
+                        final bossDone =
+                            Progress.I.unitsDone(grade) == grade.units.length;
+                        return Column(
+                          children: [
+                            connector,
+                            Align(
+                              alignment: Alignment(alignX, 0),
+                              child: _BossNode(
+                                grade: grade,
+                                unlocked: bossDone,
+                                onTap: () {
+                                  if (bossDone) {
+                                    Sfx.I.pop();
+                                    Navigator.of(
+                                      context,
+                                    ).push(funRoute(BossScreen(grade: grade)));
+                                  } else {
+                                    Sfx.I.wrong();
+                                    Sfx.I.speak('Finish all units first!');
+                                  }
+                                },
                               ),
                             ),
-                          );
-                    if (i == grade.units.length) {
-                      final bossDone = Progress.I.unitsDone(grade) == grade.units.length;
+                          ],
+                        );
+                      }
+                      final unit = grade.units[i];
+                      final unlocked = Progress.I.unitUnlocked(grade, i);
                       return Column(
                         children: [
                           connector,
                           Align(
                             alignment: Alignment(alignX, 0),
-                            child: _BossNode(
-                              grade: grade,
-                              unlocked: bossDone,
-                              onTap: () {
-                                if (bossDone) {
-                                  Sfx.I.pop();
-                                  Navigator.of(context).push(funRoute(BossScreen(grade: grade)));
-                                } else {
-                                  Sfx.I.wrong();
-                                  Sfx.I.speak('Finish all units first!');
-                                }
-                              },
+                            child: _UnitNode(
+                              unit: unit,
+                              unlocked: unlocked,
+                              colors: grade.colors,
+                              onTap: () =>
+                                  _showUnitDetail(context, unit, grade.colors),
                             ),
                           ),
                         ],
                       );
-                    }
-                    final unit = grade.units[i];
-                    final unlocked = Progress.I.unitUnlocked(grade, i);
-                    return Column(
-                      children: [
-                        connector,
-                        Align(
-                          alignment: Alignment(alignX, 0),
-                          child: _UnitNode(
-                            unit: unit,
-                            unlocked: unlocked,
-                            colors: grade.colors,
-                            onTap: () => _showUnitDetail(context, unit, grade.colors),
-                          ),
-                        ),
-                      ],
-                    );
-                  },
+                    },
+                  ),
                 ),
               ),
             ),
@@ -123,7 +130,10 @@ class UnitsScreen extends StatelessWidget {
               Container(
                 width: 56,
                 height: 6,
-                decoration: BoxDecoration(color: Colors.grey.shade300, borderRadius: BorderRadius.circular(4)),
+                decoration: BoxDecoration(
+                  color: Colors.grey.shade300,
+                  borderRadius: BorderRadius.circular(4),
+                ),
               ),
               const SizedBox(height: 14),
               Text(unit.emoji, style: const TextStyle(fontSize: 54)),
@@ -138,17 +148,27 @@ class UnitsScreen extends StatelessWidget {
                   child: BouncyButton(
                     onTap: () => _openGame(sheetContext, unit, game, colors),
                     child: Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 18,
+                        vertical: 12,
+                      ),
                       decoration: BoxDecoration(
                         gradient: LinearGradient(colors: colors),
                         borderRadius: BorderRadius.circular(22),
-                        boxShadow: [BoxShadow(color: colors.last.withOpacity(0.4), offset: const Offset(0, 5))],
+                        boxShadow: [
+                          BoxShadow(
+                            color: colors.last.withValues(alpha: 0.4),
+                            offset: const Offset(0, 5),
+                          ),
+                        ],
                       ),
                       child: Row(
                         children: [
                           Text(meta.$1, style: const TextStyle(fontSize: 30)),
                           const SizedBox(width: 12),
-                          Expanded(child: Text(meta.$2, style: AppText.display(22))),
+                          Expanded(
+                            child: Text(meta.$2, style: AppText.display(22)),
+                          ),
                           StarRow(stars: earned, max: meta.$3, size: 22),
                         ],
                       ),
@@ -170,7 +190,9 @@ class UnitsScreen extends StatelessWidget {
             ? ('📖', 'Belajar & Latihan', 3)
             : ('📖', 'Belajar', 1);
       case 'quiz':
-        return u.kind == UnitKind.story ? ('🎯', 'Kuis Cerita', 3) : ('🎯', 'Tebak Kata', 3);
+        return u.kind == UnitKind.story
+            ? ('🎯', 'Kuis Cerita', 3)
+            : ('🎯', 'Tebak Kata', 3);
       case 'listen':
         return ('🎧', 'Tebak Suara', 3);
       case 'build':
@@ -188,12 +210,19 @@ class UnitsScreen extends StatelessWidget {
     }
   }
 
-  void _openGame(BuildContext sheetContext, Unit unit, String game, List<Color> colors) {
+  void _openGame(
+    BuildContext sheetContext,
+    Unit unit,
+    String game,
+    List<Color> colors,
+  ) {
     Navigator.of(sheetContext).pop();
     late final Widget screen;
     switch (game) {
       case 'learn':
-        screen = unit.kind == UnitKind.grammar ? GrammarScreen(unit: unit) : LearnScreen(unit: unit);
+        screen = unit.kind == UnitKind.grammar
+            ? GrammarScreen(unit: unit)
+            : LearnScreen(unit: unit);
         break;
       case 'quiz':
         screen = unit.kind == UnitKind.story
@@ -230,14 +259,18 @@ class _ConnectorPainter extends CustomPainter {
   final double from; // alignment.x of previous node
   final double to; // alignment.x of this node
   final Color color;
-  _ConnectorPainter({required this.from, required this.to, required this.color});
+  _ConnectorPainter({
+    required this.from,
+    required this.to,
+    required this.color,
+  });
 
   @override
   void paint(Canvas canvas, Size size) {
     double x(double alignX) => size.width / 2 + alignX * (size.width - 170) / 2;
     final p1 = Offset(x(from), -4);
     final p2 = Offset(x(to), size.height + 4);
-    final paint = Paint()..color = color.withOpacity(0.65);
+    final paint = Paint()..color = color.withValues(alpha: 0.65);
     // dotted cubic curve
     const steps = 7;
     for (var i = 0; i <= steps; i++) {
@@ -246,11 +279,13 @@ class _ConnectorPainter extends CustomPainter {
       // control points pull horizontally for an S-curve feel
       final c1 = Offset(p1.dx, size.height * 0.45);
       final c2 = Offset(p2.dx, size.height * 0.55);
-      final px = mt * mt * mt * p1.dx +
+      final px =
+          mt * mt * mt * p1.dx +
           3 * mt * mt * t * c1.dx +
           3 * mt * t * t * c2.dx +
           t * t * t * p2.dx;
-      final py = mt * mt * mt * p1.dy +
+      final py =
+          mt * mt * mt * p1.dy +
           3 * mt * mt * t * c1.dy +
           3 * mt * t * t * c2.dy +
           t * t * t * p2.dy;
@@ -268,7 +303,12 @@ class _UnitNode extends StatelessWidget {
   final bool unlocked;
   final List<Color> colors;
   final VoidCallback onTap;
-  const _UnitNode({required this.unit, required this.unlocked, required this.colors, required this.onTap});
+  const _UnitNode({
+    required this.unit,
+    required this.unlocked,
+    required this.colors,
+    required this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -284,14 +324,20 @@ class _UnitNode extends StatelessWidget {
               height: 96,
               decoration: BoxDecoration(
                 gradient: unlocked
-                    ? LinearGradient(begin: Alignment.topLeft, end: Alignment.bottomRight, colors: colors)
+                    ? LinearGradient(
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                        colors: colors,
+                      )
                     : null,
                 color: unlocked ? null : Colors.grey.shade400,
                 shape: BoxShape.circle,
                 border: Border.all(color: Colors.white, width: 4),
                 boxShadow: [
                   BoxShadow(
-                    color: (unlocked ? colors.last : Colors.grey).withOpacity(0.45),
+                    color: (unlocked ? colors.last : Colors.grey).withValues(
+                      alpha: 0.45,
+                    ),
                     offset: const Offset(0, 6),
                   ),
                 ],
@@ -299,7 +345,10 @@ class _UnitNode extends StatelessWidget {
               alignment: Alignment.center,
               child: Text(
                 unlocked ? unit.emoji : '🔒',
-                style: TextStyle(fontSize: 44, color: unlocked ? null : Colors.grey.shade600),
+                style: TextStyle(
+                  fontSize: 44,
+                  color: unlocked ? null : Colors.grey.shade600,
+                ),
               ),
             ),
             const SizedBox(height: 8),
@@ -308,7 +357,13 @@ class _UnitNode extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(16),
-                boxShadow: const [BoxShadow(color: Color(0x1A000000), blurRadius: 6, offset: Offset(0, 3))],
+                boxShadow: const [
+                  BoxShadow(
+                    color: Color(0x1A000000),
+                    blurRadius: 6,
+                    offset: Offset(0, 3),
+                  ),
+                ],
               ),
               child: Column(
                 children: [
@@ -318,8 +373,15 @@ class _UnitNode extends StatelessWidget {
                     Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        const Icon(Icons.star_rounded, color: AppColors.star, size: 18),
-                        Text('$earned/${unit.maxStars}', style: AppText.body(13)),
+                        const Icon(
+                          Icons.star_rounded,
+                          color: AppColors.star,
+                          size: 18,
+                        ),
+                        Text(
+                          '$earned/${unit.maxStars}',
+                          style: AppText.body(13),
+                        ),
                       ],
                     ),
                 ],
@@ -337,7 +399,11 @@ class _BossNode extends StatelessWidget {
   final Grade grade;
   final bool unlocked;
   final VoidCallback onTap;
-  const _BossNode({required this.grade, required this.unlocked, required this.onTap});
+  const _BossNode({
+    required this.grade,
+    required this.unlocked,
+    required this.onTap,
+  });
 
   static const _colors = [Color(0xFF4361EE), Color(0xFF9B5DE5)];
 
@@ -355,14 +421,20 @@ class _BossNode extends StatelessWidget {
               height: 108,
               decoration: BoxDecoration(
                 gradient: unlocked
-                    ? const LinearGradient(begin: Alignment.topLeft, end: Alignment.bottomRight, colors: _colors)
+                    ? const LinearGradient(
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                        colors: _colors,
+                      )
                     : null,
                 color: unlocked ? null : Colors.grey.shade400,
                 shape: BoxShape.circle,
                 border: Border.all(color: const Color(0xFFFFD60A), width: 5),
                 boxShadow: [
                   BoxShadow(
-                    color: (unlocked ? _colors.last : Colors.grey).withOpacity(0.5),
+                    color: (unlocked ? _colors.last : Colors.grey).withValues(
+                      alpha: 0.5,
+                    ),
                     offset: const Offset(0, 7),
                   ),
                 ],
@@ -370,7 +442,10 @@ class _BossNode extends StatelessWidget {
               alignment: Alignment.center,
               child: Text(
                 unlocked ? '🐉' : '🔒',
-                style: TextStyle(fontSize: 52, color: unlocked ? null : Colors.grey.shade600),
+                style: TextStyle(
+                  fontSize: 52,
+                  color: unlocked ? null : Colors.grey.shade600,
+                ),
               ),
             ),
             const SizedBox(height: 8),
@@ -379,7 +454,13 @@ class _BossNode extends StatelessWidget {
               decoration: BoxDecoration(
                 color: const Color(0xFF3C096C),
                 borderRadius: BorderRadius.circular(16),
-                boxShadow: const [BoxShadow(color: Color(0x33000000), blurRadius: 6, offset: Offset(0, 3))],
+                boxShadow: const [
+                  BoxShadow(
+                    color: Color(0x33000000),
+                    blurRadius: 6,
+                    offset: Offset(0, 3),
+                  ),
+                ],
               ),
               child: Column(
                 children: [

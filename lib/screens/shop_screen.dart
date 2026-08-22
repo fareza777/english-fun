@@ -5,6 +5,7 @@ import '../services/progress.dart';
 import '../services/sfx.dart';
 import '../theme.dart';
 import '../widgets/common.dart';
+import '../widgets/responsive.dart';
 import '../widgets/funky.dart';
 
 /// Costume shop: spend coins (earned from stars) on hats for Funky.
@@ -49,8 +50,8 @@ class ShopScreen extends StatelessWidget {
                   Expanded(
                     child: GridView.builder(
                       padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
-                      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 2,
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: context.isTablet ? 4 : 2,
                         mainAxisSpacing: 12,
                         crossAxisSpacing: 12,
                         childAspectRatio: 1.05,
@@ -72,7 +73,11 @@ class ShopScreen extends StatelessWidget {
                                 width: 4,
                               ),
                               boxShadow: const [
-                                BoxShadow(color: Color(0x22000000), blurRadius: 8, offset: Offset(0, 4))
+                                BoxShadow(
+                                  color: Color(0x22000000),
+                                  blurRadius: 8,
+                                  offset: Offset(0, 4),
+                                ),
                               ],
                             ),
                             child: Column(
@@ -86,13 +91,13 @@ class ShopScreen extends StatelessWidget {
                                   decoration: BoxDecoration(
                                     color: owned
                                         ? (equipped ? AppColors.star : AppColors.correct)
-                                        : (affordable ? const Color(0xFF4361EE) : Colors.grey.shade400),
+                                        : (affordable
+                                              ? const Color(0xFF4361EE)
+                                              : Colors.grey.shade400),
                                     borderRadius: BorderRadius.circular(14),
                                   ),
                                   child: Text(
-                                    owned
-                                        ? (equipped ? 'Dipakai ✓' : 'Pakai')
-                                        : '🪙 ${item.price}',
+                                    owned ? (equipped ? 'Dipakai ✓' : 'Pakai') : '🪙 ${item.price}',
                                     style: AppText.display(15),
                                   ),
                                 ),
@@ -131,15 +136,17 @@ class ShopScreen extends StatelessWidget {
       Sfx.I.speak('Awesome! New hat!');
     } else {
       Sfx.I.wrong();
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-        backgroundColor: AppColors.wrong,
-        behavior: SnackBarBehavior.floating,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        content: Text(
-          'Koin belum cukup! Kumpulkan bintang untuk dapat koin. ⭐→🪙',
-          style: AppText.body(16, color: Colors.white),
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          backgroundColor: AppColors.wrong,
+          behavior: SnackBarBehavior.floating,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+          content: Text(
+            'Koin belum cukup! Kumpulkan bintang untuk dapat koin. ⭐→🪙',
+            style: AppText.body(16, color: Colors.white),
+          ),
         ),
-      ));
+      );
     }
   }
 }

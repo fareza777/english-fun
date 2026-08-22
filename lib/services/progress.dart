@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../models.dart';
+import 'srs.dart';
 
 /// Tracks stars, player name, daily streak, stickers, word mastery,
 /// coins, shop items, daily goal and accessibility options.
@@ -19,8 +20,9 @@ class Progress extends ChangeNotifier {
   final Set<String> _stickers = {};
 
   // ---- v2: mastery / economy / stats ----
-  /// wrong-answer count per English word (lowercased) -> "weak words".
-  final Map<String, int> _wrong = {};
+  /// Spaced-repetition memory per English word (lowercased).
+  /// Replaces the v2 plain wrong-counter; old data is migrated on load.
+  final Map<String, WordMemory> _memory = {};
   int _coins = 0;
   final Set<String> _owned = {};
   String _hat = '';
@@ -28,6 +30,9 @@ class Progress extends ChangeNotifier {
   int _gamesTotal = 0;
   int _dailyGoal = 3;
   bool _reducedMotion = false;
+
+  /// Grade chosen during onboarding (1-6). 0 = not chosen yet.
+  int _selectedGrade = 0;
 
   // ---- v3: pets, spin, badges ----
   int _eggs = 0;
@@ -50,6 +55,15 @@ class Progress extends ChangeNotifier {
   bool get reducedMotion => _reducedMotion;
   bool get dailyGoalReached => _gamesToday >= _dailyGoal;
 
+  /// Grade picked in onboarding, or 0 when the child skipped that step.
+  int get selectedGrade => _selectedGrade;
+
+  /// Grade to open by default across the app (never 0).
+  int get preferredGrade => _selectedGrade == 0 ? 1 : _selectedGrade;
+
+  /// True once onboarding has run at least once.
+  bool get onboarded => _prefs?.getBool('onboarded') ?? false;
+
   int get eggs => _eggs;
   List<String> get pets => List.unmodifiable(_pets);
   String get activePet => _activePet;
@@ -62,7 +76,8 @@ class Progress extends ChangeNotifier {
       _stars.keys.any((k) => k.startsWith('boss_g') && (_stars[k] ?? 0) > 0);
 
   /// Any speaking-game star earned (for badges).
-  bool get anySpeakStar => _stars.keys.any((k) => k.endsWith(':speak') && (_stars[k] ?? 0) > 0);
+  bool get anySpeakStar =>
+      _stars.keys.any((k) => k.endsWith(':speak') && (_stars[k] ?? 0) > 0);
 
   static String _fmtDate(DateTime d) =>
       '${d.year}-${d.month.toString().padLeft(2, '0')}-${d.day.toString().padLeft(2, '0')}';
@@ -70,6 +85,13 @@ class Progress extends ChangeNotifier {
   Future<void> load() async {
     try {
       _prefs = await SharedPreferences.getInstance();
+      // Start from a clean slate so a reload never merges two profiles.
+      _stars.clear();
+      _stickers.clear();
+      _memory.clear();
+      _owned.clear();
+      _pets.clear();
+      _badges.clear();
       for (final key in _prefs!.getKeys()) {
         if (key.startsWith(_prefix)) {
           final v = _prefs!.getInt(key);
@@ -90,18 +112,54 @@ class Progress extends ChangeNotifier {
       _lastFed = _prefs!.getString('last_fed') ?? '';
       _lastSpin = _prefs!.getString('last_spin') ?? '';
       _badges.addAll(_prefs!.getStringList('badges') ?? const []);
-      final rawWrong = _prefs!.getString('wrong_map') ?? '';
-      if (rawWrong.isNotEmpty) {
-        final decoded = jsonDecode(rawWrong);
-        if (decoded is Map) {
-          decoded.forEach((k, v) {
-            if (v is int) _wrong['$k'] = v;
-          });
-        }
-      }
+      _selectedGrade = (_prefs!.getInt('selected_grade') ?? 0).clamp(0, 6);
+      _loadMemory();
       _updateStreak();
       _rollDailyCounters();
       notifyListeners();
+    } catch (_) {}
+  }
+
+  /// Reads the v3 memory map, falling back to migrating the v2 wrong-counter
+  /// so players who update the app keep the words they were struggling with.
+  void _loadMemory() {
+    final rawMemory = _prefs?.getString('memory_v3') ?? '';
+    if (rawMemory.isNotEmpty) {
+      try {
+        final decoded = jsonDecode(rawMemory);
+        if (decoded is Map) {
+          decoded.forEach((k, v) {
+            final memory = WordMemory.fromJson(v);
+            if (memory != null) _memory['$k'] = memory;
+          });
+          return;
+        }
+      } catch (_) {
+        // Corrupt payload: fall through to the legacy migration below.
+      }
+    }
+
+    final rawWrong = _prefs?.getString('wrong_map') ?? '';
+    if (rawWrong.isEmpty) return;
+    try {
+      final decoded = jsonDecode(rawWrong);
+      if (decoded is Map) {
+        decoded.forEach((k, v) {
+          if (v is int && v > 0) {
+            _memory['$k'] = WordMemory.fromLegacyWrongCount(v);
+          }
+        });
+        _persistMemory();
+      }
+    } catch (_) {}
+  }
+
+  void _persistMemory() {
+    try {
+      final payload = {
+        for (final entry in _memory.entries) entry.key: entry.value.toJson(),
+      };
+      _prefs?.setString('memory_v3', jsonEncode(payload));
     } catch (_) {}
   }
 
@@ -177,38 +235,72 @@ class Progress extends ChangeNotifier {
     return unitStars(grade.units[index - 1]) > 0;
   }
 
-  int unitsDone(Grade grade) => grade.units.where((u) => unitStars(u) > 0).length;
+  int unitsDone(Grade grade) =>
+      grade.units.where((u) => unitStars(u) > 0).length;
 
-  // ---- word mastery (spaced repetition data) ----
+  // ---- word mastery (spaced repetition) ----
+
+  static String _wordKey(String word) => word.trim().toLowerCase();
+
+  /// Memory for one word, or null when it has never been studied.
+  WordMemory? memoryFor(String word) => _memory[_wordKey(word)];
+
+  /// Records one answer and reschedules the word. This is the single entry
+  /// point every game uses, so scheduling stays consistent app-wide.
+  void recordAnswer(String word, {required bool correct}) {
+    final k = _wordKey(word);
+    if (k.isEmpty) return;
+    final previous = _memory[k] ?? const WordMemory();
+    _memory[k] = previous.answer(correct: correct, now: DateTime.now());
+    notifyListeners();
+    _persistMemory();
+  }
 
   /// Call whenever the kid answers a word incorrectly.
-  void recordWrong(String word) {
-    final k = word.trim().toLowerCase();
-    if (k.isEmpty) return;
-    _wrong[k] = (_wrong[k] ?? 0) + 1;
-    notifyListeners();
-    try {
-      _prefs?.setString('wrong_map', jsonEncode(_wrong));
-    } catch (_) {}
-  }
+  void recordWrong(String word) => recordAnswer(word, correct: false);
 
-  /// Call when the kid answers a word correctly: it slowly heals mastery.
-  void recordCorrect(String word) {
-    final k = word.trim().toLowerCase();
-    if (k.isEmpty || !(_wrong[k] != null && _wrong[k]! > 0)) return;
-    _wrong[k] = _wrong[k]! - 1;
-    try {
-      _prefs?.setString('wrong_map', jsonEncode(_wrong));
-    } catch (_) {}
-  }
+  /// Call when the kid answers a word correctly: it promotes the word to the
+  /// next Leitner box and pushes the next review further out.
+  void recordCorrect(String word) => recordAnswer(word, correct: true);
 
-  int wrongCount(String word) => _wrong[word.trim().toLowerCase()] ?? 0;
+  int wrongCount(String word) => memoryFor(word)?.wrong ?? 0;
+
+  /// How many studied words are ready for review right now.
+  int get dueWordCount {
+    final now = DateTime.now();
+    return _memory.values.where((m) => !m.isNew && m.isDue(now)).length;
+  }
 
   /// Words the kid struggles with, weakest first.
   List<MapEntry<String, int>> weakWords({int limit = 10}) {
-    final entries = _wrong.entries.where((e) => e.value > 0).toList()
-      ..sort((a, b) => b.value.compareTo(a.value));
+    final entries =
+        _memory.entries
+            .where((e) => e.value.wrong > 0 && e.value.box <= 2)
+            .map((e) => MapEntry(e.key, e.value.wrong))
+            .toList()
+          ..sort((a, b) => b.value.compareTo(a.value));
     return entries.take(limit).toList();
+  }
+
+  /// Seeds memory from an onboarding placement check so the very first
+  /// session is already personalised.
+  void seedPlacement(
+    Iterable<String> knownWords,
+    Iterable<String> missedWords,
+  ) {
+    final now = DateTime.now();
+    for (final word in knownWords) {
+      final k = _wordKey(word);
+      if (k.isEmpty) continue;
+      _memory[k] = const WordMemory(box: 2).answer(correct: true, now: now);
+    }
+    for (final word in missedWords) {
+      final k = _wordKey(word);
+      if (k.isEmpty) continue;
+      _memory[k] = const WordMemory().answer(correct: false, now: now);
+    }
+    notifyListeners();
+    _persistMemory();
   }
 
   // ---- coins & shop ----
@@ -270,6 +362,38 @@ class Progress extends ChangeNotifier {
     notifyListeners();
     try {
       _prefs?.setBool('reduced_motion', value);
+    } catch (_) {}
+  }
+
+  /// Stores the grade chosen during onboarding (1-6).
+  Future<void> setSelectedGrade(int grade) async {
+    _selectedGrade = grade.clamp(0, 6);
+    notifyListeners();
+    try {
+      await _prefs?.setInt('selected_grade', _selectedGrade);
+    } catch (_) {}
+  }
+
+  /// Marks onboarding as finished so it never shows again.
+  Future<void> markOnboarded() async {
+    try {
+      await _prefs?.setBool('onboarded', true);
+    } catch (_) {}
+    notifyListeners();
+  }
+
+  /// Clears the local profile identity so onboarding can be run again.
+  ///
+  /// Learning progress intentionally stays on the device. The parent-facing
+  /// reset action remains the separate, destructive way to wipe progress.
+  Future<void> logout() async {
+    _name = '';
+    _selectedGrade = 0;
+    notifyListeners();
+    try {
+      await _prefs?.remove('name');
+      await _prefs?.remove('onboarded');
+      await _prefs?.remove('selected_grade');
     } catch (_) {}
   }
 
@@ -350,7 +474,7 @@ class Progress extends ChangeNotifier {
   Future<void> reset() async {
     _stars.clear();
     _stickers.clear();
-    _wrong.clear();
+    _memory.clear();
     _owned.clear();
     _hat = '';
     _coins = 0;
@@ -365,7 +489,8 @@ class Progress extends ChangeNotifier {
     _badges.clear();
     notifyListeners();
     try {
-      final keys = _prefs?.getKeys().where((k) => k.startsWith(_prefix)).toList() ?? [];
+      final keys =
+          _prefs?.getKeys().where((k) => k.startsWith(_prefix)).toList() ?? [];
       for (final k in keys) {
         await _prefs?.remove(k);
       }
@@ -374,6 +499,7 @@ class Progress extends ChangeNotifier {
         'streak',
         'last_open',
         'wrong_map',
+        'memory_v3',
         'coins',
         'owned_items',
         'equipped_hat',

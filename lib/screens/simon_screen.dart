@@ -103,13 +103,17 @@ class _SimonScreenState extends State<SimonScreen> {
     _trickTimer?.cancel();
     final stars = _score >= 9 ? 3 : (_score >= 6 ? 2 : (_score >= 3 ? 1 : 0));
     Progress.I.addCoins(_score * 2);
-    Navigator.of(context).pushReplacement(funRoute(ResultScreen(
-      title: 'Simon Says',
-      stars: stars,
-      correct: _score,
-      total: _rounds,
-      retryBuilder: () => const SimonScreen(),
-    )));
+    Navigator.of(context).pushReplacement(
+      funRoute(
+        ResultScreen(
+          title: 'Simon Says',
+          stars: stars,
+          correct: _score,
+          total: _rounds,
+          retryBuilder: () => const SimonScreen(),
+        ),
+      ),
+    );
   }
 
   @override
@@ -132,8 +136,10 @@ class _SimonScreenState extends State<SimonScreen> {
                 colors: const [],
                 trailing: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
-                  decoration:
-                      BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(18)),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(18),
+                  ),
                   child: Text('${_index + 1}/$_rounds', style: AppText.heading(18)),
                 ),
               ),
@@ -149,7 +155,7 @@ class _SimonScreenState extends State<SimonScreen> {
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(22),
                     boxShadow: const [
-                      BoxShadow(color: Color(0x22000000), blurRadius: 10, offset: Offset(0, 4))
+                      BoxShadow(color: Color(0x22000000), blurRadius: 10, offset: Offset(0, 4)),
                     ],
                   ),
                   child: Column(
@@ -157,12 +163,15 @@ class _SimonScreenState extends State<SimonScreen> {
                       if (_simonSaid)
                         Text('SIMON BERKATA:', style: AppText.heading(15, color: AppColors.correct))
                       else
-                        Text('🤫 tanpa "Simon says"...', style: AppText.heading(15, color: AppColors.wrong)),
+                        Text(
+                          '🤫 tanpa "Simon says"...',
+                          style: AppText.heading(15, color: AppColors.wrong),
+                        ),
                       const SizedBox(height: 4),
                       Text(_command.$1, textAlign: TextAlign.center, style: AppText.heading(26)),
                       BouncyButton(
-                        onTap: () => Sfx.I.speak(
-                            _simonSaid ? 'Simon says: ${_command.$1}' : _command.$1),
+                        onTap: () =>
+                            Sfx.I.speak(_simonSaid ? 'Simon says: ${_command.$1}' : _command.$1),
                         child: const Padding(
                           padding: EdgeInsets.all(4),
                           child: Icon(Icons.volume_up_rounded, color: Color(0xFF4361EE), size: 28),
@@ -194,12 +203,16 @@ class _SimonScreenState extends State<SimonScreen> {
                           decoration: BoxDecoration(
                             color: _picked == i
                                 ? (_simonSaid && _options[i] == _command.$2
-                                    ? AppColors.correct
-                                    : AppColors.wrong)
+                                      ? AppColors.correct
+                                      : AppColors.wrong)
                                 : Colors.white,
                             borderRadius: BorderRadius.circular(24),
                             boxShadow: const [
-                              BoxShadow(color: Color(0x22000000), blurRadius: 8, offset: Offset(0, 4))
+                              BoxShadow(
+                                color: Color(0x22000000),
+                                blurRadius: 8,
+                                offset: Offset(0, 4),
+                              ),
                             ],
                           ),
                           alignment: Alignment.center,

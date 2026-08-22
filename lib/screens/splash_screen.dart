@@ -15,8 +15,10 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderStateMixin {
-  late final AnimationController _c =
-      AnimationController(vsync: this, duration: const Duration(milliseconds: 1800))..forward();
+  late final AnimationController _c = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 1800),
+  )..forward();
 
   @override
   void initState() {
@@ -27,9 +29,12 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
 
   void _go() {
     if (!mounted) return;
-    final hasName = Progress.I.playerName.isNotEmpty;
-    Navigator.of(context)
-        .pushReplacement(funRoute(hasName ? const HomeScreen() : const OnboardingScreen()));
+    // Onboarding can be finished without entering a name, so the explicit
+    // flag is what decides, not the presence of a name.
+    final done = Progress.I.onboarded || Progress.I.playerName.isNotEmpty;
+    Navigator.of(
+      context,
+    ).pushReplacement(funRoute(done ? const HomeScreen() : const OnboardingScreen()));
   }
 
   @override
@@ -47,11 +52,27 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               ScaleTransition(
-                scale: CurvedAnimation(parent: _c, curve: const Interval(0.0, 0.45, curve: Curves.elasticOut)),
+                scale: CurvedAnimation(
+                  parent: _c,
+                  curve: const Interval(0.0, 0.45, curve: Curves.elasticOut),
+                ),
                 child: const Mascot(size: 130),
               ),
               const SizedBox(height: 18),
-              _StaggeredText(text: 'English Fun', controller: _c, start: 0.25, style: AppText.display(52, color: AppColors.ink)),
+              // The per-letter row is laid out at its natural width, which is
+              // wider than a narrow phone. Scale it down instead of clipping.
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: FittedBox(
+                  fit: BoxFit.scaleDown,
+                  child: _StaggeredText(
+                    text: 'English Fun',
+                    controller: _c,
+                    start: 0.25,
+                    style: AppText.display(52, color: AppColors.ink),
+                  ),
+                ),
+              ),
               const SizedBox(height: 6),
               FadeTransition(
                 opacity: CurvedAnimation(parent: _c, curve: const Interval(0.7, 1.0)),
@@ -83,7 +104,12 @@ class _StaggeredText extends StatelessWidget {
   final AnimationController controller;
   final double start;
   final TextStyle style;
-  const _StaggeredText({required this.text, required this.controller, required this.start, required this.style});
+  const _StaggeredText({
+    required this.text,
+    required this.controller,
+    required this.start,
+    required this.style,
+  });
 
   @override
   Widget build(BuildContext context) {

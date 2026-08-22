@@ -46,7 +46,11 @@ class _LearnScreenState extends State<LearnScreen> {
   void _goTo(int page) {
     if (page < 0 || page >= items.length) return;
     Sfx.I.flip();
-    _pc.animateToPage(page, duration: const Duration(milliseconds: 350), curve: Curves.easeOutCubic);
+    _pc.animateToPage(
+      page,
+      duration: const Duration(milliseconds: 350),
+      curve: Curves.easeOutCubic,
+    );
   }
 
   Future<void> _finish() async {
@@ -110,8 +114,10 @@ class _LearnScreenState extends State<LearnScreen> {
                 ),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(24, 4, 24, 8),
-                  child: Text('Ketuk kartu untuk membalik 🔄',
-                      style: AppText.body(15, color: AppColors.inkSoft.withOpacity(0.8))),
+                  child: Text(
+                    'Ketuk kartu untuk membalik 🔄',
+                    style: AppText.body(15, color: AppColors.inkSoft.withValues(alpha: 0.8)),
+                  ),
                 ),
                 SafeArea(
                   top: false,
@@ -135,7 +141,7 @@ class _LearnScreenState extends State<LearnScreen> {
                                 child: LinearProgressIndicator(
                                   value: (_page + 1) / items.length,
                                   minHeight: 12,
-                                  backgroundColor: Colors.white.withOpacity(0.6),
+                                  backgroundColor: Colors.white.withValues(alpha: 0.6),
                                   valueColor: const AlwaysStoppedAnimation(AppColors.correct),
                                 ),
                               ),
@@ -182,8 +188,13 @@ class _CardFace extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(36),
-        border: Border.all(color: back ? const Color(0xFFC77DFF) : const Color(0xFF7ED6FF), width: 5),
-        boxShadow: const [BoxShadow(color: Color(0x33000000), blurRadius: 18, offset: Offset(0, 8))],
+        border: Border.all(
+          color: back ? const Color(0xFFC77DFF) : const Color(0xFF7ED6FF),
+          width: 5,
+        ),
+        boxShadow: const [
+          BoxShadow(color: Color(0x33000000), blurRadius: 18, offset: Offset(0, 8)),
+        ],
       ),
       child: Stack(
         children: [
@@ -251,7 +262,11 @@ class _CardFace extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 8),
-        Text(item.idn, textAlign: TextAlign.center, style: AppText.heading(38, color: const Color(0xFF9B5DE5))),
+        Text(
+          item.idn,
+          textAlign: TextAlign.center,
+          style: AppText.heading(38, color: const Color(0xFF9B5DE5)),
+        ),
         if (item.sentence != null) ...[
           const SizedBox(height: 14),
           Container(
@@ -286,9 +301,11 @@ class _ArrowButton extends StatelessWidget {
         width: 62,
         height: 62,
         decoration: BoxDecoration(
-          color: enabled ? Colors.white : Colors.white.withOpacity(0.5),
+          color: enabled ? Colors.white : Colors.white.withValues(alpha: 0.5),
           shape: BoxShape.circle,
-          boxShadow: const [BoxShadow(color: Color(0x22000000), blurRadius: 8, offset: Offset(0, 4))],
+          boxShadow: const [
+            BoxShadow(color: Color(0x22000000), blurRadius: 8, offset: Offset(0, 4)),
+          ],
         ),
         child: Icon(icon, size: 34, color: enabled ? AppColors.ink : Colors.grey),
       ),

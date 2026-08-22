@@ -132,13 +132,17 @@ class _BuildScreenState extends State<BuildScreen> {
     final total = _sentences.length;
     final stars = (_firstTry / total * 3).round().clamp(0, 3);
     Progress.I.setStars(widget.unit.id, 'build', stars);
-    Navigator.of(context).pushReplacement(funRoute(ResultScreen(
-      title: widget.unit.title,
-      stars: stars,
-      correct: _firstTry,
-      total: total,
-      retryBuilder: () => BuildScreen(unit: widget.unit),
-    )));
+    Navigator.of(context).pushReplacement(
+      funRoute(
+        ResultScreen(
+          title: widget.unit.title,
+          stars: stars,
+          correct: _firstTry,
+          total: total,
+          retryBuilder: () => BuildScreen(unit: widget.unit),
+        ),
+      ),
+    );
   }
 
   @override
@@ -155,8 +159,10 @@ class _BuildScreenState extends State<BuildScreen> {
                 colors: const [],
                 trailing: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
-                  decoration:
-                      BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(18)),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(18),
+                  ),
                   child: Text('${_index + 1}/${_sentences.length}', style: AppText.heading(18)),
                 ),
               ),
@@ -170,7 +176,7 @@ class _BuildScreenState extends State<BuildScreen> {
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(22),
                     boxShadow: const [
-                      BoxShadow(color: Color(0x22000000), blurRadius: 10, offset: Offset(0, 4))
+                      BoxShadow(color: Color(0x22000000), blurRadius: 10, offset: Offset(0, 4)),
                     ],
                   ),
                   child: Column(
@@ -198,7 +204,7 @@ class _BuildScreenState extends State<BuildScreen> {
                   constraints: const BoxConstraints(minHeight: 84),
                   padding: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.5),
+                    color: Colors.white.withValues(alpha: 0.5),
                     borderRadius: BorderRadius.circular(18),
                     border: Border.all(color: Colors.white, width: 2),
                   ),
@@ -252,7 +258,7 @@ class _BuildScreenState extends State<BuildScreen> {
       decoration: BoxDecoration(
         color: color,
         borderRadius: BorderRadius.circular(16),
-        boxShadow: [BoxShadow(color: color.withOpacity(0.5), offset: const Offset(0, 4))],
+        boxShadow: [BoxShadow(color: color.withValues(alpha: 0.5), offset: const Offset(0, 4))],
       ),
       child: Text(word, style: AppText.display(20)),
     );

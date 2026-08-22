@@ -2888,6 +2888,321 @@
               ]
             }
           ]
+        },
+        {
+          "id": "g3_house",
+          "title": "Rooms at Home",
+          "titleId": "Ruangan di Rumah",
+          "emoji": "🏡",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Bedroom",
+              "idn": "Kamar tidur",
+              "emoji": "🛏️",
+              "sentence": "I sleep in the bedroom."
+            },
+            {
+              "en": "Kitchen",
+              "idn": "Dapur",
+              "emoji": "🍳",
+              "sentence": "Mom cooks in the kitchen."
+            },
+            {
+              "en": "Bathroom",
+              "idn": "Kamar mandi",
+              "emoji": "🛁",
+              "sentence": "I wash my hands in the bathroom."
+            },
+            {
+              "en": "Garden",
+              "idn": "Kebun",
+              "emoji": "🌷",
+              "sentence": "Flowers grow in the garden."
+            },
+            {
+              "en": "Garage",
+              "idn": "Garasi",
+              "emoji": "🚗",
+              "sentence": "The car is in the garage."
+            },
+            {
+              "en": "Window",
+              "idn": "Jendela",
+              "emoji": "🪟",
+              "sentence": "I open the window."
+            },
+            {
+              "en": "Door",
+              "idn": "Pintu",
+              "emoji": "🚪",
+              "sentence": "Please close the door."
+            },
+            {
+              "en": "Stairs",
+              "idn": "Tangga",
+              "emoji": "🪜",
+              "sentence": "I go up the stairs."
+            },
+            {
+              "en": "Roof",
+              "idn": "Atap",
+              "emoji": "🏠",
+              "sentence": "A bird sits on the roof."
+            },
+            {
+              "en": "Lamp",
+              "idn": "Lampu",
+              "emoji": "💡",
+              "sentence": "The lamp is bright."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g3_meals",
+          "title": "Meals and Drinks",
+          "titleId": "Makan dan Minum",
+          "emoji": "🍽️",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Breakfast",
+              "idn": "Sarapan",
+              "emoji": "🥣",
+              "sentence": "I eat breakfast at six."
+            },
+            {
+              "en": "Lunch",
+              "idn": "Makan siang",
+              "emoji": "🍚",
+              "sentence": "We have lunch at school."
+            },
+            {
+              "en": "Dinner",
+              "idn": "Makan malam",
+              "emoji": "🍲",
+              "sentence": "My family eats dinner together."
+            },
+            {
+              "en": "Water",
+              "idn": "Air",
+              "emoji": "💧",
+              "sentence": "I drink water every day."
+            },
+            {
+              "en": "Milk",
+              "idn": "Susu",
+              "emoji": "🥛",
+              "sentence": "Milk is good for you."
+            },
+            {
+              "en": "Juice",
+              "idn": "Jus",
+              "emoji": "🧃",
+              "sentence": "I like orange juice."
+            },
+            {
+              "en": "Tea",
+              "idn": "Teh",
+              "emoji": "🍵",
+              "sentence": "Grandma drinks tea."
+            },
+            {
+              "en": "Soup",
+              "idn": "Sup",
+              "emoji": "🍜",
+              "sentence": "The soup is hot."
+            },
+            {
+              "en": "Salad",
+              "idn": "Salad",
+              "emoji": "🥗",
+              "sentence": "A salad has vegetables."
+            },
+            {
+              "en": "Snack",
+              "idn": "Camilan",
+              "emoji": "🍪",
+              "sentence": "I eat a snack after school."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g3_farm",
+          "title": "Farm Animals",
+          "titleId": "Hewan Ternak",
+          "emoji": "🚜",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Cow",
+              "idn": "Sapi",
+              "emoji": "🐄",
+              "sentence": "The cow gives us milk."
+            },
+            {
+              "en": "Horse",
+              "idn": "Kuda",
+              "emoji": "🐴",
+              "sentence": "The horse runs fast."
+            },
+            {
+              "en": "Goat",
+              "idn": "Kambing",
+              "emoji": "🐐",
+              "sentence": "The goat eats grass."
+            },
+            {
+              "en": "Sheep",
+              "idn": "Domba",
+              "emoji": "🐑",
+              "sentence": "The sheep is soft."
+            },
+            {
+              "en": "Duck",
+              "idn": "Bebek",
+              "emoji": "🦆",
+              "sentence": "The duck swims in the pond."
+            },
+            {
+              "en": "Chicken",
+              "idn": "Ayam",
+              "emoji": "🐔",
+              "sentence": "The chicken lays eggs."
+            },
+            {
+              "en": "Pig",
+              "idn": "Babi",
+              "emoji": "🐷",
+              "sentence": "The pig is pink."
+            },
+            {
+              "en": "Rabbit",
+              "idn": "Kelinci",
+              "emoji": "🐰",
+              "sentence": "The rabbit likes carrots."
+            },
+            {
+              "en": "Farmer",
+              "idn": "Petani",
+              "emoji": "🧑‍🌾",
+              "sentence": "The farmer works hard."
+            },
+            {
+              "en": "Barn",
+              "idn": "Kandang",
+              "emoji": "🏚️",
+              "sentence": "The animals sleep in the barn."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g3_story1",
+          "title": "My New Friend",
+          "titleId": "Cerita: Teman Baruku",
+          "emoji": "🤝",
+          "kind": "story",
+          "games": [
+            "read",
+            "quiz"
+          ],
+          "items": [],
+          "pages": [],
+          "story": {
+            "title": "My New Friend",
+            "emoji": "🤝",
+            "lines": [
+              {
+                "en": "Today a new boy comes to my class.",
+                "idn": "Hari ini ada anak baru di kelasku.",
+                "emoji": "🧒"
+              },
+              {
+                "en": "His name is Adi.",
+                "idn": "Namanya Adi.",
+                "emoji": "👦"
+              },
+              {
+                "en": "He sits alone at lunch.",
+                "idn": "Dia duduk sendiri saat makan siang.",
+                "emoji": "🍚"
+              },
+              {
+                "en": "I say hello and share my snack.",
+                "idn": "Aku menyapa dan berbagi camilanku.",
+                "emoji": "🍪"
+              },
+              {
+                "en": "We play football together.",
+                "idn": "Kami bermain sepak bola bersama.",
+                "emoji": "⚽"
+              },
+              {
+                "en": "Now I have a new friend!",
+                "idn": "Sekarang aku punya teman baru!",
+                "emoji": "😊"
+              }
+            ],
+            "questions": [
+              {
+                "prompt": "What is the new boy called?",
+                "options": [
+                  "Adi",
+                  "Budi",
+                  "Rian"
+                ],
+                "answer": 0,
+                "full": "His name is Adi."
+              },
+              {
+                "prompt": "What do they share?",
+                "options": [
+                  "A snack",
+                  "A book",
+                  "A pencil"
+                ],
+                "answer": 0,
+                "full": "They share a snack."
+              },
+              {
+                "prompt": "What game do they play?",
+                "options": [
+                  "Football",
+                  "Chess",
+                  "Badminton"
+                ],
+                "answer": 0,
+                "full": "They play football."
+              }
+            ]
+          }
         }
       ]
     },
@@ -3799,6 +4114,399 @@
               ]
             }
           ]
+        },
+        {
+          "id": "g4_seasons",
+          "title": "Seasons and Sky",
+          "titleId": "Musim dan Langit",
+          "emoji": "🍂",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Spring",
+              "idn": "Musim semi",
+              "emoji": "🌸",
+              "sentence": "Flowers bloom in spring."
+            },
+            {
+              "en": "Summer",
+              "idn": "Musim panas",
+              "emoji": "🌞",
+              "sentence": "Summer is very hot."
+            },
+            {
+              "en": "Autumn",
+              "idn": "Musim gugur",
+              "emoji": "🍁",
+              "sentence": "Leaves fall in autumn."
+            },
+            {
+              "en": "Winter",
+              "idn": "Musim dingin",
+              "emoji": "❄️",
+              "sentence": "Winter is cold and snowy."
+            },
+            {
+              "en": "Cloud",
+              "idn": "Awan",
+              "emoji": "☁️",
+              "sentence": "The cloud is white and soft."
+            },
+            {
+              "en": "Thunder",
+              "idn": "Guruh",
+              "emoji": "⛈️",
+              "sentence": "Thunder is very loud."
+            },
+            {
+              "en": "Storm",
+              "idn": "Badai",
+              "emoji": "🌪️",
+              "sentence": "The storm broke a tree."
+            },
+            {
+              "en": "Rainbow",
+              "idn": "Pelangi",
+              "emoji": "🌈",
+              "sentence": "A rainbow has seven colors."
+            },
+            {
+              "en": "Sunset",
+              "idn": "Matahari terbenam",
+              "emoji": "🌇",
+              "sentence": "The sunset is orange."
+            },
+            {
+              "en": "Sunrise",
+              "idn": "Matahari terbit",
+              "emoji": "🌅",
+              "sentence": "I wake up at sunrise."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g4_kitchen",
+          "title": "In the Kitchen",
+          "titleId": "Di Dapur",
+          "emoji": "🍳",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Rice",
+              "idn": "Nasi",
+              "emoji": "🍚",
+              "sentence": "We eat rice every day."
+            },
+            {
+              "en": "Bread",
+              "idn": "Roti",
+              "emoji": "🍞",
+              "sentence": "I like warm bread."
+            },
+            {
+              "en": "Egg",
+              "idn": "Telur",
+              "emoji": "🥚",
+              "sentence": "The egg is in the pan."
+            },
+            {
+              "en": "Cheese",
+              "idn": "Keju",
+              "emoji": "🧀",
+              "sentence": "Cheese comes from milk."
+            },
+            {
+              "en": "Butter",
+              "idn": "Mentega",
+              "emoji": "🧈",
+              "sentence": "Put butter on the bread."
+            },
+            {
+              "en": "Sugar",
+              "idn": "Gula",
+              "emoji": "🍬",
+              "sentence": "Sugar is sweet."
+            },
+            {
+              "en": "Salt",
+              "idn": "Garam",
+              "emoji": "🧂",
+              "sentence": "Add a little salt."
+            },
+            {
+              "en": "Honey",
+              "idn": "Madu",
+              "emoji": "🍯",
+              "sentence": "Honey comes from bees."
+            },
+            {
+              "en": "Noodle",
+              "idn": "Mi",
+              "emoji": "🍜",
+              "sentence": "The noodle soup is tasty."
+            },
+            {
+              "en": "Spoon",
+              "idn": "Sendok",
+              "emoji": "🥄",
+              "sentence": "I eat with a spoon."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g4_stationery",
+          "title": "In My Bag",
+          "titleId": "Isi Tasku",
+          "emoji": "🎒",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Eraser",
+              "idn": "Penghapus",
+              "emoji": "🧽",
+              "sentence": "The eraser removes mistakes."
+            },
+            {
+              "en": "Ruler",
+              "idn": "Penggaris",
+              "emoji": "📏",
+              "sentence": "I draw a line with a ruler."
+            },
+            {
+              "en": "Crayon",
+              "idn": "Krayon",
+              "emoji": "🖍️",
+              "sentence": "I color with a crayon."
+            },
+            {
+              "en": "Scissors",
+              "idn": "Gunting",
+              "emoji": "✂️",
+              "sentence": "Cut the paper with scissors."
+            },
+            {
+              "en": "Glue",
+              "idn": "Lem",
+              "emoji": "🧴",
+              "sentence": "The glue is sticky."
+            },
+            {
+              "en": "Notebook",
+              "idn": "Buku tulis",
+              "emoji": "📓",
+              "sentence": "I write in my notebook."
+            },
+            {
+              "en": "Marker",
+              "idn": "Spidol",
+              "emoji": "🖊️",
+              "sentence": "The marker is red."
+            },
+            {
+              "en": "Folder",
+              "idn": "Map",
+              "emoji": "📁",
+              "sentence": "My papers are in the folder."
+            },
+            {
+              "en": "Bottle",
+              "idn": "Botol",
+              "emoji": "🍶",
+              "sentence": "My water bottle is full."
+            },
+            {
+              "en": "Calculator",
+              "idn": "Kalkulator",
+              "emoji": "🧮",
+              "sentence": "A calculator helps with math."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g4_health",
+          "title": "When I Am Sick",
+          "titleId": "Saat Sakit",
+          "emoji": "🤒",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Fever",
+              "idn": "Demam",
+              "emoji": "🌡️",
+              "sentence": "I have a fever today."
+            },
+            {
+              "en": "Cough",
+              "idn": "Batuk",
+              "emoji": "😷",
+              "sentence": "My cough is getting better."
+            },
+            {
+              "en": "Cold",
+              "idn": "Pilek",
+              "emoji": "🤧",
+              "sentence": "I have a cold."
+            },
+            {
+              "en": "Medicine",
+              "idn": "Obat",
+              "emoji": "💊",
+              "sentence": "I take my medicine."
+            },
+            {
+              "en": "Hospital",
+              "idn": "Rumah sakit",
+              "emoji": "🏥",
+              "sentence": "The hospital is near."
+            },
+            {
+              "en": "Nurse",
+              "idn": "Perawat",
+              "emoji": "👩‍⚕️",
+              "sentence": "The nurse is very kind."
+            },
+            {
+              "en": "Tooth",
+              "idn": "Gigi",
+              "emoji": "🦷",
+              "sentence": "Brush your tooth well."
+            },
+            {
+              "en": "Rest",
+              "idn": "Istirahat",
+              "emoji": "🛌",
+              "sentence": "I rest in bed."
+            },
+            {
+              "en": "Healthy",
+              "idn": "Sehat",
+              "emoji": "💪",
+              "sentence": "I feel healthy again."
+            },
+            {
+              "en": "Soap",
+              "idn": "Sabun",
+              "emoji": "🧼",
+              "sentence": "Wash your hands with soap."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g4_story1",
+          "title": "The Lost Puppy",
+          "titleId": "Cerita: Anak Anjing yang Hilang",
+          "emoji": "🐶",
+          "kind": "story",
+          "games": [
+            "read",
+            "quiz"
+          ],
+          "items": [],
+          "pages": [],
+          "story": {
+            "title": "The Lost Puppy",
+            "emoji": "🐶",
+            "lines": [
+              {
+                "en": "I find a small puppy near my house.",
+                "idn": "Aku menemukan anak anjing kecil di dekat rumahku.",
+                "emoji": "🐶"
+              },
+              {
+                "en": "The puppy looks hungry and cold.",
+                "idn": "Anak anjing itu tampak lapar dan kedinginan.",
+                "emoji": "🥶"
+              },
+              {
+                "en": "I give it water and warm food.",
+                "idn": "Aku memberinya air dan makanan hangat.",
+                "emoji": "🥛"
+              },
+              {
+                "en": "We make a poster for the puppy.",
+                "idn": "Kami membuat poster untuk anak anjing itu.",
+                "emoji": "📄"
+              },
+              {
+                "en": "A girl comes and says thank you.",
+                "idn": "Seorang anak perempuan datang dan berterima kasih.",
+                "emoji": "👧"
+              },
+              {
+                "en": "The puppy is home again!",
+                "idn": "Anak anjing itu pulang lagi!",
+                "emoji": "🏠"
+              }
+            ],
+            "questions": [
+              {
+                "prompt": "What does the child find?",
+                "options": [
+                  "A puppy",
+                  "A kitten",
+                  "A bird"
+                ],
+                "answer": 0,
+                "full": "The child finds a puppy."
+              },
+              {
+                "prompt": "How does the puppy look?",
+                "options": [
+                  "Hungry and cold",
+                  "Big and strong",
+                  "Happy and fat"
+                ],
+                "answer": 0,
+                "full": "The puppy looks hungry and cold."
+              },
+              {
+                "prompt": "Who comes at the end?",
+                "options": [
+                  "A girl",
+                  "A teacher",
+                  "A farmer"
+                ],
+                "answer": 0,
+                "full": "A girl comes."
+              }
+            ]
+          }
         }
       ]
     },
@@ -4688,6 +5396,399 @@
               ]
             }
           ]
+        },
+        {
+          "id": "g5_nature",
+          "title": "Nature Around Us",
+          "titleId": "Alam di Sekitar Kita",
+          "emoji": "🏞️",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Forest",
+              "idn": "Hutan",
+              "emoji": "🌲",
+              "sentence": "The forest is full of trees."
+            },
+            {
+              "en": "River",
+              "idn": "Sungai",
+              "emoji": "🏞️",
+              "sentence": "The river flows to the sea."
+            },
+            {
+              "en": "Mountain",
+              "idn": "Gunung",
+              "emoji": "⛰️",
+              "sentence": "We climb the mountain."
+            },
+            {
+              "en": "Ocean",
+              "idn": "Samudra",
+              "emoji": "🌊",
+              "sentence": "The ocean is deep and blue."
+            },
+            {
+              "en": "Island",
+              "idn": "Pulau",
+              "emoji": "🏝️",
+              "sentence": "Indonesia has many islands."
+            },
+            {
+              "en": "Desert",
+              "idn": "Gurun",
+              "emoji": "🏜️",
+              "sentence": "The desert is dry and hot."
+            },
+            {
+              "en": "Valley",
+              "idn": "Lembah",
+              "emoji": "🏕️",
+              "sentence": "A river runs through the valley."
+            },
+            {
+              "en": "Volcano",
+              "idn": "Gunung berapi",
+              "emoji": "🌋",
+              "sentence": "The volcano is sleeping."
+            },
+            {
+              "en": "Cave",
+              "idn": "Gua",
+              "emoji": "🕳️",
+              "sentence": "Bats live in the cave."
+            },
+            {
+              "en": "Leaf",
+              "idn": "Daun",
+              "emoji": "🍃",
+              "sentence": "The leaf is green."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g5_technology",
+          "title": "Technology",
+          "titleId": "Teknologi",
+          "emoji": "📱",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Computer",
+              "idn": "Komputer",
+              "emoji": "💻",
+              "sentence": "I use a computer for school."
+            },
+            {
+              "en": "Phone",
+              "idn": "Telepon",
+              "emoji": "📱",
+              "sentence": "My phone is on the table."
+            },
+            {
+              "en": "Internet",
+              "idn": "Internet",
+              "emoji": "🌐",
+              "sentence": "The internet connects the world."
+            },
+            {
+              "en": "Camera",
+              "idn": "Kamera",
+              "emoji": "📷",
+              "sentence": "She takes photos with a camera."
+            },
+            {
+              "en": "Robot",
+              "idn": "Robot",
+              "emoji": "🤖",
+              "sentence": "The robot can walk."
+            },
+            {
+              "en": "Screen",
+              "idn": "Layar",
+              "emoji": "🖥️",
+              "sentence": "Do not sit too close to the screen."
+            },
+            {
+              "en": "Keyboard",
+              "idn": "Papan ketik",
+              "emoji": "⌨️",
+              "sentence": "I type on the keyboard."
+            },
+            {
+              "en": "Battery",
+              "idn": "Baterai",
+              "emoji": "🔋",
+              "sentence": "The battery is empty."
+            },
+            {
+              "en": "Headphone",
+              "idn": "Headphone",
+              "emoji": "🎧",
+              "sentence": "I listen with my headphone."
+            },
+            {
+              "en": "Printer",
+              "idn": "Pencetak",
+              "emoji": "🖨️",
+              "sentence": "The printer makes a copy."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g5_travel",
+          "title": "Travel Time",
+          "titleId": "Waktunya Bepergian",
+          "emoji": "✈️",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Airport",
+              "idn": "Bandara",
+              "emoji": "🛫",
+              "sentence": "We wait at the airport."
+            },
+            {
+              "en": "Ticket",
+              "idn": "Tiket",
+              "emoji": "🎫",
+              "sentence": "Keep your ticket safe."
+            },
+            {
+              "en": "Passport",
+              "idn": "Paspor",
+              "emoji": "🛂",
+              "sentence": "I show my passport."
+            },
+            {
+              "en": "Luggage",
+              "idn": "Koper",
+              "emoji": "🧳",
+              "sentence": "My luggage is heavy."
+            },
+            {
+              "en": "Hotel",
+              "idn": "Hotel",
+              "emoji": "🏨",
+              "sentence": "We sleep in a hotel."
+            },
+            {
+              "en": "Map",
+              "idn": "Peta",
+              "emoji": "🗺️",
+              "sentence": "The map shows the way."
+            },
+            {
+              "en": "Tourist",
+              "idn": "Turis",
+              "emoji": "📸",
+              "sentence": "The tourist takes pictures."
+            },
+            {
+              "en": "Station",
+              "idn": "Stasiun",
+              "emoji": "🚉",
+              "sentence": "The train leaves the station."
+            },
+            {
+              "en": "Journey",
+              "idn": "Perjalanan",
+              "emoji": "🧭",
+              "sentence": "The journey takes two hours."
+            },
+            {
+              "en": "Beach",
+              "idn": "Pantai",
+              "emoji": "🏖️",
+              "sentence": "We play at the beach."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g5_restaurant",
+          "title": "At the Restaurant",
+          "titleId": "Di Restoran",
+          "emoji": "🍴",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Menu",
+              "idn": "Daftar menu",
+              "emoji": "📋",
+              "sentence": "Please read the menu."
+            },
+            {
+              "en": "Waiter",
+              "idn": "Pelayan",
+              "emoji": "🧑‍🍳",
+              "sentence": "The waiter brings our food."
+            },
+            {
+              "en": "Order",
+              "idn": "Pesanan",
+              "emoji": "📝",
+              "sentence": "We order fried rice."
+            },
+            {
+              "en": "Bill",
+              "idn": "Bon",
+              "emoji": "🧾",
+              "sentence": "Dad pays the bill."
+            },
+            {
+              "en": "Fork",
+              "idn": "Garpu",
+              "emoji": "🍴",
+              "sentence": "Use a fork and a spoon."
+            },
+            {
+              "en": "Knife",
+              "idn": "Pisau",
+              "emoji": "🔪",
+              "sentence": "The knife is sharp."
+            },
+            {
+              "en": "Plate",
+              "idn": "Piring",
+              "emoji": "🍽️",
+              "sentence": "My plate is empty."
+            },
+            {
+              "en": "Glass",
+              "idn": "Gelas",
+              "emoji": "🥤",
+              "sentence": "The glass is full of juice."
+            },
+            {
+              "en": "Napkin",
+              "idn": "Serbet",
+              "emoji": "🧻",
+              "sentence": "Clean your hands with a napkin."
+            },
+            {
+              "en": "Dessert",
+              "idn": "Hidangan penutup",
+              "emoji": "🍰",
+              "sentence": "Ice cream is my favorite dessert."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g5_story1",
+          "title": "The Helpful Neighbor",
+          "titleId": "Cerita: Tetangga yang Baik",
+          "emoji": "🏘️",
+          "kind": "story",
+          "games": [
+            "read",
+            "quiz"
+          ],
+          "items": [],
+          "pages": [],
+          "story": {
+            "title": "The Helpful Neighbor",
+            "emoji": "🏘️",
+            "lines": [
+              {
+                "en": "Mrs. Sari lives next to my house.",
+                "idn": "Bu Sari tinggal di sebelah rumahku.",
+                "emoji": "🏘️"
+              },
+              {
+                "en": "One morning her bag falls in the street.",
+                "idn": "Suatu pagi tasnya jatuh di jalan.",
+                "emoji": "👜"
+              },
+              {
+                "en": "I run outside and help her.",
+                "idn": "Aku berlari keluar dan menolongnya.",
+                "emoji": "🏃"
+              },
+              {
+                "en": "She smiles and thanks me kindly.",
+                "idn": "Dia tersenyum dan berterima kasih.",
+                "emoji": "😊"
+              },
+              {
+                "en": "The next day she brings us cake.",
+                "idn": "Keesokan harinya dia membawakan kami kue.",
+                "emoji": "🍰"
+              },
+              {
+                "en": "Helping others makes everyone happy.",
+                "idn": "Menolong orang lain membuat semua senang.",
+                "emoji": "❤️"
+              }
+            ],
+            "questions": [
+              {
+                "prompt": "Where does Mrs. Sari live?",
+                "options": [
+                  "Next door",
+                  "In another city",
+                  "At school"
+                ],
+                "answer": 0,
+                "full": "She lives next door."
+              },
+              {
+                "prompt": "What falls in the street?",
+                "options": [
+                  "Her bag",
+                  "Her phone",
+                  "Her hat"
+                ],
+                "answer": 0,
+                "full": "Her bag falls."
+              },
+              {
+                "prompt": "What does she bring the next day?",
+                "options": [
+                  "Cake",
+                  "Flowers",
+                  "A book"
+                ],
+                "answer": 0,
+                "full": "She brings cake."
+              }
+            ]
+          }
         }
       ]
     },
@@ -5448,6 +6549,396 @@
               }
             ]
           }
+        },
+        {
+          "id": "g6_environment",
+          "title": "Save the Earth",
+          "titleId": "Selamatkan Bumi",
+          "emoji": "♻️",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Recycle",
+              "idn": "Daur ulang",
+              "emoji": "♻️",
+              "sentence": "We recycle paper and plastic."
+            },
+            {
+              "en": "Plastic",
+              "idn": "Plastik",
+              "emoji": "🥤",
+              "sentence": "Plastic harms the ocean."
+            },
+            {
+              "en": "Pollution",
+              "idn": "Polusi",
+              "emoji": "🏭",
+              "sentence": "Pollution makes the air dirty."
+            },
+            {
+              "en": "Garbage",
+              "idn": "Sampah",
+              "emoji": "🗑️",
+              "sentence": "Put the garbage in the bin."
+            },
+            {
+              "en": "Energy",
+              "idn": "Energi",
+              "emoji": "⚡",
+              "sentence": "Save energy at home."
+            },
+            {
+              "en": "Planet",
+              "idn": "Planet",
+              "emoji": "🌍",
+              "sentence": "Our planet needs our help."
+            },
+            {
+              "en": "Forest",
+              "idn": "Hutan",
+              "emoji": "🌳",
+              "sentence": "A forest gives us clean air."
+            },
+            {
+              "en": "Protect",
+              "idn": "Melindungi",
+              "emoji": "🛡️",
+              "sentence": "We protect the animals."
+            },
+            {
+              "en": "Clean",
+              "idn": "Bersih",
+              "emoji": "🧹",
+              "sentence": "Keep the river clean."
+            },
+            {
+              "en": "Future",
+              "idn": "Masa depan",
+              "emoji": "🔮",
+              "sentence": "The future is in our hands."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g6_character",
+          "title": "Good Character",
+          "titleId": "Sifat yang Baik",
+          "emoji": "🌟",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Brave",
+              "idn": "Berani",
+              "emoji": "🦁",
+              "sentence": "She is brave and strong."
+            },
+            {
+              "en": "Honest",
+              "idn": "Jujur",
+              "emoji": "🤝",
+              "sentence": "An honest person tells the truth."
+            },
+            {
+              "en": "Patient",
+              "idn": "Sabar",
+              "emoji": "⏳",
+              "sentence": "Please be patient."
+            },
+            {
+              "en": "Generous",
+              "idn": "Murah hati",
+              "emoji": "🎁",
+              "sentence": "He is generous with his friends."
+            },
+            {
+              "en": "Polite",
+              "idn": "Sopan",
+              "emoji": "🙏",
+              "sentence": "A polite child says thank you."
+            },
+            {
+              "en": "Clever",
+              "idn": "Pandai",
+              "emoji": "🧠",
+              "sentence": "She is a clever student."
+            },
+            {
+              "en": "Friendly",
+              "idn": "Ramah",
+              "emoji": "😊",
+              "sentence": "Our teacher is very friendly."
+            },
+            {
+              "en": "Calm",
+              "idn": "Tenang",
+              "emoji": "🧘",
+              "sentence": "Stay calm and try again."
+            },
+            {
+              "en": "Curious",
+              "idn": "Ingin tahu",
+              "emoji": "🔍",
+              "sentence": "A curious mind asks questions."
+            },
+            {
+              "en": "Humble",
+              "idn": "Rendah hati",
+              "emoji": "💛",
+              "sentence": "A humble winner helps others."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g6_space",
+          "title": "Space Adventure",
+          "titleId": "Petualangan Luar Angkasa",
+          "emoji": "🚀",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Planet",
+              "idn": "Planet",
+              "emoji": "🪐",
+              "sentence": "Saturn is a beautiful planet."
+            },
+            {
+              "en": "Star",
+              "idn": "Bintang",
+              "emoji": "⭐",
+              "sentence": "A star shines at night."
+            },
+            {
+              "en": "Moon",
+              "idn": "Bulan",
+              "emoji": "🌙",
+              "sentence": "The moon goes around the Earth."
+            },
+            {
+              "en": "Sun",
+              "idn": "Matahari",
+              "emoji": "☀️",
+              "sentence": "The sun gives us light."
+            },
+            {
+              "en": "Rocket",
+              "idn": "Roket",
+              "emoji": "🚀",
+              "sentence": "The rocket flies to space."
+            },
+            {
+              "en": "Astronaut",
+              "idn": "Astronaut",
+              "emoji": "👨‍🚀",
+              "sentence": "The astronaut floats in space."
+            },
+            {
+              "en": "Galaxy",
+              "idn": "Galaksi",
+              "emoji": "🌌",
+              "sentence": "Our galaxy is the Milky Way."
+            },
+            {
+              "en": "Comet",
+              "idn": "Komet",
+              "emoji": "☄️",
+              "sentence": "A comet has a bright tail."
+            },
+            {
+              "en": "Telescope",
+              "idn": "Teleskop",
+              "emoji": "🔭",
+              "sentence": "We watch stars with a telescope."
+            },
+            {
+              "en": "Alien",
+              "idn": "Alien",
+              "emoji": "👽",
+              "sentence": "Nobody has met an alien."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g6_music",
+          "title": "Music and Instruments",
+          "titleId": "Musik dan Alat Musik",
+          "emoji": "🎸",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Guitar",
+              "idn": "Gitar",
+              "emoji": "🎸",
+              "sentence": "He plays the guitar well."
+            },
+            {
+              "en": "Piano",
+              "idn": "Piano",
+              "emoji": "🎹",
+              "sentence": "The piano has many keys."
+            },
+            {
+              "en": "Drum",
+              "idn": "Drum",
+              "emoji": "🥁",
+              "sentence": "The drum is very loud."
+            },
+            {
+              "en": "Violin",
+              "idn": "Biola",
+              "emoji": "🎻",
+              "sentence": "The violin sounds sweet."
+            },
+            {
+              "en": "Trumpet",
+              "idn": "Terompet",
+              "emoji": "🎺",
+              "sentence": "He blows the trumpet."
+            },
+            {
+              "en": "Singer",
+              "idn": "Penyanyi",
+              "emoji": "🎤",
+              "sentence": "The singer has a lovely voice."
+            },
+            {
+              "en": "Concert",
+              "idn": "Konser",
+              "emoji": "🎪",
+              "sentence": "We go to a concert."
+            },
+            {
+              "en": "Song",
+              "idn": "Lagu",
+              "emoji": "🎵",
+              "sentence": "This song is my favorite."
+            },
+            {
+              "en": "Dance",
+              "idn": "Menari",
+              "emoji": "💃",
+              "sentence": "They dance to the music."
+            },
+            {
+              "en": "Radio",
+              "idn": "Radio",
+              "emoji": "📻",
+              "sentence": "The radio plays old songs."
+            }
+          ],
+          "pages": []
+        },
+        {
+          "id": "g6_body",
+          "title": "Inside My Body",
+          "titleId": "Di Dalam Tubuhku",
+          "emoji": "❤️",
+          "kind": "vocab",
+          "games": [
+            "learn",
+            "quiz",
+            "listen",
+            "speak",
+            "memory",
+            "spell"
+          ],
+          "items": [
+            {
+              "en": "Heart",
+              "idn": "Jantung",
+              "emoji": "❤️",
+              "sentence": "My heart beats fast when I run."
+            },
+            {
+              "en": "Brain",
+              "idn": "Otak",
+              "emoji": "🧠",
+              "sentence": "The brain helps us think."
+            },
+            {
+              "en": "Bone",
+              "idn": "Tulang",
+              "emoji": "🦴",
+              "sentence": "Milk makes bones strong."
+            },
+            {
+              "en": "Blood",
+              "idn": "Darah",
+              "emoji": "🩸",
+              "sentence": "Blood travels through the body."
+            },
+            {
+              "en": "Muscle",
+              "idn": "Otot",
+              "emoji": "💪",
+              "sentence": "Exercise makes muscles strong."
+            },
+            {
+              "en": "Skin",
+              "idn": "Kulit",
+              "emoji": "🖐️",
+              "sentence": "Skin protects our body."
+            },
+            {
+              "en": "Stomach",
+              "idn": "Perut",
+              "emoji": "🍽️",
+              "sentence": "Food goes to the stomach."
+            },
+            {
+              "en": "Breathe",
+              "idn": "Bernapas",
+              "emoji": "🌬️",
+              "sentence": "We breathe fresh air."
+            },
+            {
+              "en": "Sleep",
+              "idn": "Tidur",
+              "emoji": "😴",
+              "sentence": "Children need enough sleep."
+            },
+            {
+              "en": "Exercise",
+              "idn": "Olahraga",
+              "emoji": "🏃",
+              "sentence": "Exercise keeps us healthy."
+            }
+          ],
+          "pages": []
         }
       ]
     }

@@ -32,8 +32,18 @@ class FunkyMascotState extends State<FunkyMascot> with TickerProviderStateMixin 
   @override
   void initState() {
     super.initState();
-    if (!Progress.I.reducedMotion) _bob.repeat(reverse: true);
+    Progress.I.addListener(_syncMotion);
+    _syncMotion();
     _scheduleBlink();
+  }
+
+  void _syncMotion() {
+    if (!mounted) return;
+    if (Progress.I.reducedMotion) {
+      if (_bob.isAnimating) _bob.stop();
+    } else if (!_bob.isAnimating) {
+      _bob.repeat(reverse: true);
+    }
   }
 
   void _scheduleBlink() {
@@ -57,6 +67,7 @@ class FunkyMascotState extends State<FunkyMascot> with TickerProviderStateMixin 
 
   @override
   void dispose() {
+    Progress.I.removeListener(_syncMotion);
     _blinkTimer?.cancel();
     _bob.dispose();
     _blink.dispose();

@@ -21,8 +21,10 @@ class GrammarScreen extends StatefulWidget {
 
 class _GrammarScreenState extends State<GrammarScreen> with SingleTickerProviderStateMixin {
   final ConfettiController _confetti = ConfettiController();
-  late final AnimationController _shake =
-      AnimationController(vsync: this, duration: const Duration(milliseconds: 420));
+  late final AnimationController _shake = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 420),
+  );
   int _page = 0;
   final Map<String, int?> _selected = {};
   final Set<String> _solved = {};
@@ -74,13 +76,17 @@ class _GrammarScreenState extends State<GrammarScreen> with SingleTickerProvider
         : (perfect >= total ? 3 : (perfect >= (total * 0.6).ceil() ? 2 : 1));
     await Progress.I.setStars(widget.unit.id, 'learn', stars);
     if (!mounted) return;
-    Navigator.of(context).pushReplacement(funRoute(ResultScreen(
-      title: widget.unit.title,
-      stars: stars,
-      correct: perfect,
-      total: total,
-      retryBuilder: () => GrammarScreen(unit: widget.unit),
-    )));
+    Navigator.of(context).pushReplacement(
+      funRoute(
+        ResultScreen(
+          title: widget.unit.title,
+          stars: stars,
+          correct: perfect,
+          total: total,
+          retryBuilder: () => GrammarScreen(unit: widget.unit),
+        ),
+      ),
+    );
   }
 
   @override
@@ -104,7 +110,7 @@ class _GrammarScreenState extends State<GrammarScreen> with SingleTickerProvider
                         width: i == _page ? 28 : 12,
                         height: 12,
                         decoration: BoxDecoration(
-                          color: i == _page ? AppColors.ink : Colors.white.withOpacity(0.7),
+                          color: i == _page ? AppColors.ink : Colors.white.withValues(alpha: 0.7),
                           borderRadius: BorderRadius.circular(8),
                         ),
                       );
@@ -117,7 +123,10 @@ class _GrammarScreenState extends State<GrammarScreen> with SingleTickerProvider
                     transitionBuilder: (child, anim) => FadeTransition(
                       opacity: anim,
                       child: SlideTransition(
-                        position: Tween(begin: const Offset(0.12, 0), end: Offset.zero).animate(anim),
+                        position: Tween(
+                          begin: const Offset(0.12, 0),
+                          end: Offset.zero,
+                        ).animate(anim),
                         child: child,
                       ),
                     ),
@@ -128,11 +137,19 @@ class _GrammarScreenState extends State<GrammarScreen> with SingleTickerProvider
                         Container(
                           padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
                           decoration: BoxDecoration(
-                            gradient: const LinearGradient(colors: [Color(0xFF9B5DE5), Color(0xFF5A189A)]),
+                            gradient: const LinearGradient(
+                              colors: [Color(0xFF9B5DE5), Color(0xFF5A189A)],
+                            ),
                             borderRadius: BorderRadius.circular(22),
-                            boxShadow: const [BoxShadow(color: Color(0x555A189A), offset: Offset(0, 5))],
+                            boxShadow: const [
+                              BoxShadow(color: Color(0x555A189A), offset: Offset(0, 5)),
+                            ],
                           ),
-                          child: Text(_p.title, textAlign: TextAlign.center, style: AppText.display(26)),
+                          child: Text(
+                            _p.title,
+                            textAlign: TextAlign.center,
+                            style: AppText.display(26),
+                          ),
                         ),
                         const SizedBox(height: 12),
                         SpeechBubble(text: _p.explain, fontSize: 17),
@@ -146,7 +163,8 @@ class _GrammarScreenState extends State<GrammarScreen> with SingleTickerProvider
                             child: AnimatedBuilder(
                               animation: _shake,
                               builder: (context, child) {
-                                final dx = math.sin(_shake.value * math.pi * 5) * 9 * (1 - _shake.value);
+                                final dx =
+                                    math.sin(_shake.value * math.pi * 5) * 9 * (1 - _shake.value);
                                 return Transform.translate(offset: Offset(dx, 0), child: child);
                               },
                               child: _ChallengeCard(
@@ -283,11 +301,7 @@ class _ChallengeCard extends StatelessWidget {
         children: [
           Text('⚡ Soal $number', style: AppText.heading(20, color: const Color(0xFFB26A00))),
           const SizedBox(height: 8),
-          Text(
-            challenge.prompt,
-            textAlign: TextAlign.center,
-            style: AppText.heading(24),
-          ),
+          Text(challenge.prompt, textAlign: TextAlign.center, style: AppText.heading(24)),
           const SizedBox(height: 12),
           Wrap(
             alignment: WrapAlignment.center,
@@ -311,8 +325,10 @@ class _ChallengeCard extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: color,
                     borderRadius: BorderRadius.circular(18),
-                    border: Border.all(color: Colors.white.withOpacity(0.6), width: 3),
-                    boxShadow: [BoxShadow(color: color.withOpacity(0.4), offset: const Offset(0, 4))],
+                    border: Border.all(color: Colors.white.withValues(alpha: 0.6), width: 3),
+                    boxShadow: [
+                      BoxShadow(color: color.withValues(alpha: 0.4), offset: const Offset(0, 4)),
+                    ],
                   ),
                   child: Text(challenge.options[i], style: AppText.display(22)),
                 ),
@@ -321,7 +337,11 @@ class _ChallengeCard extends StatelessWidget {
           ),
           if (solved) ...[
             const SizedBox(height: 10),
-            Text('✅ ${challenge.full}', textAlign: TextAlign.center, style: AppText.body(17, color: AppColors.correct)),
+            Text(
+              '✅ ${challenge.full}',
+              textAlign: TextAlign.center,
+              style: AppText.body(17, color: AppColors.correct),
+            ),
           ],
         ],
       ),

@@ -5,6 +5,7 @@ import '../data/stickers.dart';
 import '../services/progress.dart';
 import '../theme.dart';
 import '../widgets/common.dart';
+import '../widgets/responsive.dart';
 
 /// Collection screen: sticker album + achievement badges.
 class StickerBookScreen extends StatefulWidget {
@@ -38,7 +39,7 @@ class _StickerBookScreenState extends State<StickerBookScreen> {
                 padding: const EdgeInsets.symmetric(horizontal: 24),
                 child: Container(
                   decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.5),
+                    color: Colors.white.withValues(alpha: 0.5),
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: TabBar(
@@ -57,14 +58,7 @@ class _StickerBookScreenState extends State<StickerBookScreen> {
                   ),
                 ),
               ),
-              Expanded(
-                child: TabBarView(
-                  children: [
-                    _StickerTab(),
-                    _BadgeTab(),
-                  ],
-                ),
-              ),
+              Expanded(child: TabBarView(children: [_StickerTab(), _BadgeTab()])),
             ],
           ),
         ),
@@ -86,15 +80,17 @@ class _StickerTab extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
               child: Column(
                 children: [
-                  Text('$earned dari ${kStickers.length} stiker terkumpul!',
-                      style: AppText.heading(19)),
+                  Text(
+                    '$earned dari ${kStickers.length} stiker terkumpul!',
+                    style: AppText.heading(19),
+                  ),
                   const SizedBox(height: 6),
                   ClipRRect(
                     borderRadius: BorderRadius.circular(8),
                     child: LinearProgressIndicator(
                       value: earned / kStickers.length,
                       minHeight: 12,
-                      backgroundColor: Colors.white.withOpacity(0.6),
+                      backgroundColor: Colors.white.withValues(alpha: 0.6),
                       valueColor: const AlwaysStoppedAnimation(AppColors.star),
                     ),
                   ),
@@ -104,8 +100,8 @@ class _StickerTab extends StatelessWidget {
             Expanded(
               child: GridView.builder(
                 padding: const EdgeInsets.fromLTRB(20, 4, 20, 24),
-                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 4,
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: context.isTablet ? 7 : 4,
                   mainAxisSpacing: 12,
                   crossAxisSpacing: 12,
                   childAspectRatio: 0.82,
@@ -116,10 +112,10 @@ class _StickerTab extends StatelessWidget {
                   final has = Progress.I.stickers.contains(emoji);
                   return Container(
                     decoration: BoxDecoration(
-                      color: has ? Colors.white : Colors.white.withOpacity(0.45),
+                      color: has ? Colors.white : Colors.white.withValues(alpha: 0.45),
                       borderRadius: BorderRadius.circular(18),
                       border: Border.all(
-                        color: has ? AppColors.star : Colors.white.withOpacity(0.6),
+                        color: has ? AppColors.star : Colors.white.withValues(alpha: 0.6),
                         width: 3,
                       ),
                       boxShadow: has
@@ -141,8 +137,10 @@ class _StickerTab extends StatelessWidget {
                             textAlign: TextAlign.center,
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
-                            style: AppText.body(12,
-                                color: has ? AppColors.ink : Colors.grey.shade500),
+                            style: AppText.body(
+                              12,
+                              color: has ? AppColors.ink : Colors.grey.shade500,
+                            ),
                           ),
                         ),
                       ],
@@ -169,14 +167,16 @@ class _BadgeTab extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
-              child: Text('$unlocked dari ${kBadges.length} lencana diraih!',
-                  style: AppText.heading(19)),
+              child: Text(
+                '$unlocked dari ${kBadges.length} lencana diraih!',
+                style: AppText.heading(19),
+              ),
             ),
             Expanded(
               child: GridView.builder(
                 padding: const EdgeInsets.fromLTRB(20, 4, 20, 24),
-                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 3,
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: context.isTablet ? 5 : 3,
                   mainAxisSpacing: 12,
                   crossAxisSpacing: 12,
                   childAspectRatio: 0.78,
@@ -188,10 +188,10 @@ class _BadgeTab extends StatelessWidget {
                   return Container(
                     padding: const EdgeInsets.all(8),
                     decoration: BoxDecoration(
-                      color: has ? const Color(0xFFFFF3D6) : Colors.white.withOpacity(0.45),
+                      color: has ? const Color(0xFFFFF3D6) : Colors.white.withValues(alpha: 0.45),
                       borderRadius: BorderRadius.circular(18),
                       border: Border.all(
-                        color: has ? AppColors.star : Colors.white.withOpacity(0.6),
+                        color: has ? AppColors.star : Colors.white.withValues(alpha: 0.6),
                         width: 3,
                       ),
                     ),
@@ -208,16 +208,20 @@ class _BadgeTab extends StatelessWidget {
                           textAlign: TextAlign.center,
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
-                          style: AppText.heading(13,
-                              color: has ? AppColors.ink : Colors.grey.shade500),
+                          style: AppText.heading(
+                            13,
+                            color: has ? AppColors.ink : Colors.grey.shade500,
+                          ),
                         ),
                         Text(
                           b.desc,
                           textAlign: TextAlign.center,
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
-                          style: AppText.body(10,
-                              color: has ? AppColors.inkSoft : Colors.grey.shade500),
+                          style: AppText.body(
+                            10,
+                            color: has ? AppColors.inkSoft : Colors.grey.shade500,
+                          ),
                         ),
                       ],
                     ),

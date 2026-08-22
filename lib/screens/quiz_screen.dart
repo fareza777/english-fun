@@ -3,6 +3,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 
 import '../models.dart';
+import '../services/lesson_builder.dart';
 import '../services/progress.dart';
 import '../services/sfx.dart';
 import '../theme.dart';
@@ -30,8 +31,10 @@ class QuizScreen extends StatefulWidget {
 class _QuizScreenState extends State<QuizScreen> with SingleTickerProviderStateMixin {
   late final List<_Question> _questions;
   final ConfettiController _confetti = ConfettiController();
-  late final AnimationController _shake =
-      AnimationController(vsync: this, duration: const Duration(milliseconds: 420));
+  late final AnimationController _shake = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 420),
+  );
   int _index = 0;
   int _correctCount = 0;
   int? _selected;
@@ -51,11 +54,11 @@ class _QuizScreenState extends State<QuizScreen> with SingleTickerProviderStateM
 
   List<_Question> _buildQuestions() {
     final rnd = math.Random();
-    final all = List<VocabItem>.of(widget.unit.items)..shuffle(rnd);
-    final picked = all.take(math.min(8, all.length)).toList();
+    // Spaced repetition decides *which* words are asked...
+    final picked = LessonBuilder.pickItems(widget.unit.items, 8, random: rnd);
     return picked.map((item) {
-      final others = widget.unit.items.where((e) => e != item).toList()..shuffle(rnd);
-      final options = [item, ...others.take(3)]..shuffle(rnd);
+      // ...and confusability decides which wrong answers sit next to them.
+      final options = LessonBuilder.optionsFor(item, widget.unit.items, random: rnd);
       return _Question(item, options);
     }).toList();
   }
@@ -110,13 +113,17 @@ class _QuizScreenState extends State<QuizScreen> with SingleTickerProviderStateM
     final stars = pct >= 0.9 ? 3 : (pct >= 0.6 ? 2 : 1);
     await Progress.I.setStars(widget.unit.id, _isPicture ? 'quiz' : 'listen', stars);
     if (!mounted) return;
-    Navigator.of(context).pushReplacement(funRoute(ResultScreen(
-      title: _isPicture ? 'Tebak Kata' : 'Tebak Suara',
-      stars: stars,
-      correct: _correctCount,
-      total: total,
-      retryBuilder: () => QuizScreen(unit: widget.unit, mode: widget.mode),
-    )));
+    Navigator.of(context).pushReplacement(
+      funRoute(
+        ResultScreen(
+          title: _isPicture ? 'Tebak Kata' : 'Tebak Suara',
+          stars: stars,
+          correct: _correctCount,
+          total: total,
+          retryBuilder: () => QuizScreen(unit: widget.unit, mode: widget.mode),
+        ),
+      ),
+    );
   }
 
   @override
@@ -144,7 +151,7 @@ class _QuizScreenState extends State<QuizScreen> with SingleTickerProviderStateM
                           child: LinearProgressIndicator(
                             value: (_index + 1) / _questions.length,
                             minHeight: 12,
-                            backgroundColor: Colors.white.withOpacity(0.6),
+                            backgroundColor: Colors.white.withValues(alpha: 0.6),
                             valueColor: const AlwaysStoppedAnimation(AppColors.sun),
                           ),
                         ),
@@ -184,7 +191,9 @@ class _QuizScreenState extends State<QuizScreen> with SingleTickerProviderStateM
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(32),
                 border: Border.all(color: const Color(0xFF7ED6FF), width: 5),
-                boxShadow: const [BoxShadow(color: Color(0x2A000000), blurRadius: 14, offset: Offset(0, 6))],
+                boxShadow: const [
+                  BoxShadow(color: Color(0x2A000000), blurRadius: 14, offset: Offset(0, 6)),
+                ],
               ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -209,8 +218,8 @@ class _QuizScreenState extends State<QuizScreen> with SingleTickerProviderStateM
           flex: 5,
           child: ListView.separated(
             padding: const EdgeInsets.fromLTRB(24, 8, 24, 20),
-            itemCount: 4,
-            separatorBuilder: (_, __) => const SizedBox(height: 10),
+            itemCount: _q.options.length,
+            separatorBuilder: (_, _) => const SizedBox(height: 10),
             itemBuilder: (context, i) => _wordOption(i),
           ),
         ),
@@ -247,7 +256,7 @@ class _QuizScreenState extends State<QuizScreen> with SingleTickerProviderStateM
             padding: const EdgeInsets.fromLTRB(24, 8, 24, 20),
             mainAxisSpacing: 14,
             crossAxisSpacing: 14,
-            children: List.generate(4, (i) => _emojiOption(i)),
+            children: List.generate(_q.options.length, (i) => _emojiOption(i)),
           ),
         ),
       ],
@@ -259,7 +268,7 @@ class _QuizScreenState extends State<QuizScreen> with SingleTickerProviderStateM
     final isCorrect = _q.options[i] == _q.correct;
     if (isCorrect) return AppColors.correct;
     if (_selected == i) return AppColors.wrong;
-    return base.withOpacity(0.55);
+    return base.withValues(alpha: 0.55);
   }
 
   Widget _wordOption(int i) {
@@ -273,13 +282,17 @@ class _QuizScreenState extends State<QuizScreen> with SingleTickerProviderStateM
         decoration: BoxDecoration(
           color: color,
           borderRadius: BorderRadius.circular(22),
-          border: Border.all(color: Colors.white.withOpacity(0.6), width: 3),
-          boxShadow: [BoxShadow(color: color.withOpacity(0.4), offset: const Offset(0, 5))],
+          border: Border.all(color: Colors.white.withValues(alpha: 0.6), width: 3),
+          boxShadow: [BoxShadow(color: color.withValues(alpha: 0.4), offset: const Offset(0, 5))],
         ),
         child: Row(
           children: [
             Expanded(
-              child: Text(_q.options[i].en, textAlign: TextAlign.center, style: AppText.display(24)),
+              child: Text(
+                _q.options[i].en,
+                textAlign: TextAlign.center,
+                style: AppText.display(24),
+              ),
             ),
             if (_selected != null && _q.options[i] == _q.correct)
               const Icon(Icons.check_circle_rounded, color: Colors.white, size: 30),
@@ -296,8 +309,8 @@ class _QuizScreenState extends State<QuizScreen> with SingleTickerProviderStateM
     final borderColor = _selected == null
         ? const Color(0xFF7ED6FF)
         : (_q.options[i] == _q.correct
-            ? AppColors.correct
-            : (_selected == i ? AppColors.wrong : Colors.grey.shade300));
+              ? AppColors.correct
+              : (_selected == i ? AppColors.wrong : Colors.grey.shade300));
     return BouncyButton(
       sound: false,
       onTap: _locked ? null : () => _answer(i),
@@ -307,7 +320,9 @@ class _QuizScreenState extends State<QuizScreen> with SingleTickerProviderStateM
           color: color,
           borderRadius: BorderRadius.circular(26),
           border: Border.all(color: borderColor, width: 5),
-          boxShadow: const [BoxShadow(color: Color(0x22000000), blurRadius: 8, offset: Offset(0, 4))],
+          boxShadow: const [
+            BoxShadow(color: Color(0x22000000), blurRadius: 8, offset: Offset(0, 4)),
+          ],
         ),
         child: Center(
           child: FittedBox(

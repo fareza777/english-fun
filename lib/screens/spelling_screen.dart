@@ -3,6 +3,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 
 import '../models.dart';
+import '../services/lesson_builder.dart';
 import '../services/progress.dart';
 import '../services/sfx.dart';
 import '../theme.dart';
@@ -21,8 +22,10 @@ class SpellingScreen extends StatefulWidget {
 class _SpellingScreenState extends State<SpellingScreen> with SingleTickerProviderStateMixin {
   late final List<VocabItem> _rounds;
   final ConfettiController _confetti = ConfettiController();
-  late final AnimationController _shake =
-      AnimationController(vsync: this, duration: const Duration(milliseconds: 420));
+  late final AnimationController _shake = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 420),
+  );
 
   int _index = 0;
   int _mistakes = 0;
@@ -37,8 +40,7 @@ class _SpellingScreenState extends State<SpellingScreen> with SingleTickerProvid
   void initState() {
     super.initState();
     final rnd = math.Random();
-    final items = List<VocabItem>.of(widget.unit.spellingItems)..shuffle(rnd);
-    _rounds = items.take(math.min(6, items.length)).toList();
+    _rounds = LessonBuilder.pickItems(widget.unit.spellingItems, 6, random: rnd);
     _setupRound();
     Future.delayed(const Duration(milliseconds: 500), () => Sfx.I.speak(_item.en));
   }
@@ -114,13 +116,17 @@ class _SpellingScreenState extends State<SpellingScreen> with SingleTickerProvid
     final stars = _mistakes == 0 ? 3 : (_mistakes <= 2 ? 2 : 1);
     await Progress.I.setStars(widget.unit.id, 'spell', stars);
     if (!mounted) return;
-    Navigator.of(context).pushReplacement(funRoute(ResultScreen(
-      title: 'Susun Huruf',
-      stars: stars,
-      correct: _rounds.length - _mistakes > 0 ? _rounds.length - _mistakes : 0,
-      total: _rounds.length,
-      retryBuilder: () => SpellingScreen(unit: widget.unit),
-    )));
+    Navigator.of(context).pushReplacement(
+      funRoute(
+        ResultScreen(
+          title: 'Susun Huruf',
+          stars: stars,
+          correct: _rounds.length - _mistakes > 0 ? _rounds.length - _mistakes : 0,
+          total: _rounds.length,
+          retryBuilder: () => SpellingScreen(unit: widget.unit),
+        ),
+      ),
+    );
   }
 
   @override
@@ -146,8 +152,15 @@ class _SpellingScreenState extends State<SpellingScreen> with SingleTickerProvid
                         },
                         child: Container(
                           padding: const EdgeInsets.all(10),
-                          decoration: const BoxDecoration(color: AppColors.sun, shape: BoxShape.circle),
-                          child: const Icon(Icons.volume_up_rounded, size: 28, color: AppColors.ink),
+                          decoration: const BoxDecoration(
+                            color: AppColors.sun,
+                            shape: BoxShape.circle,
+                          ),
+                          child: const Icon(
+                            Icons.volume_up_rounded,
+                            size: 28,
+                            color: AppColors.ink,
+                          ),
                         ),
                       ),
                     ],
@@ -164,7 +177,13 @@ class _SpellingScreenState extends State<SpellingScreen> with SingleTickerProvid
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(28),
                           border: Border.all(color: const Color(0xFF7ED6FF), width: 4),
-                          boxShadow: const [BoxShadow(color: Color(0x22000000), blurRadius: 10, offset: Offset(0, 5))],
+                          boxShadow: const [
+                            BoxShadow(
+                              color: Color(0x22000000),
+                              blurRadius: 10,
+                              offset: Offset(0, 5),
+                            ),
+                          ],
                         ),
                         child: Column(
                           children: [
@@ -203,16 +222,23 @@ class _SpellingScreenState extends State<SpellingScreen> with SingleTickerProvid
                                       height: 56,
                                       alignment: Alignment.center,
                                       decoration: BoxDecoration(
-                                        color: filled ? const Color(0xFF4361EE) : Colors.white.withOpacity(0.75),
+                                        color: filled
+                                            ? const Color(0xFF4361EE)
+                                            : Colors.white.withValues(alpha: 0.75),
                                         borderRadius: BorderRadius.circular(12),
                                         border: Border.all(
-                                          color: filled ? const Color(0xFF4361EE) : const Color(0xFF7ED6FF),
+                                          color: filled
+                                              ? const Color(0xFF4361EE)
+                                              : const Color(0xFF7ED6FF),
                                           width: 3,
                                         ),
                                       ),
                                       child: Text(
                                         _slots[i] ?? '',
-                                        style: AppText.display(28, color: filled ? Colors.white : AppColors.ink),
+                                        style: AppText.display(
+                                          28,
+                                          color: filled ? Colors.white : AppColors.ink,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -241,7 +267,9 @@ class _SpellingScreenState extends State<SpellingScreen> with SingleTickerProvid
                                 decoration: BoxDecoration(
                                   color: AppColors.sun,
                                   borderRadius: BorderRadius.circular(14),
-                                  boxShadow: const [BoxShadow(color: Color(0x66B26A00), offset: Offset(0, 4))],
+                                  boxShadow: const [
+                                    BoxShadow(color: Color(0x66B26A00), offset: Offset(0, 4)),
+                                  ],
                                 ),
                                 child: Text(_pool[i], style: AppText.heading(30)),
                               ),

@@ -3,6 +3,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 
 import '../models.dart';
+import '../services/lesson_builder.dart';
 import '../services/progress.dart';
 import '../services/sfx.dart';
 import '../theme.dart';
@@ -57,9 +58,15 @@ class _RunnerScreenState extends State<RunnerScreen> with SingleTickerProviderSt
   }
 
   void _newQuestion() {
-    _target = widget.words[_rnd.nextInt(widget.words.length)];
-    final pool = widget.words.where((w) => w.en != _target.en).toList()..shuffle(_rnd);
-    _options = [_target.en, ...pool.take(2).map((e) => e.en)]..shuffle(_rnd);
+    _target =
+        LessonBuilder.pickItems(widget.words, 1, random: _rnd).firstOrNull ??
+        widget.words[_rnd.nextInt(widget.words.length)];
+    _options = LessonBuilder.optionsFor(
+      _target,
+      widget.words,
+      distractors: 2,
+      random: _rnd,
+    ).map((e) => e.en).toList();
     _wrongGates.clear();
     _gateX = _width + 140;
     _resolved = false;
@@ -134,13 +141,17 @@ class _RunnerScreenState extends State<RunnerScreen> with SingleTickerProviderSt
     _done = true;
     final stars = _score >= 9 ? 3 : (_score >= 6 ? 2 : (_score >= 3 ? 1 : 0));
     Progress.I.addCoins(_score * 2);
-    Navigator.of(context).pushReplacement(funRoute(ResultScreen(
-      title: 'Lari Kata',
-      stars: stars,
-      correct: _score,
-      total: _rounds,
-      retryBuilder: () => RunnerScreen(words: widget.words, title: widget.title),
-    )));
+    Navigator.of(context).pushReplacement(
+      funRoute(
+        ResultScreen(
+          title: 'Lari Kata',
+          stars: stars,
+          correct: _score,
+          total: _rounds,
+          retryBuilder: () => RunnerScreen(words: widget.words, title: widget.title),
+        ),
+      ),
+    );
   }
 
   @override
@@ -186,13 +197,19 @@ class _RunnerScreenState extends State<RunnerScreen> with SingleTickerProviderSt
                       Text(_target.emoji, style: const TextStyle(fontSize: 34)),
                       const SizedBox(width: 10),
                       Flexible(
-                        child: Text('${_target.idn}  ($_index/$_rounds)',
-                            style: AppText.heading(22), overflow: TextOverflow.ellipsis),
+                        child: Text(
+                          '${_target.idn}  ($_index/$_rounds)',
+                          style: AppText.heading(22),
+                          overflow: TextOverflow.ellipsis,
+                        ),
                       ),
                       BouncyButton(
                         onTap: _speakTarget,
-                        child: const Icon(Icons.volume_up_rounded,
-                            color: Color(0xFF4361EE), size: 28),
+                        child: const Icon(
+                          Icons.volume_up_rounded,
+                          color: Color(0xFF4361EE),
+                          size: 28,
+                        ),
                       ),
                     ],
                   ),
@@ -237,21 +254,23 @@ class _RunnerScreenState extends State<RunnerScreen> with SingleTickerProviderSt
                                   color: _wrongGates.contains(i)
                                       ? AppColors.wrong
                                       : (_resolved && _options[i] == _target.en
-                                          ? AppColors.correct
-                                          : Colors.white),
+                                            ? AppColors.correct
+                                            : Colors.white),
                                   borderRadius: BorderRadius.circular(18),
                                   border: Border.all(color: const Color(0xFF4361EE), width: 3),
                                   boxShadow: const [
                                     BoxShadow(
-                                        color: Color(0x33000000),
-                                        blurRadius: 8,
-                                        offset: Offset(0, 4))
+                                      color: Color(0x33000000),
+                                      blurRadius: 8,
+                                      offset: Offset(0, 4),
+                                    ),
                                   ],
                                 ),
                                 alignment: Alignment.center,
                                 child: Text(
                                   _options[i],
-                                  style: _wrongGates.contains(i) ||
+                                  style:
+                                      _wrongGates.contains(i) ||
                                           (_resolved && _options[i] == _target.en)
                                       ? AppText.display(18)
                                       : AppText.heading(18),
@@ -280,15 +299,18 @@ class _GroundPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    canvas.drawRect(Rect.fromLTWH(0, 0, size.width, size.height),
-        Paint()..color = const Color(0xFF8D99AE));
+    canvas.drawRect(
+      Rect.fromLTWH(0, 0, size.width, size.height),
+      Paint()..color = const Color(0xFF8D99AE),
+    );
     canvas.drawRect(Rect.fromLTWH(0, 0, size.width, 8), Paint()..color = const Color(0xFF43AA8B));
-    final stripe = Paint()..color = Colors.white.withOpacity(0.85);
+    final stripe = Paint()..color = Colors.white.withValues(alpha: 0.85);
     for (double x = -60 + offset; x < size.width + 60; x += 60) {
       canvas.drawRRect(
         RRect.fromRectAndRadius(
-            Rect.fromCenter(center: Offset(size.width - x, size.height * 0.55), width: 34, height: 6),
-            const Radius.circular(3)),
+          Rect.fromCenter(center: Offset(size.width - x, size.height * 0.55), width: 34, height: 6),
+          const Radius.circular(3),
+        ),
         stripe,
       );
     }

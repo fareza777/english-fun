@@ -29,8 +29,7 @@ class _Balloon {
   _Balloon(this.x, this.y, this.speed, this.emoji, this.color) : wobble = 0;
 }
 
-class _BalloonScreenState extends State<BalloonScreen>
-    with SingleTickerProviderStateMixin {
+class _BalloonScreenState extends State<BalloonScreen> with SingleTickerProviderStateMixin {
   static const _targets = 12;
   final _balloons = <_Balloon>[];
   final _rnd = math.Random();
@@ -45,8 +44,12 @@ class _BalloonScreenState extends State<BalloonScreen>
   bool _done = false;
 
   static const _colors = [
-    Color(0xFFFF6B6B), Color(0xFF4CC9F0), Color(0xFF43AA8B),
-    Color(0xFFC77DFF), Color(0xFFFF9F1C), Color(0xFFFF8FAB),
+    Color(0xFFFF6B6B),
+    Color(0xFF4CC9F0),
+    Color(0xFF43AA8B),
+    Color(0xFFC77DFF),
+    Color(0xFFFF9F1C),
+    Color(0xFFFF8FAB),
   ];
 
   @override
@@ -81,13 +84,15 @@ class _BalloonScreenState extends State<BalloonScreen>
         final item = (_spawnCount % 3 == 0)
             ? _target
             : widget.words[_rnd.nextInt(widget.words.length)];
-        _balloons.add(_Balloon(
-          0.12 + _rnd.nextDouble() * 0.76,
-          _height + 60,
-          55 + _rnd.nextDouble() * 45 + _popped * 2.5,
-          item.emoji,
-          _colors[_rnd.nextInt(_colors.length)],
-        ));
+        _balloons.add(
+          _Balloon(
+            0.12 + _rnd.nextDouble() * 0.76,
+            _height + 60,
+            55 + _rnd.nextDouble() * 45 + _popped * 2.5,
+            item.emoji,
+            _colors[_rnd.nextInt(_colors.length)],
+          ),
+        );
       }
       for (final b in _balloons) {
         b.y -= b.speed * dt;
@@ -122,13 +127,17 @@ class _BalloonScreenState extends State<BalloonScreen>
     Progress.I.recordCorrect(_target.en);
     final stars = _score >= 12 ? 3 : (_score >= 9 ? 2 : (_score >= 6 ? 1 : 0));
     Progress.I.addCoins(_score * 2);
-    Navigator.of(context).pushReplacement(funRoute(ResultScreen(
-      title: 'Balon Pop',
-      stars: stars,
-      correct: _score,
-      total: _targets,
-      retryBuilder: () => BalloonScreen(words: widget.words, title: widget.title),
-    )));
+    Navigator.of(context).pushReplacement(
+      funRoute(
+        ResultScreen(
+          title: 'Balon Pop',
+          stars: stars,
+          correct: _score,
+          total: _targets,
+          retryBuilder: () => BalloonScreen(words: widget.words, title: widget.title),
+        ),
+      ),
+    );
   }
 
   @override
@@ -154,7 +163,9 @@ class _BalloonScreenState extends State<BalloonScreen>
                     trailing: Container(
                       padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
                       decoration: BoxDecoration(
-                          color: Colors.white, borderRadius: BorderRadius.circular(18)),
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(18),
+                      ),
                       child: Text('$_popped/$_targets', style: AppText.heading(18)),
                     ),
                   ),
@@ -166,21 +177,27 @@ class _BalloonScreenState extends State<BalloonScreen>
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(20),
                         boxShadow: const [
-                          BoxShadow(color: Color(0x22000000), blurRadius: 8, offset: Offset(0, 3))
+                          BoxShadow(color: Color(0x22000000), blurRadius: 8, offset: Offset(0, 3)),
                         ],
                       ),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Flexible(
-                            child: Text('Letuskan: ${_target.idn}',
-                                style: AppText.heading(22), overflow: TextOverflow.ellipsis),
+                            child: Text(
+                              'Letuskan: ${_target.idn}',
+                              style: AppText.heading(22),
+                              overflow: TextOverflow.ellipsis,
+                            ),
                           ),
                           const SizedBox(width: 8),
                           BouncyButton(
                             onTap: _speakTarget,
-                            child: const Icon(Icons.volume_up_rounded,
-                                color: Color(0xFF4361EE), size: 30),
+                            child: const Icon(
+                              Icons.volume_up_rounded,
+                              color: Color(0xFF4361EE),
+                              size: 30,
+                            ),
                           ),
                         ],
                       ),
@@ -191,13 +208,9 @@ class _BalloonScreenState extends State<BalloonScreen>
                       children: [
                         for (final b in _balloons)
                           Positioned(
-                            left: b.x * constraints.maxWidth - 38 +
-                                math.sin(b.wobble * 2.2) * 8,
+                            left: b.x * constraints.maxWidth - 38 + math.sin(b.wobble * 2.2) * 8,
                             top: b.y,
-                            child: GestureDetector(
-                              onTap: () => _pop(b),
-                              child: _balloonWidget(b),
-                            ),
+                            child: GestureDetector(onTap: () => _pop(b), child: _balloonWidget(b)),
                           ),
                       ],
                     ),
@@ -222,15 +235,14 @@ class _BalloonScreenState extends State<BalloonScreen>
             color: b.color,
             shape: BoxShape.circle,
             border: Border.all(color: Colors.white, width: 3),
-            boxShadow: [BoxShadow(color: b.color.withOpacity(0.5), offset: const Offset(0, 5))],
+            boxShadow: [
+              BoxShadow(color: b.color.withValues(alpha: 0.5), offset: const Offset(0, 5)),
+            ],
           ),
           alignment: Alignment.center,
           child: Text(b.emoji, style: const TextStyle(fontSize: 38)),
         ),
-        CustomPaint(
-          size: const Size(12, 10),
-          painter: _KnotPainter(b.color),
-        ),
+        CustomPaint(size: const Size(12, 10), painter: _KnotPainter(b.color)),
         Container(width: 2, height: 26, color: Colors.white70),
       ],
     );

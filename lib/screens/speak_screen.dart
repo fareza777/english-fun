@@ -1,9 +1,9 @@
-import 'dart:math' as math;
-
 import 'package:flutter/material.dart';
 import 'package:speech_to_text/speech_to_text.dart';
 
 import '../models.dart';
+import '../services/lesson_builder.dart';
+import '../services/text_similarity.dart';
 import '../services/progress.dart';
 import '../services/sfx.dart';
 import '../theme.dart';
@@ -39,8 +39,7 @@ class _SpeakScreenState extends State<SpeakScreen> {
   @override
   void initState() {
     super.initState();
-    final pool = List<VocabItem>.from(widget.unit.items)..shuffle(math.Random());
-    _words = pool.take(math.min(_rounds, pool.length)).toList();
+    _words = LessonBuilder.pickItems(widget.unit.items, _rounds);
     _initSpeech();
     Future.delayed(const Duration(milliseconds: 500), () {
       if (mounted) Sfx.I.speak('Say it! ${_word.en}');
@@ -54,39 +53,6 @@ class _SpeakScreenState extends State<SpeakScreen> {
     } catch (_) {
       if (mounted) setState(() => _available = false);
     }
-  }
-
-  static String _norm(String s) =>
-      s.toLowerCase().replaceAll(RegExp('[^a-z ]'), '').replaceAll(RegExp(r'\s+'), ' ').trim();
-
-  /// Generous kid-friendly matching: exact, contained, or 1 typo away.
-  static bool _matches(String heard, String target) {
-    final h = _norm(heard);
-    final t = _norm(target);
-    if (h.isEmpty || t.isEmpty) return false;
-    if (h == t) return true;
-    if (h.split(' ').contains(t)) return true;
-    if (t.contains(' ') && h.contains(t)) return true;
-    if (t.length >= 4 && _levenshtein(h, t) <= 1) return true;
-    return false;
-  }
-
-  static int _levenshtein(String a, String b) {
-    if (a.length > b.length) return _levenshtein(b, a);
-    var row = List.generate(a.length + 1, (i) => i);
-    for (var j = 1; j <= b.length; j++) {
-      var prev = row[0];
-      row[0] = j;
-      for (var i = 1; i <= a.length; i++) {
-        final cur = row[i];
-        row[i] = math.min(
-          math.min(row[i] + 1, row[i - 1] + 1),
-          prev + (a[i - 1] == b[j - 1] ? 0 : 1),
-        );
-        prev = cur;
-      }
-    }
-    return row[a.length];
   }
 
   Future<void> _toggleListen() async {
@@ -106,10 +72,10 @@ class _SpeakScreenState extends State<SpeakScreen> {
           setState(() => _heard = r.recognizedWords);
           if (r.finalResult) _evaluate(r.recognizedWords);
         },
-        localeId: 'en_US',
-        listenFor: const Duration(seconds: 6),
-        pauseFor: const Duration(seconds: 2),
         listenOptions: SpeechListenOptions(
+          localeId: 'en_US',
+          listenFor: const Duration(seconds: 6),
+          pauseFor: const Duration(seconds: 2),
           partialResults: true,
           cancelOnError: true,
           listenMode: ListenMode.confirmation,
@@ -130,7 +96,7 @@ class _SpeakScreenState extends State<SpeakScreen> {
       await _speech.stop();
     } catch (_) {}
     setState(() => _listening = false);
-    if (_matches(heard, _word.en)) {
+    if (TextSimilarity.soundsLike(heard, _word.en)) {
       _score++;
       Progress.I.recordCorrect(_word.en);
       Sfx.I.ding();
@@ -168,13 +134,17 @@ class _SpeakScreenState extends State<SpeakScreen> {
     final total = _words.length;
     final stars = (_score / total * 3).round().clamp(0, 3);
     Progress.I.setStars(widget.unit.id, 'speak', stars);
-    Navigator.of(context).pushReplacement(funRoute(ResultScreen(
-      title: widget.unit.title,
-      stars: stars,
-      correct: _score,
-      total: total,
-      retryBuilder: () => SpeakScreen(unit: widget.unit, colors: widget.colors),
-    )));
+    Navigator.of(context).pushReplacement(
+      funRoute(
+        ResultScreen(
+          title: widget.unit.title,
+          stars: stars,
+          correct: _score,
+          total: total,
+          retryBuilder: () => SpeakScreen(unit: widget.unit, colors: widget.colors),
+        ),
+      ),
+    );
   }
 
   @override
@@ -188,9 +158,7 @@ class _SpeakScreenState extends State<SpeakScreen> {
     return Scaffold(
       body: AnimatedBackground(
         colors: widget.colors,
-        child: SafeArea(
-          child: _available == false ? _unavailable() : _game(),
-        ),
+        child: SafeArea(child: _available == false ? _unavailable() : _game()),
       ),
     );
   }
@@ -246,7 +214,9 @@ class _SpeakScreenState extends State<SpeakScreen> {
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(28),
-                boxShadow: const [BoxShadow(color: Color(0x33000000), blurRadius: 14, offset: Offset(0, 6))],
+                boxShadow: const [
+                  BoxShadow(color: Color(0x33000000), blurRadius: 14, offset: Offset(0, 6)),
+                ],
               ),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
@@ -269,7 +239,10 @@ class _SpeakScreenState extends State<SpeakScreen> {
                         children: [
                           const Icon(Icons.volume_up_rounded, color: Color(0xFF4361EE)),
                           const SizedBox(width: 6),
-                          Text('Dengar', style: AppText.heading(16, color: const Color(0xFF4361EE))),
+                          Text(
+                            'Dengar',
+                            style: AppText.heading(16, color: const Color(0xFF4361EE)),
+                          ),
                         ],
                       ),
                     ),
@@ -302,7 +275,7 @@ class _SpeakScreenState extends State<SpeakScreen> {
                 color: _listening ? AppColors.wrong : Colors.white,
                 boxShadow: [
                   BoxShadow(
-                    color: (_listening ? AppColors.wrong : Colors.black).withOpacity(0.3),
+                    color: (_listening ? AppColors.wrong : Colors.black).withValues(alpha: 0.3),
                     blurRadius: _listening ? 24 : 10,
                     spreadRadius: _listening ? 4 : 0,
                     offset: const Offset(0, 4),

@@ -29,14 +29,21 @@ class _SpinScreenState extends State<SpinScreen> with SingleTickerProviderStateM
     ('🪙', 'coins', 50),
   ];
   static const _colors = [
-    Color(0xFFFF6B6B), Color(0xFFFFD60A), Color(0xFF43AA8B), Color(0xFF4CC9F0),
-    Color(0xFFC77DFF), Color(0xFFFF9F1C), Color(0xFFFF8FAB), Color(0xFF7B61FF),
+    Color(0xFFFF6B6B),
+    Color(0xFFFFD60A),
+    Color(0xFF43AA8B),
+    Color(0xFF4CC9F0),
+    Color(0xFFC77DFF),
+    Color(0xFFFF9F1C),
+    Color(0xFFFF8FAB),
+    Color(0xFF7B61FF),
   ];
 
-  late final AnimationController _c =
-      AnimationController(vsync: this, duration: const Duration(milliseconds: 4200));
-  late final Animation<double> _anim =
-      CurvedAnimation(parent: _c, curve: Curves.easeOutCubic);
+  late final AnimationController _c = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 4200),
+  );
+  late final Animation<double> _anim = CurvedAnimation(parent: _c, curve: Curves.easeOutCubic);
   double _targetRotation = 0;
   String _result = '';
   bool _spinning = false;
@@ -110,8 +117,7 @@ class _SpinScreenState extends State<SpinScreen> with SingleTickerProviderStateM
             children: [
               const KidAppBar(title: 'Roda Harian', emoji: '🎡', colors: []),
               const SizedBox(height: 10),
-              Text('Putar gratis sekali sehari!',
-                  style: AppText.body(17, color: Colors.white)),
+              Text('Putar gratis sekali sehari!', style: AppText.body(17, color: Colors.white)),
               const SizedBox(height: 6),
               // pointer
               const Text('🔻', style: TextStyle(fontSize: 34)),
@@ -119,10 +125,8 @@ class _SpinScreenState extends State<SpinScreen> with SingleTickerProviderStateM
                 child: Center(
                   child: AnimatedBuilder(
                     animation: _anim,
-                    builder: (context, child) => Transform.rotate(
-                      angle: _anim.value * _targetRotation,
-                      child: child,
-                    ),
+                    builder: (context, child) =>
+                        Transform.rotate(angle: _anim.value * _targetRotation, child: child),
                     child: CustomPaint(
                       size: const Size(300, 300),
                       painter: _WheelPainter(_segments, _colors),
@@ -170,12 +174,13 @@ class _WheelPainter extends CustomPainter {
     }
     // rim + hub
     canvas.drawCircle(
-        center,
-        radius,
-        Paint()
-          ..color = Colors.white
-          ..style = PaintingStyle.stroke
-          ..strokeWidth = 6);
+      center,
+      radius,
+      Paint()
+        ..color = Colors.white
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = 6,
+    );
     canvas.drawCircle(center, 26, Paint()..color = Colors.white);
     canvas.drawCircle(center, 18, Paint()..color = const Color(0xFFFFB703));
     // labels

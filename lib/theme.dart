@@ -15,6 +15,14 @@ class AppText {
   static const String _baloo = 'Baloo';
   static const String _nunito = 'Nunito';
 
+  /// Bounds applied to the device font-size setting.
+  ///
+  /// The app's base type is already oversized for young readers, so scaling
+  /// below 1.0 hurts rather than helps; the ceiling keeps chunky fixed-height
+  /// controls (chips, app bars, answer buttons) from clipping their labels.
+  static const double minTextScale = 1.0;
+  static const double maxTextScale = 1.3;
+
   /// Bundled Noto Color Emoji so emojis look identical on every device,
   /// including old Android phones with missing glyphs.
   static const List<String> emojiFallback = ['AppEmoji'];

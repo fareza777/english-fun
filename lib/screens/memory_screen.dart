@@ -3,6 +3,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 
 import '../models.dart';
+import '../services/lesson_builder.dart';
 import '../services/progress.dart';
 import '../services/sfx.dart';
 import '../theme.dart';
@@ -39,8 +40,7 @@ class _MemoryScreenState extends State<MemoryScreen> {
   void initState() {
     super.initState();
     final rnd = math.Random();
-    final items = List<VocabItem>.of(widget.unit.items)..shuffle(rnd);
-    final picked = items.take(math.min(_pairs, items.length)).toList();
+    final picked = LessonBuilder.pickItems(widget.unit.items, _pairs, random: rnd);
     _cards = [
       for (final it in picked) ...[_MCard(it, false), _MCard(it, true)],
     ]..shuffle(rnd);
@@ -96,13 +96,17 @@ class _MemoryScreenState extends State<MemoryScreen> {
     Sfx.I.win();
     await Future.delayed(const Duration(milliseconds: 900));
     if (!mounted) return;
-    Navigator.of(context).pushReplacement(funRoute(ResultScreen(
-      title: 'Memory Match',
-      stars: stars,
-      correct: _matchedPairs,
-      total: _cards.length ~/ 2,
-      retryBuilder: () => MemoryScreen(unit: widget.unit),
-    )));
+    Navigator.of(context).pushReplacement(
+      funRoute(
+        ResultScreen(
+          title: 'Memory Match',
+          stars: stars,
+          correct: _matchedPairs,
+          total: _cards.length ~/ 2,
+          retryBuilder: () => MemoryScreen(unit: widget.unit),
+        ),
+      ),
+    );
   }
 
   @override
@@ -119,7 +123,10 @@ class _MemoryScreenState extends State<MemoryScreen> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text('Pasangan: $_matchedPairs/${_cards.length ~/ 2}', style: AppText.heading(20)),
+                      Text(
+                        'Pasangan: $_matchedPairs/${_cards.length ~/ 2}',
+                        style: AppText.heading(20),
+                      ),
                       Text('Langkah: $_moves', style: AppText.heading(20)),
                     ],
                   ),
@@ -176,7 +183,9 @@ class _MemoryScreenState extends State<MemoryScreen> {
               color: card.matched ? AppColors.correct : const Color(0xFF7ED6FF),
               width: 3,
             ),
-            boxShadow: const [BoxShadow(color: Color(0x1A000000), blurRadius: 6, offset: Offset(0, 3))],
+            boxShadow: const [
+              BoxShadow(color: Color(0x1A000000), blurRadius: 6, offset: Offset(0, 3)),
+            ],
           ),
           alignment: Alignment.center,
           padding: const EdgeInsets.all(6),

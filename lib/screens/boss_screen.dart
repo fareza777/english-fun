@@ -3,6 +3,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 
 import '../models.dart';
+import '../services/lesson_builder.dart';
 import '../services/progress.dart';
 import '../services/sfx.dart';
 import '../theme.dart';
@@ -33,12 +34,13 @@ class _BossScreenState extends State<BossScreen> with TickerProviderStateMixin {
   int? _picked;
   bool _shakeBoss = false;
 
-  late final AnimationController _timer = AnimationController(
-    vsync: this,
-    duration: const Duration(seconds: _secondsPerQuestion),
-  )..addStatusListener((s) {
-      if (s == AnimationStatus.completed) _timeout();
-    });
+  late final AnimationController _timer =
+      AnimationController(
+        vsync: this,
+        duration: const Duration(seconds: _secondsPerQuestion),
+      )..addStatusListener((s) {
+        if (s == AnimationStatus.completed) _timeout();
+      });
 
   VocabItem get _q => _questions[_index];
 
@@ -46,29 +48,15 @@ class _BossScreenState extends State<BossScreen> with TickerProviderStateMixin {
   void initState() {
     super.initState();
     final all = widget.grade.units.expand((u) => u.items).toList();
-    // weakest words first (spaced repetition), then random fill
-    all.sort((a, b) => Progress.I.wrongCount(b.en).compareTo(Progress.I.wrongCount(a.en)));
-    final weak = all.where((e) => Progress.I.wrongCount(e.en) > 0).take(6).toList();
-    final rest = List<VocabItem>.from(all)..shuffle(math.Random());
-    final picked = <VocabItem>{...weak};
-    for (final it in rest) {
-      if (picked.length >= _rounds) break;
-      picked.add(it);
-    }
-    _questions = picked.toList()..shuffle(math.Random());
-    _options = {
-      for (final q in _questions) q: _makeOptions(q, all),
-    };
+    // The boss drills whatever is due for review first, then fills the rest.
+    _questions = LessonBuilder.dueFirst(all, limit: _rounds).toList()..shuffle(math.Random());
+    _options = {for (final q in _questions) q: _makeOptions(q, all)};
     Sfx.I.speak('Boss battle! Defeat the dragon!');
     _startTimer();
   }
 
-  List<String> _makeOptions(VocabItem q, List<VocabItem> all) {
-    final rnd = math.Random();
-    final pool = all.where((e) => e.en != q.en).toList()..shuffle(rnd);
-    final opts = [q.en, ...pool.take(3).map((e) => e.en)]..shuffle(rnd);
-    return opts;
-  }
+  List<String> _makeOptions(VocabItem q, List<VocabItem> all) =>
+      LessonBuilder.optionsFor(q, all).map((e) => e.en).toList();
 
   void _startTimer() => _timer.forward(from: 0);
 
@@ -143,13 +131,17 @@ class _BossScreenState extends State<BossScreen> with TickerProviderStateMixin {
       Progress.I.awardSticker('🏆');
       Sfx.I.win();
     }
-    Navigator.of(context).pushReplacement(funRoute(ResultScreen(
-      title: win ? 'Boss Kalah! 🎉' : 'Boss Menang...',
-      stars: stars,
-      correct: _hits,
-      total: _rounds,
-      retryBuilder: () => BossScreen(grade: widget.grade),
-    )));
+    Navigator.of(context).pushReplacement(
+      funRoute(
+        ResultScreen(
+          title: win ? 'Boss Kalah! 🎉' : 'Boss Menang...',
+          stars: stars,
+          correct: _hits,
+          total: _rounds,
+          retryBuilder: () => BossScreen(grade: widget.grade),
+        ),
+      ),
+    );
   }
 
   @override
@@ -186,7 +178,8 @@ class _BossScreenState extends State<BossScreen> with TickerProviderStateMixin {
               AnimatedContainer(
                 duration: const Duration(milliseconds: 120),
                 transform: _shakeBoss
-                    ? (Matrix4.identity()..translate(math.Random().nextDouble() * 8 - 4))
+                    ? (Matrix4.identity()
+                        ..translateByDouble(math.Random().nextDouble() * 8 - 4, 0, 0, 1))
                     : Matrix4.identity(),
                 child: const Text('🐉', style: TextStyle(fontSize: 76)),
               ),
@@ -197,7 +190,7 @@ class _BossScreenState extends State<BossScreen> with TickerProviderStateMixin {
                   child: LinearProgressIndicator(
                     value: _bossHp / _rounds,
                     minHeight: 14,
-                    backgroundColor: Colors.white.withOpacity(0.35),
+                    backgroundColor: Colors.white.withValues(alpha: 0.35),
                     valueColor: const AlwaysStoppedAnimation(Color(0xFFEF476F)),
                   ),
                 ),
@@ -213,7 +206,7 @@ class _BossScreenState extends State<BossScreen> with TickerProviderStateMixin {
                     child: LinearProgressIndicator(
                       value: 1 - _timer.value,
                       minHeight: 8,
-                      backgroundColor: Colors.white.withOpacity(0.25),
+                      backgroundColor: Colors.white.withValues(alpha: 0.25),
                       valueColor: AlwaysStoppedAnimation(
                         _timer.value > 0.7 ? AppColors.wrong : AppColors.correct,
                       ),
@@ -229,22 +222,23 @@ class _BossScreenState extends State<BossScreen> with TickerProviderStateMixin {
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(24),
-                  boxShadow: const [BoxShadow(color: Color(0x33000000), blurRadius: 12, offset: Offset(0, 5))],
+                  boxShadow: const [
+                    BoxShadow(color: Color(0x33000000), blurRadius: 12, offset: Offset(0, 5)),
+                  ],
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(_q.emoji, style: const TextStyle(fontSize: 54)),
                     const SizedBox(width: 14),
-                    Flexible(
-                      child: Text(
-                        'Apa bahasa Inggrisnya?',
-                        style: AppText.heading(20),
-                      ),
-                    ),
+                    Flexible(child: Text('Apa bahasa Inggrisnya?', style: AppText.heading(20))),
                     BouncyButton(
                       onTap: () => Sfx.I.speak(_q.en),
-                      child: const Icon(Icons.volume_up_rounded, size: 30, color: Color(0xFF4361EE)),
+                      child: const Icon(
+                        Icons.volume_up_rounded,
+                        size: 30,
+                        color: Color(0xFF4361EE),
+                      ),
                     ),
                   ],
                 ),

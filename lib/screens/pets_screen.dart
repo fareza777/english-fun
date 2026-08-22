@@ -7,6 +7,7 @@ import '../services/progress.dart';
 import '../services/sfx.dart';
 import '../theme.dart';
 import '../widgets/common.dart';
+import '../widgets/responsive.dart';
 
 /// "Peliharaan" — buy eggs, hatch surprise pets, feed them daily by
 /// answering 3 quick word questions.
@@ -26,13 +27,17 @@ class _PetsScreenState extends State<PetsScreen> {
       Sfx.I.speak('You got an egg!');
     } else {
       Sfx.I.wrong();
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-        backgroundColor: AppColors.wrong,
-        behavior: SnackBarBehavior.floating,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        content: Text('Koin kurang! Main game untuk kumpulkan koin. 🪙',
-            style: AppText.body(16, color: Colors.white)),
-      ));
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          backgroundColor: AppColors.wrong,
+          behavior: SnackBarBehavior.floating,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+          content: Text(
+            'Koin kurang! Main game untuk kumpulkan koin. 🪙',
+            style: AppText.body(16, color: Colors.white),
+          ),
+        ),
+      );
     }
   }
 
@@ -70,7 +75,9 @@ class _PetsScreenState extends State<PetsScreen> {
                     trailing: Container(
                       padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 7),
                       decoration: BoxDecoration(
-                          color: Colors.white, borderRadius: BorderRadius.circular(20)),
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(20),
+                      ),
                       child: Row(
                         children: [
                           const Text('🪙', style: TextStyle(fontSize: 18)),
@@ -93,13 +100,16 @@ class _PetsScreenState extends State<PetsScreen> {
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(22),
                             boxShadow: const [
-                              BoxShadow(color: Color(0x22000000), blurRadius: 8, offset: Offset(0, 4))
+                              BoxShadow(
+                                color: Color(0x22000000),
+                                blurRadius: 8,
+                                offset: Offset(0, 4),
+                              ),
                             ],
                           ),
                           child: Row(
                             children: [
-                              Text(_justHatched?.id ?? '🥚',
-                                  style: const TextStyle(fontSize: 44)),
+                              Text(_justHatched?.id ?? '🥚', style: const TextStyle(fontSize: 44)),
                               const SizedBox(width: 10),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -107,8 +117,11 @@ class _PetsScreenState extends State<PetsScreen> {
                                   Text(
                                     _justHatched != null
                                         ? 'Menetas: ${_justHatched!.name}!'
-                                        : (p.eggs > 0 ? 'Telur: ${p.eggs} — ketuk untuk menetas!' : 'Belum punya telur'),
-                                    style: AppText.heading(17)),
+                                        : (p.eggs > 0
+                                              ? 'Telur: ${p.eggs} — ketuk untuk menetas!'
+                                              : 'Belum punya telur'),
+                                    style: AppText.heading(17),
+                                  ),
                                   if (p.eggs == 0)
                                     Text('Beli dengan 40 koin 👉', style: AppText.body(13)),
                                 ],
@@ -126,11 +139,14 @@ class _PetsScreenState extends State<PetsScreen> {
                             color: const Color(0xFF4361EE),
                             borderRadius: BorderRadius.circular(20),
                             boxShadow: const [
-                              BoxShadow(color: Color(0x554361EE), offset: Offset(0, 4))
+                              BoxShadow(color: Color(0x554361EE), offset: Offset(0, 4)),
                             ],
                           ),
-                          child: Text('+ 🥚\n🪙40',
-                              textAlign: TextAlign.center, style: AppText.display(16)),
+                          child: Text(
+                            '+ 🥚\n🪙40',
+                            textAlign: TextAlign.center,
+                            style: AppText.display(16),
+                          ),
                         ),
                       ),
                     ],
@@ -154,8 +170,8 @@ class _PetsScreenState extends State<PetsScreen> {
                   Expanded(
                     child: GridView.builder(
                       padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
-                      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 3,
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: context.isTablet ? 5 : 3,
                         mainAxisSpacing: 10,
                         crossAxisSpacing: 10,
                       ),
@@ -171,9 +187,15 @@ class _PetsScreenState extends State<PetsScreen> {
                               color: active ? const Color(0xFFFFF3D6) : Colors.white,
                               borderRadius: BorderRadius.circular(20),
                               border: Border.all(
-                                  color: active ? AppColors.star : Colors.transparent, width: 4),
+                                color: active ? AppColors.star : Colors.transparent,
+                                width: 4,
+                              ),
                               boxShadow: const [
-                                BoxShadow(color: Color(0x1A000000), blurRadius: 6, offset: Offset(0, 3))
+                                BoxShadow(
+                                  color: Color(0x1A000000),
+                                  blurRadius: 6,
+                                  offset: Offset(0, 3),
+                                ),
                               ],
                             ),
                             child: Column(
@@ -182,8 +204,9 @@ class _PetsScreenState extends State<PetsScreen> {
                                 Text(
                                   owned ? pet.id : '❓',
                                   style: TextStyle(
-                                      fontSize: 40,
-                                      color: owned ? null : Colors.grey.shade400),
+                                    fontSize: 40,
+                                    color: owned ? null : Colors.grey.shade400,
+                                  ),
                                 ),
                                 Text(
                                   owned ? pet.name.split(' ').first : '???',
@@ -191,8 +214,10 @@ class _PetsScreenState extends State<PetsScreen> {
                                   overflow: TextOverflow.ellipsis,
                                 ),
                                 if (active)
-                                  Text('Teman main ✓',
-                                      style: AppText.body(11, color: AppColors.correct)),
+                                  Text(
+                                    'Teman main ✓',
+                                    style: AppText.body(11, color: AppColors.correct),
+                                  ),
                                 if (owned && !active)
                                   Text('ketuk: pilih', style: AppText.body(11, color: Colors.grey)),
                               ],
@@ -307,8 +332,10 @@ class _FeedingSheetState extends State<_FeedingSheet> {
         mainAxisSize: MainAxisSize.min,
         children: [
           Text('Beri makan peliharaanmu! 🍎', style: AppText.heading(22)),
-          Text('Soal ${_index + 1}/${widget.items.length}: apa bahasa Inggrisnya?',
-              style: AppText.body(15)),
+          Text(
+            'Soal ${_index + 1}/${widget.items.length}: apa bahasa Inggrisnya?',
+            style: AppText.body(15),
+          ),
           const SizedBox(height: 10),
           Text(item.emoji, style: const TextStyle(fontSize: 64)),
           Text(item.idn, style: AppText.heading(24)),

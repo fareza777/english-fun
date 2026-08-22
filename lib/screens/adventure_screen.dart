@@ -76,7 +76,11 @@ class _AdventureScreenState extends State<AdventureScreen> {
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(24),
                           boxShadow: const [
-                            BoxShadow(color: Color(0x22000000), blurRadius: 10, offset: Offset(0, 4))
+                            BoxShadow(
+                              color: Color(0x22000000),
+                              blurRadius: 10,
+                              offset: Offset(0, 4),
+                            ),
                           ],
                         ),
                         child: Column(
@@ -85,24 +89,31 @@ class _AdventureScreenState extends State<AdventureScreen> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Expanded(
-                                  child: Text(_node.en,
-                                      textAlign: TextAlign.center,
-                                      style: AppText.heading(21)),
+                                  child: Text(
+                                    _node.en,
+                                    textAlign: TextAlign.center,
+                                    style: AppText.heading(21),
+                                  ),
                                 ),
                                 BouncyButton(
                                   onTap: _speakNode,
                                   child: const Padding(
                                     padding: EdgeInsets.all(4),
-                                    child: Icon(Icons.volume_up_rounded,
-                                        color: Color(0xFF4361EE), size: 28),
+                                    child: Icon(
+                                      Icons.volume_up_rounded,
+                                      color: Color(0xFF4361EE),
+                                      size: 28,
+                                    ),
                                   ),
                                 ),
                               ],
                             ),
                             const SizedBox(height: 6),
-                            Text(_node.idn,
-                                textAlign: TextAlign.center,
-                                style: AppText.body(16, color: AppColors.inkSoft)),
+                            Text(
+                              _node.idn,
+                              textAlign: TextAlign.center,
+                              style: AppText.body(16, color: AppColors.inkSoft),
+                            ),
                           ],
                         ),
                       ),
@@ -115,8 +126,7 @@ class _AdventureScreenState extends State<AdventureScreen> {
                 child: Column(
                   children: [
                     if (isEnd) ...[
-                      Text('🎉 +${_node.coins} koin! Tamat.',
-                          style: AppText.display(20)),
+                      Text('🎉 +${_node.coins} koin! Tamat.', style: AppText.display(20)),
                       const SizedBox(height: 10),
                       PillButton(
                         label: 'Kembali',
@@ -125,8 +135,7 @@ class _AdventureScreenState extends State<AdventureScreen> {
                         onTap: () => Navigator.of(context).maybePop(),
                       ),
                     ] else ...[
-                      Text('Apa yang Funky lakukan?',
-                          style: AppText.body(16, color: Colors.white)),
+                      Text('Apa yang Funky lakukan?', style: AppText.body(16, color: Colors.white)),
                       const SizedBox(height: 8),
                       for (final c in _node.choices)
                         Padding(

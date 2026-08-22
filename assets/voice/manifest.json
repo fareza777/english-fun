@@ -2671,6 +2671,341 @@
       "voice": "teach"
     },
     {
+      "id": "a61657a611899ffa630469160c5c20aa",
+      "text": "Rooms at Home",
+      "voice": "teach"
+    },
+    {
+      "id": "4840d2555bd5f0b995eb76723c6c9055",
+      "text": "Bedroom",
+      "voice": "teach"
+    },
+    {
+      "id": "5b0e5a7c580547e039b441444e73997b",
+      "text": "I sleep in the bedroom.",
+      "voice": "teach"
+    },
+    {
+      "id": "2cdc875cbb149431944df11185c7760b",
+      "text": "Mom cooks in the kitchen.",
+      "voice": "teach"
+    },
+    {
+      "id": "1d03d2db1ee48f873a16a3d319e498aa",
+      "text": "I wash my hands in the bathroom.",
+      "voice": "teach"
+    },
+    {
+      "id": "ea9f1881279a97a59f479e8d0a8bc695",
+      "text": "Garden",
+      "voice": "teach"
+    },
+    {
+      "id": "5db7a3b89919397a8f118094ae1a21e4",
+      "text": "Flowers grow in the garden.",
+      "voice": "teach"
+    },
+    {
+      "id": "92e85ee2aa52444e3dd71d2f2f4f2c0f",
+      "text": "Garage",
+      "voice": "teach"
+    },
+    {
+      "id": "9fab22902b092b68b48449fc1f2f6780",
+      "text": "The car is in the garage.",
+      "voice": "teach"
+    },
+    {
+      "id": "7b9eec7fa1e5a441f62abbf952614d7a",
+      "text": "I open the window.",
+      "voice": "teach"
+    },
+    {
+      "id": "96bac7eaab8e95fcb90839c3e2178629",
+      "text": "Please close the door.",
+      "voice": "teach"
+    },
+    {
+      "id": "0b01cc688e1e0b5f6b70f858a1b389ae",
+      "text": "Stairs",
+      "voice": "teach"
+    },
+    {
+      "id": "a3449a5d0a7183948ec9185135a7c67b",
+      "text": "I go up the stairs.",
+      "voice": "teach"
+    },
+    {
+      "id": "64230583b0483604ea026c80b127f16a",
+      "text": "Roof",
+      "voice": "teach"
+    },
+    {
+      "id": "830315a6697f4e007f9c55d2bee9541d",
+      "text": "A bird sits on the roof.",
+      "voice": "teach"
+    },
+    {
+      "id": "666d5a5439b78620f4e84d0ed5253b60",
+      "text": "The lamp is bright.",
+      "voice": "teach"
+    },
+    {
+      "id": "7f2678f168619331c47757cfbc5468d1",
+      "text": "Meals and Drinks",
+      "voice": "teach"
+    },
+    {
+      "id": "f2265d0f5f6b7bc88c9fe2f877ccb9cb",
+      "text": "Breakfast",
+      "voice": "teach"
+    },
+    {
+      "id": "d68da43f35ff36a95eb48219c70c69bb",
+      "text": "I eat breakfast at six.",
+      "voice": "teach"
+    },
+    {
+      "id": "f1e8a2ee776150614aaf07a8bdbac218",
+      "text": "Lunch",
+      "voice": "teach"
+    },
+    {
+      "id": "636fb816ff486bc34aef12cc37e653c1",
+      "text": "We have lunch at school.",
+      "voice": "teach"
+    },
+    {
+      "id": "6aa545ff0b2a89f8257d5a003b4635a8",
+      "text": "Dinner",
+      "voice": "teach"
+    },
+    {
+      "id": "69c46bb9d385f8abbfdb76b40dc25bdc",
+      "text": "My family eats dinner together.",
+      "voice": "teach"
+    },
+    {
+      "id": "1078d10376763bd1bc86bfee61839276",
+      "text": "I drink water every day.",
+      "voice": "teach"
+    },
+    {
+      "id": "ea3cccbb74d6f9657367dc81752af2e9",
+      "text": "Milk is good for you.",
+      "voice": "teach"
+    },
+    {
+      "id": "3e5bcf0f5ccf03192a03a9d0a760f54a",
+      "text": "I like orange juice.",
+      "voice": "teach"
+    },
+    {
+      "id": "485c264d44820de10d8cfa64441c143e",
+      "text": "Tea",
+      "voice": "teach"
+    },
+    {
+      "id": "7ae91a6c270a39d012e90992444d8188",
+      "text": "Grandma drinks tea.",
+      "voice": "teach"
+    },
+    {
+      "id": "af086693c2d4ad3125dc25d68c68d00b",
+      "text": "Soup",
+      "voice": "teach"
+    },
+    {
+      "id": "4964715d95b0e6ff752fb0c39053bacb",
+      "text": "The soup is hot.",
+      "voice": "teach"
+    },
+    {
+      "id": "2d26bfc596446389e0c7e9bd4c6a9c39",
+      "text": "Salad",
+      "voice": "teach"
+    },
+    {
+      "id": "b2e95485c88f4e73ced4a764f36b165e",
+      "text": "A salad has vegetables.",
+      "voice": "teach"
+    },
+    {
+      "id": "090fff2375519910fe600106efd542bf",
+      "text": "Snack",
+      "voice": "teach"
+    },
+    {
+      "id": "22fc71372a51324abb6c1cb305a617a8",
+      "text": "I eat a snack after school.",
+      "voice": "teach"
+    },
+    {
+      "id": "956441e1e973c3bd0a34d6991b5ac28b",
+      "text": "Farm Animals",
+      "voice": "teach"
+    },
+    {
+      "id": "cbd6e1e4e4229fa4b6e56cad8efa9c5a",
+      "text": "The cow gives us milk.",
+      "voice": "teach"
+    },
+    {
+      "id": "2e9791c83c56afb0f7fc81bd1d9dbb85",
+      "text": "The horse runs fast.",
+      "voice": "teach"
+    },
+    {
+      "id": "8515a38ff3b01fb049521bb51101a734",
+      "text": "Goat",
+      "voice": "teach"
+    },
+    {
+      "id": "fbaab8369500734d8e0e688a2cabd286",
+      "text": "The goat eats grass.",
+      "voice": "teach"
+    },
+    {
+      "id": "44c2c17bea559179ad35aa051c226c1d",
+      "text": "The sheep is soft.",
+      "voice": "teach"
+    },
+    {
+      "id": "5038299e58c2ce9185cc09f5e6f0cd95",
+      "text": "The duck swims in the pond.",
+      "voice": "teach"
+    },
+    {
+      "id": "3aec6c362080c3fd5222111240afc2d6",
+      "text": "The chicken lays eggs.",
+      "voice": "teach"
+    },
+    {
+      "id": "d806ed2ce0c9027ccc9c701569a557eb",
+      "text": "The pig is pink.",
+      "voice": "teach"
+    },
+    {
+      "id": "d95ac9b0fe4bba4dd03cfae0f66158b0",
+      "text": "The rabbit likes carrots.",
+      "voice": "teach"
+    },
+    {
+      "id": "265ee67e432f44a57b3248ba76aa0447",
+      "text": "The farmer works hard.",
+      "voice": "teach"
+    },
+    {
+      "id": "701296b552986f74dacf2b5a85d4cd30",
+      "text": "Barn",
+      "voice": "teach"
+    },
+    {
+      "id": "55572357c87edb3b8999e2ddd7ca213b",
+      "text": "The animals sleep in the barn.",
+      "voice": "teach"
+    },
+    {
+      "id": "58ebfcf535322b302af7fc8bf145ff7e",
+      "text": "My New Friend",
+      "voice": "teach"
+    },
+    {
+      "id": "4903e2c16fb4233d67d9be7857b376d8",
+      "text": "Today a new boy comes to my class.",
+      "voice": "story"
+    },
+    {
+      "id": "de91bd301b393a6eaf8430f63ca42659",
+      "text": "His name is Adi.",
+      "voice": "story"
+    },
+    {
+      "id": "18357767c77a915f4a8117750513184d",
+      "text": "He sits alone at lunch.",
+      "voice": "story"
+    },
+    {
+      "id": "3759325dd2ce0106dcd7c19d7f6d0140",
+      "text": "I say hello and share my snack.",
+      "voice": "story"
+    },
+    {
+      "id": "35fc86669689c5d581bb11accd5126bd",
+      "text": "We play football together.",
+      "voice": "story"
+    },
+    {
+      "id": "dfc313795ab2be22d98ff97afc864627",
+      "text": "Now I have a new friend!",
+      "voice": "story"
+    },
+    {
+      "id": "0687e364293695b4865867a64547e0a1",
+      "text": "What is the new boy called?",
+      "voice": "story"
+    },
+    {
+      "id": "8b825f407e3a716aaaf245d415d3d18d",
+      "text": "Adi",
+      "voice": "teach"
+    },
+    {
+      "id": "5894c82cc2aeb6560140a81694f99051",
+      "text": "Budi",
+      "voice": "teach"
+    },
+    {
+      "id": "869bc62a99676368c7fdac2909a4b2e7",
+      "text": "Rian",
+      "voice": "teach"
+    },
+    {
+      "id": "3b088697e6b5ed2c0572b7dc87e193b6",
+      "text": "What do they share?",
+      "voice": "story"
+    },
+    {
+      "id": "256b14543c28e86ba5fd61ee7e874686",
+      "text": "They share a snack.",
+      "voice": "teach"
+    },
+    {
+      "id": "0a271da5a0989a05ecffd436c22a0bc4",
+      "text": "A snack",
+      "voice": "teach"
+    },
+    {
+      "id": "148605a9c4d66f493baa63d55da21892",
+      "text": "A book",
+      "voice": "teach"
+    },
+    {
+      "id": "9c6d2a07c8ad480f1e85b62f69f91a81",
+      "text": "A pencil",
+      "voice": "teach"
+    },
+    {
+      "id": "54bb4d4fe72bb9e2450b2c3d81a51679",
+      "text": "What game do they play?",
+      "voice": "story"
+    },
+    {
+      "id": "608a4f3f67f539e299931ff167d17837",
+      "text": "They play football.",
+      "voice": "teach"
+    },
+    {
+      "id": "449a5f6d01d5f416810d04b4df596b6a",
+      "text": "Football",
+      "voice": "teach"
+    },
+    {
+      "id": "0727c24ec484e0175850a0e366a7dd42",
+      "text": "Chess",
+      "voice": "teach"
+    },
+    {
       "id": "75d0e629e286e414e69a2269e2050fa8",
       "text": "Daily Routines",
       "voice": "teach"
@@ -3458,6 +3793,476 @@
     {
       "id": "efb2a684e4afb7d55e6147fbe5a332ee",
       "text": "write",
+      "voice": "teach"
+    },
+    {
+      "id": "8d42595f570e4c6d9cef45954d664bdb",
+      "text": "Seasons and Sky",
+      "voice": "teach"
+    },
+    {
+      "id": "38008dd81c2f4d7985ecf6e0ce8af1d1",
+      "text": "Spring",
+      "voice": "teach"
+    },
+    {
+      "id": "a7a3113fbb30dd79af2fb524627ab6fd",
+      "text": "Flowers bloom in spring.",
+      "voice": "teach"
+    },
+    {
+      "id": "95884b5232ea01d055768613fc84f242",
+      "text": "Summer",
+      "voice": "teach"
+    },
+    {
+      "id": "41ad77d10d9ffa7e23d1bab0ccf3a2c9",
+      "text": "Summer is very hot.",
+      "voice": "teach"
+    },
+    {
+      "id": "1e3576c804bb2b1cbf66a87b70b53ba8",
+      "text": "Autumn",
+      "voice": "teach"
+    },
+    {
+      "id": "4ce1f015a2f88440f70c67e9cd615cfe",
+      "text": "Leaves fall in autumn.",
+      "voice": "teach"
+    },
+    {
+      "id": "b18e66b41efd9a3df1a7bc8758da1883",
+      "text": "Winter",
+      "voice": "teach"
+    },
+    {
+      "id": "1645f14767bfdc0f8c7ba10c5fd8ebae",
+      "text": "Winter is cold and snowy.",
+      "voice": "teach"
+    },
+    {
+      "id": "53ddb12b882f542593ae471718a6b74c",
+      "text": "The cloud is white and soft.",
+      "voice": "teach"
+    },
+    {
+      "id": "7db228551936f49a61c6b965886ad840",
+      "text": "Thunder",
+      "voice": "teach"
+    },
+    {
+      "id": "607297ce7e996795843bc2de5248a323",
+      "text": "Thunder is very loud.",
+      "voice": "teach"
+    },
+    {
+      "id": "fdcf3cdc04f367257c92382e032b6293",
+      "text": "Storm",
+      "voice": "teach"
+    },
+    {
+      "id": "772390976a823a4fcb0052daf9383882",
+      "text": "The storm broke a tree.",
+      "voice": "teach"
+    },
+    {
+      "id": "236272f43d7f45490a478e8218ef2778",
+      "text": "A rainbow has seven colors.",
+      "voice": "teach"
+    },
+    {
+      "id": "d0e1dc9d061e72d496bd3757671edeea",
+      "text": "Sunset",
+      "voice": "teach"
+    },
+    {
+      "id": "ca6a2f7389f88eb7cd52a424cd68e93d",
+      "text": "The sunset is orange.",
+      "voice": "teach"
+    },
+    {
+      "id": "4c88924788f419b562d50acfddc3a781",
+      "text": "Sunrise",
+      "voice": "teach"
+    },
+    {
+      "id": "279432df331ef178547fb61094e1d0b3",
+      "text": "I wake up at sunrise.",
+      "voice": "teach"
+    },
+    {
+      "id": "9d5481dd351946ba4d0cfd7f03d9314b",
+      "text": "In the Kitchen",
+      "voice": "teach"
+    },
+    {
+      "id": "e1b9f1e0ff973ad19bcf1b6b6e953d99",
+      "text": "We eat rice every day.",
+      "voice": "teach"
+    },
+    {
+      "id": "d5bb704bd49d3871446db103e99141d4",
+      "text": "I like warm bread.",
+      "voice": "teach"
+    },
+    {
+      "id": "78e1fad7d1393c8bd12310f930da453d",
+      "text": "The egg is in the pan.",
+      "voice": "teach"
+    },
+    {
+      "id": "a67778b3dcc82bfaace0f8bc0061f20e",
+      "text": "Cheese",
+      "voice": "teach"
+    },
+    {
+      "id": "194d5a7fd4e2e03daa63570d643cce2f",
+      "text": "Cheese comes from milk.",
+      "voice": "teach"
+    },
+    {
+      "id": "e5961b0baa369b1c565601db04d82c3c",
+      "text": "Butter",
+      "voice": "teach"
+    },
+    {
+      "id": "858eae598efc16513e90974150717a5c",
+      "text": "Put butter on the bread.",
+      "voice": "teach"
+    },
+    {
+      "id": "f0dc7a91ef793fd0a59d9568168dec4d",
+      "text": "Sugar",
+      "voice": "teach"
+    },
+    {
+      "id": "ff627907a1903d412b996e9094bffa9f",
+      "text": "Sugar is sweet.",
+      "voice": "teach"
+    },
+    {
+      "id": "af334c7b6ef89b42a94f7932a1ee9ffe",
+      "text": "Salt",
+      "voice": "teach"
+    },
+    {
+      "id": "72d729b6ca2a09d0736bfcd3ba7fe7b4",
+      "text": "Add a little salt.",
+      "voice": "teach"
+    },
+    {
+      "id": "8dc0611245a871ac51bbeebb85f33a58",
+      "text": "Honey",
+      "voice": "teach"
+    },
+    {
+      "id": "5def8c14e7404295f4b3c53d1cb18fca",
+      "text": "Honey comes from bees.",
+      "voice": "teach"
+    },
+    {
+      "id": "8e079f514c461a1c73d9b603ac29ffc4",
+      "text": "Noodle",
+      "voice": "teach"
+    },
+    {
+      "id": "1bd333435dc27e03a5d5174274f5e11a",
+      "text": "The noodle soup is tasty.",
+      "voice": "teach"
+    },
+    {
+      "id": "eb395ae501386828658ede4010e0704c",
+      "text": "Spoon",
+      "voice": "teach"
+    },
+    {
+      "id": "d770426065fc7c42a33a2d664435631a",
+      "text": "I eat with a spoon.",
+      "voice": "teach"
+    },
+    {
+      "id": "f439f11d03a2315932706a907e2427d3",
+      "text": "In My Bag",
+      "voice": "teach"
+    },
+    {
+      "id": "1432aab1d005218c17376fbee5b3c894",
+      "text": "Eraser",
+      "voice": "teach"
+    },
+    {
+      "id": "9ec310715e35e62117a91d092e7071b3",
+      "text": "The eraser removes mistakes.",
+      "voice": "teach"
+    },
+    {
+      "id": "8dc3cbd4dc42089f6446824e33cf6e00",
+      "text": "I draw a line with a ruler.",
+      "voice": "teach"
+    },
+    {
+      "id": "6b27027ae7c0c0adb0fd98387d9b6542",
+      "text": "I color with a crayon.",
+      "voice": "teach"
+    },
+    {
+      "id": "07f4d7af8813a752908b9c37a4717268",
+      "text": "Cut the paper with scissors.",
+      "voice": "teach"
+    },
+    {
+      "id": "54208e4c83cffaab659a233d24fd5eca",
+      "text": "Glue",
+      "voice": "teach"
+    },
+    {
+      "id": "466dec68d2743117235dfd937ff64497",
+      "text": "The glue is sticky.",
+      "voice": "teach"
+    },
+    {
+      "id": "3a4f8d88ea1eac117f98223609194cb9",
+      "text": "Notebook",
+      "voice": "teach"
+    },
+    {
+      "id": "30801572296c9aa3bc9ea8b36bd45843",
+      "text": "I write in my notebook.",
+      "voice": "teach"
+    },
+    {
+      "id": "0235c996b43b3799573658df41ef82f2",
+      "text": "Marker",
+      "voice": "teach"
+    },
+    {
+      "id": "cafa374a006db5208e10ede805bb7472",
+      "text": "The marker is red.",
+      "voice": "teach"
+    },
+    {
+      "id": "b0f2b97dc5d2b76b26e040408bb1d8af",
+      "text": "Folder",
+      "voice": "teach"
+    },
+    {
+      "id": "f881fc034f9a6ea0555e46562097586f",
+      "text": "My papers are in the folder.",
+      "voice": "teach"
+    },
+    {
+      "id": "4050731c8563f0ac4df9ebda6526aa2c",
+      "text": "Bottle",
+      "voice": "teach"
+    },
+    {
+      "id": "0ba4a2c3ee53136448c92eb3a70107d2",
+      "text": "My water bottle is full.",
+      "voice": "teach"
+    },
+    {
+      "id": "cc84fa821011b93c1f935268e5560c2e",
+      "text": "Calculator",
+      "voice": "teach"
+    },
+    {
+      "id": "80a30c867caa8365ebf5e344bbcde19f",
+      "text": "A calculator helps with math.",
+      "voice": "teach"
+    },
+    {
+      "id": "22ea044f27ff2e436aee25121299936a",
+      "text": "When I Am Sick",
+      "voice": "teach"
+    },
+    {
+      "id": "5780df68fc82bfb733e0b3d0520d3179",
+      "text": "Fever",
+      "voice": "teach"
+    },
+    {
+      "id": "307fb8acb53a12ae20fd20053d1b8170",
+      "text": "I have a fever today.",
+      "voice": "teach"
+    },
+    {
+      "id": "5fbfa4ee149ef57f853a69e719bc69db",
+      "text": "Cough",
+      "voice": "teach"
+    },
+    {
+      "id": "7767a22edca65a3285eed5af1827f29a",
+      "text": "My cough is getting better.",
+      "voice": "teach"
+    },
+    {
+      "id": "b47bdcf461610ef5cab9f80ff9662052",
+      "text": "I have a cold.",
+      "voice": "teach"
+    },
+    {
+      "id": "4ff278b4704d3e44b01ff80f37386777",
+      "text": "Medicine",
+      "voice": "teach"
+    },
+    {
+      "id": "9f09cfdfacc5ac0582139c9a8ce42e48",
+      "text": "I take my medicine.",
+      "voice": "teach"
+    },
+    {
+      "id": "7e755864341255e870db63b1e934bd5c",
+      "text": "The hospital is near.",
+      "voice": "teach"
+    },
+    {
+      "id": "36b24335c79a8e04e47f8c91e4376d58",
+      "text": "The nurse is very kind.",
+      "voice": "teach"
+    },
+    {
+      "id": "77ec14e9c85fac87542b984e8988b422",
+      "text": "Tooth",
+      "voice": "teach"
+    },
+    {
+      "id": "0c9a7209989b2ad1ecfbc8b9916a1a3e",
+      "text": "Brush your tooth well.",
+      "voice": "teach"
+    },
+    {
+      "id": "55276c10d84e1df7713b441e76e141f9",
+      "text": "Rest",
+      "voice": "teach"
+    },
+    {
+      "id": "d0050bdec8ab0fa1d1af30daa69b4b6f",
+      "text": "I rest in bed.",
+      "voice": "teach"
+    },
+    {
+      "id": "396d45b57c2fbe3318e7b93272a2686b",
+      "text": "Healthy",
+      "voice": "teach"
+    },
+    {
+      "id": "e16dbb8b8c466e787858d099a6f045d7",
+      "text": "I feel healthy again.",
+      "voice": "teach"
+    },
+    {
+      "id": "c740969b60b76f28afb8af7cb5e4c0de",
+      "text": "Soap",
+      "voice": "teach"
+    },
+    {
+      "id": "65f3845a2c7c8f0a35dc5632f488a00a",
+      "text": "Wash your hands with soap.",
+      "voice": "teach"
+    },
+    {
+      "id": "91d5e8448493f8912c2e7c480933efec",
+      "text": "The Lost Puppy",
+      "voice": "teach"
+    },
+    {
+      "id": "3dad6aece4b66d31a732646dec6d6416",
+      "text": "I find a small puppy near my house.",
+      "voice": "story"
+    },
+    {
+      "id": "7d8ef17ac7932c444c961d38123633e7",
+      "text": "The puppy looks hungry and cold.",
+      "voice": "story"
+    },
+    {
+      "id": "19d1048654d69d756741767bbb1f7843",
+      "text": "I give it water and warm food.",
+      "voice": "story"
+    },
+    {
+      "id": "effa184edcecb7cb69e4d19c84a71a8b",
+      "text": "We make a poster for the puppy.",
+      "voice": "story"
+    },
+    {
+      "id": "5d8670f4ae682d9231e67c4212371751",
+      "text": "A girl comes and says thank you.",
+      "voice": "story"
+    },
+    {
+      "id": "48462a129e57b8dd846c31fc14ef49f5",
+      "text": "The puppy is home again!",
+      "voice": "story"
+    },
+    {
+      "id": "c70ae2f6e79e74913fafbaf23d881e4b",
+      "text": "What does the child find?",
+      "voice": "story"
+    },
+    {
+      "id": "b410ca56fb164a5416c79205e149845a",
+      "text": "The child finds a puppy.",
+      "voice": "teach"
+    },
+    {
+      "id": "dbd9563de9ad0d409aecc209fed76052",
+      "text": "A puppy",
+      "voice": "teach"
+    },
+    {
+      "id": "c2498812232e57666069150463c96233",
+      "text": "A kitten",
+      "voice": "teach"
+    },
+    {
+      "id": "2114c3f8bdeaa45d9431fc162e17966c",
+      "text": "A bird",
+      "voice": "teach"
+    },
+    {
+      "id": "02ad91aef9e37dabbc9958c7d364cbc1",
+      "text": "How does the puppy look?",
+      "voice": "story"
+    },
+    {
+      "id": "7fc3b9f428227bfaadfe711de9d7d47d",
+      "text": "Hungry and cold",
+      "voice": "teach"
+    },
+    {
+      "id": "f0a926fdc7fb7018ab8f6a845104f195",
+      "text": "Big and strong",
+      "voice": "teach"
+    },
+    {
+      "id": "a3a3580da16904086cc34a574bb414c4",
+      "text": "Happy and fat",
+      "voice": "teach"
+    },
+    {
+      "id": "615b5105c065c7012e713717cacbd80d",
+      "text": "Who comes at the end?",
+      "voice": "story"
+    },
+    {
+      "id": "bb1431aa909dfc159b1f57b2afaadf00",
+      "text": "A girl comes.",
+      "voice": "teach"
+    },
+    {
+      "id": "12acb171177ab258ab13df202236f16e",
+      "text": "A girl",
+      "voice": "teach"
+    },
+    {
+      "id": "d204ef779dc7563e442af9ec0d3bfe93",
+      "text": "A teacher",
+      "voice": "teach"
+    },
+    {
+      "id": "acc5d914191285a59f8a726e2a006431",
+      "text": "A farmer",
       "voice": "teach"
     },
     {
@@ -4336,6 +5141,481 @@
       "voice": "teach"
     },
     {
+      "id": "de7ea6b8d663a9ff89c881ce80c2367a",
+      "text": "Nature Around Us",
+      "voice": "teach"
+    },
+    {
+      "id": "ac12ee4aedb176eb73ce3f6c0d1e9036",
+      "text": "Forest",
+      "voice": "teach"
+    },
+    {
+      "id": "83dadc8310c92c31eba412468efb9eaa",
+      "text": "The forest is full of trees.",
+      "voice": "teach"
+    },
+    {
+      "id": "149529f6dcbcc198787e69a11235422e",
+      "text": "River",
+      "voice": "teach"
+    },
+    {
+      "id": "3d77a753bf0229033bb1b139168a75b2",
+      "text": "The river flows to the sea.",
+      "voice": "teach"
+    },
+    {
+      "id": "9b1374e4ce5982efe8270a80d869b017",
+      "text": "We climb the mountain.",
+      "voice": "teach"
+    },
+    {
+      "id": "f41054884f4a8c8cb596222e2a31f098",
+      "text": "Ocean",
+      "voice": "teach"
+    },
+    {
+      "id": "ef072b92f6546256c670895e2d7b82ea",
+      "text": "The ocean is deep and blue.",
+      "voice": "teach"
+    },
+    {
+      "id": "ac0ce97fbbf9358c19452118b49eeacc",
+      "text": "Island",
+      "voice": "teach"
+    },
+    {
+      "id": "35ac9d009c2e01aa5e25f164089625af",
+      "text": "Indonesia has many islands.",
+      "voice": "teach"
+    },
+    {
+      "id": "000c016d34ff41e245b69c67f22c83ff",
+      "text": "Desert",
+      "voice": "teach"
+    },
+    {
+      "id": "8b1e76249bf708d75aa7ba0af6c54e5c",
+      "text": "The desert is dry and hot.",
+      "voice": "teach"
+    },
+    {
+      "id": "6c92ef33cb2e34237d16fdf3d1a907ee",
+      "text": "Valley",
+      "voice": "teach"
+    },
+    {
+      "id": "900867d5ddf8dfc28e43afd410a74fe4",
+      "text": "A river runs through the valley.",
+      "voice": "teach"
+    },
+    {
+      "id": "c1258da2ebd7625dcb2a1bb6f176493e",
+      "text": "Volcano",
+      "voice": "teach"
+    },
+    {
+      "id": "c920dbaa8552a4997f050f0630784719",
+      "text": "The volcano is sleeping.",
+      "voice": "teach"
+    },
+    {
+      "id": "1e8b2516fdcbb457e365167b8b060b47",
+      "text": "Cave",
+      "voice": "teach"
+    },
+    {
+      "id": "87f2780382b0207dd82b52db855f25df",
+      "text": "Bats live in the cave.",
+      "voice": "teach"
+    },
+    {
+      "id": "0c0c42171610847998dba4203159f53a",
+      "text": "The leaf is green.",
+      "voice": "teach"
+    },
+    {
+      "id": "e7e767d7c0e58b16e57d3ab16150db80",
+      "text": "Technology",
+      "voice": "teach"
+    },
+    {
+      "id": "fed3be5f7ade72347616fb224c29d874",
+      "text": "I use a computer for school.",
+      "voice": "teach"
+    },
+    {
+      "id": "8908c18bcd09cebe8bbf2d98b08e672b",
+      "text": "My phone is on the table.",
+      "voice": "teach"
+    },
+    {
+      "id": "c8205c7636e728d448c2774e6a4a944b",
+      "text": "Internet",
+      "voice": "teach"
+    },
+    {
+      "id": "b77b08901a636dc59fb100656869ba92",
+      "text": "The internet connects the world.",
+      "voice": "teach"
+    },
+    {
+      "id": "967d35e40f3f95b1f538bd248640bf3b",
+      "text": "Camera",
+      "voice": "teach"
+    },
+    {
+      "id": "9dc5b7f20892581deff0132ede779470",
+      "text": "She takes photos with a camera.",
+      "voice": "teach"
+    },
+    {
+      "id": "c360abe0e8058fead9561bf3b253150e",
+      "text": "The robot can walk.",
+      "voice": "teach"
+    },
+    {
+      "id": "2fc3359e12b2a9104121dcf04246f6a0",
+      "text": "Screen",
+      "voice": "teach"
+    },
+    {
+      "id": "e9f2c776dcb0b31b2e58d2c9e12ec0b2",
+      "text": "Do not sit too close to the screen.",
+      "voice": "teach"
+    },
+    {
+      "id": "6ce4d85a628a88bbdb3ac24a8e5a9c2e",
+      "text": "Keyboard",
+      "voice": "teach"
+    },
+    {
+      "id": "9097e73e68443df775a6fe3f4c442e3b",
+      "text": "I type on the keyboard.",
+      "voice": "teach"
+    },
+    {
+      "id": "d67c92867cc3d7fdf47f32cf70ab1b24",
+      "text": "Battery",
+      "voice": "teach"
+    },
+    {
+      "id": "c118cb59e457172d655998f70ce0246c",
+      "text": "The battery is empty.",
+      "voice": "teach"
+    },
+    {
+      "id": "52f40b8ad1f6b4675a8df324a0df10ee",
+      "text": "Headphone",
+      "voice": "teach"
+    },
+    {
+      "id": "f5156f27e3fc1502c78f80064a724b80",
+      "text": "I listen with my headphone.",
+      "voice": "teach"
+    },
+    {
+      "id": "37fe93164a9c7b7622bab12c349b98c8",
+      "text": "Printer",
+      "voice": "teach"
+    },
+    {
+      "id": "1307d09cc8e9d9d60df3f4cb4d25eff2",
+      "text": "The printer makes a copy.",
+      "voice": "teach"
+    },
+    {
+      "id": "2fa64354573c97544f3f6986d2a2138a",
+      "text": "Travel Time",
+      "voice": "teach"
+    },
+    {
+      "id": "0696406deb0328271626ca80619ae8ab",
+      "text": "We wait at the airport.",
+      "voice": "teach"
+    },
+    {
+      "id": "c751439d0db3883ac1c8e816327adcab",
+      "text": "Ticket",
+      "voice": "teach"
+    },
+    {
+      "id": "767125d19f4cf71fafdd678491c9be18",
+      "text": "Keep your ticket safe.",
+      "voice": "teach"
+    },
+    {
+      "id": "916df6dabccb420c1ee355d7dd7dd89b",
+      "text": "Passport",
+      "voice": "teach"
+    },
+    {
+      "id": "fb528877cc564147820f1bac4f94f30b",
+      "text": "I show my passport.",
+      "voice": "teach"
+    },
+    {
+      "id": "f94263be7b8cbf08446f2baf70cc7400",
+      "text": "Luggage",
+      "voice": "teach"
+    },
+    {
+      "id": "58dc88e293388247c0d086c8230a8db7",
+      "text": "My luggage is heavy.",
+      "voice": "teach"
+    },
+    {
+      "id": "121543472e739f6cb809c2c509992c24",
+      "text": "We sleep in a hotel.",
+      "voice": "teach"
+    },
+    {
+      "id": "46f3ea056caa3126b91f3f70beea068c",
+      "text": "Map",
+      "voice": "teach"
+    },
+    {
+      "id": "251521157be30ea1bbf80b871b7f9ead",
+      "text": "The map shows the way.",
+      "voice": "teach"
+    },
+    {
+      "id": "f11c0f348320194a7376b6b06d7d0c76",
+      "text": "Tourist",
+      "voice": "teach"
+    },
+    {
+      "id": "ae05878e7e74738f91955a0c7b84dca4",
+      "text": "The tourist takes pictures.",
+      "voice": "teach"
+    },
+    {
+      "id": "394a844cc3d6d99eb45b4e71afde2c99",
+      "text": "Station",
+      "voice": "teach"
+    },
+    {
+      "id": "29b217c30ed53ce6c176c44dcbd98e70",
+      "text": "The train leaves the station.",
+      "voice": "teach"
+    },
+    {
+      "id": "375b06b70e34a9943fc749abfe7e04dc",
+      "text": "Journey",
+      "voice": "teach"
+    },
+    {
+      "id": "0fa4c474330045c938f7bc397b77f911",
+      "text": "The journey takes two hours.",
+      "voice": "teach"
+    },
+    {
+      "id": "58ba47f4265e48f8af4b944b82eaf673",
+      "text": "At the Restaurant",
+      "voice": "teach"
+    },
+    {
+      "id": "b61541208db7fa7dba42c85224405911",
+      "text": "Menu",
+      "voice": "teach"
+    },
+    {
+      "id": "c312f696409c6d55eaf24bc4d7c3117d",
+      "text": "Please read the menu.",
+      "voice": "teach"
+    },
+    {
+      "id": "1af927f37a013989ed9220a6a456952b",
+      "text": "Waiter",
+      "voice": "teach"
+    },
+    {
+      "id": "f3d373bfdc373a4de51e718ef8c3a19a",
+      "text": "The waiter brings our food.",
+      "voice": "teach"
+    },
+    {
+      "id": "a240fa27925a635b08dc28c9e4f9216d",
+      "text": "Order",
+      "voice": "teach"
+    },
+    {
+      "id": "086f4ffea333dbaf5fb3790d869ed2fe",
+      "text": "We order fried rice.",
+      "voice": "teach"
+    },
+    {
+      "id": "d92c25d41fcd9f8ab35545ef34b1e7ed",
+      "text": "Bill",
+      "voice": "teach"
+    },
+    {
+      "id": "fad79d38fe31ec0e402d4e1c26142cae",
+      "text": "Dad pays the bill.",
+      "voice": "teach"
+    },
+    {
+      "id": "36c81967df3424f919e89b09ed34c90d",
+      "text": "Fork",
+      "voice": "teach"
+    },
+    {
+      "id": "e88f44703307c98a05ac78860bac4196",
+      "text": "Use a fork and a spoon.",
+      "voice": "teach"
+    },
+    {
+      "id": "d39d7a2bb6d430fd238a6aedc7f0cee2",
+      "text": "Knife",
+      "voice": "teach"
+    },
+    {
+      "id": "b196196d93d5a624454e86cbac712ba0",
+      "text": "The knife is sharp.",
+      "voice": "teach"
+    },
+    {
+      "id": "bc9a8055ff921d3d9c876ff6eb02fddb",
+      "text": "Plate",
+      "voice": "teach"
+    },
+    {
+      "id": "b182ff836037b70b191d1f7c3f259d10",
+      "text": "My plate is empty.",
+      "voice": "teach"
+    },
+    {
+      "id": "aae44179fda7ddcbf8916aff53846128",
+      "text": "Glass",
+      "voice": "teach"
+    },
+    {
+      "id": "520c2169edc595657a73108c5cb5c3aa",
+      "text": "The glass is full of juice.",
+      "voice": "teach"
+    },
+    {
+      "id": "f8cf41a379f6c7e4922351fc23de778e",
+      "text": "Napkin",
+      "voice": "teach"
+    },
+    {
+      "id": "064724f55ef1b01a882f8ab90cac1a11",
+      "text": "Clean your hands with a napkin.",
+      "voice": "teach"
+    },
+    {
+      "id": "28648c485c897cca3eba7370e3dd8c92",
+      "text": "Dessert",
+      "voice": "teach"
+    },
+    {
+      "id": "e9e1da4663e51bde61b5349d3547d586",
+      "text": "Ice cream is my favorite dessert.",
+      "voice": "teach"
+    },
+    {
+      "id": "e1cd604062cc03d191c90ee583801fd0",
+      "text": "The Helpful Neighbor",
+      "voice": "teach"
+    },
+    {
+      "id": "2b9561467e83b388f3a8a7c027d2b1f4",
+      "text": "Mrs. Sari lives next to my house.",
+      "voice": "story"
+    },
+    {
+      "id": "1246c030f15d800b4d33868c10bd54a0",
+      "text": "One morning her bag falls in the street.",
+      "voice": "story"
+    },
+    {
+      "id": "fdebb2dbe6bce0269114f26028db1ca1",
+      "text": "I run outside and help her.",
+      "voice": "story"
+    },
+    {
+      "id": "e334e1d74c634ac2b558d8da941bca80",
+      "text": "She smiles and thanks me kindly.",
+      "voice": "story"
+    },
+    {
+      "id": "9b72cf5188eae22809d5a273094efe5e",
+      "text": "The next day she brings us cake.",
+      "voice": "story"
+    },
+    {
+      "id": "edc1312af059077bd094e55ce7240d52",
+      "text": "Helping others makes everyone happy.",
+      "voice": "story"
+    },
+    {
+      "id": "a07272684ec739ce088d6148acbbfbee",
+      "text": "Where does Mrs. Sari live?",
+      "voice": "story"
+    },
+    {
+      "id": "652f86081ad99c4ad03bfa9e660c1713",
+      "text": "She lives next door.",
+      "voice": "teach"
+    },
+    {
+      "id": "ed9cabd2812b4d97a96736606a573e41",
+      "text": "Next door",
+      "voice": "teach"
+    },
+    {
+      "id": "d2d5afe9802fe7b1bf8c7b369e7ee588",
+      "text": "In another city",
+      "voice": "teach"
+    },
+    {
+      "id": "d103d411ebc1a5b70725c191d4ef0c79",
+      "text": "At school",
+      "voice": "teach"
+    },
+    {
+      "id": "31feb142950e86459a808c7c733eecb7",
+      "text": "What falls in the street?",
+      "voice": "story"
+    },
+    {
+      "id": "a83ec2dd1aeef07f6535a2055e1b1ffe",
+      "text": "Her bag falls.",
+      "voice": "teach"
+    },
+    {
+      "id": "4cf3a4cd46daee790a19ba6a6f625ddc",
+      "text": "Her bag",
+      "voice": "teach"
+    },
+    {
+      "id": "b14b35667e09e4ff9d1edbf3ad9f12f0",
+      "text": "Her phone",
+      "voice": "teach"
+    },
+    {
+      "id": "2996d31893fc7439872b57645433eeb4",
+      "text": "Her hat",
+      "voice": "teach"
+    },
+    {
+      "id": "fc8345110b5fa178d70479a277797591",
+      "text": "What does she bring the next day?",
+      "voice": "story"
+    },
+    {
+      "id": "756b5e42f7103face30d1a82271afaf3",
+      "text": "She brings cake.",
+      "voice": "teach"
+    },
+    {
+      "id": "472a15a57fdecd29c72a0224f2069582",
+      "text": "Flowers",
+      "voice": "teach"
+    },
+    {
       "id": "790d59ef178acbc75d233bf4211763c6",
       "text": "Countries",
       "voice": "teach"
@@ -4831,11 +6111,6 @@
       "voice": "teach"
     },
     {
-      "id": "d204ef779dc7563e442af9ec0d3bfe93",
-      "text": "A teacher",
-      "voice": "teach"
-    },
-    {
       "id": "4582911d2453a1d655d74dc9e51cdc04",
       "text": "What does Mom give?",
       "voice": "story"
@@ -4853,11 +6128,6 @@
     {
       "id": "97d79eb5af8141837ef252198d39f74c",
       "text": "A ball",
-      "voice": "teach"
-    },
-    {
-      "id": "148605a9c4d66f493baa63d55da21892",
-      "text": "A book",
       "voice": "teach"
     },
     {
@@ -4961,6 +6231,441 @@
       "voice": "teach"
     },
     {
+      "id": "e21709915672f071d9b7ca202f9fd730",
+      "text": "Save the Earth",
+      "voice": "teach"
+    },
+    {
+      "id": "6b2724e1fdbbcc2065b002943d831972",
+      "text": "Recycle",
+      "voice": "teach"
+    },
+    {
+      "id": "35427e2e7a1234888ec9d37c155a5869",
+      "text": "We recycle paper and plastic.",
+      "voice": "teach"
+    },
+    {
+      "id": "1c230158ba570fb39c64e2b8b9863624",
+      "text": "Plastic",
+      "voice": "teach"
+    },
+    {
+      "id": "1fea77157a3f8ce4d936e38ee4b40138",
+      "text": "Plastic harms the ocean.",
+      "voice": "teach"
+    },
+    {
+      "id": "c407e8a237df27b56f1ebc020c489a6a",
+      "text": "Pollution",
+      "voice": "teach"
+    },
+    {
+      "id": "278ccefe1d20fae73c249f5ce86727fc",
+      "text": "Pollution makes the air dirty.",
+      "voice": "teach"
+    },
+    {
+      "id": "8c97626c3bda0721059f5eddbd2d255d",
+      "text": "Garbage",
+      "voice": "teach"
+    },
+    {
+      "id": "d70ae4e41de0bc3ef293a11c237c105d",
+      "text": "Put the garbage in the bin.",
+      "voice": "teach"
+    },
+    {
+      "id": "5cc28f31113ec7cd7e546b836ccae2b9",
+      "text": "Energy",
+      "voice": "teach"
+    },
+    {
+      "id": "7f440a08d73aeb7742e1c8d0165e89cc",
+      "text": "Save energy at home.",
+      "voice": "teach"
+    },
+    {
+      "id": "9ffc5da794071c4508a5bc2fe0422e46",
+      "text": "Planet",
+      "voice": "teach"
+    },
+    {
+      "id": "3bf9dd882e82244a580f37ab6c742698",
+      "text": "Our planet needs our help.",
+      "voice": "teach"
+    },
+    {
+      "id": "7ae5ee44eeb07d4d1a45bc8f49d0326c",
+      "text": "A forest gives us clean air.",
+      "voice": "teach"
+    },
+    {
+      "id": "97740c0c87b83b324e18993ba93f0617",
+      "text": "Protect",
+      "voice": "teach"
+    },
+    {
+      "id": "88fc284db52fc4fbc902db79fcd2165c",
+      "text": "We protect the animals.",
+      "voice": "teach"
+    },
+    {
+      "id": "6b942b8c1e6ef172ce7a3b2ddf96fdde",
+      "text": "Keep the river clean.",
+      "voice": "teach"
+    },
+    {
+      "id": "adff855173c9b92b5478129af7d39e03",
+      "text": "Future",
+      "voice": "teach"
+    },
+    {
+      "id": "c6c655bc342f5b53f2cabb3b83a63260",
+      "text": "The future is in our hands.",
+      "voice": "teach"
+    },
+    {
+      "id": "62ec812c364e8a68c28d866f131d8d4d",
+      "text": "Good Character",
+      "voice": "teach"
+    },
+    {
+      "id": "626dc82571652d5713914fb2bdf7ba57",
+      "text": "She is brave and strong.",
+      "voice": "teach"
+    },
+    {
+      "id": "87606cbadadd5442d24caadd3d1ae7e3",
+      "text": "Honest",
+      "voice": "teach"
+    },
+    {
+      "id": "5d629e4172f1ba4d787498955f1b7255",
+      "text": "An honest person tells the truth.",
+      "voice": "teach"
+    },
+    {
+      "id": "01122a97dca927210827560cb7d76af8",
+      "text": "Patient",
+      "voice": "teach"
+    },
+    {
+      "id": "5f63fb64c1ac9fad12a50015358a9261",
+      "text": "Please be patient.",
+      "voice": "teach"
+    },
+    {
+      "id": "d08cb6b1941c7c758d8a8c9377abd2e9",
+      "text": "Generous",
+      "voice": "teach"
+    },
+    {
+      "id": "b6f20b3411d8d7d4954eb03535231ba6",
+      "text": "He is generous with his friends.",
+      "voice": "teach"
+    },
+    {
+      "id": "9ebb8e5bcf53d8350b8d2d9b8ed7b8d1",
+      "text": "A polite child says thank you.",
+      "voice": "teach"
+    },
+    {
+      "id": "8299420ed1a00358c7129de9677bbc67",
+      "text": "Clever",
+      "voice": "teach"
+    },
+    {
+      "id": "e2aba1d2b172ca0ff295f470bfe1418a",
+      "text": "She is a clever student.",
+      "voice": "teach"
+    },
+    {
+      "id": "84f7981332a83c61e7959601878fa41f",
+      "text": "Our teacher is very friendly.",
+      "voice": "teach"
+    },
+    {
+      "id": "75b58bbe3ee47f6de301e7663eb01d23",
+      "text": "Calm",
+      "voice": "teach"
+    },
+    {
+      "id": "97edcb2eb673d090ccaa5440e20931fc",
+      "text": "Stay calm and try again.",
+      "voice": "teach"
+    },
+    {
+      "id": "2f2604b73c6be8cbf9b84a24fb6f4519",
+      "text": "Curious",
+      "voice": "teach"
+    },
+    {
+      "id": "ef96932b53dad39dbd77ce150bc1c3be",
+      "text": "A curious mind asks questions.",
+      "voice": "teach"
+    },
+    {
+      "id": "a9d13af9ab68f8e72cd864d749bf30de",
+      "text": "Humble",
+      "voice": "teach"
+    },
+    {
+      "id": "8b765752fde8200a1fde2b05524f7ada",
+      "text": "A humble winner helps others.",
+      "voice": "teach"
+    },
+    {
+      "id": "72a79ae68f07f93d448d2947a3ca00ee",
+      "text": "Space Adventure",
+      "voice": "teach"
+    },
+    {
+      "id": "92a1fbef79cad0a6d8e2b9c6da1e6319",
+      "text": "Saturn is a beautiful planet.",
+      "voice": "teach"
+    },
+    {
+      "id": "11d1004fb626febb4adc2126abe6167d",
+      "text": "A star shines at night.",
+      "voice": "teach"
+    },
+    {
+      "id": "0468a1bc5e1e494047ba20eb3e24dd36",
+      "text": "The moon goes around the Earth.",
+      "voice": "teach"
+    },
+    {
+      "id": "37f2c9dfe0c3b002bf0eeb3ce3fb1153",
+      "text": "The sun gives us light.",
+      "voice": "teach"
+    },
+    {
+      "id": "b3fa2d1a2c9cd90648e2857e1c066ff0",
+      "text": "The astronaut floats in space.",
+      "voice": "teach"
+    },
+    {
+      "id": "756fb2b980ffa9a26e5290293efba3aa",
+      "text": "Galaxy",
+      "voice": "teach"
+    },
+    {
+      "id": "75acd8649413b1fe823909dde8e59bcd",
+      "text": "Our galaxy is the Milky Way.",
+      "voice": "teach"
+    },
+    {
+      "id": "b9a8503552f9f7e1e1bc4a0ba9902594",
+      "text": "Comet",
+      "voice": "teach"
+    },
+    {
+      "id": "38275f3facb8b62fad895d5601186851",
+      "text": "A comet has a bright tail.",
+      "voice": "teach"
+    },
+    {
+      "id": "399bee418c7599d0fc9ed14b55925f05",
+      "text": "Telescope",
+      "voice": "teach"
+    },
+    {
+      "id": "f0f8920cf0545900783aaff7f7ebcc79",
+      "text": "We watch stars with a telescope.",
+      "voice": "teach"
+    },
+    {
+      "id": "3a5f3a4432a441a0e16d926f54af3417",
+      "text": "Alien",
+      "voice": "teach"
+    },
+    {
+      "id": "5b1512d1d640ba440f930b9f68516f61",
+      "text": "Nobody has met an alien.",
+      "voice": "teach"
+    },
+    {
+      "id": "de63b853ef7890fe1ad5dc2ec57a74fb",
+      "text": "Music and Instruments",
+      "voice": "teach"
+    },
+    {
+      "id": "ae9b9e717bbdc974d74cd2a2aaa5b1d9",
+      "text": "Guitar",
+      "voice": "teach"
+    },
+    {
+      "id": "0169b8c65d1298806f843d76c0561647",
+      "text": "He plays the guitar well.",
+      "voice": "teach"
+    },
+    {
+      "id": "060e8e88876d796e83c5201d70e45661",
+      "text": "Piano",
+      "voice": "teach"
+    },
+    {
+      "id": "46b28994c5913dac5959eb183a90fc23",
+      "text": "The piano has many keys.",
+      "voice": "teach"
+    },
+    {
+      "id": "66f1b6aa200a516b571dd9306090fd15",
+      "text": "The drum is very loud.",
+      "voice": "teach"
+    },
+    {
+      "id": "d93584d3fa10b2305359c0cd6ab561ac",
+      "text": "The violin sounds sweet.",
+      "voice": "teach"
+    },
+    {
+      "id": "142e3acd3610d6c670ac3f74b36347c6",
+      "text": "Trumpet",
+      "voice": "teach"
+    },
+    {
+      "id": "bb2ce28fb7e42526c175385e873c5bfe",
+      "text": "He blows the trumpet.",
+      "voice": "teach"
+    },
+    {
+      "id": "95702756b0a90fa92c5d946623e857f2",
+      "text": "The singer has a lovely voice.",
+      "voice": "teach"
+    },
+    {
+      "id": "6c8730a0f73d13d796f39d636d3623ae",
+      "text": "Concert",
+      "voice": "teach"
+    },
+    {
+      "id": "72752791bcbda9e0144c6304706e58ce",
+      "text": "We go to a concert.",
+      "voice": "teach"
+    },
+    {
+      "id": "816681f7ec9c9061b5c183095aff399e",
+      "text": "Song",
+      "voice": "teach"
+    },
+    {
+      "id": "6d18c42f075bf8070f20fb3e52f10c09",
+      "text": "This song is my favorite.",
+      "voice": "teach"
+    },
+    {
+      "id": "f01812ba119c287c03e7ac7745b89161",
+      "text": "They dance to the music.",
+      "voice": "teach"
+    },
+    {
+      "id": "1f32d2c1b49b9b0c9d99bd10da107e41",
+      "text": "Radio",
+      "voice": "teach"
+    },
+    {
+      "id": "b794e108a71d4704893ee138aace782c",
+      "text": "The radio plays old songs.",
+      "voice": "teach"
+    },
+    {
+      "id": "1baf3af29b18dcb5f361da6d20e7123f",
+      "text": "Inside My Body",
+      "voice": "teach"
+    },
+    {
+      "id": "b0625e96716518b4be86adb4ff6af53f",
+      "text": "My heart beats fast when I run.",
+      "voice": "teach"
+    },
+    {
+      "id": "71bb21a64807546d7f3107b32dc49afc",
+      "text": "Brain",
+      "voice": "teach"
+    },
+    {
+      "id": "d22b98f951b468a0eecff6a58c200412",
+      "text": "The brain helps us think.",
+      "voice": "teach"
+    },
+    {
+      "id": "d790f0e7721581ed25c97eef3f5e9021",
+      "text": "Bone",
+      "voice": "teach"
+    },
+    {
+      "id": "b8f5d852ef3944a7806be97469ce5b1d",
+      "text": "Milk makes bones strong.",
+      "voice": "teach"
+    },
+    {
+      "id": "747f992097b9e5c9df7585931537150a",
+      "text": "Blood",
+      "voice": "teach"
+    },
+    {
+      "id": "5bcbae34046bb79ded78183cbf00dbda",
+      "text": "Blood travels through the body.",
+      "voice": "teach"
+    },
+    {
+      "id": "36143fa4f2c24dd4816fd6e238cfd5e3",
+      "text": "Muscle",
+      "voice": "teach"
+    },
+    {
+      "id": "9d157de93373669d9d903e10ee22e16d",
+      "text": "Exercise makes muscles strong.",
+      "voice": "teach"
+    },
+    {
+      "id": "9313566fe19aca293daefe4ce37942bf",
+      "text": "Skin",
+      "voice": "teach"
+    },
+    {
+      "id": "ed63093c453918ac2fdce5bc90776ef2",
+      "text": "Skin protects our body.",
+      "voice": "teach"
+    },
+    {
+      "id": "e936c1ea0c8532693c86d6672edf529a",
+      "text": "Stomach",
+      "voice": "teach"
+    },
+    {
+      "id": "1e4cd675b4cfad9312113f4674a76745",
+      "text": "Food goes to the stomach.",
+      "voice": "teach"
+    },
+    {
+      "id": "0d9b0a3b3a93a8f759c9d8ac8eef97ca",
+      "text": "Breathe",
+      "voice": "teach"
+    },
+    {
+      "id": "05aed14d2e106eb8d5d3958727566da2",
+      "text": "We breathe fresh air.",
+      "voice": "teach"
+    },
+    {
+      "id": "bed49be40f3cbe6cae20ae9bc13bd44a",
+      "text": "Children need enough sleep.",
+      "voice": "teach"
+    },
+    {
+      "id": "ef8fb97d271d5d2e855498ac9a9b41b7",
+      "text": "Exercise",
+      "voice": "teach"
+    },
+    {
+      "id": "90feb4c3262d4695c911cda8f944ccf4",
+      "text": "Exercise keeps us healthy.",
+      "voice": "teach"
+    },
+    {
       "id": "9148d2894b2fc08246ecfdf9550be655",
       "text": "Great job!",
       "voice": "praise"
@@ -5009,6 +6714,361 @@
       "id": "0912f8f8b87c237b8415f1b4c0a50438",
       "text": "Try again!",
       "voice": "praise"
+    },
+    {
+      "id": "7c3a169e5658da5e804a4afb7b4c5f65",
+      "text": "The Lost Kitten",
+      "voice": "story"
+    },
+    {
+      "id": "60d7f137efc95cca331ff2be28a47fe8",
+      "text": "Funky plays in the park. Suddenly he hears: \"Meow!\"",
+      "voice": "story"
+    },
+    {
+      "id": "e57dc6683472f0472592094be15ff553",
+      "text": "Look under the tree 🌳",
+      "voice": "teach"
+    },
+    {
+      "id": "3a0c0e253eb73f50a574dd02df5a7e55",
+      "text": "Look near the pond 💧",
+      "voice": "teach"
+    },
+    {
+      "id": "a0a63bf374189d2d7522c4ad00a230d1",
+      "text": "Funky looks under the tree. Nobody is here...",
+      "voice": "story"
+    },
+    {
+      "id": "dbdfac3aac8b1a587c4b52e4eae516dd",
+      "text": "Follow the sound 👂",
+      "voice": "teach"
+    },
+    {
+      "id": "3d9dff28461feebbd583e30876d55c1f",
+      "text": "Call the kitten 📣",
+      "voice": "teach"
+    },
+    {
+      "id": "40bc060e8d83114c6fbc624dee62d03b",
+      "text": "Funky sees ducks in the pond, but no kitten.",
+      "voice": "story"
+    },
+    {
+      "id": "f393adbab082ded569cd6e4ee71edcc7",
+      "text": "Ask the ducks 🦆",
+      "voice": "teach"
+    },
+    {
+      "id": "4742c9a747a52c4e8b8a6b6a22407ea9",
+      "text": "Go back to the tree 🌳",
+      "voice": "teach"
+    },
+    {
+      "id": "21e75d8c97559e38a8606bce9ece047c",
+      "text": "The ducks say: \"The kitten is hiding in the bush!\"",
+      "voice": "story"
+    },
+    {
+      "id": "93aec2bca5c6a70f8194ef377b42a512",
+      "text": "Go to the bush 🌿",
+      "voice": "teach"
+    },
+    {
+      "id": "2f9f070920417992916194509771e1b7",
+      "text": "\"Here, kitty kitty!\" ... No answer. Hmm.",
+      "voice": "story"
+    },
+    {
+      "id": "c9db8c4947f0619ad10cabaf99736174",
+      "text": "Funky finds a little kitten in the bush. It is scared!",
+      "voice": "story"
+    },
+    {
+      "id": "e268fc414a5b9b58a1d3077662df2545",
+      "text": "Give it some milk 🥛",
+      "voice": "teach"
+    },
+    {
+      "id": "116d78f6c0bd1456d6710e6fd440fc4e",
+      "text": "Pick it up gently 🤲",
+      "voice": "teach"
+    },
+    {
+      "id": "dfd60d91e619f36fb69e445842627f71",
+      "text": "The kitten drinks the milk. It feels better now!",
+      "voice": "story"
+    },
+    {
+      "id": "d5462cb08c336f4574049fc08474f139",
+      "text": "Find its home 🏠",
+      "voice": "teach"
+    },
+    {
+      "id": "ac4f4db9b8c55e7926673f176cff753d",
+      "text": "Funky holds the kitten softly. It starts to purr!",
+      "voice": "story"
+    },
+    {
+      "id": "2728a5a0d05e87a2c4e93d558959cd3a",
+      "text": "A girl opens the door: \"Luna! My kitten! Thank you, Funky!\"",
+      "voice": "story"
+    },
+    {
+      "id": "05070dc70761879ea31fa68fb59b1339",
+      "text": "Finish 🎉",
+      "voice": "teach"
+    },
+    {
+      "id": "77e541ebcb3052c9fc2e88411064f6a0",
+      "text": "Hooray! The kitten is home. You are a hero, Funky!",
+      "voice": "story"
+    },
+    {
+      "id": "f922e26e054e5f4551d38ee3ad83ccb0",
+      "text": "Funky Goes to Space",
+      "voice": "story"
+    },
+    {
+      "id": "7c87413906f8bf407b0cbef22daf19d3",
+      "text": "Funky has a red rocket. \"Three, two, one... GO!\"",
+      "voice": "story"
+    },
+    {
+      "id": "282c9ba1773c4c518537e48edbff02ea",
+      "text": "Fly to the Moon 🌙",
+      "voice": "teach"
+    },
+    {
+      "id": "d23850dcfc4059cdfdab83b119ac67b1",
+      "text": "Fly to Mars 🔴",
+      "voice": "teach"
+    },
+    {
+      "id": "7b81f05cfc370512c0aa3b32bc566e10",
+      "text": "The Moon is big and grey. Funky jumps super high here!",
+      "voice": "story"
+    },
+    {
+      "id": "77f8a2d05f38b50459defc82141c0599",
+      "text": "Collect moon rocks 🪨",
+      "voice": "teach"
+    },
+    {
+      "id": "d71e2d9937324984e01dd2595351312b",
+      "text": "Look at the stars ✨",
+      "voice": "teach"
+    },
+    {
+      "id": "03fdf0408dd93bf1ca24a8221c2159c7",
+      "text": "Mars is red and dusty. A friendly robot waves at Funky!",
+      "voice": "story"
+    },
+    {
+      "id": "5a9e36a5dc6dccaa396a4c5a1915b9c5",
+      "text": "Say hello to the robot 🤖",
+      "voice": "teach"
+    },
+    {
+      "id": "1272631714a485d2167c845e4f09f18d",
+      "text": "Take a photo 📸",
+      "voice": "teach"
+    },
+    {
+      "id": "31f41e7ef0d57e83d2474b3b657733d7",
+      "text": "The moon rocks sparkle like diamonds. Beautiful!",
+      "voice": "story"
+    },
+    {
+      "id": "117f9c852540c4f7217dcc666ea202b8",
+      "text": "Fly home 🏠",
+      "voice": "teach"
+    },
+    {
+      "id": "cacb7b6554e2b3186eafecb1b51d876f",
+      "text": "The stars twinkle: twinkle, twinkle, little star...",
+      "voice": "story"
+    },
+    {
+      "id": "6fe54e3cd48936a94e790fc05d75a07a",
+      "text": "The robot says: \"Welcome to Mars, Funky!\" and dances.",
+      "voice": "story"
+    },
+    {
+      "id": "a09091fbfba2a82b02b12074334a2d62",
+      "text": "Click! What a beautiful photo of red Mars!",
+      "voice": "story"
+    },
+    {
+      "id": "9fe68ab8a0d46cafc053130f898de625",
+      "text": "Funky lands safely on Earth. What a big adventure!",
+      "voice": "story"
+    },
+    {
+      "id": "5be290c0f3756cb55f92d9f15a3c3283",
+      "text": "Great explorer! You travelled to space. The End!",
+      "voice": "story"
+    },
+    {
+      "id": "5b5bc04f554bbd36d241cc6c82fc0d4e",
+      "text": "Touch your nose!",
+      "voice": "teach"
+    },
+    {
+      "id": "c827a24a7782d2ae0e52900890ca4e64",
+      "text": "Simon says: Touch your nose!",
+      "voice": "teach"
+    },
+    {
+      "id": "00a5edef4540ce182db5e662e58b7b8e",
+      "text": "Touch your ears!",
+      "voice": "teach"
+    },
+    {
+      "id": "b8d09b3d8ab984354fb9028e93c1c387",
+      "text": "Simon says: Touch your ears!",
+      "voice": "teach"
+    },
+    {
+      "id": "a0b9cf47fd81bd6684a650be20147a78",
+      "text": "Clap your hands!",
+      "voice": "teach"
+    },
+    {
+      "id": "dc6bc492db537aba80f42cf42aa73d03",
+      "text": "Simon says: Clap your hands!",
+      "voice": "teach"
+    },
+    {
+      "id": "042491454ef493305262e87a54837f59",
+      "text": "Close your eyes!",
+      "voice": "teach"
+    },
+    {
+      "id": "d1a5f2469499fd78c7b91d63c4ffa482",
+      "text": "Simon says: Close your eyes!",
+      "voice": "teach"
+    },
+    {
+      "id": "8641af74271fe1739cad309ef8c6c363",
+      "text": "Open your mouth!",
+      "voice": "teach"
+    },
+    {
+      "id": "c1a373a50927105c498446d754555728",
+      "text": "Simon says: Open your mouth!",
+      "voice": "teach"
+    },
+    {
+      "id": "4bbeca80c43c89e7c32eaa7e530a88fa",
+      "text": "Stamp your feet!",
+      "voice": "teach"
+    },
+    {
+      "id": "29e8b5946a23454be293a1b5cb3aba1f",
+      "text": "Simon says: Stamp your feet!",
+      "voice": "teach"
+    },
+    {
+      "id": "c9ca4bd1a46d3f7e2a058401a6ae2b28",
+      "text": "Raise your hands!",
+      "voice": "teach"
+    },
+    {
+      "id": "e3f512695001d40603bab4d6c3a29e44",
+      "text": "Simon says: Raise your hands!",
+      "voice": "teach"
+    },
+    {
+      "id": "c347da28e88b80f41e2d681f314ab2e4",
+      "text": "Touch your shoulders!",
+      "voice": "teach"
+    },
+    {
+      "id": "4ae2bd03d6e9a4f5b08c996548733b9c",
+      "text": "Simon says: Touch your shoulders!",
+      "voice": "teach"
+    },
+    {
+      "id": "30663cd049fa21431d7e1644df9069b2",
+      "text": "Jump up!",
+      "voice": "teach"
+    },
+    {
+      "id": "05acaf4dc981d45b4fb810eefc5cdf3b",
+      "text": "Simon says: Jump up!",
+      "voice": "teach"
+    },
+    {
+      "id": "fe8cf6a9d66481f0f37c5057a2372087",
+      "text": "Turn around!",
+      "voice": "teach"
+    },
+    {
+      "id": "0f275edd458b6d57b6626847d41a2e71",
+      "text": "Simon says: Turn around!",
+      "voice": "teach"
+    },
+    {
+      "id": "26980863d2de1f5dabe7c87b9ccc7e3f",
+      "text": "Sit down!",
+      "voice": "teach"
+    },
+    {
+      "id": "d71609dff9c0625e989adcb0e5537790",
+      "text": "Simon says: Sit down!",
+      "voice": "teach"
+    },
+    {
+      "id": "de4f1d5ae8f1abd8e7313c2019a4811b",
+      "text": "Touch your head!",
+      "voice": "teach"
+    },
+    {
+      "id": "a7c57888f1b2a6f4ff944b1cdd10d5ec",
+      "text": "Simon says: Touch your head!",
+      "voice": "teach"
+    },
+    {
+      "id": "44611d264a682050b8ed710ee20cb440",
+      "text": "Simon did not say! Good job!",
+      "voice": "praise"
+    },
+    {
+      "id": "7cfabb99d031d18577abbbc298be8bb6",
+      "text": "Simon did not say that!",
+      "voice": "praise"
+    },
+    {
+      "id": "d357cb4c98421a963f7851c175d9719f",
+      "text": "You got an egg!",
+      "voice": "praise"
+    },
+    {
+      "id": "7bc1c28bb3094035c224069a06d1bed3",
+      "text": "Yummy! Thank you!",
+      "voice": "praise"
+    },
+    {
+      "id": "0eafdc492fff7d9b929096f367f3a59e",
+      "text": "Looking good!",
+      "voice": "praise"
+    },
+    {
+      "id": "60aa3db06f9c024e7392515a39f0442c",
+      "text": "Awesome! New hat!",
+      "voice": "praise"
+    },
+    {
+      "id": "c0be1f580be9443ee9c3b769bce4b706",
+      "text": "Finish all units first!",
+      "voice": "teach"
+    },
+    {
+      "id": "19b00581b45b02f67af46e2f7935a28f",
+      "text": "Boss battle! Defeat the dragon!",
+      "voice": "teach"
     }
   ]
 }

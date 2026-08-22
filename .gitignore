@@ -50,7 +50,8 @@ app.*.map.json
 # Local env files must never carry API keys
 .env
 *.env
-`n# generator scratch file`n/assets/voice/voice_failed.txt
+# generator scratch file
+/assets/voice/voice_failed.txt
 
 # Local QA screenshots and Remotion build output
 /artifacts/

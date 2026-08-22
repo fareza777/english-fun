@@ -9,6 +9,15 @@ import 'package:shared_preferences/shared_preferences.dart';
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
+  /// Pins a logical screen size so a test always exercises the layout it
+  /// means to. Without this the default 800x600 surface sits exactly on the
+  /// tablet breakpoint and the home screen silently switches to a grid.
+  void useScreen(WidgetTester tester, Size size) {
+    tester.view.devicePixelRatio = 1.0;
+    tester.view.physicalSize = size;
+    addTearDown(tester.view.reset);
+  }
+
   setUpAll(() async {
     // Pre-set a player name so the app skips onboarding and lands on Home.
     SharedPreferences.setMockInitialValues({'name': 'Tester'});
@@ -17,6 +26,7 @@ void main() {
   });
 
   testWidgets('splash -> home -> grade map -> flashcard learn flow', (tester) async {
+    useScreen(tester, const Size(420, 900)); // phone
     await tester.pumpWidget(const EnglishFunApp());
 
     // Splash shows the painted mascot, badge and subtitle (title is per-letter animated).
@@ -33,14 +43,13 @@ void main() {
     expect(find.text('Kelas 1'), findsOneWidget);
 
     // Scroll the grade list to reveal Kelas 6.
-    await tester.drag(find.byType(ListView).first, const Offset(0, -600));
-    await tester.pump(const Duration(milliseconds: 400));
-    await tester.drag(find.byType(ListView).first, const Offset(0, -600));
+    final gradeList = find.byType(Scrollable).last;
+    await tester.scrollUntilVisible(find.text('Kelas 6'), 240, scrollable: gradeList);
     await tester.pump(const Duration(milliseconds: 400));
     expect(find.text('Kelas 6'), findsOneWidget);
 
     // Scroll back to the top.
-    await tester.drag(find.byType(ListView).first, const Offset(0, 1200));
+    await tester.scrollUntilVisible(find.text('Kelas 1'), -240, scrollable: gradeList);
     await tester.pump(const Duration(milliseconds: 400));
 
     // Open grade 1 -> unit map shows Alphabet Fun.
@@ -78,6 +87,7 @@ void main() {
   });
 
   testWidgets('home -> sticker book opens with badges tab', (tester) async {
+    useScreen(tester, const Size(420, 900)); // phone
     await tester.pumpWidget(const EnglishFunApp());
     await tester.pump(const Duration(seconds: 3));
     await tester.pump(const Duration(milliseconds: 600));
@@ -88,6 +98,10 @@ void main() {
     // (regression: badge unlock during build used to crash this route).
     await Progress.I.setStars('g1_alphabet', 'learn', 1);
 
+    // The stats chips scroll horizontally; on a phone this one starts
+    // off-screen, so bring it into view before tapping.
+    await tester.ensureVisible(find.text('Stiker 0'));
+    await tester.pump(const Duration(milliseconds: 300));
     await tester.tap(find.text('Stiker 0'));
     await tester.pump(const Duration(milliseconds: 600));
     await tester.pump(const Duration(milliseconds: 600));
@@ -102,5 +116,22 @@ void main() {
     await tester.pump(const Duration(milliseconds: 400));
     await tester.pump(const Duration(milliseconds: 400));
     expect(find.text('Bintang Pertama'), findsOneWidget);
+  });
+
+  testWidgets('tablet layout renders the grade grid without overflowing', (tester) async {
+    useScreen(tester, const Size(1024, 1366)); // large tablet, portrait
+    await tester.pumpWidget(const EnglishFunApp());
+    await tester.pump(const Duration(seconds: 3));
+    await tester.pump(const Duration(milliseconds: 600));
+    await tester.pump(const Duration(milliseconds: 600));
+
+    // Wide screens lay the grade cards out as a grid rather than one
+    // stretched column.
+    expect(find.byType(GridView), findsOneWidget);
+    expect(find.text('English Fun Adventure'), findsOneWidget);
+    expect(find.text('Kelas 1'), findsOneWidget);
+
+    // Any RenderFlex overflow would have been recorded as a test exception.
+    expect(tester.takeException(), isNull);
   });
 }

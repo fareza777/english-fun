@@ -1,4 +1,5 @@
 /// Branching interactive stories ("Cerita Bercabang") + Simon Says commands.
+library;
 
 class AdvChoice {
   final String text;

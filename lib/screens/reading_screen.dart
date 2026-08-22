@@ -102,13 +102,17 @@ class _ReadingScreenState extends State<ReadingScreen> {
     final stars = _correct >= total ? 3 : (_correct >= total - 1 ? 2 : 1);
     await Progress.I.setStars(widget.unit.id, 'quiz', stars);
     if (!mounted) return;
-    Navigator.of(context).pushReplacement(funRoute(ResultScreen(
-      title: 'Kuis Cerita',
-      stars: stars,
-      correct: _correct,
-      total: total,
-      retryBuilder: () => ReadingScreen(unit: widget.unit, startAtQuiz: true),
-    )));
+    Navigator.of(context).pushReplacement(
+      funRoute(
+        ResultScreen(
+          title: 'Kuis Cerita',
+          stars: stars,
+          correct: _correct,
+          total: total,
+          retryBuilder: () => ReadingScreen(unit: widget.unit, startAtQuiz: true),
+        ),
+      ),
+    );
   }
 
   @override
@@ -142,7 +146,7 @@ class _ReadingScreenState extends State<ReadingScreen> {
                 width: i == _line ? 26 : 11,
                 height: 11,
                 decoration: BoxDecoration(
-                  color: i == _line ? AppColors.ink : Colors.white.withOpacity(0.7),
+                  color: i == _line ? AppColors.ink : Colors.white.withValues(alpha: 0.7),
                   borderRadius: BorderRadius.circular(8),
                 ),
               );
@@ -154,7 +158,10 @@ class _ReadingScreenState extends State<ReadingScreen> {
             duration: const Duration(milliseconds: 350),
             transitionBuilder: (child, anim) => FadeTransition(
               opacity: anim,
-              child: ScaleTransition(scale: Tween(begin: 0.95, end: 1.0).animate(anim), child: child),
+              child: ScaleTransition(
+                scale: Tween(begin: 0.95, end: 1.0).animate(anim),
+                child: child,
+              ),
             ),
             child: Container(
               key: ValueKey(_line),
@@ -164,7 +171,9 @@ class _ReadingScreenState extends State<ReadingScreen> {
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(32),
                 border: Border.all(color: const Color(0xFFFFD60A), width: 5),
-                boxShadow: const [BoxShadow(color: Color(0x2A000000), blurRadius: 14, offset: Offset(0, 6))],
+                boxShadow: const [
+                  BoxShadow(color: Color(0x2A000000), blurRadius: 14, offset: Offset(0, 6)),
+                ],
               ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -181,11 +190,7 @@ class _ReadingScreenState extends State<ReadingScreen> {
                     flex: 3,
                     child: FittedBox(
                       fit: BoxFit.scaleDown,
-                      child: Text(
-                        line.en,
-                        textAlign: TextAlign.center,
-                        style: AppText.heading(32),
-                      ),
+                      child: Text(line.en, textAlign: TextAlign.center, style: AppText.heading(32)),
                     ),
                   ),
                   const SizedBox(height: 8),
@@ -267,7 +272,9 @@ class _ReadingScreenState extends State<ReadingScreen> {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(28),
                   border: Border.all(color: const Color(0xFF7ED6FF), width: 4),
-                  boxShadow: const [BoxShadow(color: Color(0x22000000), blurRadius: 10, offset: Offset(0, 5))],
+                  boxShadow: const [
+                    BoxShadow(color: Color(0x22000000), blurRadius: 10, offset: Offset(0, 5)),
+                  ],
                 ),
                 child: Column(
                   children: [
@@ -283,7 +290,10 @@ class _ReadingScreenState extends State<ReadingScreen> {
                       },
                       child: Container(
                         padding: const EdgeInsets.all(8),
-                        decoration: const BoxDecoration(color: AppColors.sun, shape: BoxShape.circle),
+                        decoration: const BoxDecoration(
+                          color: AppColors.sun,
+                          shape: BoxShape.circle,
+                        ),
                         child: const Icon(Icons.volume_up_rounded, size: 26, color: AppColors.ink),
                       ),
                     ),
@@ -299,7 +309,7 @@ class _ReadingScreenState extends State<ReadingScreen> {
                   } else if (_selected == i) {
                     color = AppColors.wrong;
                   } else {
-                    color = color.withOpacity(0.5);
+                    color = color.withValues(alpha: 0.5);
                   }
                 }
                 return Padding(
@@ -314,10 +324,19 @@ class _ReadingScreenState extends State<ReadingScreen> {
                       decoration: BoxDecoration(
                         color: color,
                         borderRadius: BorderRadius.circular(22),
-                        border: Border.all(color: Colors.white.withOpacity(0.6), width: 3),
-                        boxShadow: [BoxShadow(color: color.withOpacity(0.4), offset: const Offset(0, 5))],
+                        border: Border.all(color: Colors.white.withValues(alpha: 0.6), width: 3),
+                        boxShadow: [
+                          BoxShadow(
+                            color: color.withValues(alpha: 0.4),
+                            offset: const Offset(0, 5),
+                          ),
+                        ],
                       ),
-                      child: Text(q.options[i], textAlign: TextAlign.center, style: AppText.display(24)),
+                      child: Text(
+                        q.options[i],
+                        textAlign: TextAlign.center,
+                        style: AppText.display(24),
+                      ),
                     ),
                   ),
                 );

@@ -50,6 +50,7 @@ class MonetizationService extends ChangeNotifier {
   );
   static const _prodMrecAdUnitId = String.fromEnvironment(
     'ADMOB_MREC_AD_UNIT_ID',
+    defaultValue: 'ca-app-pub-6279186647593327/5392592706',
   );
   static const _prodInterstitialAdUnitId = String.fromEnvironment(
     'ADMOB_INTERSTITIAL_AD_UNIT_ID',
@@ -71,12 +72,12 @@ class MonetizationService extends ChangeNotifier {
   static String get bannerAdUnitId =>
       useTestUnits ? _testBannerAdUnitId : _prodBannerAdUnitId;
 
-  /// Dedicated 300x250 unit for the result screen.
+  /// Dedicated 300x250 unit ("Result MREC") for the result screen.
   ///
   /// AdMob tunes fill and eCPM per ad unit using that unit's size history, so
   /// serving a medium rectangle from the anchored-banner unit leaves money on
-  /// the table. Falls back to the banner unit until a real MREC unit exists:
-  /// `--dart-define=ADMOB_MREC_AD_UNIT_ID=ca-app-pub-…/…`
+  /// the table. Falls back to the banner unit only if the define overrides
+  /// the default with an empty value.
   static String get mrecAdUnitId {
     if (useTestUnits) return _testBannerAdUnitId;
     return _prodMrecAdUnitId.isEmpty ? _prodBannerAdUnitId : _prodMrecAdUnitId;

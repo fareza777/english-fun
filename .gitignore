@@ -50,6 +50,11 @@ app.*.map.json
 # Local env files must never carry API keys
 .env
 *.env
+
+# Upload signing key — NEVER commit. Backup lives outside the repo.
+/android/key.properties
+/android/app/*.jks
+*.keystore
 # generator scratch file
 /assets/voice/voice_failed.txt
 

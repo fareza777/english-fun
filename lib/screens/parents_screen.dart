@@ -11,6 +11,7 @@ import '../widgets/adult_gate.dart';
 import '../widgets/common.dart';
 import '../widgets/responsive.dart';
 import 'diagnostics_screen.dart';
+import 'about_screen.dart';
 import 'onboarding_screen.dart';
 import 'privacy_screen.dart';
 
@@ -90,6 +91,47 @@ class ParentsScreen extends StatelessWidget {
     if (sure != true) return;
 
     await Progress.I.logout();
+    if (!context.mounted) return;
+    Navigator.of(
+      context,
+    ).pushAndRemoveUntil(funRoute(const OnboardingScreen()), (_) => false);
+  }
+
+  Future<void> _confirmDeleteAccount(BuildContext context) async {
+    final approved = await AdultGate.show(
+      context,
+      reason: 'Menghapus profil dan seluruh data belajar di perangkat ini.',
+    );
+    if (!approved || !context.mounted) return;
+
+    final sure = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
+        title: Text('Hapus Akun & Data?', style: AppText.heading(24)),
+        content: Text(
+          'Nama, progres, bintang, koleksi, statistik, dan pengaturan lokal akan dihapus. Pembelian Hapus Iklan tetap tersedia melalui akun Google Play. Tindakan ini tidak bisa dibatalkan.',
+          style: AppText.body(17),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context, false),
+            child: Text('Batal', style: AppText.body(17, color: Colors.grey)),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(context, true),
+            child: Text(
+              'Ya, Hapus Semua',
+              style: AppText.body(17, color: AppColors.wrong),
+            ),
+          ),
+        ],
+      ),
+    );
+    if (sure != true) return;
+
+    await Progress.I.deleteAccount();
+    await ErrorReporter.I.clear();
     if (!context.mounted) return;
     Navigator.of(
       context,
@@ -286,6 +328,13 @@ class ParentsScreen extends StatelessWidget {
                 '${ErrorReporter.I.hasRecords ? ' (${ErrorReporter.I.records.length})' : ''}',
             onTap: () =>
                 Navigator.of(context).push(funRoute(const DiagnosticsScreen())),
+          ),
+          _linkRow(
+            context,
+            icon: Icons.auto_awesome_rounded,
+            label: 'Tentang English Fun',
+            onTap: () =>
+                Navigator.of(context).push(funRoute(const AboutScreen())),
           ),
         ],
       ),
@@ -521,6 +570,12 @@ class ParentsScreen extends StatelessWidget {
             icon: Icons.logout_rounded,
             label: 'Ganti Profil & Ulangi Onboarding',
             onTap: () => _confirmLogout(context),
+          ),
+          _linkRow(
+            context,
+            icon: Icons.delete_forever_rounded,
+            label: 'Hapus Akun & Semua Data Lokal',
+            onTap: () => _confirmDeleteAccount(context),
           ),
         ],
       ),

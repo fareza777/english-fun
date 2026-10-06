@@ -134,6 +134,57 @@ void main() {
     },
   );
 
+  test(
+    'deleteAccount clears the local profile and learning data but keeps purchase entitlement',
+    () async {
+      SharedPreferences.setMockInitialValues({
+        'name': 'Ari',
+        'onboarded': true,
+        'selected_grade': 4,
+        'daily_goal': 10,
+        'reduced_motion': true,
+        'st_g1_alphabet:quiz': 3,
+        'stickers': ['⭐'],
+        'coins': 120,
+        'owned_items': ['🧢'],
+        'equipped_hat': '🧢',
+        'games_today': 4,
+        'games_total': 9,
+        'eggs': 2,
+        'pets': ['🐱'],
+        'active_pet': '🐱',
+        'last_fed': '2026-09-03',
+        'last_spin': '2026-09-03',
+        'badges': ['first_star'],
+        'memory_v3': '{"apple":{"box":1}}',
+        'ads_removed': true,
+      });
+      await Progress.I.load();
+
+      await Progress.I.deleteAccount();
+
+      expect(Progress.I.playerName, isEmpty);
+      expect(Progress.I.onboarded, isFalse);
+      expect(Progress.I.selectedGrade, 0);
+      expect(Progress.I.totalStars, 0);
+      expect(Progress.I.coins, 0);
+      expect(Progress.I.stickers, isEmpty);
+      expect(Progress.I.pets, isEmpty);
+      expect(Progress.I.badges, isEmpty);
+      expect(Progress.I.gamesTotal, 0);
+      expect(Progress.I.dailyGoal, 3);
+      expect(Progress.I.reducedMotion, isFalse);
+      expect(Progress.I.memoryFor('apple'), isNull);
+
+      final prefs = await SharedPreferences.getInstance();
+      expect(prefs.getString('name'), isNull);
+      expect(prefs.getBool('onboarded'), isNull);
+      expect(prefs.getInt('selected_grade'), isNull);
+      expect(prefs.getBool('ads_removed'), isTrue);
+      expect(prefs.getKeys().where((key) => key.startsWith('st_')), isEmpty);
+    },
+  );
+
   test('pets: egg economy, hatching, feeding and spin daily gates', () {
     final p = Progress.I;
     expect(p.eggs, 0);

@@ -70,3 +70,55 @@ class InterstitialGate {
     gamesAtLastShow = gamesTotal;
   }
 }
+
+/// When the hub banner is allowed to start a *new* AdMob request.
+///
+/// Reloading on every notify after a no-fill spams the network. That is why
+/// the banner vanished after a single game: the first return request missed,
+/// then a listener reset the backoff and fired another immediate request
+/// until AdMob stopped filling for the rest of the session.
+enum HubBannerAction { none, tearDown, load }
+
+class HubBannerLoadGate {
+  bool _onHub = false;
+
+  bool get onHub => _onHub;
+
+  HubBannerAction decide({
+    required bool adsAllowed,
+    required bool isHub,
+    required bool hasBanner,
+    required bool loading,
+  }) {
+    if (!adsAllowed || !isHub) {
+      _onHub = false;
+      return HubBannerAction.tearDown;
+    }
+    if (_onHub) return HubBannerAction.none;
+    _onHub = true;
+    if (hasBanner || loading) return HubBannerAction.none;
+    return HubBannerAction.load;
+  }
+
+  /// After a size-change rebuild the next hub tick must be allowed to load.
+  void reset() => _onHub = false;
+}
+
+/// Backoff for a persistent hub banner after consecutive no-fill responses.
+///
+/// The counter deliberately lives outside the widget's load method: resetting
+/// it at the start of every retry turns the intended exponential backoff into
+/// a tight loop that keeps asking AdMob every few seconds.
+class HubBannerRetryPolicy {
+  static const maxDelay = Duration(minutes: 4);
+
+  int _failures = 0;
+
+  Duration recordFailure() {
+    _failures++;
+    final backoff = Duration(seconds: 3 * (1 << (_failures - 1).clamp(0, 7)));
+    return backoff > maxDelay ? maxDelay : backoff;
+  }
+
+  void reset() => _failures = 0;
+}

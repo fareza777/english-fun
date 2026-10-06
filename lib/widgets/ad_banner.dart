@@ -6,6 +6,7 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 import '../services/ad_diagnostics.dart';
 import '../services/ads_placement.dart';
+import '../services/ads_policy.dart';
 import '../services/consent.dart';
 import '../services/error_reporter.dart';
 import '../services/monetization.dart';
@@ -33,9 +34,13 @@ class _PersistentAdBannerState extends State<PersistentAdBanner>
   BannerAd? _banner;
   bool _loaded = false;
   bool _loading = false;
-  int _failures = 0;
   int _lastWidth = 0;
   Timer? _retry;
+  Timer? _loadWatchdog;
+  int _loadId = 0;
+  int _syncGen = 0;
+  final HubBannerLoadGate _gate = HubBannerLoadGate();
+  final HubBannerRetryPolicy _retryPolicy = HubBannerRetryPolicy();
 
   @override
   void initState() {
@@ -58,37 +63,34 @@ class _PersistentAdBannerState extends State<PersistentAdBanner>
   void _sync() => _onChanged();
 
   void _onChanged({bool forceReloadIfWidthChanged = false}) {
+    final gen = ++_syncGen;
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (!mounted) return;
+      if (!mounted || gen != _syncGen) return;
 
-      // Entitlement or consent revoked: the ad has to go.
-      if (!_adsAllowed) {
-        _tearDown();
-        return;
-      }
-
-      // Off a hub screen the ad is disposed, not merely hidden.
-      //
-      // Unmounting an AdWidget destroys the underlying WebView, so a
-      // BannerAd kept alive past that point is a zombie: the SDK logs
-      // "The webview is destroyed. Ignoring action." on its next refresh and
-      // the banner comes back blank. Releasing it here and requesting a new
-      // one on the way back is what the SDK expects.
-      if (!AdsPlacement.I.showHubBanner) {
-        _tearDown();
-        return;
-      }
-
-      final width = MediaQuery.sizeOf(context).width.truncate();
       if (forceReloadIfWidthChanged &&
           _banner != null &&
-          (width - _lastWidth).abs() > 24) {
-        _tearDown(notify: false);
+          AdsPlacement.I.showHubBanner) {
+        final width = MediaQuery.sizeOf(context).width.truncate();
+        if ((width - _lastWidth).abs() > 24) {
+          _tearDown(notify: false);
+          _gate.reset();
+        }
       }
-      // A fresh arrival on the hub is a fresh chance: clear a stale failure
-      // streak so a temporary run of no-fill cannot disable ads for good.
-      _failures = 0;
-      if (_banner == null && !_loading) unawaited(_load());
+
+      final action = _gate.decide(
+        adsAllowed: _adsAllowed,
+        isHub: AdsPlacement.I.showHubBanner,
+        hasBanner: _banner != null,
+        loading: _loading,
+      );
+      switch (action) {
+        case HubBannerAction.tearDown:
+          _tearDown();
+        case HubBannerAction.load:
+          unawaited(_load());
+        case HubBannerAction.none:
+          break;
+      }
     });
   }
 
@@ -101,11 +103,19 @@ class _PersistentAdBannerState extends State<PersistentAdBanner>
   Future<void> _load() async {
     if (!mounted || _loading || _banner != null || !_canShow) return;
     _loading = true;
+    final id = ++_loadId;
+    // Let a result-screen MREC finish disposing before we ask for the hub
+    // banner again. Requesting both in the same beat is a common no-fill.
+    await Future<void>.delayed(const Duration(milliseconds: 450));
+    if (!mounted || id != _loadId || !_canShow) {
+      if (id == _loadId) _loading = false;
+      return;
+    }
     final width = MediaQuery.sizeOf(context).width.truncate();
     _lastWidth = width;
     final size = await _adaptiveSize(width);
-    if (!mounted || !_canShow) {
-      _loading = false;
+    if (!mounted || id != _loadId || !_canShow) {
+      if (id == _loadId) _loading = false;
       return;
     }
 
@@ -115,15 +125,17 @@ class _PersistentAdBannerState extends State<PersistentAdBanner>
       request: MonetizationService.childAdRequest,
       listener: BannerAdListener(
         onAdLoaded: (ad) {
+          if (id != _loadId) {
+            ad.dispose();
+            return;
+          }
+          _loadWatchdog?.cancel();
           _loading = false;
-          // If the child left the hub while this was in flight there is no
-          // AdWidget to host it, so release it rather than keep a banner
-          // whose WebView is about to be torn down.
           if (!mounted || !_canShow) {
             ad.dispose();
             return;
           }
-          _failures = 0;
+          _retryPolicy.reset();
           setState(() {
             _banner = ad as BannerAd;
             _loaded = true;
@@ -132,13 +144,9 @@ class _PersistentAdBannerState extends State<PersistentAdBanner>
           AdDiagnostics.I.markLoaded(AdDiagnostics.slotBanner);
         },
         onAdFailedToLoad: (ad, error) {
-          // Only the request that failed dies here.
-          //
-          // A banner already on screen is deliberately left alone: AdMob
-          // returns "no fill" (code 3) constantly for a young, child-directed
-          // ad unit, and blanking the hub on every miss is exactly why the
-          // ad seemed to vanish for good after a few minutes of play.
           ad.dispose();
+          if (id != _loadId) return;
+          _loadWatchdog?.cancel();
           _loading = false;
           AdDiagnostics.I.markFailed(
             AdDiagnostics.slotBanner,
@@ -154,9 +162,20 @@ class _PersistentAdBannerState extends State<PersistentAdBanner>
         },
       ),
     );
+    _loadWatchdog?.cancel();
+    _loadWatchdog = Timer(const Duration(seconds: 12), () {
+      if (id != _loadId || !_loading || _banner != null) return;
+      _loading = false;
+      _scheduleRetry();
+    });
     try {
       await banner.load();
     } catch (error, stack) {
+      if (id != _loadId) {
+        banner.dispose();
+        return;
+      }
+      _loadWatchdog?.cancel();
       _loading = false;
       banner.dispose();
       ErrorReporter.I.record(error, stack, context: 'PersistentAdBanner');
@@ -170,26 +189,26 @@ class _PersistentAdBannerState extends State<PersistentAdBanner>
   /// so the old hard stop after a handful of misses meant a quiet minute
   /// could cost every impression for the rest of the session. Retries slow
   /// down to one every few minutes instead of stopping.
-  static const _maxRetryDelay = Duration(minutes: 4);
-
   void _scheduleRetry() {
     if (!_canShow) return;
-    _failures++;
     _retry?.cancel();
-    final backoff = Duration(seconds: 3 * (1 << (_failures - 1).clamp(0, 7)));
-    final delay = backoff > _maxRetryDelay ? _maxRetryDelay : backoff;
+    final delay = _retryPolicy.recordFailure();
     _retry = Timer(delay, () {
       if (mounted) unawaited(_load());
     });
   }
 
   void _tearDown({bool notify = true}) {
+    _loadId++;
     _retry?.cancel();
     _retry = null;
+    _loadWatchdog?.cancel();
+    _loadWatchdog = null;
     _banner?.dispose();
     _banner = null;
     _loaded = false;
     _loading = false;
+    _retryPolicy.reset();
     AdsPlacement.I.setHubBannerReady(false);
     if (notify && mounted) setState(() {});
   }
@@ -199,6 +218,7 @@ class _PersistentAdBannerState extends State<PersistentAdBanner>
     WidgetsBinding.instance.removeObserver(this);
     _listenable.removeListener(_sync);
     _retry?.cancel();
+    _loadWatchdog?.cancel();
     _banner?.dispose();
     super.dispose();
   }
@@ -355,7 +375,8 @@ Future<AdSize> _adaptiveSize(int width) async {
     // variant, but it maps to the platform's long-standing
     // getCurrentOrientationAnchoredAdaptiveBannerAdSize, which is still the
     // documented choice for a bottom-anchored banner.
-    final standard = await AdSize
+    final standard =
+        await AdSize
         // ignore: deprecated_member_use
         .getCurrentOrientationAnchoredAdaptiveBannerAdSize(width);
     if (standard != null && standard.height > 0) return standard;

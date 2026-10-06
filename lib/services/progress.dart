@@ -397,6 +397,69 @@ class Progress extends ChangeNotifier {
     } catch (_) {}
   }
 
+  /// Deletes the local child profile and all learning data so the next app
+  /// launch can start a completely fresh onboarding flow.
+  ///
+  /// The one-time remove-ads entitlement is intentionally not touched: it is
+  /// owned by the Google Play account, not by this on-device profile.
+  Future<void> deleteAccount() async {
+    _name = '';
+    _stars.clear();
+    _stickers.clear();
+    _memory.clear();
+    _owned.clear();
+    _hat = '';
+    _coins = 0;
+    _gamesToday = 0;
+    _gamesTotal = 0;
+    _dailyGoal = 3;
+    _reducedMotion = false;
+    _selectedGrade = 0;
+    _streak = 0;
+    _eggs = 0;
+    _pets.clear();
+    _activePet = '';
+    _lastFed = '';
+    _lastSpin = '';
+    _badges.clear();
+    notifyListeners();
+
+    try {
+      for (final key in [
+        'name',
+        'onboarded',
+        'selected_grade',
+        'daily_goal',
+        'reduced_motion',
+        'stickers',
+        'streak',
+        'last_open',
+        'wrong_map',
+        'memory_v3',
+        'coins',
+        'owned_items',
+        'equipped_hat',
+        'games_today',
+        'games_total',
+        'games_date',
+        'eggs',
+        'pets',
+        'active_pet',
+        'last_fed',
+        'last_spin',
+        'badges',
+      ]) {
+        await _prefs?.remove(key);
+      }
+      final starKeys =
+          _prefs?.getKeys().where((key) => key.startsWith(_prefix)).toList() ??
+          const <String>[];
+      for (final key in starKeys) {
+        await _prefs?.remove(key);
+      }
+    } catch (_) {}
+  }
+
   // ---- pets, spin, badges ----
 
   void addEggs(int n) {

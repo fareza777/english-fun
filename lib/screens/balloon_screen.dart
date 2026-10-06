@@ -29,7 +29,8 @@ class _Balloon {
   _Balloon(this.x, this.y, this.speed, this.emoji, this.color) : wobble = 0;
 }
 
-class _BalloonScreenState extends State<BalloonScreen> with SingleTickerProviderStateMixin {
+class _BalloonScreenState extends State<BalloonScreen>
+    with SingleTickerProviderStateMixin {
   static const _targets = 12;
   final _balloons = <_Balloon>[];
   final _rnd = math.Random();
@@ -42,6 +43,7 @@ class _BalloonScreenState extends State<BalloonScreen> with SingleTickerProvider
   int _score = 0;
   int _popped = 0;
   bool _done = false;
+  bool _missedTarget = false;
 
   static const _colors = [
     Color(0xFFFF6B6B),
@@ -56,9 +58,10 @@ class _BalloonScreenState extends State<BalloonScreen> with SingleTickerProvider
   void initState() {
     super.initState();
     _newTarget();
-    _ticker = AnimationController(vsync: this, duration: const Duration(minutes: 5))
-      ..addListener(_tick)
-      ..forward();
+    _ticker =
+        AnimationController(vsync: this, duration: const Duration(minutes: 5))
+          ..addListener(_tick)
+          ..forward();
     Future.delayed(const Duration(milliseconds: 600), _speakTarget);
   }
 
@@ -68,6 +71,7 @@ class _BalloonScreenState extends State<BalloonScreen> with SingleTickerProvider
 
   void _newTarget() {
     _target = widget.words[_rnd.nextInt(widget.words.length)];
+    _missedTarget = false;
   }
 
   void _tick() {
@@ -103,10 +107,11 @@ class _BalloonScreenState extends State<BalloonScreen> with SingleTickerProvider
   }
 
   void _pop(_Balloon b) {
-    if (_done) return;
+    if (_done || !_balloons.contains(b)) return;
     if (b.emoji == _target.emoji) {
-      _score++;
+      if (!_missedTarget) _score++;
       _popped++;
+      Progress.I.recordCorrect(_target.en);
       Sfx.I.pop();
       Sfx.I.ding();
       setState(() => _balloons.remove(b));
@@ -117,6 +122,7 @@ class _BalloonScreenState extends State<BalloonScreen> with SingleTickerProvider
         _speakTarget();
       }
     } else {
+      _missedTarget = true;
       Sfx.I.wrong();
       Progress.I.recordWrong(_target.en);
     }
@@ -124,7 +130,6 @@ class _BalloonScreenState extends State<BalloonScreen> with SingleTickerProvider
 
   void _finish() {
     _done = true;
-    Progress.I.recordCorrect(_target.en);
     final stars = _score >= 12 ? 3 : (_score >= 9 ? 2 : (_score >= 6 ? 1 : 0));
     Progress.I.addCoins(_score * 2);
     Navigator.of(context).pushReplacement(
@@ -134,7 +139,9 @@ class _BalloonScreenState extends State<BalloonScreen> with SingleTickerProvider
           stars: stars,
           correct: _score,
           total: _targets,
-          retryBuilder: () => BalloonScreen(words: widget.words, title: widget.title),
+          scoreCaption: 'Pada percobaan pertama',
+          retryBuilder: () =>
+              BalloonScreen(words: widget.words, title: widget.title),
         ),
       ),
     );
@@ -161,23 +168,39 @@ class _BalloonScreenState extends State<BalloonScreen> with SingleTickerProvider
                     emoji: '🎈',
                     colors: const [],
                     trailing: Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 14,
+                        vertical: 8,
+                      ),
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(18),
                       ),
-                      child: Text('$_popped/$_targets', style: AppText.heading(18)),
+                      child: Text(
+                        '$_popped/$_targets',
+                        style: AppText.heading(18),
+                      ),
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 6),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 24,
+                      vertical: 6,
+                    ),
                     child: Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 10),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 18,
+                        vertical: 10,
+                      ),
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(20),
                         boxShadow: const [
-                          BoxShadow(color: Color(0x22000000), blurRadius: 8, offset: Offset(0, 3)),
+                          BoxShadow(
+                            color: Color(0x22000000),
+                            blurRadius: 8,
+                            offset: Offset(0, 3),
+                          ),
                         ],
                       ),
                       child: Row(
@@ -208,9 +231,15 @@ class _BalloonScreenState extends State<BalloonScreen> with SingleTickerProvider
                       children: [
                         for (final b in _balloons)
                           Positioned(
-                            left: b.x * constraints.maxWidth - 38 + math.sin(b.wobble * 2.2) * 8,
+                            left:
+                                b.x * constraints.maxWidth -
+                                38 +
+                                math.sin(b.wobble * 2.2) * 8,
                             top: b.y,
-                            child: GestureDetector(onTap: () => _pop(b), child: _balloonWidget(b)),
+                            child: GestureDetector(
+                              onTap: () => _pop(b),
+                              child: _balloonWidget(b),
+                            ),
                           ),
                       ],
                     ),
@@ -236,7 +265,10 @@ class _BalloonScreenState extends State<BalloonScreen> with SingleTickerProvider
             shape: BoxShape.circle,
             border: Border.all(color: Colors.white, width: 3),
             boxShadow: [
-              BoxShadow(color: b.color.withValues(alpha: 0.5), offset: const Offset(0, 5)),
+              BoxShadow(
+                color: b.color.withValues(alpha: 0.5),
+                offset: const Offset(0, 5),
+              ),
             ],
           ),
           alignment: Alignment.center,

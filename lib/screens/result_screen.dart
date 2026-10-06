@@ -17,6 +17,7 @@ class ResultScreen extends StatefulWidget {
   final int stars;
   final int correct;
   final int total;
+  final String? scoreCaption;
   final Widget Function() retryBuilder;
   const ResultScreen({
     super.key,
@@ -24,6 +25,7 @@ class ResultScreen extends StatefulWidget {
     required this.stars,
     required this.correct,
     required this.total,
+    this.scoreCaption,
     required this.retryBuilder,
   });
 
@@ -197,9 +199,20 @@ class _ResultScreenState extends State<ResultScreen>
                                   ),
                                 ],
                               ),
-                              child: Text(
-                                'Benar ${widget.correct} dari ${widget.total}',
-                                style: AppText.heading(22),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Text(
+                                    'Benar ${widget.correct} dari ${widget.total}',
+                                    style: AppText.heading(22),
+                                  ),
+                                  if (widget.scoreCaption != null)
+                                    Text(
+                                      widget.scoreCaption!,
+                                      style: AppText.body(16),
+                                      textAlign: TextAlign.center,
+                                    ),
+                                ],
                               ),
                             ),
                             if (_newSticker != null) ...[
@@ -260,9 +273,10 @@ class _ResultScreenState extends State<ResultScreen>
                                   fontSize: 20,
                                   onTap: () => unawaited(
                                     _leave(
-                                      () => Navigator.of(context).pushReplacement(
-                                        funRoute(widget.retryBuilder()),
-                                      ),
+                                      () =>
+                                          Navigator.of(context).pushReplacement(
+                                            funRoute(widget.retryBuilder()),
+                                          ),
                                     ),
                                   ),
                                 ),

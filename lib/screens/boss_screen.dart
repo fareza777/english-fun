@@ -30,7 +30,9 @@ class _BossScreenState extends State<BossScreen> with TickerProviderStateMixin {
   int _bossHp = _rounds;
   int _hearts = 3;
   int _hits = 0;
+  int _answered = 0;
   bool _locked = false;
+  bool _done = false;
   int? _picked;
   bool _shakeBoss = false;
 
@@ -49,7 +51,8 @@ class _BossScreenState extends State<BossScreen> with TickerProviderStateMixin {
     super.initState();
     final all = widget.grade.units.expand((u) => u.items).toList();
     // The boss drills whatever is due for review first, then fills the rest.
-    _questions = LessonBuilder.dueFirst(all, limit: _rounds).toList()..shuffle(math.Random());
+    _questions = LessonBuilder.dueFirst(all, limit: _rounds).toList()
+      ..shuffle(math.Random());
     _options = {for (final q in _questions) q: _makeOptions(q, all)};
     Sfx.I.speak('Boss battle! Defeat the dragon!');
     _startTimer();
@@ -61,16 +64,18 @@ class _BossScreenState extends State<BossScreen> with TickerProviderStateMixin {
   void _startTimer() => _timer.forward(from: 0);
 
   void _timeout() {
-    if (_locked || !mounted) return;
+    if (_locked || _done || !mounted) return;
     _locked = true;
+    _answered++;
     Sfx.I.wrong();
     Progress.I.recordWrong(_q.en);
     _loseHeart();
   }
 
   void _answer(int i) {
-    if (_locked) return;
+    if (_locked || _done) return;
     _locked = true;
+    _answered++;
     _picked = i;
     final correct = _options[_q]![i] == _q.en;
     _timer.stop();
@@ -97,11 +102,14 @@ class _BossScreenState extends State<BossScreen> with TickerProviderStateMixin {
   }
 
   void _loseHeart() {
-    _hearts--;
+    setState(() => _hearts--);
     if (_hearts <= 0) {
       _finish(win: false);
       return;
     }
+    // Retry missed words after the remaining questions: ten hits are still
+    // possible while the child has a heart left.
+    _questions.add(_q);
     _next();
   }
 
@@ -111,7 +119,7 @@ class _BossScreenState extends State<BossScreen> with TickerProviderStateMixin {
       return;
     }
     Future.delayed(const Duration(milliseconds: 650), () {
-      if (!mounted) return;
+      if (!mounted || _done) return;
       setState(() {
         _index++;
         _locked = false;
@@ -122,6 +130,8 @@ class _BossScreenState extends State<BossScreen> with TickerProviderStateMixin {
   }
 
   void _finish({required bool win}) {
+    if (_done) return;
+    _done = true;
     _timer.stop();
     final stars = win ? _hearts.clamp(1, 3) : 0;
     Progress.I.setStars('boss_g${widget.grade.level}', 'boss', stars);
@@ -137,7 +147,7 @@ class _BossScreenState extends State<BossScreen> with TickerProviderStateMixin {
           title: win ? 'Boss Kalah! 🎉' : 'Boss Menang...',
           stars: stars,
           correct: _hits,
-          total: _rounds,
+          total: _answered,
           retryBuilder: () => BossScreen(grade: widget.grade),
         ),
       ),
@@ -166,7 +176,9 @@ class _BossScreenState extends State<BossScreen> with TickerProviderStateMixin {
                   children: List.generate(
                     3,
                     (i) => Icon(
-                      i < _hearts ? Icons.favorite_rounded : Icons.favorite_border_rounded,
+                      i < _hearts
+                          ? Icons.favorite_rounded
+                          : Icons.favorite_border_rounded,
                       color: const Color(0xFFFF6B6B),
                       size: 26,
                     ),
@@ -178,8 +190,12 @@ class _BossScreenState extends State<BossScreen> with TickerProviderStateMixin {
               AnimatedContainer(
                 duration: const Duration(milliseconds: 120),
                 transform: _shakeBoss
-                    ? (Matrix4.identity()
-                        ..translateByDouble(math.Random().nextDouble() * 8 - 4, 0, 0, 1))
+                    ? (Matrix4.identity()..translateByDouble(
+                        math.Random().nextDouble() * 8 - 4,
+                        0,
+                        0,
+                        1,
+                      ))
                     : Matrix4.identity(),
                 child: const Text('🐉', style: TextStyle(fontSize: 76)),
               ),
@@ -208,7 +224,9 @@ class _BossScreenState extends State<BossScreen> with TickerProviderStateMixin {
                       minHeight: 8,
                       backgroundColor: Colors.white.withValues(alpha: 0.25),
                       valueColor: AlwaysStoppedAnimation(
-                        _timer.value > 0.7 ? AppColors.wrong : AppColors.correct,
+                        _timer.value > 0.7
+                            ? AppColors.wrong
+                            : AppColors.correct,
                       ),
                     ),
                   ),
@@ -218,12 +236,19 @@ class _BossScreenState extends State<BossScreen> with TickerProviderStateMixin {
               // question card
               Container(
                 margin: const EdgeInsets.symmetric(horizontal: 28),
-                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 20,
+                  vertical: 14,
+                ),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(24),
                   boxShadow: const [
-                    BoxShadow(color: Color(0x33000000), blurRadius: 12, offset: Offset(0, 5)),
+                    BoxShadow(
+                      color: Color(0x33000000),
+                      blurRadius: 12,
+                      offset: Offset(0, 5),
+                    ),
                   ],
                 ),
                 child: Row(
@@ -231,7 +256,12 @@ class _BossScreenState extends State<BossScreen> with TickerProviderStateMixin {
                   children: [
                     Text(_q.emoji, style: const TextStyle(fontSize: 54)),
                     const SizedBox(width: 14),
-                    Flexible(child: Text('Apa bahasa Inggrisnya?', style: AppText.heading(20))),
+                    Flexible(
+                      child: Text(
+                        'Apa bahasa Inggrisnya?',
+                        style: AppText.heading(20),
+                      ),
+                    ),
                     BouncyButton(
                       onTap: () => Sfx.I.speak(_q.en),
                       child: const Icon(

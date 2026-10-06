@@ -23,12 +23,12 @@ class _Section {
 class PrivacyScreen extends StatelessWidget {
   const PrivacyScreen({super.key});
 
-  static const lastUpdated = '22 Agustus 2026';
+  static const lastUpdated = '3 September 2026';
 
   static const List<_Section> _sections = [
     _Section('1. Informasi yang disimpan di perangkat', [
       'English Fun menyimpan preferensi dan progres belajar di perangkat agar petualangan bisa dilanjutkan dari tempat terakhir. Ini mencakup nama panggilan, aktivitas yang selesai, bintang, streak, pengaturan, dan status lokal pembelian penghapusan iklan.',
-      'Informasi ini tidak dikirim ke server kami. Orang tua dapat mereset progres dari dasbor orang tua di dalam app, atau menghapus app beserta datanya dari perangkat.',
+      'Informasi ini tidak dikirim ke server kami. Orang tua dapat mereset progres, atau menghapus profil dan seluruh data lokal, dari dasbor orang tua di dalam app.',
     ]),
     _Section('2. Suara dan mikrofon', [
       'Aktivitas "Ucapkan!" dapat meminta akses mikrofon agar anak bisa berlatih pengucapan. App memakai layanan pengenalan suara bawaan perangkat. English Fun tidak merekam atau mengunggah suara ke server kami.',
@@ -67,7 +67,11 @@ class PrivacyScreen extends StatelessWidget {
       body: AnimatedBackground(
         child: Column(
           children: [
-            const KidAppBar(title: 'Kebijakan Privasi', emoji: '🔒', colors: []),
+            const KidAppBar(
+              title: 'Kebijakan Privasi',
+              emoji: '🔒',
+              colors: [],
+            ),
             Expanded(
               child: ContentWidth(
                 child: ListView(
@@ -79,7 +83,11 @@ class PrivacyScreen extends StatelessWidget {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(22),
                         boxShadow: const [
-                          BoxShadow(color: Color(0x14000000), blurRadius: 6, offset: Offset(0, 3)),
+                          BoxShadow(
+                            color: Color(0x14000000),
+                            blurRadius: 6,
+                            offset: Offset(0, 3),
+                          ),
                         ],
                       ),
                       child: Column(
@@ -87,7 +95,10 @@ class PrivacyScreen extends StatelessWidget {
                         children: [
                           Text('English Fun', style: AppText.heading(24)),
                           const SizedBox(height: 4),
-                          Text('Terakhir diperbarui: $lastUpdated', style: AppText.body(14)),
+                          Text(
+                            'Terakhir diperbarui: $lastUpdated',
+                            style: AppText.body(14),
+                          ),
                           const SizedBox(height: 10),
                           Text(
                             'Kebijakan ini menjelaskan informasi apa yang dipakai app dan bagaimana penanganannya.',
@@ -115,12 +126,21 @@ class PrivacyScreen extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(22),
-        boxShadow: const [BoxShadow(color: Color(0x14000000), blurRadius: 6, offset: Offset(0, 3))],
+        boxShadow: const [
+          BoxShadow(
+            color: Color(0x14000000),
+            blurRadius: 6,
+            offset: Offset(0, 3),
+          ),
+        ],
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Semantics(header: true, child: Text(section.title, style: AppText.heading(19))),
+          Semantics(
+            header: true,
+            child: Text(section.title, style: AppText.heading(19)),
+          ),
           const SizedBox(height: 8),
           for (final paragraph in section.paragraphs) ...[
             Text(paragraph, style: AppText.body(15)),

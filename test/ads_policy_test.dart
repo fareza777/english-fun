@@ -36,6 +36,7 @@ void main() {
         'ParentsScreen',
         'PrivacyScreen',
         'DiagnosticsScreen',
+        'AboutScreen',
         'SomeFutureScreen',
       ]) {
         expect(AdsPolicy.surfaceFor(name), AdSurface.hidden, reason: '$name');
@@ -50,67 +51,162 @@ void main() {
 
     test('does not show before two completed sessions', () {
       expect(
-        gate().canShow(
-          gamesTotal: 1,
-          now: now,
-          allowed: true,
-          ready: true,
-        ),
+        gate().canShow(gamesTotal: 1, now: now, allowed: true, ready: true),
         isFalse,
       );
     });
 
     test('shows on the second session when the ad is ready', () {
       expect(
-        gate().canShow(
-          gamesTotal: 2,
-          now: now,
-          allowed: true,
-          ready: true,
-        ),
+        gate().canShow(gamesTotal: 2, now: now, allowed: true, ready: true),
         isTrue,
       );
     });
 
     test('does not show when ads are removed or the ad is not loaded', () {
       expect(
-        gate().canShow(
-          gamesTotal: 8,
-          now: now,
-          allowed: false,
-          ready: true,
-        ),
+        gate().canShow(gamesTotal: 8, now: now, allowed: false, ready: true),
         isFalse,
       );
       expect(
-        gate().canShow(
-          gamesTotal: 8,
-          now: now,
-          allowed: true,
-          ready: false,
-        ),
+        gate().canShow(gamesTotal: 8, now: now, allowed: true, ready: false),
         isFalse,
       );
     });
 
-    test('blocks another interstitial until two more games and three minutes pass', () {
-      final g = gate()
-        ..markShown(now: now, gamesTotal: 2);
+    test(
+      'blocks another interstitial until two more games and three minutes pass',
+      () {
+        final g = gate()..markShown(now: now, gamesTotal: 2);
+
+        expect(
+          g.canShow(
+            gamesTotal: 3,
+            now: now.add(const Duration(minutes: 4)),
+            allowed: true,
+            ready: true,
+          ),
+          isFalse,
+          reason: 'only one extra game',
+        );
+        expect(
+          g.canShow(
+            gamesTotal: 4,
+            now: now.add(const Duration(minutes: 2)),
+            allowed: true,
+            ready: true,
+          ),
+          isFalse,
+          reason: 'cooldown still running',
+        );
+        expect(
+          g.canShow(
+            gamesTotal: 4,
+            now: now.add(const Duration(minutes: 3)),
+            allowed: true,
+            ready: true,
+          ),
+          isTrue,
+        );
+      },
+    );
+  });
+
+  group('HubBannerLoadGate', () {
+    test('loads once on arriving at the hub, not on every later tick', () {
+      final gate = HubBannerLoadGate();
 
       expect(
-        g.canShow(gamesTotal: 3, now: now.add(const Duration(minutes: 4)), allowed: true, ready: true),
-        isFalse,
-        reason: 'only one extra game',
+        gate.decide(
+          adsAllowed: true,
+          isHub: true,
+          hasBanner: false,
+          loading: false,
+        ),
+        HubBannerAction.load,
       );
       expect(
-        g.canShow(gamesTotal: 4, now: now.add(const Duration(minutes: 2)), allowed: true, ready: true),
-        isFalse,
-        reason: 'cooldown still running',
+        gate.decide(
+          adsAllowed: true,
+          isHub: true,
+          hasBanner: false,
+          loading: false,
+        ),
+        HubBannerAction.none,
+        reason: 'a no-fill on the hub must not start a tight reload loop',
+      );
+    });
+
+    test('tears down off the hub and loads again when coming back', () {
+      final gate = HubBannerLoadGate();
+      gate.decide(
+        adsAllowed: true,
+        isHub: true,
+        hasBanner: false,
+        loading: false,
+      );
+
+      expect(
+        gate.decide(
+          adsAllowed: true,
+          isHub: false,
+          hasBanner: true,
+          loading: false,
+        ),
+        HubBannerAction.tearDown,
       );
       expect(
-        g.canShow(gamesTotal: 4, now: now.add(const Duration(minutes: 3)), allowed: true, ready: true),
-        isTrue,
+        gate.decide(
+          adsAllowed: true,
+          isHub: true,
+          hasBanner: false,
+          loading: false,
+        ),
+        HubBannerAction.load,
       );
+    });
+
+    test('does not load while a request is already in flight', () {
+      final gate = HubBannerLoadGate();
+      expect(
+        gate.decide(
+          adsAllowed: true,
+          isHub: true,
+          hasBanner: false,
+          loading: true,
+        ),
+        HubBannerAction.none,
+      );
+    });
+  });
+
+  group('HubBannerRetryPolicy', () {
+    test('keeps exponential backoff across consecutive no-fill failures', () {
+      final policy = HubBannerRetryPolicy();
+
+      expect(policy.recordFailure(), const Duration(seconds: 3));
+      expect(policy.recordFailure(), const Duration(seconds: 6));
+      expect(policy.recordFailure(), const Duration(seconds: 12));
+      expect(policy.recordFailure(), const Duration(seconds: 24));
+      expect(policy.recordFailure(), const Duration(seconds: 48));
+      expect(policy.recordFailure(), const Duration(seconds: 96));
+      expect(policy.recordFailure(), const Duration(seconds: 192));
+      expect(policy.recordFailure(), const Duration(minutes: 4));
+      expect(
+        policy.recordFailure(),
+        const Duration(minutes: 4),
+        reason: 'the retry delay is capped instead of growing forever',
+      );
+    });
+
+    test('resets only when a new hub session starts', () {
+      final policy = HubBannerRetryPolicy()
+        ..recordFailure()
+        ..recordFailure();
+
+      policy.reset();
+
+      expect(policy.recordFailure(), const Duration(seconds: 3));
     });
   });
 
@@ -156,8 +252,11 @@ void main() {
         AdsPlacement.I.applyRouteName(route);
       }
       expect(AdsPlacement.I.surface, AdSurface.result);
-      expect(AdsPlacement.I.showHubBanner, isFalse,
-          reason: 'the hub banner must not render over a game or result');
+      expect(
+        AdsPlacement.I.showHubBanner,
+        isFalse,
+        reason: 'the hub banner must not render over a game or result',
+      );
 
       AdsPlacement.I.applyRouteName('HomeScreen');
       expect(AdsPlacement.I.surface, AdSurface.hub);

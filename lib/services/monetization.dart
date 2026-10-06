@@ -46,15 +46,15 @@ class MonetizationService extends ChangeNotifier {
   static const removeAdsProductId = 'remove_ads';
   static const _prodBannerAdUnitId = String.fromEnvironment(
     'ADMOB_BANNER_AD_UNIT_ID',
-    defaultValue: 'ca-app-pub-6279186647593327/6889227968',
+    defaultValue: 'ca-app-pub-6279186647593327/8253843153',
   );
   static const _prodMrecAdUnitId = String.fromEnvironment(
     'ADMOB_MREC_AD_UNIT_ID',
-    defaultValue: 'ca-app-pub-6279186647593327/5392592706',
+    defaultValue: 'ca-app-pub-6279186647593327/1357262312',
   );
   static const _prodInterstitialAdUnitId = String.fromEnvironment(
     'ADMOB_INTERSTITIAL_AD_UNIT_ID',
-    defaultValue: 'ca-app-pub-6279186647593327/7051490430',
+    defaultValue: 'ca-app-pub-6279186647593327/2095628912',
   );
 
   /// `--dart-define=ADMOB_TEST_UNITS=true` swaps every slot for Google's
